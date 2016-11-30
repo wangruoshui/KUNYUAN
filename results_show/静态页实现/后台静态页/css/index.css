@@ -1,0 +1,46 @@
+    *{
+        font-family:"微软雅黑";
+    }
+    .sousuo{
+        float: right;
+        margin-top: 15px;
+    }
+    .yonghu{
+        margin-right: 10px;
+    }
+    
+    .mianbao{
+       height: 60px;
+    }
+    .time{
+        margin-left: 500px;
+    }
+    .nav-l{
+        padding-left: 300px;
+    }
+    .ss{
+        margin-top: 5px;
+        margin-left: 0px;
+
+    }
+    .mianbao{
+        height: 60px;
+        margin-bottom: 0px;
+    }
+    .nav-all{
+        background-color: #44DDDD;
+        
+    }
+    .content{
+        margin-top: 40px;
+    }
+    .fonts{
+        font-size: 20px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    .title{
+        padding-top: -10px;
+        padding-left: 30px;
+    }
+
