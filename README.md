@@ -1,7 +1,7 @@
 Welcome to KUNYUAN
 ===================
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/logo.gif)
 
 # <i class="icon-refresh"></i> 坤源生物质颗粒网站
 >廊坊生物质颗粒有限公司 软件学院PHP方向实训课题
