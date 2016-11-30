@@ -1,7 +1,10 @@
-﻿# <i class="icon-refresh"></i> 坤源生物质颗粒网站
+Welcome to KUNYUAN
+===================
 
-@(廊坊生物质颗粒有限公司)[软件学院PHP方向实训课题]
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
+# <i class="icon-refresh"></i> 坤源生物质颗粒网站
+>廊坊生物质颗粒有限公司 软件学院PHP方向实训课题
 
 **[坤源生物质网站](www.lfkunyuan.com)**是为廊坊坤源生物质颗粒有限公司打造的具有产品展示,样品速递,新闻展示,环境与社会,在线留言等基本功能的商业网站.
  
@@ -14,7 +17,7 @@
 
 -------------------
 
-[TOC]
+[TOCM]
 
 
 ## <i class="icon-refresh"></i> 生物质颗粒简介
@@ -24,7 +27,7 @@
 ##<i class="icon-refresh"></i> 廊坊坤源生物质颗粒有限公司简介
 >    
 > 
->       
+> 
  
 
 
@@ -35,8 +38,8 @@
 ##<i class="icon-refresh"></i> 项目组成员
 
 | 序号      |     姓名 |   redmine主页   | github主页 | 角色 |
-| :-------- | --------:| :------: |
-| 1    |   岳** |  [57373](http://www.hostedredmine.com/users/57373)  |[yuejianbin](https://github.com/yuejianbin)| 项目经理 |
+| :-------- | --------:| :------: |:-------:|:------------:|:-----------:|
+| 1    |   岳** |  [57373](http://www.hostedredmine.com/users/57373)  |[yuejianbin](https://github.com/yuejianbin)| 项目经理 |
 |2|顾**	|[57409](http://www.hostedredmine.com/users/57409)|[guyinhang](https://github.com/guyinhang)|产品经理|
 |3|王**|[57410](http://www.hostedredmine.com/users/57410)|[wangxiaoman1](https://github.com/wangxiaoman1)|UI设计 开发工程师|
 |4|马**|[57442](http://www.hostedredmine.com/users/57442)|[maxing](https://github.com/maxing)|开发工程师|
@@ -45,6 +48,7 @@
 ##<i class="icon-refresh"></i> 项目背景
 > 
 > 
+
 ##<i class="icon-refresh"></i> 项目流程
 
 > 
@@ -56,10 +60,12 @@
 
 > 
 > 
+
 ##<i class="icon-refresh"></i> 项目进展
 
 > 
-> 
+>
+
 ##<i class="icon-refresh"></i> 项目文档说明
 		---src  项目源码
 		---doc  项目文档
