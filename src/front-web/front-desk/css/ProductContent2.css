@@ -1,0 +1,32 @@
+.content-text-p{
+	font-family:'黑体';
+	text-indent:2em; 
+}
+.content-text{
+	width: 150px;
+	float: left;
+}
+.content-img{	
+	width: 456px;
+	height: 200px;
+}
+.content-con1{
+	height: 365px;
+	background-image:url(../manimages/QQ截图20161129163047.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+.content-text2{
+	width: 150px;
+	float: right;
+}
+.content-img2{	
+	width: 456px;
+	height: 200px;
+}
+.content-con2{
+	height: 365px;
+	background-image:url(../manimages/QQ截图20161129163108.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
