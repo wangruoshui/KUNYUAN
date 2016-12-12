@@ -1,0 +1,181 @@
+*{
+    text-decoration: none;
+    color:black;
+}
+.centre{
+    color:black;
+    margin-top:50px;
+    padding:0px;
+    /*width:1320px;*/
+}
+.centre_1{
+    float:left;
+}
+.centre_1 .title{
+    margin-left:200px;
+    font-size:32px;
+}
+.source{
+    float:left;
+    margin-left:300px;
+    font-size:12px;
+    color:gray;
+}
+.author{
+    margin-left:150px;
+    float:left;
+    font-size:12px;
+    color:gray;
+}
+.centre_1 .publishing_time{
+    margin-left:150px;
+    font-size:12px;
+    color:gray;
+    float:left;
+}
+.hr_1 hr{
+    clear:both;
+    margin-left:100px;
+    width:900px;
+}
+.picture{
+    width:580px;
+    height:378px;
+    margin-left:260px;
+    margin-top:20px;
+}
+.content{
+    margin-top:20px;
+    font-family: '黑体';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18pt;
+    font-size:18px;
+
+}
+.content .p_title{
+    margin-left:230px;
+    text-align:left;
+    color:gray;
+}
+.centre .p_content{
+    margin-left:200px;
+    width:800px;
+    color:grey;
+}
+.al{
+    margin-left:800px;
+    margin-top:30px;
+}
+.al a{
+    margin-left:10px;
+    color:dimgrey;
+    font-size:20px;
+}
+.turn{
+    margin-top:20px;
+    padding-left:760px;
+    color:dimgrey;
+}
+.turn_up{
+    float:left;
+}
+.turn_down{
+    margin-left:30px;
+    float:left;
+
+}
+.hr_vertical img{
+   margin-left:40px;
+    margin-top:120px;
+    height:800px;
+    float:left;
+}
+.centre_2{
+    margin-left:30px;
+    margin-top:100px;
+    float:left;
+    width:250px;
+}
+.centre_2 p{
+    font-size:12px;
+    color:black;
+
+}
+.product{
+    font-size:16px;
+    margin-bottom: 7px;
+}
+.product p{
+    font-size:22px;
+}
+.pro_title{
+    float:left;
+}
+.pro_tit{
+    font-family: 'Blackadder ITC Normal', 'Blackadder ITC';
+}
+.right_1 img{
+    width:100px;
+    height:100px;
+}
+.pro_pic_1{
+    margin-top:10px;
+    float:left;
+}
+.pro_pic_2{
+    margin-top:10px;
+    margin-left:20px;
+    float:left;
+}
+.pro_pic_3{
+    float:left;
+    margin-top:10px;
+}
+.pro_pic_4{
+    margin-top:10px;
+    margin-left:20px;
+    float:left;
+}
+.pro_pic{
+    clear:both;
+}
+.right_2{
+    clear:both;
+    padding-top:30px;
+}
+.news p{
+    font-size:22px;
+    margin-bottom:8px;
+}
+.news #mor{
+    margin-left:75px;
+    margin-top:6px;
+    color:grey;
+    float:left;
+    font-size:16px;
+}
+.right_2 hr{
+    clear:both;
+}
+.list{
+    margin-top:20px;
+}
+.list p{
+    font-size:15px;
+    line-height:30px;
+}
+
+.right_3{
+    padding-top:30px;
+}
+.news #mor2{
+    margin-left:75px;
+    margin-top:6px;
+    color:grey;
+    float:left;
+    font-size:16px;
+}
+.right_3 hr{
+    clear:both;
+}
