@@ -5,34 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="__PUBLIC__/css/contactus.css" type="text/css" rel="stylesheet">
-    <link href="__PUBLIC__/css/environment.css"  type="text/css" rel="stylesheet">
+    <!--<link href="__PUBLIC__/css/environment.css"  type="text/css" rel="stylesheet">-->
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
 
-
-
-
+    <script src="__PUBLIC__/js/jquery-1.12.4.min.js"></script>
+    <script src="__PUBLIC__/js/completer.min.js"></script>
     <!--样式main.js-->
     <script src="__PUBLIC__/js/main.js"></script>
     <link rel="stylesheet" href="__PUBLIC__/css/completer.min.css">
 </head>
 
-<div class="row clearfix" style="margin:0px">
-    <div>
 
-        <ul class="breadcrumb ">
-
-            <li>
-                您所在的位置:
-                <a href="/home/index/index">首页</a>
-            </li>
-
-            <li class="active">
-
-                联系我们
-            </li>
-
-        </ul>
-    </div>
-</div>
     <div class="container">
         <!--第一部分开始-->
         <div class="row">&nbsp;</div>
@@ -65,6 +48,7 @@
                             <h3 class="nav-font">客户留言</h3>
                             <p>get more......</p>
                         </div>
+
                     </div>  
                 </div>
             </div>  
@@ -149,21 +133,21 @@
         <!--第七部分开始-->
         <div class="row contact_seventh">
                 <div class="col-md-8 col-md-push-2 col-xs-10 col-xs-push-1 contact_seventh_form">
-                    <form>
+                    <form action="../contactus/addmessage" method="post" enctype="multipart/form-data">
                         <div class="row contact_seventh_first">
                             <div class="col-md-4 col-md-push-1 contact_seventh_first_input">
-                                <input type="text" placeholder="请输入联系人姓名：" class="form-control">
+                                <input type="text" placeholder="请输入联系人姓名：" class="form-control" name="name">
                             </div>
                             <div class="col-xs-4">&nbsp</div>
                             <div class="col-md-4 col-md-pull-1 contact_seventh_first_input">
-                                <input type="text" placeholder="请输入联系电话：" class="form-control">
+                                <input type="text" placeholder="请输入联系电话：" class="form-control" name="phone">
                             </div>
                         </div>
                         <div class="row contact_seventh_second">
                             <div class="col-md-4 col-md-push-1 contact_seventh_first_input">
                                 <div class="form-group contact_seventh_second_third">
                                     <!--<label for="name">选择列表</label>-->
-                                    <select class="form-control">
+                                    <select class="form-control" name="title">
                                         <option>我的需求</option>
                                         <option>产品问题</option>
                                         <option>价格问题</option>
@@ -174,13 +158,13 @@
                         </div>
                         <div class="row">
                                 <div class="col-md-4 col-md-push-1 col-xs-10  contact_seventh_third_input">
-                                    <input class="form-control" id="auto-complete-domain" placeholder="请输入您的邮箱地址">
+                                    <input class="form-control" id="auto-complete-domain" placeholder="请输入您的邮箱地址" name="email">
                                 </div>
                          </div>
                         <div class="row">&nbsp</div>
                         <div class="row">
                             <div class="form-group col-md-8 col-md-push-1 col-xs-10 contact_seventh_fourth">
-                                <textarea rows="5" cols="50" class="form-control" placeholder="详情描述"></textarea></div>
+                                <textarea rows="5" cols="50" class="form-control" placeholder="详情描述" name="content"></textarea></div>
                         </div>
                         <div class="row contact_seventh_last">
                             <div class="form-group col-md-2 col-md-push-7 contact_seventh_fourth">

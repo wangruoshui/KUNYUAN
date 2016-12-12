@@ -4,35 +4,13 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.css.map">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap-theme.css.map">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css">
 	<script type="text/javascript" src="__PUBLIC__/js/npm.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/jquery.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
 </head>
 <div class="container">
-	<div class="row clearfix" style="margin:0px">
-		<div>
 
-			<ul class="breadcrumb ">
-
-				<li>
-					您所在的位置:
-					<a href="/home/index/index">首页</a>
-				</li>
-
-				<li class="active">
-
-					公司简介
-				</li>
-
-			</ul>
-		</div>
-	</div>
 	<div class="text-center">
 		<div class="big">
 			<div>
@@ -60,7 +38,16 @@
 				<div class="row-md-1">&nbsp;</br></br></div>
 				<div class="col-md-3">&nbsp;</div>
 				<div class="col-md-8">
-					<p><span>&nbsp;&nbsp;&nbsp; 生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。</p><p>&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p><p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>
+					<!--<p><span>&nbsp;&nbsp;&nbsp; 生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。</span></p><p><span>&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p>-->
+                    <!--<p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>-->
+
+                    <p><volist name="results" id="datas" offset="0" length='3'>
+                        <volist name="datas" id="data">
+                            <!--<?php dump(data)?>-->
+                        {$data.content}
+                        <br/>
+                            </volist>
+                    </volist></p>
 					<p class="cu1">---选自百度百科（<a href="http://baike.baidu.com/item/%E7%94%9F%E7%89%A9%E8%B4%A8%E7%87%83%E6%96%99">生物质颗粒燃料</a>）</p>
 				</div>	
 			</div>				
@@ -71,7 +58,11 @@
 			<div class="col-md-1 col-xs-2">&nbsp;</div>
 			<div class="col-md-9 col-xs-8" id="bei1">
 				<div class="row-md-1">&nbsp;</div>
-				<img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/images/company/u706.jpg">
+                <volist name="results" id="datas" offset="0" length='1'>
+                    <volist name="datas" id="data">
+						<img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/images/company/{$data.image}">
+					</volist>
+				</volist>
 				<div class="row-md-1">&nbsp;</div>
 			</div>	
 			<div class="col-md-1 col-xs-2">&nbsp;</div>		
@@ -109,7 +100,14 @@
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="row-md-4 col-md-7 col-xs-7">
 									<h1>NO.1</h1>
-									我们拥有更实惠的价格
+									<volist name="results" id="datas" offset="3" length='1'>
+										<volist name="datas" id="data">
+											<!--<?php dump(data)?>-->
+											{$data.content}
+											<br/>
+										</volist>
+									</volist>
+									<!--我们拥有更实惠的价格-->
 								</div>
 							</div>
 							<div class="col-md-1 col-xs-1">&nbsp;</div>
@@ -117,7 +115,13 @@
 								<div class="row-md-1">&nbsp;</br></br></div>
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="col-md-8 col-xs-8">
-									<img src="__PUBLIC__/images/company/u724.png">
+
+									<volist name="results" id="datas" offset="3" length='1'>
+										<volist name="datas" id="data">
+											<!--<?php dump(data)?>-->
+											<img src="__PUBLIC__/images/company/{$data.image}">
+										</volist>
+									</volist>
 								</div>
 							</div>	
 						</div>
@@ -129,7 +133,14 @@
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="row-md-4 col-md-7 col-xs-7">
 									<h1>NO.1</h1>
-									我们拥有更实惠的价格
+									<volist name="results" id="datas" offset="4" length='1'>
+										<volist name="datas" id="data">
+											<!--<?php dump(data)?>-->
+											{$data.content}
+											<br/>
+										</volist>
+									</volist>
+									<!--我们拥有更实惠的价格-->
 								</div>
 							</div>
 							<div class="col-md-1 col-xs-1">&nbsp;</div>
@@ -137,7 +148,13 @@
 								<div class="row-md-1">&nbsp;</br></br></div>
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="col-md-8 col-xs-8">
-									<img src="__PUBLIC__/images/company/u724.png">
+									<volist name="results" id="datas" offset="4" length='1'>
+										<volist name="datas" id="data">
+											<!--<?php dump(data)?>-->
+											<img src="__PUBLIC__/images/company/{$data.image}">
+										</volist>
+									</volist>
+
 								</div>
 							</div>	
 						</div>
@@ -155,7 +172,14 @@
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="row-md-4 col-md-7 col-xs-7">
 									<h1>NO.1</h1>
-									我们拥有更实惠的价格
+									<volist name="results" id="datas" offset="5" length='1'>
+										<volist name="datas" id="data">
+											<!--<?php dump(data)?>-->
+											{$data.content}
+											<br/>
+										</volist>
+									</volist>
+									<!--我们拥有更实惠的价格-->
 								</div>
 							</div>
 							<div class="col-md-1 col-xs-1">&nbsp;</div>
@@ -163,7 +187,12 @@
 								<div class="row-md-1">&nbsp;</br></br></div>
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="col-md-8 col-xs-8">
-									<img src="__PUBLIC__/images/company/u724.png">
+									<volist name="results" id="datas" offset="5" length='1'>
+										<volist name="datas" id="data">
+											<!--<?php dump(data)?>-->
+											<img src="__PUBLIC__/images/company/{$data.image}">
+										</volist>
+									</volist>
 								</div>
 							</div>	
 						</div>
@@ -190,7 +219,20 @@
 				<div class="row-md-1">&nbsp;</br></br></div>
 				<div class="col-md-3">&nbsp;</div>
 				<div class="col-md-8">
-					<p><span>&nbsp;&nbsp;&nbsp; 生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。</p><p>&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p><p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>
+					<!--<p><span>&nbsp;&nbsp;&nbsp;-->
+						<!--生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。-->
+					<!--</p><p>-->
+					<!--&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p>-->
+					<!--<p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>-->
+					<p>
+						<volist name="results" id="datas" offset="6" length='1'>
+							<volist name="datas" id="data">
+								<!--<?php dump(data)?>-->
+								&nbsp;&nbsp;&nbsp;{$data.content}
+								<br/>
+							</volist>
+						</volist>
+					</p>
 					<p class="cu1">---选自百度百科（<a href="http://baike.baidu.com/item/%E7%94%9F%E7%89%A9%E8%B4%A8%E7%87%83%E6%96%99">生物质颗粒燃料</a>）</p>
 				</div>	
 			</div>				
@@ -199,7 +241,14 @@
 		<div class="col-md-6 row-md-8">
 			<div class="col-md-1 col-xs-2">&nbsp;</div>
 			<div class="col-md-10 col-xs-10">
-				<img class="carousel-inner img-responsive img-rounded" id="youtu" src="__PUBLIC__/images/company/u765.jpg">
+				<volist name="results" id="datas" offset="6" length='1'>
+					<volist name="datas" id="data">
+						<!--<?php dump(data)?>-->
+						<img class="carousel-inner img-responsive img-rounded" id="youtu" src="__PUBLIC__/images/company/{$data.image}">
+						<br/>
+					</volist>
+				</volist>
+
 			</div>			
 		</div>
 	</div>
@@ -223,8 +272,17 @@
 		<div class="col-md-3 col-xs-2">&nbsp;</div>
 		<div class="col-md-6 col-xs-8" id="bei5">
 			<div class="row-md-1">&nbsp;</div>
-			<img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/images/company/u782.jpg">
+			<volist name="results" id="datas" offset="7" length='1'>
+				<volist name="datas" id="data">
+					<!--<?php dump(data)?>-->
+					<img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/images/company/{$data.image}">
+					<br/>
+				</volist>
+			</volist>
+
+
 			<div class="row-md-1">&nbsp;</div>
+
 		</div>			
 	</div>
 
