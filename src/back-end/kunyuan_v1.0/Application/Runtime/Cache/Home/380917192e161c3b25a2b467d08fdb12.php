@@ -147,7 +147,7 @@
 
 <head>
 	<title>新版环境页</title>
-	
+
 	<link href="/Public/css/environment.css"  type="text/css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/Public/css/index.css">
 </head>
