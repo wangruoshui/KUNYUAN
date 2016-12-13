@@ -41,8 +41,8 @@
                            <span class="daohang"></span>
                            <span>首页</span><span>></span>
                           
-                           <span>素材管理</span>
-                           <a  href="{:U('admin/common/add')}" class="label label-warning" style="float:right; margin:8px;">添加</a>
+                           <span>角色管理</span>
+                           <a  href="{:U('admin/role/add')}" class="label label-warning" style="float:right; margin:8px;">添加</a>
                          </div>
                         <div class="well brown">
                             
@@ -53,13 +53,12 @@
                                         <tr>
                                             
                                             <th width="5%">ID</th>
-                                            <th width="10%">类别名</th>
-                                            <th width="10%">所在部分</th>
-                                            <th width="10%">标题</th>
-                                            <th width="15%">内容</th>
+                                            <th width="10%">角色名</th>
                                             
-                                            <th width="15%">图片</th>
-                                            <th width="15%">添加时间</th>
+                                            <th width="15%">角色描述</th>
+                                            
+                                            <th width="15%">拥有权限</th>
+                                            
                                             
                                             <th width="15%">管理操作</th>
                                         </tr>
@@ -67,17 +66,15 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>新闻</td>
-                                            <td>2</td>
-                                            <td>生物质颗粒燃料</td>
-                                            <td>生物质颗......</td>
-                                            <td><img src="__PUBLIC__/admin/image/logo.gif"></td>
-                                            <td>2016-12-05 11:12</td>
+                                            <td>经理</td>
+                                            <td>管理对应员工</td>
+                                           
+                                            <td>公司信息&nbsp;&nbsp;/&nbsp;&nbsp;产品&nbsp;&nbsp;/&nbsp;&nbsp;留言&nbsp;&nbsp;/&nbsp;&nbsp;招聘</td>
                                             
                                             <td>
-                                            <a class="btn" href="{:U('admin/common/manage')}" title="修改">修改</a>
-                                            <a class="btn" href="{:U('admin/common/del')}" title="删除">删除</a>
-                                            <a class="btn" href="{:U('admin/common/show')}" title="查看">查看</a>
+                                            <a class="btn" href="{:U('admin/role/manage')}" title="修改">修改</a>
+                                            <a class="btn" href="{:U('admin/role/del')}" title="删除">删除</a>
+                                            <a class="btn" href="{:U('admin/role/show')}" title="查看">查看</a>
                                             </td>
                                         </tr>
                                         

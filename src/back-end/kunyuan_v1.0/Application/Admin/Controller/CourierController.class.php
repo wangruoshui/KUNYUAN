@@ -1,5 +1,6 @@
 <?php
 /**
+ * 样品管理
  * Created by PhpStorm.
  * User: DELL
  * Date: 2016/11/22
@@ -12,16 +13,15 @@ use Think\Controller;
 
 class CourierController extends Controller{
     public function index() {
-        echo 'admin/courier/index';
-    }
-
-    public function manage()
-    {
         $this->display();
     }
-
-    public function view()
-    {
+    public function add(){
+        $this->display();
+    }
+    public function manage(){
+        $this->display();
+    }
+    public function show(){
         $this->display();
     }
 }

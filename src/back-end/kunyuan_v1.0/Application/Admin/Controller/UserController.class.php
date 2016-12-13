@@ -1,18 +1,17 @@
 <?php
 /**
- * 留言管理
+ * 用户管理
  * Created by PhpStorm.
- * User: DELL
- * Date: 2016/11/22
- * Time: 15:42
+ * User: lenovo
+ * Date: 2016-12-12
+ * Time: 20:29
  */
 
 namespace Admin\Controller;
 
-
 use Think\Controller;
-
-class MessageController extends Controller{
+class UserController extends Controller
+{
     public function index() {
         $this->display();
     }

@@ -41,8 +41,8 @@
                            <span class="daohang"></span>
                            <span>首页</span><span>></span>
                           
-                           <span>素材管理</span>
-                           <a  href="{:U('admin/common/add')}" class="label label-warning" style="float:right; margin:8px;">添加</a>
+                           <span>样品管理</span>
+                           
                          </div>
                         <div class="well brown">
                             
@@ -53,34 +53,48 @@
                                         <tr>
                                             
                                             <th width="5%">ID</th>
-                                            <th width="10%">类别名</th>
-                                            <th width="10%">所在部分</th>
-                                            <th width="10%">标题</th>
-                                            <th width="15%">内容</th>
-                                            
-                                            <th width="15%">图片</th>
-                                            <th width="15%">添加时间</th>
-                                            
+                                            <th width="5%">姓名</th>
+                                            <th width="5%">性别</th>
+                                            <th width="10%">手机号</th>
+                                            <th width="15%">邮箱</th>
+                                            <th width="15%">地址</th>
+                                            <th width="15%">时间</th>
+                                            <th width="10%">状态</th>
                                             <th width="15%">管理操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>新闻</td>
-                                            <td>2</td>
-                                            <td>生物质颗粒燃料</td>
-                                            <td>生物质颗......</td>
-                                            <td><img src="__PUBLIC__/admin/image/logo.gif"></td>
+                                            <td>张三</td>
+                                            <td>男</td>
+                                            <td>13155698896</td>
+                                            <td>xxxxxx@qq.com</td>
+                                            <td>河北省石家庄市裕华区......</td>
                                             <td>2016-12-05 11:12</td>
+                                            <td style="background-color: #FF0033;color:#FFFFFF;text-align:center;">未寄出</td>
                                             
                                             <td>
-                                            <a class="btn" href="{:U('admin/common/manage')}" title="修改">修改</a>
-                                            <a class="btn" href="{:U('admin/common/del')}" title="删除">删除</a>
-                                            <a class="btn" href="{:U('admin/common/show')}" title="查看">查看</a>
+                                            <a class="btn" href="{:U('admin/courier/manage')}" title="修改">修改</a>
+                                            <a class="btn" href="{:U('admin/courier/del')}" title="删除">删除</a>
+                                            <a class="btn" href="{:U('admin/courier/show')}" title="查看">查看</a>
                                             </td>
                                         </tr>
-                                        
+                                        <tr>
+                                            <td>2</td>
+                                            <td>张三</td>
+                                            <td>男</td>
+                                            <td>13155698896</td>
+                                            <td>xxxxxx@qq.com</td>
+                                            <td>河北省石家庄市裕华区......</td>
+                                            <td>2016-12-05 11:12</td>
+                                            <td style="background-color: #003399;color:#FFFFFF;text-align:center;">已寄出</td>
+                                            <td>
+                                            <a class="btn" href="{:U('admin/courier/manage')}" title="修改">修改</a>
+                                            <a class="btn" href="{:U('admin/courier/del')}" title="删除">删除</a>
+                                            <a class="btn" href="{:U('admin/courier/show')}" title="查看">查看</a>
+                                            </td>
+                                        </tr>
                                        
                                         
                                     </tbody>

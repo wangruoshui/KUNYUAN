@@ -1,18 +1,17 @@
 <?php
 /**
- * 留言管理
+ * 新闻管理
  * Created by PhpStorm.
- * User: DELL
- * Date: 2016/11/22
- * Time: 15:42
+ * User: lenovo
+ * Date: 2016-12-12
+ * Time: 20:12
  */
 
 namespace Admin\Controller;
 
-
 use Think\Controller;
-
-class MessageController extends Controller{
+class NewsController extends Controller
+{
     public function index() {
         $this->display();
     }

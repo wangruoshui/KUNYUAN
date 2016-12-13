@@ -40,20 +40,35 @@
                          <div  class="daohanglink"style="">
                            <span class="daohang"></span>
                            <span>首页</span><span>></span>
-                           <span>问题管理</span><span>></span>
-                           <span>修改问题</span>
+                           <span>素材管理</span><span>></span>
+                           <span>修改素材</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:40%;margin-top:3%;">修改问题信息</p>
+                        <p style="font-size:26px;margin-left:40%;margin-top:3%;">修改素材信息</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:30%;">
-                         <form action="{:U('admin/question/index')}">
+                        <div class="well brown" style="margin-left:34%;">
+                         <form action="{:U('admin/news/index')}">
                             
-                            <div class="form_list"><label class="lable_title">问&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题</label><input class="form_input" type="text"/></div>
+                            <div class="form_list"><label class="lable_title">种&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                              <input type="text" list="url_list" class="form-control" name="text" placeholder="请选择素材种类"/>  
+                              <datalist id="url_list">
+                                 <option label="新闻" value="新闻" />
+                                 <option label="政策" value="政策" />
+                                 <option label="公司现状" value="公司现状" />
+                               </datalist>
+                            </div>
 
-                            <div class="form_list"><label class="lable_title">答&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;案</label><input class="form_input" type="text"/></div>
+                            <div class="form_list"><label class="lable_title">标题名称</label><input class="form_input" type="text"/></div>
+
+                            <div class="form_list"><label class="lable_title">内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容</label><input class="form_input" type="text"/></div>
+
+                            <div class="form_list"><label class="lable_title">选择图片&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" />
+                            </div>
                             
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;"></div>
+                            <div class="form_list"><label class="lable_title">所属块数</label><input class="form_input" type="text"/></div>
+
+                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;修&nbsp;&nbsp;改&nbsp;&nbsp;"></div>
                          </form>   
                            
                           
