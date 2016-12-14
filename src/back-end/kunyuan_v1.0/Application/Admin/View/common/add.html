@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,35 +47,47 @@
                            <span>添加素材</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:42%;margin-top:3%;">添加素材</p>
+                        <p style="font-size:20px;margin-left:2%;margin-top:1%;">添加素材</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:34%;">
-                         <form action="{:U('admin/common/index')}">
+                         <div class="result-content">
+               <form action="{:U('admin/common/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
                             
-                            <div class="form_list"><label class="lable_title">种&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                              <input type="text" list="url_list" class="form-control" name="text" placeholder="请选择素材种类"/>  
-                              <datalist id="url_list">
-                                 <option label="新闻" value="新闻" />
-                                 <option label="政策" value="政策" />
-                                 <option label="公司现状" value="公司现状" />
-                               </datalist>
-                            </div>
-
-                            <div class="form_list"><label class="lable_title">标题名称</label><input class="form_input" type="text"/></div>
-
-                            <div class="form_list"><label class="lable_title">内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容</label><input class="form_input" type="text"/></div>
-
-                            <div class="form_list"><label class="lable_title">选择图片&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" />
-                            </div>
+                            <tr>
+                                <th width="10%;">种类：</th>
+                                <td>
+                                公司信息
+                            </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>标题：</th>
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                            <th>内容：</th>
+                            <td>
+                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+                            </td>
+                            </tr>
                             
-                            <div class="form_list"><label class="lable_title">所属块数</label><input class="form_input" type="text"/></div>
+                            <tr>
+                                <th><i class="require-red">*</i>选择图片：</th>
+                                <td><input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" /></td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="添加" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
 
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                        </tbody></table>
+               </form>
+            </div>
                     </div>
                 </div>
 

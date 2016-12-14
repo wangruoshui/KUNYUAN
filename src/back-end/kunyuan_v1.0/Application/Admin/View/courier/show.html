@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -46,17 +49,38 @@
                          </div>
                         <p style="font-size:26px;margin-left:42%;margin-top:3%;">样品信息</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:39.5%;">
+                        <div class="well brown" style="margin-left:30%;margin-right:30%;">
                          <form action="{:U('admin/courier/manage')}">
                             
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
+                            <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th width="45%">姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                                <td>
+                                张三
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>联系方式：</th>
+                                <td>13223426272</td>
+                            </tr>
+                            <tr>
+                                <th>地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                                <td>河北省石家庄市裕华区南二环29号</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>状态&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                                <td>
+                                    已寄出
+                                </td>
+                            </tr>
+                            
+                            
+                            
 
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;联系方式：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
-
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
-
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已寄出/未寄出</div>
-
+                        </tbody></table>
 
                          </form>   
                            

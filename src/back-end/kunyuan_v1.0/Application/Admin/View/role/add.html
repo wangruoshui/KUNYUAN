@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,67 +47,57 @@
                            <span>添加角色</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:42%;margin-top:3%;">添加角色</p>
+                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">添加角色</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:30%;">
-                         <form action="{:U('admin/role/index')}">
-                            <div class="form_list"><label class="lable_title">角色名称</label><input class="form_input" type="text"/></div>
-                            <div class="form_list"><label class="lable_title">所在机构</label><input class="form_input" type="text"/></div>
+                         <div class="result-content">
+               <form action="{:U('admin/role/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
                             
-                            <div class="form_list"><label class="lable_title">权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-         
-                                 <tr>         
+                            <tr>
+                                <th>角色名称：</th>
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>所在部门：</th>
+                                <td><input class="common-text" name="author" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>权限：</th>
                                    <td class="tc" >
                                       <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>公司信息</td>
-                                  
-                                   <td class="tc" >
+                                   产品管理
                                       <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>产品</td>
+                                   公司信息管理
+                                      <input  name="id[]" type="checkbox">
+                                   新闻管理
+                                      <input  name="id[]" type="checkbox">
+                                   政策管理
+                                      <input  name="id[]" type="checkbox">
+                                   招聘管理
+                                      <input  name="id[]" type="checkbox">
+                                   问题管理
+                                      <input  name="id[]" type="checkbox">
+                                   用户管理
+                                      <input  name="id[]" type="checkbox">
+                                   角色管理
+                                      <input  name="id[]" type="checkbox">
+                                       样品管理
+                                      <input  name="id[]" type="checkbox">
+                                       留言管理</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="添加" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
 
-                                    <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>招聘</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>快递</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>留言</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>问题（客服）</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>新闻</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>政策</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>社会</td>
-                                </tr>
-                              </div>
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                        </tbody></table>
+               </form>
+            </div>
+                        
                     </div>
                 </div>
 
