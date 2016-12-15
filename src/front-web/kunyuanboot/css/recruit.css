@@ -1,0 +1,48 @@
+.kuang1{
+	margin-top: 2%;
+}
+.kuang2{
+	margin-top: 0.8%;
+}
+.kuang3{
+	margin-top: 1.7%;
+}
+.kuang4{
+	margin-top: 1.7%;
+	margin-left: -1.8%;
+}
+.xiaozi{
+	margin-left: 0.3%;
+	font-size: 17px;
+}
+h1{
+   font-size: 15px;
+}
+.form-horizontal{
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+}
+.black{
+	background-image:url(../yinhangimages/car.png);
+    background-position: 50%;
+    height:100%;
+    width:100%;
+    background-repeat: no-repeat;
+}
+
+.font1{
+	margin-top: 0.5%;
+	color:white;
+	font-size: 28px;
+	font-weight: bold;
+}
+.font2{
+	color:black;
+	font-size: 28px;
+}
+.font3{
+	color:white;
+	font-size: 18px;
+}
