@@ -54,7 +54,7 @@
                             
                            <table class="insert-tab" width="100%">
                         <tbody>
-                            
+                            <volist name="result" id="data">
                             <tr>
                                 <th width="10%">种类：</th>
                                 <td>
@@ -63,21 +63,21 @@
                             </tr>
                             <tr>
                                 <th>标题：</th>
-                                <td>生物质颗粒燃料-新能源</td>
+                                <td>{$data.title}</td>
                             </tr>
                             <tr>
                             <th>内容：</th>
                             <td>
-                                硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料
+                                {$data.content}
                             </td>
                             </tr>
                             
                             <tr>
                                <th>图片：</th>
-                                <td><img src="__PUBLIC__/admin/image/logo.gif" style="height:50px;width:100px;"></td>
+                                <td><img src="__PUBLIC__/upload/{$data.image}" style="height:50px;width:100px;"></td>
                             </tr>
                             
-                            
+                            </volist>
                            
 
                         </tbody></table>

@@ -53,34 +53,34 @@
                          <form action="{:U('admin/common/manage')}">
                             
                            <table class="insert-tab" width="100%">
-                        <tbody>
-                            
-                            <tr>
-                                <th width="10%">种类：</th>
-                                <td>
-                                新闻
-                            </td>
-                            </tr>
-                            <tr>
-                                <th>标题：</th>
-                                <td>生物质颗粒燃料-新能源</td>
-                            </tr>
-                            <tr>
-                            <th>内容：</th>
-                            <td>
-                                硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料
-                            </td>
-                            </tr>
-                            
-                            <tr>
-                               <th>图片：</th>
-                                <td><img src="__PUBLIC__/admin/image/logo.gif" style="height:50px;width:100px;"></td>
-                            </tr>
-                            
-                            
-                           
+                               <tbody>
+                               <volist name="result" id="data">
+                                   <tr>
+                                       <th width="10%">种类：</th>
+                                       <td>
+                                           政策
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <th>标题：</th>
+                                       <td>{$data.title}</td>
+                                   </tr>
+                                   <tr>
+                                       <th>内容：</th>
+                                       <td>
+                                           {$data.content}
+                                       </td>
+                                   </tr>
 
-                        </tbody></table>
+                                   <tr>
+                                       <th>图片：</th>
+                                       <td><img src="__PUBLIC__/upload/{$data.image}" style="height:50px;width:100px;"></td>
+                                   </tr>
+
+
+                               </volist>
+
+                               </tbody></table>
                             
                          </form>   
                            

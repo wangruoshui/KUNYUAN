@@ -62,23 +62,24 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <volist name="result" id="data" key="k">
                                         <tr>
-                                            <td>1</td>
-                                            <td>会计</td>
-                                            <td>普通员工</td>
-                                            <td>河北廊坊</td>
-                                            <td>有2年经验...</td>
-                                            <td>负责公司财务问题....</td>
+                                            <td>{$k}</td>
+                                            <td>{$data.name}</td>
+                                            <td>{$data.type}</td>
+                                            <td>{$data.place}</td>
+                                            <td>{$data.introduce|substr=0,30}......</td>
+                                            <td>{$data.require|substr=0,30}......</td>
                                             
                                             <td>
-                                            <a class="btn" href="{:U('admin/recruit/manage')}" title="修改">修改</a>
-                                            <a class="btn" href="{:U('admin/recruit/del')}" title="删除">删除</a>
-                                            <a class="btn" href="{:U('admin/recruit/show')}" title="查看">查看</a>
+                                                <a class="btn" href="/admin/recruit/manage/id/{$data.stationid}" title="修改">修改</a>
+                                                <a class="btn" href="/admin/recruit/del/id/{$data.stationid}" title="删除">删除</a>
+                                                <a class="btn" href="/admin/recruit/show/id/{$data.stationid}" title="查看">查看</a>
                                             </td>
                                         </tr>
                                         
                                        
-                                        
+                                    </volist>
                                     </tbody>
                                 </table>
                             </div>

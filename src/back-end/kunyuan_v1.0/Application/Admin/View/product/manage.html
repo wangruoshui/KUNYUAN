@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+      <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/modify.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -50,36 +51,55 @@
                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改产品</p>
                            <hr/>
                          <div class="result-content">
-               <form action="{:U('admin/product/index')}" method="post" enctype= "multipart/form-data">
+               <form action="/Admin/product/modify" method="post" enctype= "multipart/form-data">
                 <table class="insert-tab" width="100%">
                         <tbody>
-                            
+                        <volist name="result" id="data">
                             <tr>
+
                                 <th width="10%"><i class="require-red">*</i>产品名称：</th>
-                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                                <td><input class="common-text" name="name" size="50" type="text" value="{$data.name}"></td>
                             </tr>
                             <tr>
-                                <th><i class="require-red">*</i>选择图片：</th>
-                                <td><input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" /></td>
+                                <th><i class="require-red">*</i>当前图片：</th>
+                                <th>
+                                    <div class="modify_img"><img src="__PUBLIC__/upload/{$data.image}" width="150" hegiht="100"></div></th>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>更换图片：</th>
+                                <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
                             </tr>
                             
                             <tr>
                             <th>介绍：</th>
                             <td>
-                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+                                <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.introductions}</textarea>
+                            </td>
+                            </tr>
+                            <th>优势：</th>
+                            <td>
+                                <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.advantage}</textarea>
+                            </td>
+                            </tr>
+                            <th>指标：</th>
+                            <td>
+                                <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.quota}</textarea>
                             </td>
                             </tr>
                             <tr>
                                 <th><i class="require-red">*</i>价格：</th>
-                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                                <td><input class="common-text" name="price" size="50" type="text" value="{$data.price}"></td>
                             </tr>
                             <tr>
                                 <th></th>
                                 <td>
+                                    <input class="hidden" value="{$data.productid}" name="productid">
+                                    <input class="hidden" value="{$data.userid}" name="userid">
                                     <input class="btn btn-primary btn6 mr10" value="修改" type="submit" name="submit">
                                     <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
                                 </td>
                             </tr>
+                            </volist>
 
                         </tbody></table>
                </form>

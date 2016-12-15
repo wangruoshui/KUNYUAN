@@ -53,28 +53,38 @@
                          <form action="{:U('admin/product/manage')}">
                             <table class="insert-tab" width="100%">
                         <tbody>
-                            
+                            <volist name="result" id="data">
                             <tr>
                                 <th width="15%">产品名称：</th>
-                                <td>硬杂木生物质颗粒燃料</td>
+                                <td>{$data.name}</td>
                             </tr>
                             <tr>
                                 <th>图片：</th>
-                                <td><img src="__PUBLIC__/admin/image/logo.gif" style="height:50px;width:100px;"></td>
+                                <td><img src="__PUBLIC__/upload/{$data.image}" style="height:50px;width:100px;"></td>
                             </tr>
                             
                             <tr>
                             <th>介绍：</th>
                             <td>
-                                硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料
+                                {$data.introductions}
                             </td>
                             </tr>
+                                <th>优势：</th>
+                                <td>
+                                    {$data.advantage}
+                                </td>
+                                </tr>
+                                <th>指标：</th>
+                                <td>
+                                    {$data.quota}
+                                </td>
+                                </tr>
                             <tr>
                                 <th>价格：</th>
-                                <td>2000&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;吨</td>
+                                <td>{$data.price}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;吨</td>
                             </tr>
                             
-
+                        </volist>
                         </tbody></table>
                             
                          </form>   

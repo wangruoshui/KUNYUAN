@@ -53,30 +53,31 @@
                          <form action="{:U('admin/recruit/manage')}">
                          <table class="insert-tab" width="100%" >
                         <tbody>
+                        <volist name="result" id="data">
                             <tr>
                                 <th width="30%">职位名称：</th>
-                                <td>经理</td>
+                                <td>{$data.name}</td>
                             </tr>
                             <tr>
                                 <th>职务类别：</th>
-                                <td>经理</td>
+                                <td>{$data.type}</td>
                             </tr>
                             <tr>
                                 <th>工作地点：</th>
-                                <td>河北省廊坊</td>
+                                <td>{$data.place}</td>
                             </tr>
                             <tr>
                                 <th>岗位描述：</th>
-                                <td>勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进</td>
+                                <td>{$data.introduce}</td>
                             </tr>
                             <tr>
                                 <th>职位要求：</th>
-                                <td>勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进勤奋好学，积极上进</td>
+                                <td>{$data.require}</td>
                             </tr>
-                            
-                         </form>   
+                            </volist>
+
                            
-                          </tbody></table>
+                          </tbody></table></form>
                         </div>
                     </div>
                 </div>
