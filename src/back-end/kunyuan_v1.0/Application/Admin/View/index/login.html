@@ -28,23 +28,23 @@
 <div class="header">坤源</div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form class="form form-horizontal" action="{:U('admin/index/index')}" method="post">
+    <form class="form form-horizontal" action="/admin/index/dologin" method="post">
       <div class="row cl">
         <label class="form-label col-xs-3" style="font-size:25px;">账户：</label>
         <div class="formControls col-xs-8">
-          <input id="" name="" type="text" placeholder="账户" class="input-text size-L">
+          <input id="" name="name" type="text" placeholder="账户" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
-        <label class="form-label col-xs-3" style="font-size:25px;">密码：</label>
+        <label  class="form-label col-xs-3" style="font-size:25px;">密码：</label>
         <div class="formControls col-xs-8">
-          <input id="" name="" type="password" placeholder="密码" class="input-text size-L">
+          <input id="" name="pswd" type="password" placeholder="密码" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
-          <img src="__PUBLIC__/admin/static/h-ui.admin/images/2012100516070577.png" style="height: 40px;width: 90px;"> <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>
+          <input name="captcha" class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
+          <img src="/admin/index/captcha"  width="30%" onclick="this.src=this.src+'?'"/> <a id="kanbuq" href="#">点击图片换一换</a> </div>
       </div>
     
       <div class="row cl">

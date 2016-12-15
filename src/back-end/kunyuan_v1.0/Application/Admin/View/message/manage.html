@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,23 +47,48 @@
                            <span>修改留言</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:40%;margin-top:3%;">修改留言信息</p>
+                        <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改留言信息</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:40%;">
-                         <form action="{:U('admin/message/index')}">
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
+                         <div class="result-content">
+               <form action="{:U('admin/message/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th width="10%">姓名：</th>
+                                <td>
+                                张三
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>邮箱：</th>
+                                <td>13223426272</td>
+                            </tr>
+                            <tr>
+                                <th>内容：</th>
+                                <td>买多少能打折买多少能打折买多少能打折买多少能打折</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>状态：</th>
+                                <td>
+                                    <input name="show_cover_pic"  type="radio" value="1" checked="checked" />已回复&nbsp; &nbsp;&nbsp;&nbsp;
+                                    <input name="show_cover_pic"  type="radio" value="0" checked="checked">未回复
+                                </td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="修改" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
 
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
-
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;内&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;容：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
-
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" >&nbsp;&nbsp;已回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" checked=”checked”>&nbsp;&nbsp;未回复</div>
-
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;修&nbsp;&nbsp;改&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                        </tbody></table>
+               </form>
+            </div>
                     </div>
                 </div>
 

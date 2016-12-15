@@ -24,11 +24,12 @@
 				$.post('../send/province',
 						{'parentid':$(this).val()}, function(data){
 							//替换市区数据
+							$("select[name='city']").html(null);
 							var citys=JSON.parse(data);
-//			console.log(citys);
 							for(var i in citys){
 								var str = '<option value='+citys[i]['linkageid']+'>'+citys[i]['name']+'</option>'
 								var option = $(str);
+
 								$("select[name='city']").append(option);
 							}
 						});
@@ -43,10 +44,10 @@
 				$.post('../send/province',
 						{'parentid':self.val()}, function(data){
 							//替换市区数据
-							var citys=JSON.parse(data);
+							var areas=JSON.parse(data);
 
-							for(var i in citys){
-								var str = '<option value='+citys[i]['id']+'>'+citys[i]['name']+'</option>'
+							for(var i in areas){
+								var str = '<option value='+areas[i]['id']+'>'+areas[i]['name']+'</option>'
 								var option = $(str);
 								$("select[name='district']").append(option);
 							}

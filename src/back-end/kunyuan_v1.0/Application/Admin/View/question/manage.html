@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,20 +47,36 @@
                            <span>修改问题</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:40%;margin-top:3%;">修改问题信息</p>
+                        <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改问题</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:30%;">
-                         <form action="{:U('admin/question/index')}">
+                         <div class="result-content">
+               <form action="{:U('admin/question/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
                             
-                            <div class="form_list"><label class="lable_title">问&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题</label><input class="form_input" type="text"/></div>
+                            
+                            <tr>
+                                <th width="10%">问题：</th>
+                                <td><input class="common-text" name="author" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                            <th>答案：</th>
+                            <td>
+                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="修改" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
 
-                            <div class="form_list"><label class="lable_title">答&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;案</label><input class="form_input" type="text"/></div>
-                            
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                        </tbody></table>
+               </form>
+            </div>
                     </div>
                 </div>
 
