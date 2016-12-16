@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,67 +47,86 @@
                            <span>编辑角色</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:40%;margin-top:3%;">修改角色信息</p>
+                        <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改角色</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:30%;">
-                         <form action="{:U('admin/role/index')}">
-                            <div class="form_list"><label class="lable_title">角色名称</label><input class="form_input" type="text"/></div>
-                            <div class="form_list"><label class="lable_title">所在机构</label><input class="form_input" type="text"/></div>
+                         <div class="result-content">
+               <form action="/admin/role/manage/id/{$role[0].roleid}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
                             
-                            <div class="form_list"><label class="lable_title">权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-         
-                                 <tr>         
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>公司信息</td>
-                                  
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>产品</td>
+                            <tr>
+                                <th>角色名称：</th>
+                                <td><input class="common-text" name="rolename" size="50" type="text" value="{$role[0].rolename}"></td>
+                            </tr>
+                            <tr>
+                                <th>所在部门：</th>
+                                <td><input class="common-text" name="description" size="50" type="text" value="{$role[0].description}"></td>
+                            </tr>
+                            <tr>
+                                <th>权限：</th>
+                                <td class="tc" >
+                                    <if condition="$role[0]['product'] eq 1 ">
+                                        <input  name="product" type="checkbox" checked="checked">
+                                    <else/>
+                                        <input  name="product" type="checkbox">
+                                    </if>产品管理
+                                    <if condition="$role[0]['courier'] eq 1 ">
+                                        <input  name="courier" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="courier" type="checkbox">
+                                    </if>样品管理
+                                    <if condition="$role[0]['message'] eq 1 ">
+                                        <input  name="message" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="message" type="checkbox">
+                                    </if>留言管理
+                                    <if condition="$role[0]['question'] eq 1 ">
+                                        <input  name="question" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="question" type="checkbox">
+                                    </if>问题管理
+                                    <if condition="$role[0]['news'] eq 1 ">
+                                        <input  name="news" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="news" type="checkbox">
+                                    </if>新闻管理
+                                    <if condition="$role[0]['policy'] eq 1 ">
+                                        <input  name="policy" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="policy" type="checkbox">
+                                    </if>政策管理
+                                    <if condition="$role[0]['common'] eq 1 ">
+                                        <input  name="common" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="common" type="checkbox">
+                                    </if>公司信息管理
+                                    <if condition="$role[0]['recruit'] eq 1 ">
+                                        <input  name="recruit" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="recruit" type="checkbox">
+                                    </if>招聘管理
+                                    <if condition="$role[0]['admin'] eq 1 ">
+                                        <input  name="admin" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="admin" type="checkbox">
+                                    </if>用户管理
+                                    <if condition="$role[0]['role'] eq 1 ">
+                                        <input  name="role" type="checkbox" checked="checked">
+                                        <else/>
+                                        <input  name="role" type="checkbox">
+                                    </if>角色管理</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="修改" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
 
-                                    <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>招聘</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>快递</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>留言</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>问题（客服）</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>新闻</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>政策</td>
-                                   
-                                   <td class="tc" >
-                                      <input  name="id[]" type="checkbox">
-                                   </td>
-                                   <td>社会</td>
-                                </tr>
-                              </div>
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;修&nbsp;&nbsp;改&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                        </tbody></table>
+               </form>
+            </div>
                     </div>
                 </div>
 

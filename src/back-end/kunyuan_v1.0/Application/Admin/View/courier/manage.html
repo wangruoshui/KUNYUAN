@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,23 +47,59 @@
                            <span>修改样品</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:40%;margin-top:3%;">修改样品信息</p>
+
+                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改样品信息</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:40%;">
-                         <form action="{:U('admin/courier/index')}">
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
+                         <div class="result-content">
+               <form action="/admin/courier/manage/id/{$courier[0].courierid}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th width="10%">姓名：</th>
+                                <td>
+                                    {$courier[0].username}
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>联系方式：</th>
+                                <td>{$courier[0].phone}</td>
+                            </tr>
+                            <tr>
+                                <th>地址：</th>
+                                <td>{$courier[0].address}</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>状态：</th>
+                                <if condition="$courier[0]['status'] eq 0 ">
+                                    <td>
+                                        <input name="show_cover_pic"  type="radio" value="1" />已寄出&nbsp; &nbsp;&nbsp;&nbsp;
+                                        <input name="show_cover_pic"  type="radio" value="0" checked="checked" />未寄出
+                                    </td>
+                                 <else />
+                                    <td>
+                                        <input name="show_cover_pic1"  type="radio" value="1" checked="checked" />已寄出&nbsp; &nbsp;&nbsp;&nbsp;
+                                        <input name="show_cover_pic1"  type="radio" value="0" />未寄出
+                                    </td>
+                                </if>
 
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;联系方式：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="修改" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
 
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
+                        </tbody></table>
+               </form>
+            </div>
 
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex">&nbsp;&nbsp;已寄出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" checked=”checked”>&nbsp;&nbsp;未寄出</div>
-
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;修&nbsp;&nbsp;改&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                        
                     </div>
                 </div>
 

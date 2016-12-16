@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,41 +47,62 @@
                            <span>角色信息</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:42%;margin-top:3%;">角色信息</p>
+                        <p style="font-size:20px;margin-left:42%;margin-top:1%;" > 角色信息</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:39.5%;">
-                         <form action="{:U('admin/role/manage')}">
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;角色名称：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
+                         <div class="result-content">
+               <form action="{:U('admin/role/index')}" method="post" enctype= "multipart/form-data" style="margin-left:20%;margin-right:20%;">
+                <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th>角色名称：</th>
+                                <td>{$role[0].rolename}</td>
+                            </tr>
+                            <tr>
+                                <th>所在部门：</th>
+                                <td>{$role[0].description}</td>
+                            </tr>
+                            <tr>
+                                <th>权限&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                                   <td class="tc" >
 
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;所在机构：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX</div>
+                                       <if condition="$role[0]['product'] eq 1 ">
+                                           产品&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['courier'] eq 1 ">
+                                           样品&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['message'] eq 1 ">
+                                           留言&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['question'] eq 1 ">
+                                           问题&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['news'] eq 1 ">
+                                           新闻&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['policy'] eq 1 ">
+                                           政策&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['common'] eq 1 ">
+                                           公司信息&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['recruit'] eq 1 ">
+                                           招聘&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['admin'] eq 1 ">
+                                           用户&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                       <if condition="$role[0]['role'] eq 1 ">
+                                           角色&nbsp;&nbsp;/&nbsp;&nbsp;
+                                       </if>
+                                      </td>
+                            </tr>
                             
-                            <div class="form_list"><label class="lable_title">&nbsp;&nbsp;&nbsp;&nbsp;权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-         
-                                 <tr>         
-                                   
-                                   <td>公司信息</td>
-                                  &nbsp;&nbsp;/&nbsp;&nbsp;
-                                   
-                                   <td>产品</td>
-                                   &nbsp;&nbsp;/&nbsp;&nbsp;
-                                    
-                                   <td>招聘</td>
-                                   
-                                   &nbsp;&nbsp;/&nbsp;&nbsp;
-                                   <td>快递</td>
-                                   
-                                   &nbsp;&nbsp;/&nbsp;&nbsp;
-                                   <td>留言</td>
-                                   
-                                   
-                                   
-                                </tr>
-                              </div>
-                            
-                         </form>   
-                           
-                          
-                        </div>
+
+                        </tbody></table>
+               </form>
+            </div>
                     </div>
                 </div>
 

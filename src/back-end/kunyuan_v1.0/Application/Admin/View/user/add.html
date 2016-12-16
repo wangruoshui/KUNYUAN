@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -45,26 +48,63 @@
                            
                          </div>
                          
-                        <p style="font-size:26px;margin-left:42%;margin-top:3%;">创建用户</p>
+                        <p style="font-size:20px;margin-left:2%;margin-top:1%;">创建用户</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:30%;">
-                         <form action="{:U('admin/user/index')}">
-                            <div class="form_list"><label class="lable_title">用&nbsp;&nbsp;户&nbsp;&nbsp;名</label><input class="form_input" type="text"/></div>
-
-                            <div class="form_list"><label class="lable_title">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label><input class="form_input" type="text"/></div>
-                          
-                            <div class="form_list"><label class="lable_title">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex">&nbsp;&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex">&nbsp;&nbsp;女</div>
-
-                            <div class="form_list"><label class="lable_title">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</label><input class="form_input" type="text"/></div>
-
-                            <div class="form_list"><label class="lable_title">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</label><input class="form_input" type="text"/></div>
+                         <div class="result-content">
+               <form action="{:U('admin/user/add')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
                             
-                            <div class="form_list"><label class="lable_title">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址</label><input class="form_input" type="text"/></div>
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;添&nbsp;&nbsp;加&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                            <tr>
+                                <th><i class="require-red">*</i>用户名：</th>
+                                <td><input class="common-text" name="username" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>密码：</th>
+                                <td><input class="common-text" name="password" size="50" type="password" id="pas1" onblur="password1()"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>确认密码：</th>
+                                <td><input class="common-text" name="" size="50" type="password" id="pas2" onblur="password2()"></td>
+                            </tr>
+                            <tr>
+                                <th>性别：</th>
+                                <td>
+                                    <input name="sex"  type="radio" value="1" checked="checked" />男&nbsp; &nbsp;&nbsp;&nbsp;
+                                    <input name="sex"  type="radio" value="0" >女
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>职位：</th>
+                                <td>
+                                <select name="roleid">
+
+                                    <volist name="role" id="vo">
+                                        <option value="{$vo.roleid}">{$vo.rolename}</option>
+                                    </volist>
+
+                                </select>
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>手机：</th>
+                                <td><input class="common-text" name="phone" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>家庭地址：</th>
+                                <td><input class="common-text" name="address" size="80" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="创建" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+
+                        </tbody></table>
+               </form>
+            </div>
                     </div>
                 </div>
 
@@ -83,4 +123,24 @@
     <script src="__PUBLIC__/admin/js/flatpoint_core.js"></script>
 
   </body>
+  <script type="text/javascript" >
+      function password2(){
+          var pas1,pas2;
+          pas1=document.getElementById("pas1").value;
+          pas2=document.getElementById("pas2").value;
+
+          if(!(pas1==pas2 && pas2!='')){
+              alert("两次输入的密码不一致，请重新输入！");
+              return;
+          }
+      }
+      function password1() {
+          var pas1;
+          pas1=document.getElementById("pas1").value;
+          if(!pas1){
+              alert("密码不能为空！");
+              return;
+          }
+      }
+  </script>
 </html>

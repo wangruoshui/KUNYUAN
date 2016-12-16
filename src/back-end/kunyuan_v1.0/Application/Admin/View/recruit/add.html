@@ -8,6 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -44,25 +47,51 @@
                            <span>添加招聘职位</span>
                            
                          </div>
-                        <p style="font-size:26px;margin-left:42%;margin-top:3%;">添加职位</p>
+
+                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">添加职位</p>
                            <hr/>
-                        <div class="well brown" style="margin-left:30%;">
-                         <form action="{:U('admin/recruit/index')}">
-                            <div class="form_list"><label class="lable_title">职位名称</label><input class="form_input" type="text"/></div>
-
-                            <div class="form_list"><label class="lable_title">职务类别</label><input class="form_input" type="text"/></div>
-
-                            <div class="form_list"><label class="lable_title">工作地点</label><input class="form_input" type="text"/></div>
+                         <div class="result-content">
+               <form action="{:U('admin/recruit/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
                             
-                            <div class="form_list"><label class="lable_title">岗位描述</label><input class="form_input" type="text"/></div>
+                            <tr>
+                                <th width="10%">职位名称：</th>
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>职位类别：</th>
+                                <td><input class="common-text" name="author" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>工作地点：</th>
+                                <td><input class="common-text" name="author" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                            <th>岗位描述：</th>
+                            <td>
+                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+                            </td>
+                            </tr>
+                            <tr>
+                            <th>岗位要求：</th>
+                            <td>
+                                <textarea class="common-textarea" name="description" cols="30" style="width:60%;" rows="5"></textarea>
+                            </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="添加" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
 
-                            <div class="form_list"><label class="lable_title">职位要求</label><input class="form_input" type="text"/></div>
-                            
-                            <div class="form_list"><input type="submit" class="submit" value="&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;"></div>
-                         </form>   
-                           
-                          
-                        </div>
+                        </tbody></table>
+               </form>
+            </div>
+                        
+                        
                     </div>
                 </div>
 
