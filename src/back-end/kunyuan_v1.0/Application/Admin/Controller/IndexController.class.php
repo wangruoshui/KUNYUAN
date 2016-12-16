@@ -68,7 +68,7 @@ class IndexController extends Controller {
             $condition['pswd']=I('post.pswd','','');
             //获取指定用户名和密码的详细信息
             //$users=$this->_db->where($condition)->select();
-            $user = M('admin')->where($condition)->find();
+            $user = M('user')->where($condition)->find();
             //   if ($this->_db->where($condition)->count()){
 
             if ($user){
