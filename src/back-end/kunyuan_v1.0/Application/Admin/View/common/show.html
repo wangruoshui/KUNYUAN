@@ -53,6 +53,7 @@
                          <form action="{:U('admin/common/manage')}">
                             
                            <table class="insert-tab" width="100%">
+<<<<<<< HEAD
                         <tbody>
                             
                             <tr>
@@ -81,6 +82,36 @@
                            
 
                         </tbody></table>
+=======
+                               <tbody>
+                               <volist name="result" id="data">
+                                   <tr>
+                                       <th width="10%">种类：</th>
+                                       <td>
+                                           政策
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <th>标题：</th>
+                                       <td>{$data.title}</td>
+                                   </tr>
+                                   <tr>
+                                       <th>内容：</th>
+                                       <td>
+                                           {$data.content}
+                                       </td>
+                                   </tr>
+
+                                   <tr>
+                                       <th>图片：</th>
+                                       <td><img src="__PUBLIC__/upload/{$data.image}" style="height:50px;width:100px;"></td>
+                                   </tr>
+
+
+                               </volist>
+
+                               </tbody></table>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             
                          </form>   
                            

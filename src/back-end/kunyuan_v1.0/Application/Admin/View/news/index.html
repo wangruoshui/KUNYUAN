@@ -65,24 +65,25 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <volist name="result" id="data" key="k">
                                         <tr>
-                                            <td>1</td>
+                                            <td>{$k}</td>
                                             <td>新闻</td>
                                             <td>2</td>
-                                            <td>生物质颗粒燃料</td>
-                                            <td>生物质颗......</td>
-                                            <td><img src="__PUBLIC__/admin/image/logo.gif"></td>
-                                            <td>2016-12-05 11:12</td>
+                                            <td>{$data.title}</td>
+                                            <td>{$data.content}</td>
+                                            <td><img src="__PUBLIC__/upload/{$data.image}"></td>
+                                            <td>{$data.time}</td>
                                             
                                             <td>
-                                            <a class="btn" href="{:U('admin/news/manage')}" title="修改">修改</a>
-                                            <a class="btn" href="{:U('admin/news/del')}" title="删除">删除</a>
-                                            <a class="btn" href="{:U('admin/news/show')}" title="查看">查看</a>
+                                            <a class="btn" href="/admin/news/manage/id/{$data.commonid}" title="修改">修改</a>
+                                            <a class="btn" href="/admin/news/del/id/{$data.commonid}" title="删除">删除</a>
+                                            <a class="btn" href="/admin/news/show/id/{$data.commonid}" title="查看">查看</a>
                                             </td>
                                         </tr>
                                         
                                        
-                                        
+                                       </volist>
                                     </tbody>
                                 </table>
                             </div>

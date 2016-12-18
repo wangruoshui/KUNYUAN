@@ -50,18 +50,27 @@
                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改留言信息</p>
                            <hr/>
                          <div class="result-content">
+<<<<<<< HEAD
                <form action="/admin/message/manage/id/{$message[0].messageid}" method="post" enctype= "multipart/form-data">
+=======
+               <form action="{:U('admin/message/index')}" method="post" enctype= "multipart/form-data">
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                 <table class="insert-tab" width="100%">
                         <tbody>
                             
                             <tr>
                                 <th width="10%">姓名：</th>
                                 <td>
+<<<<<<< HEAD
                                     {$message[0].name}
+=======
+                                张三
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </td>
                             </tr>
                             <tr>
                                 <th>邮箱：</th>
+<<<<<<< HEAD
                                 <td>{$message[0].email}</td>
                             </tr>
                             <tr>
@@ -71,10 +80,18 @@
                             <tr>
                                 <th>内容：</th>
                                 <td>{$message[0].content}</td>
+=======
+                                <td>13223426272</td>
+                            </tr>
+                            <tr>
+                                <th>内容：</th>
+                                <td>买多少能打折买多少能打折买多少能打折买多少能打折</td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             
                             <tr>
                                 <th>状态：</th>
+<<<<<<< HEAD
                                 <if condition="$message[0]['status'] eq 0 ">
                                     <td>
                                         <input name="show_cover_pic"  type="radio" value="1" />已回复&nbsp; &nbsp;&nbsp;&nbsp;
@@ -86,6 +103,12 @@
                                         <input name="show_cover_pic1"  type="radio" value="0" />未回复
                                     </td>
                                 </if>
+=======
+                                <td>
+                                    <input name="show_cover_pic"  type="radio" value="1" checked="checked" />已回复&nbsp; &nbsp;&nbsp;&nbsp;
+                                    <input name="show_cover_pic"  type="radio" value="0" checked="checked">未回复
+                                </td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             
                             

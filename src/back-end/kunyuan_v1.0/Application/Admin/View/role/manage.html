@@ -50,12 +50,17 @@
                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改角色</p>
                            <hr/>
                          <div class="result-content">
+<<<<<<< HEAD
                <form action="/admin/role/manage/id/{$role[0].roleid}" method="post" enctype= "multipart/form-data">
+=======
+               <form action="{:U('admin/role/index')}" method="post" enctype= "multipart/form-data">
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                 <table class="insert-tab" width="100%">
                         <tbody>
                             
                             <tr>
                                 <th>角色名称：</th>
+<<<<<<< HEAD
                                 <td><input class="common-text" name="rolename" size="50" type="text" value="{$role[0].rolename}"></td>
                             </tr>
                             <tr>
@@ -115,6 +120,37 @@
                                         <else/>
                                         <input  name="role" type="checkbox">
                                     </if>角色管理</td>
+=======
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>所在部门：</th>
+                                <td><input class="common-text" name="author" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>权限：</th>
+                                   <td class="tc" >
+                                      <input  name="id[]" type="checkbox">
+                                   产品管理
+                                      <input  name="id[]" type="checkbox">
+                                   公司信息管理
+                                      <input  name="id[]" type="checkbox">
+                                   新闻管理
+                                      <input  name="id[]" type="checkbox">
+                                   政策管理
+                                      <input  name="id[]" type="checkbox">
+                                   招聘管理
+                                      <input  name="id[]" type="checkbox">
+                                   问题管理
+                                      <input  name="id[]" type="checkbox">
+                                   样品管理
+                                      <input  name="id[]" type="checkbox">
+                                   留言管理
+                                      <input  name="id[]" type="checkbox">
+                                   用户管理
+                                      <input  name="id[]" type="checkbox">
+                                   角色管理</td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             <tr>
                                 <th></th>

@@ -65,24 +65,27 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <volist name="result" id="data" key="k">
                                         <tr>
-                                            <td>1</td>
-                                            <td>新闻</td>
-                                            <td>2</td>
-                                            <td>生物质颗粒燃料</td>
-                                            <td>生物质颗......</td>
-                                            <td><img src="__PUBLIC__/admin/image/logo.gif"></td>
-                                            <td>2016-12-05 11:12</td>
+                                            <td>{$k}</td>
+                                            <td>环境与社会</td>
+                                            <td>{$data.kindid}</td>
+                                            <td>{$data.title}</td>
+                                            <td>
+                                                {$data.content|substr=0,30}......
+                                            </td>
+                                            <td><img src="__PUBLIC__/upload/{$data.image}"></td>
+                                            <td>{$data.time}</td>
                                             
                                             <td>
-                                            <a class="btn" href="{:U('admin/policy/manage')}" title="修改">修改</a>
-                                            <a class="btn" href="{:U('admin/policy/del')}" title="删除">删除</a>
-                                            <a class="btn" href="{:U('admin/policy/show')}" title="查看">查看</a>
+                                            <a class="btn" href="/admin/policy/manage/id/{$data.commonid}" title="修改">修改</a>
+                                            <a class="btn" href="/admin/policy/del/id/{$data.commonid}" title="删除">删除</a>
+                                            <a class="btn" href="/admin/policy/show/id/{$data.commonid}" title="查看">查看</a>
                                             </td>
                                         </tr>
                                         
                                        
-                                        
+                                       </volist>
                                     </tbody>
                                 </table>
                             </div>
