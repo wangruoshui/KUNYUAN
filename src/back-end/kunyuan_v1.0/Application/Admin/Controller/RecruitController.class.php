@@ -13,16 +13,70 @@ namespace Admin\Controller;
 use Think\Controller;
 
 class RecruitController extends Controller{
+    protected $_db;
     public function index() {
+        $this->_db=M("station");
+        $results=$this->_db->select();
+
+        $this->assign('result',$results);
         $this->display();
     }
     public function add(){
         $this->display();
     }
+    public function addinsert(){
+            $this->_db=M("station");
+            $results=I("post.");
+            $result=$this->_db->add($results);
+
+            if($result){
+                //插入成功
+                $this->success('添加成功,3秒后自动为您跳转到招聘列表','/admin/recruit/index',3);
+            }else{
+                //插入失败
+                $this->error('添加失败，3秒后自动跳回添加页面','/admin/recruit/add',3);
+            }
+        }
+
+
     public function manage(){
+        $this->_db=M("station");
+        $id=I("get.id");
+        $results=$this->_db->where("stationid=$id")->select();
+        $this->assign('result',$results);
         $this->display();
     }
+    public function modify(){
+        $this->_db=M("station");
+        $results=I("post.");
+        $id=$results['stationid'];
+        $result=$this->_db->save($results);
+        if($result){
+            //插入成功
+            $this->success('修改成功,3秒后自动为您跳转到招聘列表','/admin/recruit/index',3);
+        }else{
+            //插入失败
+            $this->error('修改失败，3秒后自动跳回招聘修改页面',"/admin/recruit/manage/id/$id",3);
+        }
+    }
     public function show(){
+        $this->_db=M("station");
+        $id=I("get.id");
+        $results=$this->_db->where("stationid=$id")->select();
+
+        $this->assign('result',$results);
         $this->display();
+    }
+    public function del(){
+        $this->_db=M("station");
+        $id=I("get.id");
+        $results=$this->_db->where("stationid=$id")->delete();
+        if($results){
+            //插入成功
+            $this->success('删除成功,3秒后自动为您跳转到招聘列表','/admin/recruit/index',3);
+        }else{
+            //插入失败
+            $this->error('删除失败，3秒后自动跳回公司简介列表','/admin/recruit/index',3);
+        }
     }
 }

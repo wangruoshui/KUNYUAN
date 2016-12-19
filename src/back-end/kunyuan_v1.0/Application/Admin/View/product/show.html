@@ -53,6 +53,7 @@
                          <form action="{:U('admin/product/manage')}">
                             <table class="insert-tab" width="100%">
                         <tbody>
+<<<<<<< HEAD
                             
                             <tr>
                                 <th width="15%">产品名称：</th>
@@ -61,11 +62,22 @@
                             <tr>
                                 <th>图片：</th>
                                 <td><img src="__PUBLIC__/admin/image/logo.gif" style="height:50px;width:100px;"></td>
+=======
+                            <volist name="result" id="data">
+                            <tr>
+                                <th width="15%">产品名称：</th>
+                                <td>{$data.name}</td>
+                            </tr>
+                            <tr>
+                                <th>图片：</th>
+                                <td><img src="__PUBLIC__/upload/{$data.image}" style="height:50px;width:100px;"></td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             
                             <tr>
                             <th>介绍：</th>
                             <td>
+<<<<<<< HEAD
                                 硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料硬杂木生物质颗粒燃料
                             </td>
                             </tr>
@@ -75,6 +87,27 @@
                             </tr>
                             
 
+=======
+                                {$data.introductions}
+                            </td>
+                            </tr>
+                                <th>优势：</th>
+                                <td>
+                                    {$data.advantage}
+                                </td>
+                                </tr>
+                                <th>指标：</th>
+                                <td>
+                                    {$data.quota}
+                                </td>
+                                </tr>
+                            <tr>
+                                <th>价格：</th>
+                                <td>{$data.price}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;吨</td>
+                            </tr>
+                            
+                        </volist>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                         </tbody></table>
                             
                          </form>   

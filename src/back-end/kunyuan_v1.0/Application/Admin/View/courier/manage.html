@@ -47,6 +47,45 @@
                            <span>修改样品</span>
                            
                          </div>
+<<<<<<< HEAD
+
+                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改样品信息</p>
+                           <hr/>
+                         <div class="result-content">
+               <form action="/admin/courier/manage/id/{$courier[0].courierid}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th width="10%">姓名：</th>
+                                <td>
+                                    {$courier[0].username}
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>联系方式：</th>
+                                <td>{$courier[0].phone}</td>
+                            </tr>
+                            <tr>
+                                <th>地址：</th>
+                                <td>{$courier[0].address}</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>状态：</th>
+                                <if condition="$courier[0]['status'] eq 0 ">
+                                    <td>
+                                        <input name="show_cover_pic"  type="radio" value="1" />已寄出&nbsp; &nbsp;&nbsp;&nbsp;
+                                        <input name="show_cover_pic"  type="radio" value="0" checked="checked" />未寄出
+                                    </td>
+                                 <else />
+                                    <td>
+                                        <input name="show_cover_pic1"  type="radio" value="1" checked="checked" />已寄出&nbsp; &nbsp;&nbsp;&nbsp;
+                                        <input name="show_cover_pic1"  type="radio" value="0" />未寄出
+                                    </td>
+                                </if>
+
+=======
 
                          <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改样品信息</p>
                            <hr/>
@@ -76,6 +115,7 @@
                                     <input name="show_cover_pic"  type="radio" value="1" checked="checked" />已寄出&nbsp; &nbsp;&nbsp;&nbsp;
                                     <input name="show_cover_pic"  type="radio" value="0" checked="checked">未寄出
                                 </td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             
                             

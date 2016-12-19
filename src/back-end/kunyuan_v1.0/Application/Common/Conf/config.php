@@ -44,10 +44,10 @@ return array(
 
     /* 数据库设置 */
     'DB_TYPE'                => 'mysql', // 数据库类型
-    'DB_HOST'                => 'localhost', // 服务器地址
-    'DB_NAME'                => 'kunyuan_v1.0', // 数据库名
+    'DB_HOST'                => '123.207.175.231', // 服务器地址
+    'DB_NAME'                => 'kunyuan_v1_0', // 数据库名
     'DB_USER'                => 'root', // 用户名
-    'DB_PWD'                 => '123456', // 密码
+    'DB_PWD'                 => 'kunyuan2016', // 密码
     'DB_PORT'                => '3306', // 端口
     'DB_PREFIX'              => '', // 数据库表前缀
     'DB_PARAMS'              => array(), // 数据库连接参数
@@ -152,9 +152,12 @@ return array(
     'VAR_TEMPLATE'           => 't', // 默认模板切换变量
     'VAR_AUTO_STRING'        => false, // 输入变量是否自动强制转换为字符串 如果开启则数组变量需要手动传入变量修饰符获取变量
 
-    'HTTP_CACHE_CONTROL'     => 'private', // 网页缓存控制
+    'HTTP_CACHE_CONTROL'     =>    'no-cache', // 关闭浏览器缓存
+
+   'HTTP_CACHE_CONTROL'     => 'private', // 网页缓存控制
     'CHECK_APP_DIR'          => true, // 是否检查应用目录是否创建
     'FILE_UPLOAD_TYPE'       => 'Local', // 文件上传方式
     'DATA_CRYPT_TYPE'        => 'Think', // 数据加密方式
+  //
 
 );

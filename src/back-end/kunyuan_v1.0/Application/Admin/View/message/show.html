@@ -54,6 +54,39 @@
                             
                             <table class="insert-tab" width="100%">
                         <tbody>
+<<<<<<< HEAD
+
+                        <tr>
+                            <th width="20%">姓名：</th>
+                            <td>
+                                {$message[0].name}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>邮箱：</th>
+                            <td>{$message[0].email}</td>
+                        </tr>
+                        <tr>
+                            <th>标题：</th>
+                            <td>{$message[0].title}</td>
+                        </tr>
+                        <tr>
+                            <th>内容：</th>
+                            <td>{$message[0].content}</td>
+                        </tr>
+                            
+                            <tr>
+                                <th>状态：</th>
+                                <if condition="$courier[0]['status'] eq 0 ">
+                                    <td>
+                                        未回复
+                                    </td>
+                                    <else />
+                                    <td>
+                                        已回复
+                                    </td>
+                                </if>
+=======
                             
                             <tr>
                                 <th width="45%">姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
@@ -75,6 +108,7 @@
                                 <td>
                                     已回复
                                 </td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             
                             

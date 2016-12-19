@@ -150,35 +150,13 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap.css.map">
-	<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap-theme.css.map">
 	<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="/Public/css/index.css">
 	<script type="text/javascript" src="/Public/js/npm.js"></script>
-	<script type="text/javascript" src="/Public/bootstrap/js/jquery.js"></script>
-	<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
 </head>
 <div class="container">
-	<div class="row clearfix" style="margin:0px">
-		<div>
 
-			<ul class="breadcrumb ">
-
-				<li>
-					您所在的位置:
-					<a href="/home/index/index">首页</a>
-				</li>
-
-				<li class="active">
-
-					公司简介
-				</li>
-
-			</ul>
-		</div>
-	</div>
 	<div class="text-center">
 		<div class="big">
 			<div>
@@ -206,7 +184,12 @@
 				<div class="row-md-1">&nbsp;</br></br></div>
 				<div class="col-md-3">&nbsp;</div>
 				<div class="col-md-8">
-					<p><span>&nbsp;&nbsp;&nbsp; 生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。</p><p>&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p><p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>
+					<!--<p><span>&nbsp;&nbsp;&nbsp; 生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。</span></p><p><span>&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p>-->
+                    <!--<p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>-->
+
+                    <p><?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+                        <?php echo ($data["content"]); ?>
+                        <br/><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?></p>
 					<p class="cu1">---选自百度百科（<a href="http://baike.baidu.com/item/%E7%94%9F%E7%89%A9%E8%B4%A8%E7%87%83%E6%96%99">生物质颗粒燃料</a>）</p>
 				</div>	
 			</div>				
@@ -217,7 +200,7 @@
 			<div class="col-md-1 col-xs-2">&nbsp;</div>
 			<div class="col-md-9 col-xs-8" id="bei1">
 				<div class="row-md-1">&nbsp;</div>
-				<img class="carousel-inner img-responsive img-rounded" src="/Public/images/company/u706.jpg">
+                <?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><img class="carousel-inner img-responsive img-rounded" src="/Public/images/company/<?php echo ($data["image"]); ?>"><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
 				<div class="row-md-1">&nbsp;</div>
 			</div>	
 			<div class="col-md-1 col-xs-2">&nbsp;</div>		
@@ -255,7 +238,10 @@
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="row-md-4 col-md-7 col-xs-7">
 									<h1>NO.1</h1>
-									我们拥有更实惠的价格
+									<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+											<?php echo ($data["content"]); ?>
+											<br/><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+									<!--我们拥有更实惠的价格-->
 								</div>
 							</div>
 							<div class="col-md-1 col-xs-1">&nbsp;</div>
@@ -263,7 +249,9 @@
 								<div class="row-md-1">&nbsp;</br></br></div>
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="col-md-8 col-xs-8">
-									<img src="/Public/images/company/u724.png">
+
+									<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+											<img src="/Public/images/company/<?php echo ($data["image"]); ?>"><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
 								</div>
 							</div>	
 						</div>
@@ -275,7 +263,10 @@
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="row-md-4 col-md-7 col-xs-7">
 									<h1>NO.1</h1>
-									我们拥有更实惠的价格
+									<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,4,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+											<?php echo ($data["content"]); ?>
+											<br/><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+									<!--我们拥有更实惠的价格-->
 								</div>
 							</div>
 							<div class="col-md-1 col-xs-1">&nbsp;</div>
@@ -283,7 +274,9 @@
 								<div class="row-md-1">&nbsp;</br></br></div>
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="col-md-8 col-xs-8">
-									<img src="/Public/images/company/u724.png">
+									<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,4,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+											<img src="/Public/images/company/<?php echo ($data["image"]); ?>"><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+
 								</div>
 							</div>	
 						</div>
@@ -301,7 +294,10 @@
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="row-md-4 col-md-7 col-xs-7">
 									<h1>NO.1</h1>
-									我们拥有更实惠的价格
+									<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,5,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+											<?php echo ($data["content"]); ?>
+											<br/><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+									<!--我们拥有更实惠的价格-->
 								</div>
 							</div>
 							<div class="col-md-1 col-xs-1">&nbsp;</div>
@@ -309,7 +305,8 @@
 								<div class="row-md-1">&nbsp;</br></br></div>
 								<div class="col-md-3 col-xs-3">&nbsp;</div>
 								<div class="col-md-8 col-xs-8">
-									<img src="/Public/images/company/u724.png">
+									<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,5,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+											<img src="/Public/images/company/<?php echo ($data["image"]); ?>"><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
 								</div>
 							</div>	
 						</div>
@@ -336,7 +333,16 @@
 				<div class="row-md-1">&nbsp;</br></br></div>
 				<div class="col-md-3">&nbsp;</div>
 				<div class="col-md-8">
-					<p><span>&nbsp;&nbsp;&nbsp; 生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。</p><p>&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p><p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>
+					<!--<p><span>&nbsp;&nbsp;&nbsp;-->
+						<!--生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益，完全符合了可持续发展的要求。-->
+					<!--</p><p>-->
+					<!--&nbsp;&nbsp;&nbsp; 首先，由于形状为颗粒，压缩了体积，节省了储存空间，也便于运输，减少了运输成本。其次，燃烧效益高，残留的碳量少，易点燃；密度提高，能量密度大，燃烧持续时间大幅增加，可以直接在燃煤锅炉上应用。</p>-->
+					<!--<p>&nbsp;&nbsp;&nbsp; 除此之外，生物质颗粒燃烧时有害气体成分含量极低，而且燃烧后的灰还可以作为钾肥直接使用，节省了开支。</span></p>-->
+					<p>
+						<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,6,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+								&nbsp;&nbsp;&nbsp;<?php echo ($data["content"]); ?>
+								<br/><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+					</p>
 					<p class="cu1">---选自百度百科（<a href="http://baike.baidu.com/item/%E7%94%9F%E7%89%A9%E8%B4%A8%E7%87%83%E6%96%99">生物质颗粒燃料</a>）</p>
 				</div>	
 			</div>				
@@ -345,7 +351,10 @@
 		<div class="col-md-6 row-md-8">
 			<div class="col-md-1 col-xs-2">&nbsp;</div>
 			<div class="col-md-10 col-xs-10">
-				<img class="carousel-inner img-responsive img-rounded" id="youtu" src="/Public/images/company/u765.jpg">
+				<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,6,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+						<img class="carousel-inner img-responsive img-rounded" id="youtu" src="/Public/images/company/<?php echo ($data["image"]); ?>">
+						<br/><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+
 			</div>			
 		</div>
 	</div>
@@ -369,8 +378,13 @@
 		<div class="col-md-3 col-xs-2">&nbsp;</div>
 		<div class="col-md-6 col-xs-8" id="bei5">
 			<div class="row-md-1">&nbsp;</div>
-			<img class="carousel-inner img-responsive img-rounded" src="/Public/images/company/u782.jpg">
+			<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,7,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><!--<?php dump(data)?>-->
+					<img class="carousel-inner img-responsive img-rounded" src="/Public/images/company/<?php echo ($data["image"]); ?>">
+					<br/><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+
+
 			<div class="row-md-1">&nbsp;</div>
+
 		</div>			
 	</div>
 
