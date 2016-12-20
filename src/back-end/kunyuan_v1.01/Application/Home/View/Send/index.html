@@ -85,7 +85,7 @@
 
 					<li class="active">
 
-						新闻中心
+						样品寄送
 					</li>
 
 				</ul>
@@ -135,23 +135,10 @@
 						地&nbsp;&nbsp;&nbsp;&nbsp;址
 					</div>
 					<div class="col-md-10 col-xs-9" class="info">
-						<!-- json开始 -->
-						<!--<select  class="bianda" name="provice" id="selProvince">-->
-							<!--<option value="0">&#45;&#45;请选择省份&#45;&#45;</option>-->
-							<!--<volist name="result" id="data" offset="1" length='34'>-->
-								<!--<option value="{$data.linkageid}">&#45;&#45;{$data.name}&#45;&#45;</option>-->
-							<!--</volist>-->
-						<!--</select>-->
-						<!--<select class="bianda2" name="city" id="selCity">-->
-							<!--<option value="0">&#45;&#45;市&#45;&#45;</option>-->
-
-						<!--</select>-->
-						<!--<select class="bianda2" name="district" id="selDistrict">-->
-							<!--<option value="0">&#45;&#45;区/县&#45;&#45;</option>-->
-						<!--</select>-->
-                        <select class="bianda" id="s_province" name="s_province"></select>  
-                        <select id="s_city" name="s_city" ></select>  
-                        <select id="s_county" name="s_county"></select>
+						
+                        <select class="bianda2" id="s_province" name="s_province"></select>  
+                        <select class="bianda2" id="s_city" name="s_city" ></select>
+                        <select class="bianda2" id="s_county" name="s_county"></select>
 
 						<!-- json结束 -->
 					</div>
@@ -160,7 +147,6 @@
 						<input type="text" class="width3" style="height:30px;"  onblur='checkAddress()'  onfocus="checkAddresstwo()"name="town" id="address"
 							   placeholder="请输入详细街道信息">
                         <span value="详细地址不能为空" style="white-space:nowrap;" id="spanaddress">详细地址不能为空</span>
-						<p class="recruit_font3">(若无您所在省份请手动填写全部地址信息)</p>
 					</div>
 				</div>
 				<div class="kuang">

@@ -52,7 +52,7 @@
         <div class="row nc_first">
         <div class="xshidden row">&nbsp</br></br></div>
         <volist name="newscontent" id="data">
-        <div class="col-md-7 nc_first_left">
+        <div class="col-md-8 nc_first_left">
             <div class="row nc_first_left_title"><div class="col-md-11 col-xs-10 col-md-push-1 col-xs-push-1 xsnewstitle text-center">{$data.title}</div></div>
             <div class="row">&nbsp</div>
             <div class="col-xs-11 col-md-12 row nc_sat xiao">
@@ -75,7 +75,7 @@
                 <div class="row">&nbsp;</div><div class="row">&nbsp;</div>
 
 
-                <div class="col-md-12 col-xs-12 col-md-push-1">
+                <div class="col-md-11 col-xs-12 col-md-push-1">
                     <p class="nc-second_content">&nbsp;&nbsp;&nbsp;&nbsp;{$data.content}</p>
                 </div>
 
@@ -115,12 +115,10 @@
             <div class="col-md-4 col-md-push-0">
             <div class="col-md-1 hidden-xs"><img src="__PUBLIC__/images/newslist/u1690.png"></div>
             <div class="col-md-11">
-                <div class="col-md-12 row product_title">
+                <div class="row news_push_title">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
-                    <div class="col-md-5  col-xs-8 product_title_first">产品展示</div>
-
+                    <div class="col-md-5  col-xs-8 news_push_title_first">产品展示</div>
                 </div>
-                <div class="row">&nbsp</div>
                 <div class="row right_first_hr">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
@@ -208,7 +206,7 @@
                 <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
                                     </div></div>
                 <volist name="recommonnews" id="data">
-                <div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/{$data.commonid}">》{$data.title|mb_substr=###,0,15,'utf-8'}..</a></div></div>
+                <div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/{$data.commonid}">{$data.title|mb_substr=###,0,15,'utf-8'}..</a></div></div>
                 </volist>
 
                 <!--第五部分结束-->

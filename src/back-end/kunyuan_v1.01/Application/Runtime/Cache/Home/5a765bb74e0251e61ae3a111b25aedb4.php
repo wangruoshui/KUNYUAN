@@ -295,7 +295,7 @@ function goTop(){
 
 					<li class="active">
 
-						新闻中心
+						样品寄送
 					</li>
 
 				</ul>
@@ -345,23 +345,10 @@ function goTop(){
 						地&nbsp;&nbsp;&nbsp;&nbsp;址
 					</div>
 					<div class="col-md-10 col-xs-9" class="info">
-						<!-- json开始 -->
-						<!--<select  class="bianda" name="provice" id="selProvince">-->
-							<!--<option value="0">&#45;&#45;请选择省份&#45;&#45;</option>-->
-							<!--<?php if(is_array($result)): $i = 0; $__LIST__ = array_slice($result,1,34,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?>-->
-								<!--<option value="<?php echo ($data["linkageid"]); ?>">&#45;&#45;<?php echo ($data["name"]); ?>&#45;&#45;</option>-->
-							<!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-						<!--</select>-->
-						<!--<select class="bianda2" name="city" id="selCity">-->
-							<!--<option value="0">&#45;&#45;市&#45;&#45;</option>-->
-
-						<!--</select>-->
-						<!--<select class="bianda2" name="district" id="selDistrict">-->
-							<!--<option value="0">&#45;&#45;区/县&#45;&#45;</option>-->
-						<!--</select>-->
-                        <select class="bianda" id="s_province" name="s_province"></select>  
-                        <select id="s_city" name="s_city" ></select>  
-                        <select id="s_county" name="s_county"></select>
+						
+                        <select class="bianda2" id="s_province" name="s_province"></select>  
+                        <select class="bianda2" id="s_city" name="s_city" ></select>
+                        <select class="bianda2" id="s_county" name="s_county"></select>
 
 						<!-- json结束 -->
 					</div>
@@ -370,7 +357,6 @@ function goTop(){
 						<input type="text" class="width3" style="height:30px;"  onblur='checkAddress()'  onfocus="checkAddresstwo()"name="town" id="address"
 							   placeholder="请输入详细街道信息">
                         <span value="详细地址不能为空" style="white-space:nowrap;" id="spanaddress">详细地址不能为空</span>
-						<p class="recruit_font3">(若无您所在省份请手动填写全部地址信息)</p>
 					</div>
 				</div>
 				<div class="kuang">
@@ -427,7 +413,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

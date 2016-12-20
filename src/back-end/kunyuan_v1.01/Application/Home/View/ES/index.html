@@ -110,9 +110,9 @@
 				<div class="col-md-6 col-xs-12 col-md-offset-0 col-xs-pull-0 col-md-pull-0">
 					<div class="col-md-11 col-xs-12">
 
-						<div class="row-md-1 row-xs-1">&nbsp;</br></br></div>
+						<div class="row-md-1 row-xs-1">&nbsp;</div>
 						<p class="comtext">
-							&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}
 						</p>
 
 						<div class="row-md-1 row-xs-1">&nbsp;</div>
@@ -220,21 +220,6 @@
 		</div>
 		
 		<!-- 第七行 -->
-		<div class="row rowheight3" >
-		<div class="row-xs-5">&nbsp;</br></br></br></div>
-			<div  class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1 center3-3 text1">
-				<div class="row-md-1">&nbsp;</div>
-				<div class="col-md-12 col-xs-12">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益.
-					</p>
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;生物质颗粒燃烧时有害气体成分含量极低，排放的有害气体少，具有环保效益。
-					</p>
-				</div>
-				<div class="row-md-1">&nbsp;</div>
-			</div>
-		</div>
 		<!-- 第八行 -->
 		<div class="row-md-1">&nbsp;</br></br></br><div id="box2"></div></br></div>
 		<div class="row rowheight">
@@ -252,19 +237,20 @@
 		<div class="row rowheight">
 		
 			<div class="col-md-6  col-xs-12">
-				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-2">&nbsp;</div>
 				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin:0px"><volist name="policy" id="vi" offset="3" length='1'>
 					<img class="img-responsive" src="__PUBLIC__/upload/{$vi.image}"/>
 				</div>
 				</volist>
 			</div>
-			<div class="col-md-5 col-xs-12 col-md-offset-1 col-xs-offset-0">
-				<div class="col-md-10 col-xs-12">
+			<div class="col-md-5 col-xs-12 col-md-offset-0 col-xs-offset-0">
+			<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-11 col-xs-12">
 					<div class="row-xs-1">&nbsp;</div>
 					<volist name="policy" id="vi">
 					<p><img src="__PUBLIC__/images/newenvironment/u1404.png" />&nbsp;
 					<a href="{$vi.content}" class="wtext">
-						{$vi.title|mb_substr=###,0,16,'utf-8'}...
+						{$vi.title|mb_substr=###,0,18,'utf-8'}...
 					</a>
 					</p>
 					</volist>
@@ -289,16 +275,16 @@
 		<div class="row rowheight">
 		<volist name="limit" id="ky">
 			<div class="col-md-6">
-				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-2">&nbsp;</div>
 				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin: 0px">
 					<img src="__PUBLIC__/upload/{$ky.image}" style="width:100%"/>
 				</div>
 
 			</div>
 
-			<div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-1">
-
-				<div class="col-md-10 col-xs-12">
+			<div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-0">
+				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-11 col-xs-12">
 					<div class="row-md-1">&nbsp;</div>
 					<p class="etext">
 						{$ky.content}

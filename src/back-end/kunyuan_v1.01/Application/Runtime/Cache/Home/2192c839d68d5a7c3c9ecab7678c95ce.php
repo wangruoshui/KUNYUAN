@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -263,7 +261,7 @@ function goTop(){
         <div class="row nc_first_top"></div>
         <div class="row nc_first">
         <div class="xshidden row">&nbsp</br></br></div>
-        <?php if(is_array($newscontent)): $i = 0; $__LIST__ = $newscontent;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-7 nc_first_left">
+        <?php if(is_array($newscontent)): $i = 0; $__LIST__ = $newscontent;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-8 nc_first_left">
             <div class="row nc_first_left_title"><div class="col-md-11 col-xs-10 col-md-push-1 col-xs-push-1 xsnewstitle text-center"><?php echo ($data["title"]); ?></div></div>
             <div class="row">&nbsp</div>
             <div class="col-xs-11 col-md-12 row nc_sat xiao">
@@ -286,7 +284,7 @@ function goTop(){
                 <div class="row">&nbsp;</div><div class="row">&nbsp;</div>
 
 
-                <div class="col-md-12 col-xs-12 col-md-push-1">
+                <div class="col-md-11 col-xs-12 col-md-push-1">
                     <p class="nc-second_content">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($data["content"]); ?></p>
                 </div>
 
@@ -325,12 +323,10 @@ function goTop(){
             <div class="col-md-4 col-md-push-0">
             <div class="col-md-1 hidden-xs"><img src="/Public/images/newslist/u1690.png"></div>
             <div class="col-md-11">
-                <div class="col-md-12 row product_title">
+                <div class="row news_push_title">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
-                    <div class="col-md-5  col-xs-8 product_title_first">产品展示</div>
-
+                    <div class="col-md-5  col-xs-8 news_push_title_first">产品展示</div>
                 </div>
-                <div class="row">&nbsp</div>
                 <div class="row right_first_hr">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
@@ -405,7 +401,7 @@ function goTop(){
 
                 <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
                                     </div></div>
-                <?php if(is_array($recommonnews)): $i = 0; $__LIST__ = $recommonnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>">》<?php echo (mb_substr($data["title"],0,15,'utf-8')); ?>..</a></div></div><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($recommonnews)): $i = 0; $__LIST__ = $recommonnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>"><?php echo (mb_substr($data["title"],0,15,'utf-8')); ?>..</a></div></div><?php endforeach; endif; else: echo "" ;endif; ?>
 
                 <!--第五部分结束-->
                 <!--第六部分开始-->
@@ -433,7 +429,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

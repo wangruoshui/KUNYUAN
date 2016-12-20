@@ -319,9 +319,9 @@ function goTop(){
 				<div class="col-md-6 col-xs-12 col-md-offset-0 col-xs-pull-0 col-md-pull-0">
 					<div class="col-md-11 col-xs-12">
 
-						<div class="row-md-1 row-xs-1">&nbsp;</br></br></div>
+						<div class="row-md-1 row-xs-1">&nbsp;</div>
 						<p class="comtext">
-							&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($vo["content"]); ?>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($vo["content"]); ?>
 						</p>
 
 						<div class="row-md-1 row-xs-1">&nbsp;</div>
@@ -420,21 +420,6 @@ function goTop(){
 		</div>
 		
 		<!-- 第七行 -->
-		<div class="row rowheight3" >
-		<div class="row-xs-5">&nbsp;</br></br></br></div>
-			<div  class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1 center3-3 text1">
-				<div class="row-md-1">&nbsp;</div>
-				<div class="col-md-12 col-xs-12">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益.
-					</p>
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;生物质颗粒燃烧时有害气体成分含量极低，排放的有害气体少，具有环保效益。
-					</p>
-				</div>
-				<div class="row-md-1">&nbsp;</div>
-			</div>
-		</div>
 		<!-- 第八行 -->
 		<div class="row-md-1">&nbsp;</br></br></br><div id="box2"></div></br></div>
 		<div class="row rowheight">
@@ -452,16 +437,17 @@ function goTop(){
 		<div class="row rowheight">
 		
 			<div class="col-md-6  col-xs-12">
-				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin: 0px"><?php if(is_array($policy)): $i = 0; $__LIST__ = array_slice($policy,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><img class="img-responsive" src="/Public/upload/<?php echo ($vi["image"]); ?>"/>
+				<div class="col-md-2">&nbsp;</div>
+				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin:0px"><?php if(is_array($policy)): $i = 0; $__LIST__ = array_slice($policy,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><img class="img-responsive" src="/Public/upload/<?php echo ($vi["image"]); ?>"/>
 				</div><?php endforeach; endif; else: echo "" ;endif; ?>
 			</div>
-			<div class="col-md-5 col-xs-12 col-md-offset-1 col-xs-offset-0">
-				<div class="col-md-10 col-xs-12">
+			<div class="col-md-5 col-xs-12 col-md-offset-0 col-xs-offset-0">
+			<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-11 col-xs-12">
 					<div class="row-xs-1">&nbsp;</div>
 					<?php if(is_array($policy)): $i = 0; $__LIST__ = $policy;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><p><img src="/Public/images/newenvironment/u1404.png" />&nbsp;
 					<a href="<?php echo ($vi["content"]); ?>" class="wtext">
-						<?php echo (mb_substr($vi["title"],0,16,'utf-8')); ?>...
+						<?php echo (mb_substr($vi["title"],0,18,'utf-8')); ?>...
 					</a>
 					</p><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
@@ -484,16 +470,16 @@ function goTop(){
 		<!-- 第十一行 -->
 		<div class="row rowheight">
 		<?php if(is_array($limit)): $i = 0; $__LIST__ = $limit;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ky): $mod = ($i % 2 );++$i;?><div class="col-md-6">
-				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-2">&nbsp;</div>
 				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin: 0px">
 					<img src="/Public/upload/<?php echo ($ky["image"]); ?>" style="width:100%"/>
 				</div>
 
 			</div>
 
-			<div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-1">
-
-				<div class="col-md-10 col-xs-12">
+			<div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-0">
+				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-11 col-xs-12">
 					<div class="row-md-1">&nbsp;</div>
 					<p class="etext">
 						<?php echo ($ky["content"]); ?>
@@ -519,7 +505,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

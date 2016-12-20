@@ -78,7 +78,7 @@
                             </div>
                             <div class="col-md-9 col-xs-12" style="color:#666;display:inline;padding-bottom:0px; ">
 
-                                <p style="line-height: 27px;font-family:微软雅黑;">  {$data.content|mb_substr=###,0,50,'utf-8'}<a target="_blank" href="/home/newscontent/index/id/{$data.commonid}" class="right">[详细]</a> </p>
+                                <p style="line-height: 27px;font-family:微软雅黑;">  {$data.content|mb_substr=###,0,50,'utf-8'}......<a target="_blank" href="/home/newscontent/index/id/{$data.commonid}" class="right">[详细]</a> </p>
                                 <span style="color:#999;padding-top:10px;">{$data.time}</span>
                             </div>
                             <script type="text/javascript">
@@ -110,8 +110,7 @@
         </volist>
 
         <div class="row-md-1">&nbsp;</div>
-              <load href=" __PUBLIC__/css/page.css"/>
-              <div class="col-md-11 col-xs-8 col-md-push-8 col-xs-push-4 sabrosus"><{$page}></div>
+              <div class="col-md-11 col-xs-8 col-md-push-9 col-xs-push-4 panel-body">{$page}</div>
             </div>
 
             <script type="text/javascript">
@@ -128,12 +127,10 @@
             <div class="row-md-1">&nbsp;</br></br></br></div>
             <div class="col-md-1 hidden-xs"><img src="__PUBLIC__/images/newslist/u1690.png"></div>
             <div class="col-md-11">
-                <div class="col-md-12 row product_title">
+                <div class="row news_push_title">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
-                    <div class="col-md-5  col-xs-8 product_title_first">产品展示</div>
-
+                    <div class="col-md-5  col-xs-8 news_push_title_first">产品展示</div>
                 </div>
-          
                 <div class="row right_first_hr">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
@@ -221,7 +218,7 @@
                 <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
                                     </div></div>
                 <volist name="recommonnews" id="data">
-                <div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/{$data.commonid}">》{$data.title|mb_substr=###,0,15,'utf-8'}..</a></div></div>
+                <div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/{$data.commonid}">{$data.title|mb_substr=###,0,14,'utf-8'}...</a></div></div>
                 </volist>
 
                 <!--第五部分结束-->

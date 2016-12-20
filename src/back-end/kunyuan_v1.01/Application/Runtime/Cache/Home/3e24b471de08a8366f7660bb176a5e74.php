@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -289,7 +287,7 @@ function goTop(){
                             </div>
                             <div class="col-md-9 col-xs-12" style="color:#666;display:inline;padding-bottom:0px; ">
 
-                                <p style="line-height: 27px;font-family:微软雅黑;">  <?php echo (mb_substr($data["content"],0,50,'utf-8')); ?><a target="_blank" href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>" class="right">[详细]</a> </p>
+                                <p style="line-height: 27px;font-family:微软雅黑;">  <?php echo (mb_substr($data["content"],0,50,'utf-8')); ?>......<a target="_blank" href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>" class="right">[详细]</a> </p>
                                 <span style="color:#999;padding-top:10px;"><?php echo ($data["time"]); ?></span>
                             </div>
                             <script type="text/javascript">
@@ -320,8 +318,7 @@ function goTop(){
                     <div class="row-md-1">&nbsp;</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
         <div class="row-md-1">&nbsp;</div>
-              <link rel="stylesheet" type="text/css" href=" /Public/css/page.css" />
-              <div class="col-md-11 col-xs-8 col-md-push-8 col-xs-push-4 sabrosus"><<?php echo ($page); ?>></div>
+              <div class="col-md-11 col-xs-8 col-md-push-9 col-xs-push-4 panel-body"><?php echo ($page); ?></div>
             </div>
 
             <script type="text/javascript">
@@ -338,12 +335,10 @@ function goTop(){
             <div class="row-md-1">&nbsp;</br></br></br></div>
             <div class="col-md-1 hidden-xs"><img src="/Public/images/newslist/u1690.png"></div>
             <div class="col-md-11">
-                <div class="col-md-12 row product_title">
+                <div class="row news_push_title">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
-                    <div class="col-md-5  col-xs-8 product_title_first">产品展示</div>
-
+                    <div class="col-md-5  col-xs-8 news_push_title_first">产品展示--ky</div>
                 </div>
-          
                 <div class="row right_first_hr">
                     <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
@@ -418,7 +413,7 @@ function goTop(){
 
                 <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
                                     </div></div>
-                <?php if(is_array($recommonnews)): $i = 0; $__LIST__ = $recommonnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>">》<?php echo (mb_substr($data["title"],0,15,'utf-8')); ?>..</a></div></div><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($recommonnews)): $i = 0; $__LIST__ = $recommonnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>"><?php echo (mb_substr($data["title"],0,14,'utf-8')); ?>...</a></div></div><?php endforeach; endif; else: echo "" ;endif; ?>
 
                 <!--第五部分结束-->
                 <!--第六部分开始-->
@@ -447,7 +442,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

@@ -3,6 +3,7 @@
 //author:maxing
 namespace Home\Controller;
 use Think\Controller;
+use Think\Verify;
 
 class SendController extends Controller
 {
@@ -38,7 +39,7 @@ class SendController extends Controller
     }
     public function verifycode(){
         $config =    array(
-            'fontSize'    =>    21,    // 验证码字体大小
+            'fontSize'    =>    20,    // 验证码字体大小
             'length'      =>    4,     // 验证码位数
             'useNoise'    =>    false, // 关闭验证码杂点
             'codeSet'     =>   '0123456789', //指定验证码的字符
@@ -52,23 +53,34 @@ class SendController extends Controller
     public function addsend(){
         $this->_db=M("courier");
         $messages=I("post.");
-        $message['time']=date("Y-m-d H:i:s",time());
-        $message['username']=$messages['username'];
-        $message['address']=$messages['province'].'-'.$messages['city'].'-'.$messages['area'].'-'.$messages['town'];
-        $message['phone']=$messages['phone'];
-        $message['email']=$messages['email'];
-        $message['sex']=$messages['sex'];
+        $Verify= new \Think\Verify();
+        if($Verify->check($messages['check'])) {
+
+
+        if(($messages['username'])&&($messages['town'])&&($messages['provice'])&&($messages['city'])&&($messages['area'])&&($messages['phone'])) {
+
+
+            $message['time'] = date("Y-m-d H:i:s", time());
+            $message['username'] = $messages['username'];
+            $message['address'] = $messages['province'] . '-' . $messages['city'] . '-' . $messages['area'] . '-' . $messages['town'];
+            $message['phone'] = $messages['phone'];
+
+            $message['sex'] = $messages['sex'];
 //        dump($messages);
 //        exit;
-        $result=$this->_db->add($message);
-        //  dump($result);
-        if($result){
-            //插入成功
-            $this->success('提交成功,3秒后自动为您跳转到产品页面','/home/proTechnology/index',2);
+            $result = $this->_db->add($message);
+            //  dump($result);
+            if ($result) {
+                //插入成功
+                $this->success('提交成功,3秒后自动为您跳转到产品页面', '/home/proTechnology/index', 2);
+            } else {
+                //插入失败
+                $this->error('提交失败，3秒后自动跳回留言界面', '/home/send/index', 2);
+            }
         }else{
-            //插入失败
-            $this->error('提交失败，3秒后自动跳回留言界面','/home/send/index',2);
+            $this->error('信息不能为空，请重新填写', '/home/send/index', 2);
         }
+        }else{$this->error('验证码错误！');}
     }
 
 }

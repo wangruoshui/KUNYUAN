@@ -413,7 +413,7 @@ function goTop(){
 
 
 
-                                <?php echo ($data["name"]); ?></a>生物质材料</h3>
+                                <?php echo ($data["name"]); ?>生物质材料</a></h3>
 							<p class="comtext"><?php echo ($data["introductions"]); ?></p>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
@@ -438,7 +438,7 @@ function goTop(){
 					</div>
 					<div class="col-md-6 col-md-push-0 col-md-pull-7 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft" style="margin-top:5%;">
 						<div class="col-xs-12 content2-text">
-							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?></a>生物质材料</h3>
+							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?>生物质材料</a></h3>
 							<p class="comtext"><?php echo ($data["introductions"]); ?></p>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
@@ -464,7 +464,7 @@ function goTop(){
 					</div>
 					<div class="col-md-6 col-md-push-1 col-md-pull-0 col-xs-12 col-xs-push-0 col-xs-pull-0 " style="margin-top:5%;">
 						<div class="col-xs-12 content2-text">
-							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?></a>生物质材料</h3>
+							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?>生物质材料</a></h3>
 							<p class="comtext"><?php echo ($data["introductions"]); ?></p><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>
 					</div>
@@ -490,7 +490,7 @@ function goTop(){
 					</div>
 					<div class="col-md-6 col-md-push-0 col-md-pull-7 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft" style="margin-top:5%;">
 						<div class="col-xs-12 content2-text">
-							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?></a>生物质材料</h3>
+							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?>生物质材料</a></h3>
 							<p class="comtext"><?php echo ($data["introductions"]); ?></p>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
@@ -525,13 +525,13 @@ function goTop(){
 					<div class="col-md-5 col-md-push-5 col-md-pull-1 col-xs-12 col-xs-push-0 col-xs-pull-1">
 					<?php if(is_array($range)): $i = 0; $__LIST__ = $range;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive  content3-img">
 					</div>
-					<div class="col-md-5 col-md-push-0 col-md-pull-6 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft">
-						<div class="col-xs-12 col-md-10">
+					<div class="col-md-5 col-md-push-0 col-md-pull-5 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft">
+						<div class="col-xs-12 col-md-11 col-md-pull-1 col-xs-pull-0">
 							<h2>销售<a href="#" class="content3-h1">范围:</a></h2>
 							<div class="row-md-1">&nbsp;</div>
 							<p class="comtext"> 
-                                &nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($data["content"]); endforeach; endif; else: echo "" ;endif; ?></p>
-							<h5>—公司地址<a href="/home/company/index ">（河北省廊坊市永清县里澜城镇-里澜城村）</a></h5>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($data["content"]); endforeach; endif; else: echo "" ;endif; ?></p>
+							<h5>—公司地址<a href="/home/company/index">（河北省廊坊市永清县里澜城工业园区）</a></h5>
 						</div>
 					</div>
 				</div>
@@ -610,7 +610,7 @@ function goTop(){
 		</div>
 		<div class="row-md-1">&nbsp;</div>
 		<div class="container col-md-12">
-			<div class="col-md-4 col-md-push-4 col-xs-9 col-xs-push-3" style="margin-top:6%;margin-left:3.6%;">
+			<div class="col-md-4 col-md-push-4 col-xs-9 col-xs-push-3" style="margin-top:6%;margin-left:6%;">
 				<img class="xshidden" src="/Public/images/protechnology/u174.png">
 				<a href="/home/send/index"><img src="/Public/images/protechnology/u176.png" style="margin-left:1%;" class="img-change" name="u176"></a>
 			</div>
@@ -634,7 +634,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

@@ -35,7 +35,7 @@
 }
 
 .center312{
-	background-image:url(../images/newenvironment/square.png);
+	background-image:url(../images/newenvironment/square.webp);
     height:320px;
     width:400px;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
     margin-top: 100px;
 }
 .center313{
-    background-image:url(../images/newenvironment/square.png);
+    background-image:url(../images/newenvironment/square.webp);
     background-position: center;
     filter:alpha(opacity=80);
     -moz-opacity:0.8;

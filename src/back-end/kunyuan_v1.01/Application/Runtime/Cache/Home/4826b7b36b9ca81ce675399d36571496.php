@@ -24,49 +24,20 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
-    <style type="text/css">
-img{border:0;}
-ul,li{padding:0;margin:0;}
-.suspend {z-index:99;right:0;width:128px;height:128px;position:absolute;}
-.suspend .press{right:0;width:72px;cursor:pointer;position:absolute;height:128px;}
-.suspend .suspend_list{left:0;width:131px;position:absolute;height:128px;}
-.suspend .suspend_list ul{padding:43px 0 0 21px;}
-.suspend .suspend_list li{height:26px;margin-bottom:11px;_margin-bottom:7px; list-style-type:none;}
-</style>
-<script type="text/javascript">
-window.onload = window.onresize = window.onscroll = function ()
-{
- var oBox = document.getElementById("qqbox_zzjs");
- var oLine = document.getElementById("online_wwwzzjsnet");
- var oMenu = document.getElementById("menu_zzjs_net");
- var iScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
- setTimeout(function ()
- {
-  clearInterval(oBox.timer);
-  var iTop = parseInt((document.documentElement.clientHeight - oBox.offsetHeight)/2) + iScrollTop;
-  oBox.timer = setInterval(function ()
-  {
-   var iSpeed = (iTop - oBox.offsetTop) / 8;
-   iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
-   oBox.offsetTop == iTop ? clearInterval(oBox.timer) : (oBox.style.top = oBox.offsetTop + iSpeed + "px");
-  }, 30)
- }, 100)
-
- oBox.onmouseover = function ()
- {
-  this.style.width = 80 + "px";
-  oLine.style.display = "block";
-  oMenu.style.display = "none";
- };
- oBox.onmouseout = function ()
- {
-  this.style.width = '';
-  oLine.style.display = "none";
-  oMenu.style.display = "block";
- };
-};
-</script>
+    <style>
+        *{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;}
+        /* side */
+        .side{position:fixed;width:54px;height:275px;right:0;top:214px;z-index:100;}
+        .side ul li{width:54px;height:54px;float:left;position:relative;border-bottom:1px solid #444;}
+        .side ul li .sidebox{position:absolute;width:54px;height:54px;top:0;right:0;transition:all 0.3s;background:#000;opacity:0.8;filter:Alpha(opacity=80);color:#fff;font:14px/54px "微软雅黑";overflow:hidden;}
+        .sidebox2{
+            position:absolute;width:125px;height:125px;margin-top:-125px;margin-left:-72px;transition:all 1s;opacity:1;filter:Alpha(opacity=80);overflow:hidden;display: none;
+        }
+        .side ul li .sidetop{width:54px;height:54px;line-height:54px;display:inline-block;background:#000;opacity:0.8;filter:Alpha(opacity=80);transition:all 0.3s;}
+        .side ul li .sidetop:hover{background:#777777;opacity:1;filter:Alpha(opacity=100);}
+        .side ul li img{float:left;}
+    </style>
 </head>
 <body>
 
@@ -77,7 +48,7 @@ window.onload = window.onresize = window.onscroll = function ()
             <nav class="navbar navbar-default-me     " role="navigation" style="margin:0px;padding:0px;border:0">
 
                 <div class="col-md-2 navbar-brand">
-                    <img class="navbar-brand2" src="/Public/images/logo.png">
+                    <img class="navbar-brand2" src="/Public/upload/logo.webp">
                 </div>
                 <div class="navbar-header ">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -95,8 +66,8 @@ window.onload = window.onresize = window.onscroll = function ()
                         <li>
                             <a href="/home/Company/index">公司简介</a>
                         </li>
-                        <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">产品中心</a>
+                        <li class="dropdown" onmouseover="show(this)" onmouseout="hide(this)">
+                            <a href="" class="dropdown-toggle"  data-toggle="dropdown">产品中心</a>
                             <ul class="dropdown-menu" style="background-color: #fff">
                                 <li>
                                     <a href="/home/ProTechnology/index#box1" style="color:#000">产品技术</a>
@@ -110,7 +81,16 @@ window.onload = window.onresize = window.onscroll = function ()
                                 <li>
                                     <a href="/home/protechnology/index#box4"style="color:#000s">样品寄送</a>
                                 </li>
-
+                                <script type="text/javascript">
+                                    function show(li) {
+                                        var ul = li.firstChild.nextSibling.nextSibling.nextSibling;
+                                        ul.style.display = "block";
+                                    }
+                                    function hide(li) {
+                                        var ul = li.firstChild.nextSibling.nextSibling.nextSibling;
+                                        ul.style.display = "none";
+                                    }
+                                </script>
 
 
                             </ul>
@@ -119,7 +99,7 @@ window.onload = window.onresize = window.onscroll = function ()
                         <li>
                             <a href="/home/News/index">新闻中心</a>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown" onmouseover="show(this)" onmouseout="hide(this)">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">环境与社会</a>
                             <ul class="dropdown-menu" style="background-color: #fff">
                                 <li>
@@ -136,8 +116,8 @@ window.onload = window.onresize = window.onscroll = function ()
                             </ul>
 
                         </li>
-                        <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">职业中心</a>
+                        <li class="dropdown" onmouseover="show(this)" onmouseout="hide(this)">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" >职业中心</a>
                             <ul class="dropdown-menu" style="background-color: #fff">
                                 <li>
                                     <a href="/home/Career/index#box1"style="color:#000">人才理念</a>
@@ -150,7 +130,7 @@ window.onload = window.onresize = window.onscroll = function ()
                             </ul>
 
                         </li>
-                        <li class="dropdown" >
+                        <li class="dropdown" onmouseover="show(this)" onmouseout="hide(this)">
                             <a class="dropdown-toggle" data-toggle="dropdown">联系我们</a>
                             <ul class="dropdown-menu" style="background-color: #fff">
                                 <li>
@@ -177,19 +157,58 @@ window.onload = window.onresize = window.onscroll = function ()
 
 
 
-<div class="suspend" id="qqbox_zzjs" >
-<div class="suspend_list" id="online_wwwzzjsnet" style="display:none;">
+<div class="side">
+    <ul>
+        <li>
+            <a href="/home/contactus/index#box3">
+                <div class="sidebox">
+                <img src="/Public/images/index/side_icon01.png">在线留言
+                </div>
+            </a>
+        </li>
+      <li>
+          <a href="/home/qq/index" >
+            <div class="sidebox"><img src="/Public/images/index/side_icon04.png">QQ客服</div>
+          </a>
+      </li>
 
-<ul>
-<a href="/home/contactus/index#box3"><li><img src="/Public/images/index/u184_mouseOver.png" alt="留言"></li></a>
-<li style="padding-top:15px"><a href="#"><img src="/Public/images/index/u182_mouseOver.png" alt="QQ"></a></li>
-<li style="padding-top:37px"><a href="#"><img  src="/Public/images/index/u192_mouseOver.png" alt="微信"></a></li>
+      <li>
+           <div class="sidebox2"><img src="/Public/images/index/2wm.jpg"></div>
+          <a href="javascript:void(0);">
 
-</ul>
+            <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
+          </a>
+      </li>
+      <li style="border:none;">
+          <a href="javascript:goTop();" class="sidetop">
+            <img src="/Public/images/index/side_icon05.png">
+          </a>
+      </li>
+  </ul>
 </div>
-<div id="menu_zzjs_net"><img src="/Public/images/index/u177.png" class="press" alt="咨询"></div>
-<div id="menu_zzjs_net" class="press" style="padding-left:21px">咨询</div>
-</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>    
+<script>
+$(function(){
+    $(".side ul li").hover(function(){
+        $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#777777"})    
+    },function(){
+        $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})   
+    });
+    $(".weixin").click(function(){
+        $(".sidebox2").css({"display":"block"})
+    });
+    $(".weixin").mouseout(function(){
+        $(".sidebox2").css({"display":"none"})
+    });
+
+});
+//回到顶部函数
+function goTop(){
+    $('html,body').animate({'scrollTop':0},300);
+}
+</script>
+
+
 
 <div class="container col-md-12 font-family"style="padding:0px">
 	<div class="container col-md-12" style="padding:0px">
@@ -198,7 +217,7 @@ window.onload = window.onresize = window.onscroll = function ()
 
 				<div class="carousel-inner">
 					<div class="item active" >
-						<img  src="/Public/images/company/5_u286.jpg" width="100%" />
+						<?php if(is_array($bigtu)): $i = 0; $__LIST__ = $bigtu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$big): $mod = ($i % 2 );++$i;?><img  src="/Public/upload/<?php echo ($big["config_content"]); ?>" width="100%" /><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
 				</div>
 			</div>
@@ -310,7 +329,7 @@ window.onload = window.onresize = window.onscroll = function ()
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;
