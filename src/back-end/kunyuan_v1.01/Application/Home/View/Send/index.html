@@ -1,0 +1,184 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		//测试jquery文件是否引入成功
+		console.log('succeed');
+		//根据省id获取市
+		$("select[name='provice']").change(function(){
+			//发送请求
+			console.log('成功改变');
+			$.post('/home/send/province',
+					{'parentid':$(this).val()}, function(data){
+						//替换市区数据
+						$("select[name='city']").html(null);
+						var str1 = '<option value="--市--">--市--</option>'
+						$("select[name='city']").append(str1);
+						var citys=JSON.parse(data);
+						for(var i in citys){
+							var str = '<option value='+citys[i]['linkageid']+'>'+citys[i]['name']+'</option>'
+							var option = $(str);
+
+							$("select[name='city']").append(option);
+						}
+					});
+		});
+
+
+		//根据省id获取市获取区县
+		$("select[name='city']").change(function(){
+			//发送请求
+			var self=$(this);
+//			console.log(self);
+			$.post('../send/province',
+					{'parentid':self.val()}, function(data){
+						//替换市区数据
+						$("select[name='district']").html(null);
+
+						var areas=JSON.parse(data);
+
+						for(var i in areas){
+							var str = '<option value='+areas[i]['id']+'>'+areas[i]['name']+'</option>'
+							var option = $(str);
+							$("select[name='district']").append(option);
+						}
+					});
+		});
+
+	});
+</script>
+
+<div class="container col-md-12 font-family"style="padding:0px">
+	<div class="container col-md-12" style="padding:0px">
+		<div>
+			<div class="carousel slide" >
+
+				<div class="carousel-inner">
+					<div class="item active" >
+						<volist name="bigtu" id="big">
+						<img  src="__PUBLIC__/upload/{$big.config_content}" width="100%" />
+					</volist>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix" style="margin:0px">
+			<div>
+
+				<ul class="breadcrumb ">
+
+					<li>
+						您所在的位置:
+						<a href="index.html">首页</a>
+					</li>
+
+					<li class="active">
+
+						申请样品
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+<div class="row-md-1">&nbsp;</br></br></br></br></br></div>
+	<div class="text-center">
+		<div class="big">
+			<div>
+				<img src="__PUBLIC__/images/protechnology/u321.png">
+				样品寄送
+				<img src="__PUBLIC__/images/protechnology/u321.png">
+			</div>
+		</div>
+		<div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
+	</div>
+<div class="xshidden row-md-1">&nbsp;</br></br></div>
+</br></br></br>
+	<!-- 第一行 -->
+	<div class=" col-md-12 col-xs-12">
+		<div class="col-md-1 col-xs-1">
+		</div>
+		<div class="col-md-4 col-xs-12">
+			<img class="yangtugao" src="__PUBLIC__/upload/recruit.jpg" >
+		</div>
+		<div class="mdhidden row-xs-1"> &nbsp;</br></br></div>
+		<div class="col-md-1 col-xs-1">
+		</div>
+		<div class="col-md-5 col-xs-12">
+			<form role="form" action="/home/send/addsend" method="post" enctype="multipart/form-data">
+				<div class="kuang">
+					<div class="col-md-2 col-xs-3 text4">
+						 姓&nbsp;&nbsp;&nbsp;&nbsp;名
+					</div>
+					
+					<div class="col-md-10 col-xs-9">
+						<input type="text" class="width4" style="height:30px;" name="username"  id="name" placeholder="请输入姓名">
+					</div>
+				</div>
+
+				<div class="kuang">
+					<div class="col-md-2 col-xs-3 text4">
+						地&nbsp;&nbsp;&nbsp;&nbsp;址
+					</div>
+					<div class="col-md-10 col-xs-9">
+						<!-- json开始 -->
+						<select  class="bianda" name="provice" id="selProvince">
+							<option value="0">--请选择省份--</option>
+							<volist name="result" id="data" offset="1" length='34'>
+								<option value="{$data.linkageid}">--{$data.name}--</option>
+							</volist>
+						</select>
+						<select class="bianda2" name="city" id="selCity">
+							<option value="0">--市--</option>
+
+						</select>
+						<select class="bianda2" name="district" id="selDistrict">
+							<option value="0">--区/县--</option>
+						</select>
+						<!-- json结束 -->
+					</div>
+					<div class="col-md-10 col-xs-10 col-md-offset-2 col-xs-offset-3">
+
+						<input type="text" class="width3" style="height:30px;" name="town" id="address"
+							   placeholder="请输入详细街道信息">
+						<p class="recruit_font3">(若无您所在省份请手动填写全部地址信息)</p>
+					</div>
+				</div>
+				<div class="kuang">
+					<div class="col-md-2 col-xs-3 text4">
+					电&nbsp;&nbsp;&nbsp;&nbsp;话
+					</div>
+					<div class="col-md-10 col-xs-9">
+						<input type="text" style="height:30px;" class="width4" name="phone" id="phone"
+							   placeholder="请输入手机号">
+					</div>
+				</div>
+				<div class="kuang">
+					<div class="col-md-2 col-xs-3 text4">
+						验证码
+					</div>
+			
+						<div class="col-md-3 col-xs-3">
+							<input type="text" class="width5" name="code" id="check" style="height:40px;"
+								   placeholder="请输入验证码">
+						</div>
+						<div class="col-md-6 col-xs-6">
+                            <img id="img_code" class="width6" style="height:39px;margin-left:24px;" src="/home/send/verifycode">
+						</div>
+				
+				</div>
+				
+				<div>
+				
+					<div class="col-md-10 col-xs-10 col-md-offset-4 col-xs-offset-4 ">
+					</br></br>
+						<button type="submit" class="btn btn-default anniu">提交</button></br></br>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+</div>
+<div class="xshidden row-md-1">&nbsp;</br></br></br></br></div>
+<div class="row-md-1">&nbsp;</br></br></div>
