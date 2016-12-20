@@ -268,7 +268,9 @@
 		<div class="col-md-3 col-xs-1">&nbsp;</div>
 		<div class="col-md-6 col-xs-10 img-thumbnail1" style="margin: 0px;padding: 0px">
             <div style="width:100%;height:308px;border:#ccc solid 1px;" id="dituContent"></div>
-            <script type="text/javascript">
+            
+               
+                <script type="text/javascript">
                 //创建和初始化地图函数：
                 function initMap(){
                     createMap();//创建地图
@@ -280,8 +282,8 @@
                 //创建地图函数：
                 function createMap(){
                     var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-                    var point = new BMap.Point(116.732861,39.204238);//定义一个中心点坐标
-                    map.centerAndZoom(point,15);//设定地图的中心点和坐标并将地图显示在地图容器中
+                    var point = new BMap.Point(116.734307,39.206474);//定义一个中心点坐标
+                    map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
                     window.map = map;//将map变量存储在全局
                 }
 
@@ -289,7 +291,7 @@
                 function setMapEvent(){
                     map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
                     map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-//                    map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                    map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
                     map.enableKeyboard();//启用键盘上下左右键移动地图
                 }
 
@@ -307,7 +309,7 @@
                 }
 
                 //标注点数组
-                var markerArr = [{title:"坤源生物质颗粒有限公司",content:"手机：15231110767 <br/> 地址：廊坊市永清县里澜城镇里澜城村",point:"116.732861|39.204238",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+                var markerArr = [{title:"坤源生物质颗粒有限公司",content:"手机：15231110767&nbsp;<br/>&nbsp;地址：廊坊市永清县里澜城镇里澜城村",point:"116.734172|39.2066",isOpen:1,icon:{w:23,h:25,l:92,t:21,x:9,lb:12}}
                 ];
                 //创建marker
                 function addMarker(){
@@ -359,7 +361,7 @@
                 }
                 //创建一个Icon
                 function createIcon(json){
-                    var icon = new BMap.Icon("http://phping.cf/point.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+                    var icon = new BMap.Icon("http://map.baidu.com/image/us_cursor.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
                     return icon;
                 }
 
