@@ -19,15 +19,12 @@
 
                     <li>
                         您所在的位置:
-                        <a href="/home/index/index">首页</a>
+                        <a href="index.html">首页</a>
                     </li>
-                    <li>
 
-                        <a href="/home/news/index">新闻列表</a>
-                    </li>
                     <li class="active">
 
-                        新闻内容
+                        新闻列表
                     </li>
 
                 </ul>
@@ -35,14 +32,28 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <!--第一部分，内容标题+下划线+产品标题-->
-<div class="xshidden row">&nbsp</br></br></br></br></div>
-    <div class="row nc_first_top"></div>
-    <div class="row nc_first">
+
+<div class="container col-md-12">
+<div class="row">&nbsp</br></br></br></div>
+    <div class="container">
+        <div class="text-center">
+            <div class="big">
+                <div>
+                    <img src="__PUBLIC__/images/newslist/u321.png">
+                    新闻中心
+                    <img src="__PUBLIC__/images/newslist/u321.png">
+                </div>
+            </div>
+            <div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
+        </div>
+        <!--第一部分，内容标题+下划线+产品标题-->
+        <div class="row">&nbsp</br></br></div>
+        <div class="row nc_first_top"></div>
+        <div class="row nc_first">
+        <div class="xshidden row">&nbsp</br></br></div>
         <volist name="newscontent" id="data">
         <div class="col-md-7 nc_first_left">
-            <div class="row nc_first_left_title"><div class="col-md-12 col-xs-12 col-md-push-1 col-xs-push-0 xsnewstitle text-center">{$data.title}</div></div>
+            <div class="row nc_first_left_title"><div class="col-md-11 col-xs-10 col-md-push-1 col-xs-push-1 xsnewstitle text-center">{$data.title}</div></div>
             <div class="row">&nbsp</div>
             <div class="col-xs-11 col-md-12 row nc_sat xiao">
                 <div class="col-xs-2 col-md-2 col-md-push-4 col-xs-push-2 source">来源：{$data.resource}</div>
@@ -50,29 +61,29 @@
                 <div class="col-xs-6 col-xs-push-4 col-md-6 col-md-push-6 push_time"></div>
             </div>
             <div class="row-md-1">&nbsp;</div>
-            <div class="row">
+            <div class="col-md-12 col-xs-12">
 
                 <!--第二部分内容-->
                 <div class="row xshidden">&nbsp</div>
                 <div class="row xshidden">&nbsp</div>
                 <div class="row">&nbsp</div>
-                <div class="col-xs-12 col-md-12 col-md-push-2 col-xs-push-0 ">
+                <div class="col-xs-12 col-md-9 col-md-push-2 col-xs-push-0 ">
              
                         <img  class="leftxin img-responsive" src="__PUBLIC__/upload/{$data.image}">
             
                 </div>
                 <div class="row">&nbsp;</div><div class="row">&nbsp;</div>
-                <div class="col-md-12 ">
 
-                    <div class="col-md-12 col-md-push-1">
-                        <span class="nc-second_content">&nbsp;&nbsp;&nbsp;&nbsp;{$data.content}</span>
-                    </div>
+
+                <div class="col-md-12 col-xs-12 col-md-push-1">
+                    <p class="nc-second_content">&nbsp;&nbsp;&nbsp;&nbsp;{$data.content}</p>
                 </div>
+
                 <!--第二部分结束-->
                 <!--第三部分开启-->
                 <div class="row">&nbsp</div>
                 <div class="row">&nbsp</div>
-                <div class="row nc_third_top">
+                <div class="col-md-12 nc_third_top">
                     <div class="col-md-4 col-md-offset-8 col-md-push-3 col-xs-4 col-xs-push-8">
                         <a href="#"></a></div>
                 </div>
@@ -99,102 +110,117 @@
         </volist>
             </div>
         </div>
-        <div class="col-md-1 col-md-push-1 no_first_center hidden-xs"><img src="__PUBLIC__/images/newscontent/u1690.png"></div>
-        <div class="row-xs-1 mdhidden">&nbsp;</div>
-        <div class="col-md-4 col-md-push-0">
-            <div class="col-md-12 row product_title">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-md-5  col-xs-8 product_title_first">产品展示</div>
+            
+            
+            <div class="col-md-4 col-md-push-0">
+            <div class="col-md-1 hidden-xs"><img src="__PUBLIC__/images/newslist/u1690.png"></div>
+            <div class="col-md-11">
+                <div class="col-md-12 row product_title">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-md-5  col-xs-8 product_title_first">产品展示</div>
 
-            </div>
-            <div class="row">&nbsp</div>
-            <div class="row right_first_hr">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
                 </div>
-            </div>
-            <div class="row">&nbsp</div>
-            <!--第四部分开始-->
-            <div class="row">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-md-4 col-xs-4">
-                    <volist name="products" id="data1" offset="0" length="1">
-                        <a href="/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
-                        </a></volist>
+                <div class="row">&nbsp</div>
+                <div class="row right_first_hr">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
+                    </div>
                 </div>
-                <div class="col-xs-1 col-md-1"></div>
-                <div class="col-md-4 col-xs-4">
-                    <volist name="products" id="data1" offset="1" length="1">
-                        <a href="/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
-                        </a></volist>
+                
+                <!--第四部分开始-->
+
+                <div class="row">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-md-4 col-xs-4">
+                        <volist name="products" id="data1" offset="0" length="1">
+                            <a href="/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
+                            </a></volist>
+                    </div>
+                    
+                    <div class="col-md-4 col-xs-4">
+                        <volist name="products" id="data1" offset="1" length="1">
+                            <a href="/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
+                            </a></volist>
+                   </div>
                 </div>
-            </div>
-            <div class="row right_first_word">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-xs-4  col-md-4 right_first_word_first">
-                    <div class="row">&nbsp</div>
-                    <volist name="products" id="data1" offset="0" length="1">
-                        <a href="/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物质材料</a>
-                    </volist>
+                <div class="row right_first_word">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-xs-4  col-md-4 right_first_word_first">
+                        <div class="row">&nbsp</div>
+                        <volist name="products" id="data1" offset="0" length="1">
+                        <a href="/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                            </volist>
+                            <div class="row">&nbsp</div>
+                    </div>
+                   
+                    <div class="col-xs-4 right_first_word_second">
+                        <div class="row">&nbsp</div>
+                        <volist name="products" id="data1" offset="1" length="1">
+                        <a href="/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                            </volist>
+                            <div class="row">&nbsp</div>
+                    </div>
                 </div>
-                <div class="col-xs-1 col-md-1"></div>
-                <div class="col-xs-4 right_first_word_second">
-                    <div class="row">&nbsp</div>
-                    <volist name="products" id="data1" offset="1" length="1">
-                        <a href="/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物质材料</a>
-                    </volist>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-md-4 col-xs-4">
-                    <volist name="products" id="data1" offset="2" length="1">
+                <div class="row">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-md-4 col-xs-4">
+                        <volist name="products" id="data1" offset="2" length="1">
                         <a href="/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}"></a>
-                    </volist>
+                            </volist>
+                    </div>
+                    
+                    <div class="col-md-4 col-xs-4">
+                        <volist name="products" id="data1" offset="3" length="1"><a href="/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}"></a></volist></div>
                 </div>
-                <div class="col-xs-1 col-md-1"></div>
-                <div class="col-md-4 col-xs-4">
-                    <volist name="products" id="data1" offset="3" length="1"><a href="/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}"></a></volist></div>
-            </div>
 
-            <div class="row right_first_word">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-xs-4  col-md-4 right_first_word_first">
-                    <div class="row">&nbsp</div>
-                    <volist name="products" id="data1" offset="2" length="1">
-                        <a href="/home/Proshow/index/id/{$data1.productid}">生物质材料</a>
-                    </volist>
+                <div class="row right_first_word">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-xs-4  col-md-4 right_first_word_first">
+                        <div class="row">&nbsp</div>
+                        <volist name="products" id="data1" offset="2" length="1">
+                        <a href="/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                            </volist>
+                            <div class="row">&nbsp</div>
+                    </div>
+                    
+                    <div class="col-xs-4 right_first_word_second">
+                        <div class="row">&nbsp</div>
+                        <volist name="products" id="data1" offset="3" length="1">
+                        <a href="/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                            </volist>
+                            <div class="row">&nbsp</div>
+                    </div>
                 </div>
-                <div class="col-xs-1 col-md-1"></div>
-                <div class="col-xs-4 right_first_word_second">
-                    <div class="row">&nbsp</div>
-                    <volist name="products" id="data1" offset="3" length="1">
-                        <a href="/home/Proshow/index/id/{$data1.productid}">生物质材料</a>
-                    </volist>
-                </div>
-            </div>
-            <!--第四部分结束-->
-            <!--第五部分开始-->
-            <div class="row">&nbsp</div>
-            <div class="row news_push_title">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-md-5  col-xs-8 news_push_title_first">新闻推荐</div>
-            </div>
-            <div class="row right_first_hr">
-                <div class="col-md-2 col-xs-1">&nbsp</div>
-                <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
-                </div>
-            </div>
 
-            <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
-            </div></div>
-            <volist name="recommonnews" id="data">
-                <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/{$data.commonid}">》{$data.title|mb_substr=###,0,19}..</a></div></div>
-            </volist>
+                <!--第四部分结束-->
+                <!--第五部分开始-->
+                <div class="row">&nbsp</div>
+                <div class="row news_push_title">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-md-5  col-xs-8 news_push_title_first">新闻推荐</div>
+                </div>
+                <div class="row right_first_hr">
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
+                    <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
+                    </div>
+                </div>
 
-            <!--第六部分结束-->
+                <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
+                                    </div></div>
+                <volist name="recommonnews" id="data">
+                <div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/{$data.commonid}">》{$data.title|mb_substr=###,0,15,'utf-8'}..</a></div></div>
+                </volist>
+
+                <!--第五部分结束-->
+                <!--第六部分开始-->
+                <div class="row">&nbsp</div>
+
+
+                               <!--第六部分结束-->
+            </div>
         </div>
+        </div>
+        <!--第一部分结束-->
     </div>
-    <!--第一部分结束-->
 </div>
 <div class="row-md-1">&nbsp;</br></br></div>

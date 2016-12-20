@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}

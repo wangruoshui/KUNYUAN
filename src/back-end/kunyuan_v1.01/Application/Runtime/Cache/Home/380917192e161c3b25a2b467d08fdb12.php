@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -324,7 +322,6 @@ function goTop(){
 						<div class="row-md-1 row-xs-1">&nbsp;</br></br></div>
 						<p class="comtext">
 							&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($vo["content"]); ?>
-							<a class="more1" href="#">详情>></a>
 						</p>
 
 						<div class="row-md-1 row-xs-1">&nbsp;</div>
@@ -358,7 +355,7 @@ function goTop(){
 			<div class="col-md-5 col-xs-7">
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.1
 						</h2>
@@ -373,7 +370,7 @@ function goTop(){
 				<div class="row-md-6">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.2
 						</h2>
@@ -392,7 +389,7 @@ function goTop(){
 				<div class="row-xs-5">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.3
 						</h2>
@@ -408,7 +405,7 @@ function goTop(){
 				<div class="row-md-6">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.4
 						</h2>
@@ -456,7 +453,7 @@ function goTop(){
 		
 			<div class="col-md-6  col-xs-12">
 				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture"><?php if(is_array($policy)): $i = 0; $__LIST__ = array_slice($policy,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($vi["image"]); ?>"/>
+				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin: 0px"><?php if(is_array($policy)): $i = 0; $__LIST__ = array_slice($policy,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><img class="img-responsive" src="/Public/upload/<?php echo ($vi["image"]); ?>"/>
 				</div><?php endforeach; endif; else: echo "" ;endif; ?>
 			</div>
 			<div class="col-md-5 col-xs-12 col-md-offset-1 col-xs-offset-0">
@@ -464,7 +461,7 @@ function goTop(){
 					<div class="row-xs-1">&nbsp;</div>
 					<?php if(is_array($policy)): $i = 0; $__LIST__ = $policy;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><p><img src="/Public/images/newenvironment/u1404.png" />&nbsp;
 					<a href="<?php echo ($vi["content"]); ?>" class="wtext">
-						<?php echo ($vi["title"]); ?>
+						<?php echo (mb_substr($vi["title"],0,16,'utf-8')); ?>...
 					</a>
 					</p><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
@@ -488,7 +485,7 @@ function goTop(){
 		<div class="row rowheight">
 		<?php if(is_array($limit)): $i = 0; $__LIST__ = $limit;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ky): $mod = ($i % 2 );++$i;?><div class="col-md-6">
 				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture">
+				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin: 0px">
 					<img src="/Public/upload/<?php echo ($ky["image"]); ?>" style="width:100%"/>
 				</div>
 

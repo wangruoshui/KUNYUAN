@@ -324,7 +324,7 @@ function goTop(){
 						<div>
 							<div class="row-md-1"></br></div>
 							<div class="col-md-3 col-xs-1">&nbsp;</div>
-							<div class="row-md-4 col-md-7 col-xs-8">
+							<div class="row-md-4 col-md-7 col-xs-8 center3">
 								<h1 class="title3">NO.1</h1>
 								<p class="title333">
 									<?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,1,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i; echo ($data["content"]); ?>
@@ -347,7 +347,7 @@ function goTop(){
 						<div>
 							<div class="row-md-1"></br></div>
 							<div class="col-md-3 col-xs-1">&nbsp;</div>
-							<div class="row-md-4 col-md-7 col-xs-8">
+							<div class="row-md-4 col-md-7 col-xs-8 center3">
 								<h1 class="title3">NO.2</h1>
 								<p class="title333">
                                     <?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,2,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i; echo ($data["content"]); ?>
@@ -376,7 +376,7 @@ function goTop(){
 							<div>
 								<div class="row-md-1"></br></div>
 								<div class="col-md-3 col-xs-1">&nbsp;</div>
-								<div class="row-md-4 col-md-7 col-xs-8 col-xs-push-1 col-md-push-0">
+								<div class="row-md-4 col-md-7 col-xs-8 col-xs-push-1 col-md-push-0 center3">
 									<h1 class="title3">NO.3</h1>
 									<p class="title333">
                                         <?php if(is_array($results)): $i = 0; $__LIST__ = array_slice($results,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$datas): $mod = ($i % 2 );++$i; if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i; echo ($data["content"]); ?>

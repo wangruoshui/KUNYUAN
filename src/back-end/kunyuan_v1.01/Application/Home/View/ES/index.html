@@ -113,7 +113,6 @@
 						<div class="row-md-1 row-xs-1">&nbsp;</br></br></div>
 						<p class="comtext">
 							&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}
-							<a class="more1" href="#">详情>></a>
 						</p>
 
 						<div class="row-md-1 row-xs-1">&nbsp;</div>
@@ -148,7 +147,7 @@
 			<div class="col-md-5 col-xs-7">
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.1
 						</h2>
@@ -165,7 +164,7 @@
 				<div class="row-md-6">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.2
 						</h2>
@@ -186,7 +185,7 @@
 				<div class="row-xs-5">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.3
 						</h2>
@@ -204,7 +203,7 @@
 				<div class="row-md-6">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.4
 						</h2>
@@ -254,8 +253,8 @@
 		
 			<div class="col-md-6  col-xs-12">
 				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture"><volist name="policy" id="vi" offset="3" length='1'>
-					<img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$vi.image}"/>
+				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin:0px"><volist name="policy" id="vi" offset="3" length='1'>
+					<img class="img-responsive" src="__PUBLIC__/upload/{$vi.image}"/>
 				</div>
 				</volist>
 			</div>
@@ -265,7 +264,7 @@
 					<volist name="policy" id="vi">
 					<p><img src="__PUBLIC__/images/newenvironment/u1404.png" />&nbsp;
 					<a href="{$vi.content}" class="wtext">
-						{$vi.title}
+						{$vi.title|mb_substr=###,0,16,'utf-8'}...
 					</a>
 					</p>
 					</volist>
@@ -291,7 +290,7 @@
 		<volist name="limit" id="ky">
 			<div class="col-md-6">
 				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture">
+				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin: 0px">
 					<img src="__PUBLIC__/upload/{$ky.image}" style="width:100%"/>
 				</div>
 

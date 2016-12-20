@@ -7,9 +7,7 @@
 	width:100%;
 
 }
-.left4{
-	margin-left: -2%;
-}
+
 .center1{
 	width:100%;
 	margin-left: 300px;
@@ -84,7 +82,7 @@
 }
 .font6{
 	font-size: 18px;
-	font-family: "黑体" ;
+	font-family: "微软雅黑" ;
 	line-height:25px;
 	margin-left: 1%;
 }
@@ -126,17 +124,17 @@
 }
 .etext{
 	font-size: 16px;
-	font-family: "黑体" ;
+	font-family: "微软雅黑" ;
 	line-height:25px;
 }
 .wtext{
-	font-size: 17px;
-	font-family: "黑体" ;
+	font-size: 18px;
+	font-family: "微软雅黑" ;
 	line-height:29px;
 }
 .text1{
 	font-size: 17px;
-	font-family: "黑体" ;
+	font-family: "微软雅黑" ;
 	line-height:22px;
 }
 .picture{
@@ -160,7 +158,9 @@ a{
 	background-image:url(../images/newenvironment/bigbgd.png);
 	padding-top: 1%;
 }
-
+.size4444{
+	font-family: "微软雅黑" ;
+}
 .ba1{
    font-size:24px;
    font-weight: bolder;

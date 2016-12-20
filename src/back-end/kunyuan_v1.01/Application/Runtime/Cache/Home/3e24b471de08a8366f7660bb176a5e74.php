@@ -262,7 +262,7 @@ function goTop(){
         <div class="row nc_first_top"></div>
         <div class="row nc_first">
         <div class="xshidden row">&nbsp</br></br></div>
-          <div class="col-md-6 nc_first_left">
+          <div class="col-md-7 col-md-offset-1 nc_first_left">
 
 
                                             
@@ -276,7 +276,7 @@ function goTop(){
                                
 
                     <div style="height: 30px"></div>
-              <?php if(is_array($newss)): $i = 0; $__LIST__ = $newss;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-12 col-md-push-2" style="border-top: 1px solid #c6c6c6;" onmouseover="chagebgcolor(this)" onmouseout="recovecolor(this)">
+              <?php if(is_array($newss)): $i = 0; $__LIST__ = $newss;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-12 col-xs-12" style="border-top: 1px solid #c6c6c6;" onmouseover="chagebgcolor(this)" onmouseout="recovecolor(this)">
 
                         <h2>
                             <a target="_blank" href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>" style="text-decoration: none;font-size:23px;font-family:微软雅黑;line-width: 27px;" class="text-center">
@@ -284,12 +284,12 @@ function goTop(){
                             </a>
                         </h2>
 
-                            <div class="col-md-3"  style="display:inline; padding-bottom:10px">
+                            <div class="col-md-3 col-xs-12"  style="display:inline; padding-bottom:10px">
                                 <a href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>" target="_blank" class="imageshide"><img width="100%" src="/Public/upload/<?php echo ($data["image"]); ?>"/></a>
                             </div>
-                            <div class="col-md-9" style="color:#666;display:inline;padding-bottom:0px; ">
+                            <div class="col-md-9 col-xs-12" style="color:#666;display:inline;padding-bottom:0px; ">
 
-                                <p style="line-height: 27px;font-family:微软雅黑;">  <?php echo (mb_substr($data["content"],0,60)); ?><a target="_blank" href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>" class="text-right">[详细]</a> </p>
+                                <p style="line-height: 27px;font-family:微软雅黑;">  <?php echo (mb_substr($data["content"],0,50,'utf-8')); ?><a target="_blank" href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>" class="right">[详细]</a> </p>
                                 <span style="color:#999;padding-top:10px;"><?php echo ($data["time"]); ?></span>
                             </div>
                             <script type="text/javascript">
@@ -313,12 +313,15 @@ function goTop(){
                                 </div>
                             </div>
 
+                            
 
+                    </div>
+                    
+                    <div class="row-md-1">&nbsp;</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
-                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
-        <div class="xshidden row-md-1">&nbsp;</br></br></div>
+        <div class="row-md-1">&nbsp;</div>
               <link rel="stylesheet" type="text/css" href=" /Public/css/page.css" />
-              <div class="col-md-11 col-md-push-9 sabrosus"><<?php echo ($page); ?>></div>
+              <div class="col-md-11 col-xs-8 col-md-push-8 col-xs-push-4 sabrosus"><<?php echo ($page); ?>></div>
             </div>
 
             <script type="text/javascript">
@@ -329,86 +332,93 @@ function goTop(){
                     e.style.backgroundColor='#fff';
                 }
             </script>
-
-            <div class="ggleft col-md-1 col-md-push-0 no_first_center hidden-xs"><img src="/Public/images/newslist/u1690.png"></div>
-
-            <div class="col-md-4 col-md-pull-1">
+            
+            
+            <div class="col-md-4 col-md-push-0">
+            <div class="row-md-1">&nbsp;</br></br></br></div>
+            <div class="col-md-1 hidden-xs"><img src="/Public/images/newslist/u1690.png"></div>
+            <div class="col-md-11">
                 <div class="col-md-12 row product_title">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-5  col-xs-8 product_title_first">产品展示</div>
 
                 </div>
-                <div class="row">&nbsp</div>
+          
                 <div class="row right_first_hr">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
                     </div>
                 </div>
-                <div class="row">&nbsp</div>
+                
                 <!--第四部分开始-->
 
                 <div class="row">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-4 col-xs-4">
                         <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($data1["image"]); ?>">
                             </a><?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
-                    <div class="col-xs-1 col-md-1"></div>
+                    
                     <div class="col-md-4 col-xs-4">
                         <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,1,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($data1["image"]); ?>">
                             </a><?php endforeach; endif; else: echo "" ;endif; ?>
                    </div>
                 </div>
                 <div class="row right_first_word">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-xs-4  col-md-4 right_first_word_first">
                         <div class="row">&nbsp</div>
-                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物质材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <div class="row">&nbsp</div>
                     </div>
-                    <div class="col-xs-1 col-md-1"></div>
+                   
                     <div class="col-xs-4 right_first_word_second">
                         <div class="row">&nbsp</div>
-                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,1,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物质材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,1,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <div class="row">&nbsp</div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-4 col-xs-4">
                         <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,2,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($data1["image"]); ?>"></a><?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
-                    <div class="col-xs-1 col-md-1"></div>
+                    
                     <div class="col-md-4 col-xs-4">
                         <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($data1["image"]); ?>"></a><?php endforeach; endif; else: echo "" ;endif; ?></div>
                 </div>
 
                 <div class="row right_first_word">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-xs-4  col-md-4 right_first_word_first">
                         <div class="row">&nbsp</div>
-                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,2,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物质材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,2,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <div class="row">&nbsp</div>
                     </div>
-                    <div class="col-xs-1 col-md-1"></div>
+                    
                     <div class="col-xs-4 right_first_word_second">
                         <div class="row">&nbsp</div>
-                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物质材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($products)): $i = 0; $__LIST__ = array_slice($products,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data1): $mod = ($i % 2 );++$i;?><a href="/home/Proshow/index/id/<?php echo ($data1["productid"]); ?>"><?php echo ($data1["name"]); ?>生物材料</a><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <div class="row">&nbsp</div>
                     </div>
                 </div>
+
                 <!--第四部分结束-->
                 <!--第五部分开始-->
                 <div class="row">&nbsp</div>
                 <div class="row news_push_title">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-5  col-xs-8 news_push_title_first">新闻推荐</div>
                 </div>
                 <div class="row right_first_hr">
-                    <div class="col-md-2 col-xs-1">&nbsp</div>
+                    <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-9  right_hr_p"><hr style=" height:2px;border:none;border-top:1px  solid #000;" />
                     </div>
                 </div>
 
                 <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
                                     </div></div>
-                <?php if(is_array($recommonnews)): $i = 0; $__LIST__ = $recommonnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>">》<?php echo (mb_substr($data["title"],0,19)); ?>..</a></div></div><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($recommonnews)): $i = 0; $__LIST__ = $recommonnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/home/newscontent/index/id/<?php echo ($data["commonid"]); ?>">》<?php echo (mb_substr($data["title"],0,15,'utf-8')); ?>..</a></div></div><?php endforeach; endif; else: echo "" ;endif; ?>
 
                 <!--第五部分结束-->
                 <!--第六部分开始-->
@@ -417,6 +427,7 @@ function goTop(){
 
                                <!--第六部分结束-->
             </div>
+        </div>
         </div>
         <!--第一部分结束-->
     </div>

@@ -30,10 +30,11 @@ body {
   line-height:25px;
 }
 .comtext{
-  font-size: 14px;
+  font-size: 15px;
   font-family: "微软雅黑" ;
   line-height:23px;
 }
+
 .big{
      font-family: "微软雅黑";
      font-weight: bolder;
@@ -50,6 +51,12 @@ body {
   font-family: "微软雅黑";
 }
 @media (min-width: 1000px) {
+  .left4{
+    margin-left: -2%;
+  }
+  .center3{
+    margin-left: 20px;
+  }
   .center31{
   background-image: url("../../images/newenvironment/square.png");
   width: 368px;
@@ -82,6 +89,9 @@ body {
 }
 }
 @media (max-width: 767px) {
+  .left4{
+    margin-left: 1%;
+  }
   .center31{
     background-image: url("../../images/newenvironment/square.png");
     width: 167%;
