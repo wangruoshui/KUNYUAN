@@ -52,13 +52,12 @@
                                     <thead>
                                         <tr>
                                             
-                                            <th width="5%">ID</th>
-                                            <th width="10%">职位名称</th>
-                                            <th width="10%">职位类别</th>
+                                            <th width="10%">ID</th>
+                                            <th width="20%">职位名称</th>
+                                            <th width="20%">职位类别</th>
                                             <th width="20%">工作地点</th>
-                                            <th width="20%">岗位描述</th>
-                                            <th width="20%">职位要求</th>
-                                            <th width="15%">管理操作</th>
+
+                                            <th width="25%">管理操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -68,8 +67,8 @@
                                             <td>{$data.name}</td>
                                             <td>{$data.type}</td>
                                             <td>{$data.place}</td>
-                                            <td>{$data.introduce|mb_substr=0,10,'utf-8'}......</td>
-                                            <td>{$data.require|mb_substr=0,10,'utf-8'}......</td>
+                                            <!--<td>{$data.introduce|mb_substr=0,10,'utf-8'}......</td>-->
+                                            <!--<td>{$data.require|mb_substr=0,10,'utf-8'}......</td>-->
                                             
                                             <td>
                                                 <a class="btn" href="/admin/recruit/manage/id/{$data.stationid}" title="修改">修改</a>
@@ -101,35 +100,35 @@
 
     <script src="__PUBLIC__/admin/js/library/jquery.collapsible.min.js"></script>
     <script src="__PUBLIC__/admin/js/library/jquery.mCustomScrollbar.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.mousewheel.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.uniform.min.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.mousewheel.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.uniform.min.js"></script>-->
 
-   
+
     <script src="__PUBLIC__/admin/js/library/jquery.sparkline.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/chosen.jquery.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.easytabs.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/excanvas.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.pie.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.selection.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.resize.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.orderBars.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/jquery.vmap.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/maps/jquery.vmap.world.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.autosize-min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/charCount.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.minicolors.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.tagsinput.js"></script>
-    <script src="__PUBLIC__/admin/js/library/fullcalendar.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/footable/footable.js"></script>
-    <script src="__PUBLIC__/admin/js/library/footable/data-generator.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/chosen.jquery.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.easytabs.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/excanvas.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.pie.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.selection.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.resize.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.orderBars.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/jquery.vmap.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/maps/jquery.vmap.world.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.autosize-min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/charCount.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.minicolors.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.tagsinput.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/fullcalendar.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/footable/footable.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/footable/data-generator.js"></script>-->
 
-    <script src="__PUBLIC__/admin/js/library/bootstrap-datetimepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-timepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-datepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-fileupload.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.inputmask.bundle.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-datetimepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-timepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-datepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-fileupload.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.inputmask.bundle.js"></script>-->
 
     <script src="__PUBLIC__/admin/js/library/jquery.dataTables.js"></script>
 

@@ -95,13 +95,8 @@
             <ul class="main" >
                 <volist name="role_list" id="vo">
                     <if condition="($vo[0]['id'] eq 7) OR ($vo[0]['id'] eq 8) ">
-                        <li ><a class="expand"  href="dashboard.html"><i class="icon-reorder"></i>&nbsp;&nbsp;{$vo[0]['name']}</a>
-                            <ul class="sub_main" style="background-color: #20477C;">
-                                <div style=" height:8px; width:100%;"></div>
-                                <li><a href="/admin/{$vo[0]['show_url']}" target="right" onClick="getclassname(this)">{$vo[0]['show_name']}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="float:right;font-size:20px;">></font></a></li>
-                                <div style=" height:8px; width:100%;"></div>
+                        <li ><a target="right" onClick="getclassname(this)"  href="/admin/{$vo[0]['show_url']}"><i class="icon-reorder"></i>&nbsp;&nbsp;{$vo[0]['name']}</a>
 
-                            </ul>
                         </li>
 
                         <else />
@@ -151,42 +146,42 @@
 
     <!-- Le javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+     <!--Placed at the end of the document so the pages load faster -->
     <script src="__PUBLIC__/admin/js/jquery-1.10.2.js"></script>
     <script src="__PUBLIC__/admin/js/jquery-ui-1.10.3.js"></script>
     <script src="__PUBLIC__/admin/js/bootstrap.js"></script>
 
     <script src="__PUBLIC__/admin/js/library/jquery.collapsible.min.js"></script>
     <script src="__PUBLIC__/admin/js/library/jquery.mCustomScrollbar.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.mousewheel.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.uniform.min.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.mousewheel.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.uniform.min.js"></script>-->
 
-    
-    <script src="__PUBLIC__/admin/js/library/jquery.sparkline.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/chosen.jquery.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.easytabs.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/excanvas.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.pie.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.selection.js"></script>
+
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.sparkline.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/chosen.jquery.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.easytabs.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/excanvas.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.pie.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.selection.js"></script>-->
     <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.resize.js"></script>-->
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.orderBars.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/jquery.vmap.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/maps/jquery.vmap.world.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.autosize-min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/charCount.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.minicolors.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.tagsinput.js"></script>
-    <script src="__PUBLIC__/admin/js/library/fullcalendar.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/footable/footable.js"></script>
-    <script src="__PUBLIC__/admin/js/library/footable/data-generator.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.orderBars.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/jquery.vmap.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/maps/jquery.vmap.world.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.autosize-min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/charCount.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.minicolors.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.tagsinput.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/fullcalendar.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/footable/footable.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/footable/data-generator.js"></script>-->
 
-    <script src="__PUBLIC__/admin/js/library/bootstrap-datetimepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-timepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-datepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-fileupload.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.inputmask.bundle.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-datetimepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-timepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-datepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-fileupload.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.inputmask.bundle.js"></script>-->
 
     <script src="__PUBLIC__/admin/js/flatpoint_core.js"></script>
 

@@ -47,6 +47,8 @@
                            <span>新闻信息</span>
                            
                          </div>
+
+                        <div class="well-content">
                         <p style="font-size:26px;margin-left:42%;margin-top:3%;">新闻信息</p>
                            <hr/>
                         <div class="well brown" style="margin-left:20%;margin-right:20%;">
@@ -68,7 +70,8 @@
                             <tr>
                             <th>内容：</th>
                             <td>
-                                {$data.content}
+
+                                {$data.content|htmlspecialchars_decode}
                             </td>
                             </tr>
                             
@@ -86,6 +89,7 @@
                            
                           
                         </div>
+                            </div>
                     </div>
                 </div>
 

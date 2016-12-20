@@ -109,8 +109,12 @@ class NewsController extends Controller
         $this->_db=M("common");
         $id=I("get.id");
         $results=$this->_db->where("commonid=$id")->select();
+        $content=htmlspecialchars($results[0]['content']);
+//        dump($content);
+//        exit;
 
         $this->assign('result',$results);
+//        $this->assign('content',$content);
         $this->display();
     }
     public function del(){

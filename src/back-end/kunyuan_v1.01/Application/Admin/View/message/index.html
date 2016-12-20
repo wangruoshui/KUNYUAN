@@ -78,16 +78,24 @@
                                                 <td>{$vo.time}</td>
 
                                                 <if condition="$vo.status eq 0 ">
-                                                    <td style="color:#FF0033;text-align:center;">未回复</td>
+                                                    <td style="text-align:center;"><button style="color:#FF0033;"  class="status1" href="#" name="{$vo.messageid}">未回复</button></td>
                                                     <else />
-                                                    <td style="color:#003399;text-align:center;">已回复</td>
+                                                    <td  style="text-align:center;"><button style="color:#003399;"  class="status2" href="#" name="{$vo.messageid}">已回复</button></td>
+                                                </if>
+                                                <if condition="$roleid eq 1 ">
+                                                    <td>
+                                                        <a class="btn" href="/admin/message/manage/id/{$vo.messageid}" title="修改">修改</a>
+                                                        <a class="btn" href="/admin/message/del/id/{$vo.messageid}" title="删除">删除</a>
+                                                        <a class="btn" href="/admin/message/show/id/{$vo.messageid}" title="查看">查看</a>
+                                                    </td>
+                                                    <else />
+                                                    <td>
+
+                                                        <a class="btn" href="/admin/message/show/id/{$vo.messageid}" title="查看">查看</a>
+                                                    </td>
                                                 </if>
 
-                                                <td>
-                                                    <a class="btn" href="/admin/message/manage/id/{$vo.messageid}" title="修改">修改</a>
-                                                    <a class="btn" href="/admin/message/del/id/{$vo.messageid}" title="删除">删除</a>
-                                                    <a class="btn" href="/admin/message/show/id/{$vo.messageid}" title="查看">查看</a>
-                                                </td>
+
 
                                             </tr>
                                         </volist>
@@ -114,41 +122,64 @@
 
     <script src="__PUBLIC__/admin/js/library/jquery.collapsible.min.js"></script>
     <script src="__PUBLIC__/admin/js/library/jquery.mCustomScrollbar.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.mousewheel.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.uniform.min.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.mousewheel.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.uniform.min.js"></script>-->
 
-   
+
     <script src="__PUBLIC__/admin/js/library/jquery.sparkline.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/chosen.jquery.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.easytabs.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/excanvas.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.pie.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.selection.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.resize.js"></script>
-    <script src="__PUBLIC__/admin/js/library/flot/jquery.flot.orderBars.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/jquery.vmap.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/maps/jquery.vmap.world.js"></script>
-    <script src="__PUBLIC__/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.autosize-min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/charCount.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.minicolors.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.tagsinput.js"></script>
-    <script src="__PUBLIC__/admin/js/library/fullcalendar.min.js"></script>
-    <script src="__PUBLIC__/admin/js/library/footable/footable.js"></script>
-    <script src="__PUBLIC__/admin/js/library/footable/data-generator.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/chosen.jquery.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.easytabs.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/excanvas.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.pie.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.selection.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.resize.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/flot/jquery.flot.orderBars.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/jquery.vmap.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/maps/jquery.vmap.world.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.autosize-min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/charCount.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.minicolors.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.tagsinput.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/fullcalendar.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/footable/footable.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/footable/data-generator.js"></script>-->
 
-    <script src="__PUBLIC__/admin/js/library/bootstrap-datetimepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-timepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-datepicker.js"></script>
-    <script src="__PUBLIC__/admin/js/library/bootstrap-fileupload.js"></script>
-    <script src="__PUBLIC__/admin/js/library/jquery.inputmask.bundle.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-datetimepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-timepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-datepicker.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/bootstrap-fileupload.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/library/jquery.inputmask.bundle.js"></script>-->
 
     <script src="__PUBLIC__/admin/js/library/jquery.dataTables.js"></script>
 
     <script src="__PUBLIC__/admin/js/flatpoint_core.js"></script>
 
     <script src="__PUBLIC__/admin/js/datatables.js"></script>
+
+    <script src="__PUBLIC__/admin/js/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".status1").click(function(){
+                var id=$(this).attr('name');
+                $(this).addClass("status2").removeClass("status1");
+                $.post("{:U('/admin/message/manage1')}",
+                        {
+                            id:id
+                        },
+                        function(){
+                            alert('是否确认修改！');
+                            $(".status2").css("color","#003399");
+                            $(".status2").text('已回复');
+
+                        });
+
+            });
+
+        });
+    </script>
 
   </body>
 </html>

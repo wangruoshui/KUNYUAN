@@ -19,8 +19,12 @@ class CourierController extends Controller{
             $courier_list=$courier->select();
             //dump($ques_list);
 
+            //判断权限
+            $results = D('user')->relation(true)->where("userid=%d",$_SESSION['group_id'])->select();
+
             //传递数据
             $this->assign('courier',$courier_list);
+            $this->assign('roleid',$results[0]['role']['roleid']);
 
             //显示视图
             $this->display();
@@ -95,5 +99,12 @@ class CourierController extends Controller{
 
         //$this->display('index');
 
+    }
+    public function courier1(){
+        $condition = array();
+        $condition['status']=1;
+        $courier = M('courier');
+
+        $message_manage = $courier->where("courierid='%s'",I('post.id'))->save($condition);
     }
 }

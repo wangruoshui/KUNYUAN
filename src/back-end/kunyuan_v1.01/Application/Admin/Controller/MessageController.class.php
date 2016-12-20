@@ -20,8 +20,14 @@ class MessageController extends Controller{
             $message_list=$message->select();
             //dump($ques_list);
 
+            //判断权限
+            $results = D('user')->relation(true)->where("userid=%d",$_SESSION['group_id'])->select();
+//            dump($results);
+//            exit;
+
             //传递数据
             $this->assign('message',$message_list);
+            $this->assign('roleid',$results[0]['role']['roleid']);
 
             //显示视图
             $this->display();
@@ -97,4 +103,11 @@ class MessageController extends Controller{
         //$this->display('index');
 
     }
+public function manage1(){
+    $condition = array();
+    $condition['status']=1;
+    $message = M('message');
+
+    $message_manage = $message->where("messageid='%s'",I('post.id'))->save($condition);
+}
 }
