@@ -51,6 +51,45 @@
                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">添加素材</p>
                            <hr/>
                          <div class="result-content">
+<<<<<<< HEAD
+               <form action="{:U('admin/common/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th width="10%;">种类：</th>
+                                <td>
+                                公司信息
+                            </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>标题：</th>
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                            <th>内容：</th>
+                            <td>
+                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><i class="require-red">*</i>选择图片：</th>
+                                <td><input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" /></td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="添加" type="submit" name="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+
+                        </tbody></table>
+               </form>
+=======
                              <form action="{:U('admin/common/addinsert')}" method="post" enctype= "multipart/form-data">
                                  <table class="insert-tab" width="100%">
                                      <tbody>
@@ -95,6 +134,7 @@
 
                                      </tbody></table>
                              </form>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
             </div>
                     </div>
                 </div>

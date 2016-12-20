@@ -11,7 +11,10 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+<<<<<<< HEAD
+=======
       <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/modify.css"/>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
     <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
@@ -51,6 +54,19 @@
                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改产品</p>
                            <hr/>
                          <div class="result-content">
+<<<<<<< HEAD
+               <form action="{:U('admin/product/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th width="10%"><i class="require-red">*</i>产品名称：</th>
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>选择图片：</th>
+                                <td><input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" /></td>
+=======
                <form action="/Admin/product/modify" method="post" enctype= "multipart/form-data">
                 <table class="insert-tab" width="100%">
                         <tbody>
@@ -68,11 +84,15 @@
                             <tr>
                                 <th><i class="require-red">*</i>更换图片：</th>
                                 <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             
                             <tr>
                             <th>介绍：</th>
                             <td>
+<<<<<<< HEAD
+                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+=======
                                 <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.introductions}</textarea>
                             </td>
                             </tr>
@@ -84,22 +104,33 @@
                             <th>指标：</th>
                             <td>
                                 <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.quota}</textarea>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </td>
                             </tr>
                             <tr>
                                 <th><i class="require-red">*</i>价格：</th>
+<<<<<<< HEAD
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+=======
                                 <td><input class="common-text" name="price" size="50" type="text" value="{$data.price}"></td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             <tr>
                                 <th></th>
                                 <td>
+<<<<<<< HEAD
+=======
                                     <input class="hidden" value="{$data.productid}" name="productid">
                                     <input class="hidden" value="{$data.userid}" name="userid">
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                                     <input class="btn btn-primary btn6 mr10" value="修改" type="submit" name="submit">
                                     <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
                                 </td>
                             </tr>
+<<<<<<< HEAD
+=======
                             </volist>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
 
                         </tbody></table>
                </form>

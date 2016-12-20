@@ -51,6 +51,35 @@
                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改政策</p>
                            <hr/>
                          <div class="result-content">
+<<<<<<< HEAD
+               <form action="{:U('admin/policy/index')}" method="post" enctype= "multipart/form-data">
+                <table class="insert-tab" width="100%">
+                        <tbody>
+                            
+                            <tr>
+                                <th width="10%">种类：</th>
+                                <td>
+                                政策
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>标题：</th>
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+                            </tr>
+                            <tr>
+                            <th>内容：</th>
+                            <td>
+                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><i class="require-red">*</i>选择图片：</th>
+                                <td><input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" /></td>
+                            </tr>
+                            
+                            
+=======
                <form action="{:U('admin/policy/modify')}" method="post" enctype= "multipart/form-data">
                 <table class="insert-tab" width="100%">
                         <tbody>
@@ -82,6 +111,7 @@
                             </tr>
                             
                             
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             <tr>
                                 <th></th>
                                 <td>
@@ -89,7 +119,11 @@
                                     <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
                                 </td>
                             </tr>
+<<<<<<< HEAD
+
+=======
 </volist>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                         </tbody></table>
                </form>
             </div>

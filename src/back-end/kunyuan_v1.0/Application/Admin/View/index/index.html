@@ -60,11 +60,19 @@
      <div class="login">
          <div style="width: 70%;height:35%;" ></div>
          <div style="width: 70%;height: 50px;">
+<<<<<<< HEAD
+     <a href="{:U('admin/log/logout')}" style="font-size: 20px;padding-top: 40%;margin-left: 20%;">退出</a>
+         </div>
+         </div>
+    <div class="username">
+       Hi {$user}
+=======
      <a href="{:U('admin/index/login')}" style="font-size: 20px;padding-top: 40%;margin-left: 20%;">退出</a>
          </div>
          </div>
     <div class="username">
        Hi 超级管理员
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
     </div>
     
    
@@ -76,18 +84,61 @@
     <div id="main_navigation" class="dark_navigation" > <!-- Main navigation start -->
         <div class="inner_navigation" >
         <div class="user" style="width: 80%; margin-right: 5%;margin-top: 10%;">
+<<<<<<< HEAD
+            <div style="width: 50%;float: left;margin-right: 7%;">
+                <if condition="$usersex eq 1 ">
+                    <a  href="/admin/user/show/id/{$userid}" target="right"><img src="__PUBLIC__/admin/image/user1.png" /></a>
+                    <else />
+                    <a  href="/admin/user/show/id/{$userid}" target="right"><img src="__PUBLIC__/admin/image/user2.png" /></a>
+                </if></span>
+
+            </div>
+            <div style="float: left;color: #ffffff;margin-top: 10%;font-size: 12%;">
+                <p >{$user}{$role_all[0].rolename}</p>
+                <p >{$role_all[0].description}部门</p>
+=======
             <div style="width: 50%;float: left;margin-right: 10%;">
                 <a  href="{:U('admin/user/show')}" target="right"><img src="__PUBLIC__/admin/image/user1.png" /></a>
             </div>
             <div style="float: left;color: #ffffff;margin-top: 15%;font-size: 12%;">
                 <p >张经理</p>
                 <p >销售部门</p>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
             </div>
         </div>
 
 
         <div style="margin-top:65%;"></div>
             <ul class="main" >
+<<<<<<< HEAD
+                <volist name="role_list" id="vo">
+                    <if condition="($vo[0]['id'] eq 7) OR ($vo[0]['id'] eq 8) ">
+                        <li ><a class="expand"  href="dashboard.html"><i class="icon-reorder"></i>&nbsp;&nbsp;{$vo[0]['name']}</a>
+                            <ul class="sub_main" style="background-color: #20477C;">
+                                <div style=" height:8px; width:100%;"></div>
+                                <li><a href="/admin/{$vo[0]['show_url']}" target="right" onClick="getclassname(this)">{$vo[0]['show_name']}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="float:right;font-size:20px;">></font></a></li>
+                                <div style=" height:8px; width:100%;"></div>
+
+                            </ul>
+                        </li>
+
+                        <else />
+                        <li ><a class="expand"  href="dashboard.html"><i class="icon-reorder"></i>&nbsp;&nbsp;{$vo[0]['name']}</a>
+                            <ul class="sub_main" style="background-color: #20477C;">
+                                <div style=" height:8px; width:100%;"></div>
+                                <li><a href="/admin/{$vo[0]['add_url']}" target="right" onClick="getclassname(this)">{$vo[0]['add_name']}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="float:right;font-size:20px;">></font></a></li>
+                                <li><a href="/admin/{$vo[0]['show_url']}" target="right" onClick="getclassname(this)">{$vo[0]['show_name']}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="float:right;font-size:20px;">></font></a></li>
+                                <div style=" height:8px; width:100%;"></div>
+
+                            </ul>
+                        </li>
+
+                    </if>
+
+
+
+                </volist>
+=======
 
                 <li ><a class="expand"  href="dashboard.html"><i class="icon-reorder"></i>&nbsp;&nbsp;产品管理</a>
                     <ul class="sub_main" style="background-color: #20477C;">
@@ -198,6 +249,7 @@
                     </ul>
                 </li>
 
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
             </ul>
         </div>
     </div>

@@ -51,7 +51,11 @@
                          <p style="font-size:20px;margin-left:2%;margin-top:1%;">添加新闻</p>
                            <hr/>
                          <div class="result-content">
+<<<<<<< HEAD
+               <form action="{:U('admin/news/index')}" method="post" enctype= "multipart/form-data">
+=======
                <form action="{:U('admin/news/addinsert')}" method="post" enctype= "multipart/form-data">
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                 <table class="insert-tab" width="100%">
                         <tbody>
                             
@@ -63,17 +67,31 @@
                             </tr>
                             <tr>
                                 <th><i class="require-red">*</i>标题：</th>
+<<<<<<< HEAD
+                                <td><input class="common-text" name="thumb_media_id" size="50" type="text"></td>
+=======
                                 <td><input class="common-text" name="title" size="50" type="text"></td>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </tr>
                             <tr>
                             <th>内容：</th>
                             <td>
+<<<<<<< HEAD
+                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5"></textarea>
+=======
                                 <textarea class="common-textarea" name="content" cols="30" style="width: 60%;" rows="5"></textarea>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             </td>
                             </tr>
                             
                             <tr>
                                 <th><i class="require-red">*</i>选择图片：</th>
+<<<<<<< HEAD
+                                <td><input type="file" name="pic" id="pic" accept="image/gif, image/jpeg" /></td>
+                            </tr>
+                            
+                            
+=======
                                 <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
                             </tr>
                             <tr>
@@ -81,6 +99,7 @@
                                 <td><input class="common-text" name="userid" size="50" type="text"  value="1"/></td>
                                 <input class="hidden" name="kindid" value="15">
                             </tr>
+>>>>>>> b797bdc56f47ac12978cecb0db6bb4d481afbc54
                             <tr>
                                 <th></th>
                                 <td>
