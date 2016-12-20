@@ -1,0 +1,132 @@
+[ 2016-11-24T12:53:27+08:00 ] ::1 /KUNYUAN/kunyuan1.0/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T12:59:03+08:00 ] ::1 /KUNYUAN/kunyuan1.0/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T12:59:03+08:00 ] ::1 /KUNYUAN/kunyuan1.0/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T12:59:04+08:00 ] ::1 /KUNYUAN/kunyuan1.0/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T12:59:05+08:00 ] ::1 /KUNYUAN/kunyuan1.0/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T12:59:06+08:00 ] ::1 /KUNYUAN/kunyuan1.0/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:09+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:12+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:13+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:13+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:13+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:13+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:13+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:14+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:14+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:01:14+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:19:58+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:20:00+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:21:07+08:00 ] ::1 /KUNYUAN/kunyuan1.0/index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Company
+
+[ 2016-11-24T13:24:00+08:00 ] 127.0.0.1 /cmopany/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Cmopany
+
+[ 2016-11-24T13:28:17+08:00 ] 127.0.0.1 /index.php/cmopany/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Cmopany
+
+[ 2016-11-24T14:00:14+08:00 ] 127.0.0.1 /index.php/company/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Company
+

@@ -1,0 +1,36 @@
+[ 2016-12-12T15:50:26+08:00 ] ::1 /kunyuan1.5-finish/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Index.js
+
+[ 2016-12-12T15:52:58+08:00 ] 127.0.0.1 /newscontent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Newscontent
+
+[ 2016-12-12T15:53:39+08:00 ] 127.0.0.1 /newscontent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Newscontent
+
+[ 2016-12-12T15:53:41+08:00 ] 127.0.0.1 /newscontent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Newscontent
+
+[ 2016-12-12T15:53:55+08:00 ] 127.0.0.1 /newscontent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Newscontent
+
+[ 2016-12-12T15:54:06+08:00 ] 127.0.0.1 /newscontent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Newscontent
+
