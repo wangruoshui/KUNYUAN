@@ -311,6 +311,7 @@ function goTop(){
 			<div class="col-md-9 col-xs-10 col-md-offset-2 col-xs-offset-1 center41">
 				<?php if(is_array($environment)): $i = 0; $__LIST__ = $environment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-1 col-md-pull-1 col-xs-pull-0">
 					<div class="row-xs-1">&nbsp;</div>
+					<div class="row-md-1 row-xs-1">&nbsp;</div>
 					<div>
 						<img src="/Public/upload/<?php echo ($vo["image"]); ?>" class="img-responsive" />
 					</div>
@@ -319,6 +320,7 @@ function goTop(){
 				<div class="col-md-6 col-xs-12 col-md-offset-0 col-xs-pull-0 col-md-pull-0">
 					<div class="col-md-11 col-xs-12">
 
+						<div class="row-md-1 row-xs-1">&nbsp;</div>
 						<div class="row-md-1 row-xs-1">&nbsp;</div>
 						<p class="comtext">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($vo["content"]); ?>
