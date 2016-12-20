@@ -1,6 +1,53 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/send.css">
 <script type="text/javascript">
+    function checkName(){
+       //alert("tian");
+        var name2=document.getElementById("username").value;
+        if(name2==''){
+            //alert('333');
+            document.getElementById("name").style.visibility="visible";
+        }else{
+            document.getElementById("name").style.visibility="hidden";
+        }
+    }
+    function checkNametwo(){
+       // $("div[id='username1']").span(null);
+        //alert('22');
+        document.getElementById("name").style.visibility="hidden";
+
+    }
+    function checkAddress(){
+        var name=document.getElementById("address").value;
+        if(name==""){
+        document.getElementById("spanaddress").style.visibility="visible";
+        }else{document.getElementById("spanaddress").style.visibility="hidden";}
+    }
+    function checkAddresstwo(){
+        document.getElementById("spanaddress").style.visibility="hidden";
+    }
+    function checkPhone(){
+        var name=document.getElementById("phone").value;
+        if(name==""){
+        document.getElementById("spanphone").style.visibility="visible";
+        }else{document.getElementById("spanphone").style.visibility="hidden";}
+    }
+    function checkPhonetwo(){
+        document.getElementById("spanphone").style.visibility="hidden";
+    }
+    function checkcheck(){
+        var name=document.getElementById("check").value;
+        if(name==""){
+        document.getElementById("spancheck").style.visibility="visible";
+        }else{document.getElementById("spancheck").style.visibility="hidden";}
+    }
+    function checkchecktwo(){
+        document.getElementById("spancheck").style.visibility="hidden";
+    }
+
+
 	$(document).ready(function(){
-		//测试jquery文件是否引入成功
+
+        //测试jquery文件是否引入成功
 		console.log('succeed');
 		//根据省id获取市
 		$("select[name='provice']").change(function(){
@@ -72,7 +119,7 @@
 
 					<li class="active">
 
-						申请样品
+						新闻中心
 					</li>
 
 				</ul>
@@ -104,16 +151,17 @@
 		<div class="mdhidden row-xs-1"> &nbsp;</br></br></div>
 		<div class="col-md-1 col-xs-1">
 		</div>
-		<div class="col-md-5 col-xs-12">
+		<div class="col-md-5 col-xs-12 black">
 			<form role="form" action="/home/send/addsend" method="post" enctype="multipart/form-data">
 				<div class="kuang">
 					<div class="col-md-2 col-xs-3 text4">
 						 姓&nbsp;&nbsp;&nbsp;&nbsp;名
 					</div>
 					
-					<div class="col-md-10 col-xs-9">
-						<input type="text" class="width4" style="height:30px;" name="username"  id="name" placeholder="请输入姓名">
-					</div>
+					<div class="col-md-10 col-xs-9" id="username1">
+						<input type="text" class="width4" style="height:30px;" onblur='checkName()'  onfocus="checkNametwo()" name="username"  id="username"  placeholder="请输入姓名">
+                        <span value="姓名不能为空" style="white-space:nowrap;" id="name">姓名不能为空</span>
+                    </div>
 				</div>
 
 				<div class="kuang">
@@ -139,8 +187,9 @@
 					</div>
 					<div class="col-md-10 col-xs-10 col-md-offset-2 col-xs-offset-3">
 
-						<input type="text" class="width3" style="height:30px;" name="town" id="address"
+						<input type="text" class="width3" style="height:30px;"  onblur='checkAddress()'  onfocus="checkAddresstwo()"name="town" id="address"
 							   placeholder="请输入详细街道信息">
+                        <span value="详细地址不能为空" style="white-space:nowrap;" id="spanaddress">详细地址不能为空</span>
 						<p class="recruit_font3">(若无您所在省份请手动填写全部地址信息)</p>
 					</div>
 				</div>
@@ -149,8 +198,9 @@
 					电&nbsp;&nbsp;&nbsp;&nbsp;话
 					</div>
 					<div class="col-md-10 col-xs-9">
-						<input type="text" style="height:30px;" class="width4" name="phone" id="phone"
+						<input type="text" style="height:30px;" class="width4" name="phone" onblur='checkPhone()'  onfocus="checkPhonetwo()" id="phone"
 							   placeholder="请输入手机号">
+                        <span value="手机号不能为空" style="white-space:nowrap;" id="spanphone">手机号不能为空</span>
 					</div>
 				</div>
 				<div class="kuang">
@@ -159,11 +209,12 @@
 					</div>
 			
 						<div class="col-md-3 col-xs-3">
-							<input type="text" class="width5" name="code" id="check" style="height:40px;"
+							<input type="text" class="width5" name="check" id="check" onblur='checkcheck()'  onfocus="checkchecktwo()"style="height:40px;"
 								   placeholder="请输入验证码">
+                            <span value="验证码不能为空" style="white-space:nowrap;" id="spancheck">验证码不能为空</span>
 						</div>
 						<div class="col-md-6 col-xs-6">
-                            <img id="img_code" class="width6" style="height:39px;margin-left:24px;" src="/home/send/verifycode">
+                            <img id="img_code" class="width6" onclick="javascript:this.src='/home/send/verifycode'" style="height:39px;margin-left:24px;" src="/home/send/verifycode">
 						</div>
 				
 				</div>
