@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -314,13 +312,13 @@ function goTop(){
 				<div class="col-md-8 col-xs-12 col-md-offset-2 col-xs-offset-0" style="margin-top:2%;">
 					<div class="mdhidden col-xs-1"></div>
 					<?php if(is_array($technology)): $i = 0; $__LIST__ = array_slice($technology,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-5 col-md-push-7 col-xs-12">
-						<img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive img-rounded" style="margin-top:7%;">
+						<img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive " style="margin-top:7%;">
 					</div>
 					<div class="col-md-5 col-md-pull-5 col-md-push-0 fadeInLeft col-xs-12 col-xs-push-0 col-xs-pull-0">
 						<div>
 							<div class="mdhidden row-xs-1">&nbsp;</div>
 							<h3>1.原料选取</h3>
-							<p class="content1-text-p">   <volist name="technology" id="data" offset="0" length="1">
+							<p class="comtext">   <volist name="technology" id="data" offset="0" length="1">
 								<?php echo ($data["content"]); endforeach; endif; else: echo "" ;endif; ?></p>
 						</div>
 					</div>
@@ -336,13 +334,13 @@ function goTop(){
 			<div class="content-1-2" style="margin-top:1%;">
 				<div class="col-md-8 col-xs-12 col-md-offset-2 col-xs-offset-0" style="margin-top:2%;">
                     <?php if(is_array($technology)): $i = 0; $__LIST__ = array_slice($technology,1,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-5 col-md-pull-0 col-xs-12 col-xs-push-0 col-xs-pull-0">
-						<img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive img-rounded" style="margin-top:9%;">
+						<img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive " style="margin-top:9%;">
 					</div>
 					<div class="col-md-5  col-md-push-2 col-md-pull-0 fadeInLeft col-xs-12 col-xs-push-0 col-xs-pull-0">
 						<div class=" content1-text" style="margin-top:4%;">
 							<div class="mdhidden row-xs-1">&nbsp;</div>
 							<h3>2.前提准备</h3>
-							<p class="content1-text-p">
+							<p class="comtext">
 								<?php echo ($data["content"]); endforeach; endif; else: echo "" ;endif; ?></p></p>
 						</div>
 					</div>
@@ -360,13 +358,13 @@ function goTop(){
 				<div class="col-md-8 col-xs-12 col-md-offset-2 col-xs-offset-0" style="margin-top:1%;">
 					<div class="mdhidden col-xs-1"></div>
                     <?php if(is_array($technology)): $i = 0; $__LIST__ = array_slice($technology,2,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-5 col-md-push-7 col-xs-12">
-						<img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive img-rounded" style="margin-top:7%;">
+						<img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive " style="margin-top:7%;">
 					</div>
 					<div class="col-md-5 col-md-pull-5 col-md-push-0 fadeInLeft col-xs-12 col-xs-push-0 col-xs-pull-0">
 						<div>
 							<div class="mdhidden row-xs-1">&nbsp;</div>
 							<h3>3.制作过程</h3>
-							<p class="content1-text-p">
+							<p class="comtext">
 								<?php echo ($data["content"]); endforeach; endif; else: echo "" ;endif; ?></p></p></p>
 						</div>
 					</div>
@@ -415,8 +413,8 @@ function goTop(){
 
 
 
-                                <?php echo ($data["name"]); ?></a>生物质材料</h3>
-							<p class="content2-text-p"><?php echo ($data["introductions"]); ?></p>
+                                <?php echo ($data["name"]); ?>生物质材料</a></h3>
+							<p class="comtext"><?php echo ($data["introductions"]); ?></p>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
 				</div>
@@ -440,8 +438,8 @@ function goTop(){
 					</div>
 					<div class="col-md-6 col-md-push-0 col-md-pull-7 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft" style="margin-top:5%;">
 						<div class="col-xs-12 content2-text">
-							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?></a>生物质材料</h3>
-							<p class="content2-text-p"><?php echo ($data["introductions"]); ?></p>
+							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?>生物质材料</a></h3>
+							<p class="comtext"><?php echo ($data["introductions"]); ?></p>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
 				</div>
@@ -456,7 +454,7 @@ function goTop(){
 			<div class="content-2-1" style="margin-top:3%;">
 				<div class="col-md-8 col-xs-12 col-md-offset-2 col-xs-offset-0" style="margin-top:1%;">
 					<div class="col-md-6 col-md-push-0 col-md-pull-1 col-xs-12 col-xs-push-0 col-xs-pull-0">
-						<div class="col-xs-12 col-md-12 img-thumbnail1" >
+						<div class="col-xs-12 col-md-12 img-thumbnail1" style="padding:0px;margin:0px" >
                             <?php if(is_array($product)): $i = 0; $__LIST__ = array_slice($product,2,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class=" col-xs-12" style="padding:0px;margin:0px">
 								<img src="/Public/upload/<?php echo ($data["image"]); ?>" class=" carousel-inner img-responsive  " name="u96">
 							</div>
@@ -466,8 +464,8 @@ function goTop(){
 					</div>
 					<div class="col-md-6 col-md-push-1 col-md-pull-0 col-xs-12 col-xs-push-0 col-xs-pull-0 " style="margin-top:5%;">
 						<div class="col-xs-12 content2-text">
-							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?></a>生物质材料</h3>
-							<p class="content2-text-p"><?php echo ($data["introductions"]); ?></p><?php endforeach; endif; else: echo "" ;endif; ?>
+							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?>生物质材料</a></h3>
+							<p class="comtext"><?php echo ($data["introductions"]); ?></p><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>
 					</div>
 				</div>
@@ -492,8 +490,8 @@ function goTop(){
 					</div>
 					<div class="col-md-6 col-md-push-0 col-md-pull-7 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft" style="margin-top:5%;">
 						<div class="col-xs-12 content2-text">
-							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?></a>生物质材料</h3>
-							<p class="content2-text-p"><?php echo ($data["introductions"]); ?></p>
+							<h3>--<a href="/home/Proshow/index/id/<?php echo ($data["productid"]); ?>" class="proContent"><?php echo ($data["name"]); ?>生物质材料</a></h3>
+							<p class="comtext"><?php echo ($data["introductions"]); ?></p>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
 				</div>
@@ -525,14 +523,15 @@ function goTop(){
 					<div class="row-md-1">&nbsp;</div>
 					<div class="row-md-1">&nbsp;</div>
 					<div class="col-md-5 col-md-push-5 col-md-pull-1 col-xs-12 col-xs-push-0 col-xs-pull-1">
-					<?php if(is_array($range)): $i = 0; $__LIST__ = $range;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive img-rounded content3-img">
+					<?php if(is_array($range)): $i = 0; $__LIST__ = $range;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><img src="/Public/upload/<?php echo ($data["image"]); ?>" class="carousel-inner img-responsive  content3-img">
 					</div>
-					<div class="col-md-5 col-md-push-0 col-md-pull-6 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft">
-						<div class="col-xs-12 col-md-10">
+					<div class="col-md-5 col-md-push-0 col-md-pull-5 col-xs-12 col-xs-push-0 col-xs-pull-0 fadeInLeft">
+						<div class="col-xs-12 col-md-11 col-md-pull-1 col-xs-pull-0">
 							<h2>销售<a href="#" class="content3-h1">范围:</a></h2>
-							<p class="content3-text-p"> 
-                                <?php echo ($data["content"]); endforeach; endif; else: echo "" ;endif; ?></p>
-							<h5>—公司地址<a href="/home/company/index ">（河北省廊坊市永清县里澜城镇-里澜城村）</a></h5>
+							<div class="row-md-1">&nbsp;</div>
+							<p class="comtext"> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($data["content"]); endforeach; endif; else: echo "" ;endif; ?></p>
+							<h5>—公司地址<a href="/home/company/index">（河北省廊坊市永清县里澜城工业园区）</a></h5>
 						</div>
 					</div>
 				</div>
@@ -611,7 +610,7 @@ function goTop(){
 		</div>
 		<div class="row-md-1">&nbsp;</div>
 		<div class="container col-md-12">
-			<div class="col-md-4 col-md-push-4 col-xs-9 col-xs-push-3" style="margin-top:6%;margin-left:3.6%;">
+			<div class="col-md-4 col-md-push-4 col-xs-9 col-xs-push-3" style="margin-top:6%;margin-left:6%;">
 				<img class="xshidden" src="/Public/images/protechnology/u174.png">
 				<a href="/home/send/index"><img src="/Public/images/protechnology/u176.png" style="margin-left:1%;" class="img-change" name="u176"></a>
 			</div>
@@ -635,7 +634,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -212,51 +210,64 @@ function goTop(){
 
 
 
+<link rel="stylesheet" type="text/css" href="/Public/css/send.css">
+<script class="resources library" src="/Public/js/area.js" type="text/javascript"></script>
 <script type="text/javascript">
+    function checkName(){
+       //alert("tian");
+        var name2=document.getElementById("username").value;
+        if(name2==''){
+            //alert('333');
+            document.getElementById("name").style.visibility="visible";
+        }else{
+            document.getElementById("name").style.visibility="hidden";
+        }
+    }
+    function checkNametwo(){
+       // $("div[id='username1']").span(null);
+        //alert('22');
+        document.getElementById("name").style.visibility="hidden";
+
+    }
+    function checkAddress(){
+        var name=document.getElementById("address").value;
+        if(name==""){
+        document.getElementById("spanaddress").style.visibility="visible";
+        }else{document.getElementById("spanaddress").style.visibility="hidden";}
+    }
+    function checkAddresstwo(){
+        document.getElementById("spanaddress").style.visibility="hidden";
+    }
+    function checkPhone(){
+        var name=document.getElementById("phone").value;
+        if(name==""){
+        document.getElementById("spanphone").style.visibility="visible";
+        }else{document.getElementById("spanphone").style.visibility="hidden";}
+    }
+    function checkPhonetwo(){
+        document.getElementById("spanphone").style.visibility="hidden";
+    }
+    function checkcheck(){
+        var name=document.getElementById("check").value;
+        if(name==""){
+        document.getElementById("spancheck").style.visibility="visible";
+        }else{document.getElementById("spancheck").style.visibility="hidden";}
+    }
+    function checkchecktwo(){
+        document.getElementById("spancheck").style.visibility="hidden";
+    }
+
+
 	$(document).ready(function(){
-		//测试jquery文件是否引入成功
-		console.log('succeed');
-		//根据省id获取市
-		$("select[name='provice']").change(function(){
-			//发送请求
-			console.log('成功改变');
-			$.post('/home/send/province',
-					{'parentid':$(this).val()}, function(data){
-						//替换市区数据
-						$("select[name='city']").html(null);
-						var str1 = '<option value="--市--">--市--</option>'
-						$("select[name='city']").append(str1);
-						var citys=JSON.parse(data);
-						for(var i in citys){
-							var str = '<option value='+citys[i]['linkageid']+'>'+citys[i]['name']+'</option>'
-							var option = $(str);
-
-							$("select[name='city']").append(option);
-						}
-					});
-		});
-
-
-		//根据省id获取市获取区县
-		$("select[name='city']").change(function(){
-			//发送请求
-			var self=$(this);
-//			console.log(self);
-			$.post('../send/province',
-					{'parentid':self.val()}, function(data){
-						//替换市区数据
-						$("select[name='district']").html(null);
-
-						var areas=JSON.parse(data);
-
-						for(var i in areas){
-							var str = '<option value='+areas[i]['id']+'>'+areas[i]['name']+'</option>'
-							var option = $(str);
-							$("select[name='district']").append(option);
-						}
-					});
-		});
-
+        _init_area();
+        console.log('succeed');
+        var Gid  = document.getElementById;
+        var showArea = function(){
+            Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+                    Gid('s_city').value + " - 县/区" +
+                    Gid('s_county').value + "</h3>"
+        }
+        Gid('s_county').setAttribute('onchange','showArea()');
 	});
 </script>
 
@@ -284,7 +295,7 @@ function goTop(){
 
 					<li class="active">
 
-						申请样品
+						样品寄送
 					</li>
 
 				</ul>
@@ -316,42 +327,36 @@ function goTop(){
 		<div class="mdhidden row-xs-1"> &nbsp;</br></br></div>
 		<div class="col-md-1 col-xs-1">
 		</div>
-		<div class="col-md-5 col-xs-12">
+		<div class="col-md-5 col-xs-12 black">
 			<form role="form" action="/home/send/addsend" method="post" enctype="multipart/form-data">
 				<div class="kuang">
 					<div class="col-md-2 col-xs-3 text4">
 						 姓&nbsp;&nbsp;&nbsp;&nbsp;名
 					</div>
 					
-					<div class="col-md-10 col-xs-9">
-						<input type="text" class="width4" style="height:30px;" name="username"  id="name" placeholder="请输入姓名">
-					</div>
+					<div class="col-md-10 col-xs-9" id="username1">
+						<input type="text" class="width4" style="height:30px;" onblur='checkName()'  onfocus="checkNametwo()" name="username"  id="username"  placeholder="请输入姓名">
+                        <span value="姓名不能为空" style="white-space:nowrap;" id="name">姓名不能为空</span>
+                    </div>
 				</div>
 
 				<div class="kuang">
 					<div class="col-md-2 col-xs-3 text4">
 						地&nbsp;&nbsp;&nbsp;&nbsp;址
 					</div>
-					<div class="col-md-10 col-xs-9">
-						<!-- json开始 -->
-						<select  class="bianda" name="provice" id="selProvince">
-							<option value="0">--请选择省份--</option>
-							<?php if(is_array($result)): $i = 0; $__LIST__ = array_slice($result,1,34,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><option value="<?php echo ($data["linkageid"]); ?>">--<?php echo ($data["name"]); ?>--</option><?php endforeach; endif; else: echo "" ;endif; ?>
-						</select>
-						<select class="bianda2" name="city" id="selCity">
-							<option value="0">--市--</option>
+					<div class="col-md-10 col-xs-9" class="info">
+						
+                        <select class="bianda2" id="s_province" name="s_province"></select>  
+                        <select class="bianda2" id="s_city" name="s_city" ></select>
+                        <select class="bianda2" id="s_county" name="s_county"></select>
 
-						</select>
-						<select class="bianda2" name="district" id="selDistrict">
-							<option value="0">--区/县--</option>
-						</select>
 						<!-- json结束 -->
 					</div>
 					<div class="col-md-10 col-xs-10 col-md-offset-2 col-xs-offset-3">
 
-						<input type="text" class="width3" style="height:30px;" name="town" id="address"
+						<input type="text" class="width3" style="height:30px;"  onblur='checkAddress()'  onfocus="checkAddresstwo()"name="town" id="address"
 							   placeholder="请输入详细街道信息">
-						<p class="recruit_font3">(若无您所在省份请手动填写全部地址信息)</p>
+                        <span value="详细地址不能为空" style="white-space:nowrap;" id="spanaddress">详细地址不能为空</span>
 					</div>
 				</div>
 				<div class="kuang">
@@ -359,8 +364,9 @@ function goTop(){
 					电&nbsp;&nbsp;&nbsp;&nbsp;话
 					</div>
 					<div class="col-md-10 col-xs-9">
-						<input type="text" style="height:30px;" class="width4" name="phone" id="phone"
+						<input type="text" style="height:30px;" class="width4" name="phone" onblur='checkPhone()'  onfocus="checkPhonetwo()" id="phone"
 							   placeholder="请输入手机号">
+                        <span value="手机号不能为空" style="white-space:nowrap;" id="spanphone">手机号不能为空</span>
 					</div>
 				</div>
 				<div class="kuang">
@@ -369,11 +375,12 @@ function goTop(){
 					</div>
 			
 						<div class="col-md-3 col-xs-3">
-							<input type="text" class="width5" name="code" id="check" style="height:40px;"
+							<input type="text" class="width5" name="check" id="check" onblur='checkcheck()'  onfocus="checkchecktwo()"style="height:40px;"
 								   placeholder="请输入验证码">
+                            <span value="验证码不能为空" style="white-space:nowrap;" id="spancheck">验证码不能为空</span>
 						</div>
 						<div class="col-md-6 col-xs-6">
-                            <img id="img_code" class="width6" style="height:39px;margin-left:24px;" src="/home/send/verifycode">
+                            <img id="img_code" class="width6" onclick="javascript:this.src='/home/send/verifycode'" style="height:39px;margin-left:24px;" src="/home/send/verifycode">
 						</div>
 				
 				</div>
@@ -406,7 +413,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

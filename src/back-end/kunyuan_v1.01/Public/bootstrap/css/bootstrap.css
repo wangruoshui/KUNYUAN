@@ -30,10 +30,11 @@ body {
   line-height:25px;
 }
 .comtext{
-  font-size: 14px;
+  font-size: 15px;
   font-family: "微软雅黑" ;
   line-height:23px;
 }
+
 .big{
      font-family: "微软雅黑";
      font-weight: bolder;
@@ -50,8 +51,14 @@ body {
   font-family: "微软雅黑";
 }
 @media (min-width: 1000px) {
+  .left4{
+    margin-left: -2%;
+  }
+  .center3{
+    margin-left: 5px;
+  }
   .center31{
-  background-image: url("../../images/newenvironment/square.png");
+  background-image: url("../../images/newenvironment/square.webp");
   width: 368px;
   height: 365px;
   background-repeat: no-repeat;
@@ -82,8 +89,11 @@ body {
 }
 }
 @media (max-width: 767px) {
+  .left4{
+    margin-left: 1%;
+  }
   .center31{
-    background-image: url("../../images/newenvironment/square.png");
+    background-image: url("../../images/newenvironment/square.webp");
     width: 167%;
     height: 315px;
     
@@ -135,7 +145,7 @@ body {
   font-size:47px;
 }
 .title333{
-  font-size:16px;
+  font-size:19px;
 }
 #youtu{
   width: 400px;
@@ -188,7 +198,7 @@ transform:translateX(39%);
     background-color:#F7F7F7; 
 }
 .center311{
-  background-image: url("../../images/newenvironment/square.png");
+  background-image: url("../../images/newenvironment/square.webp");
   width: 368px;
   height: 365px;
   background-repeat: no-repeat;

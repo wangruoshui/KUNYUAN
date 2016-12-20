@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -313,6 +311,7 @@ function goTop(){
 			<div class="col-md-9 col-xs-10 col-md-offset-2 col-xs-offset-1 center41">
 				<?php if(is_array($environment)): $i = 0; $__LIST__ = $environment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-1 col-md-pull-1 col-xs-pull-0">
 					<div class="row-xs-1">&nbsp;</div>
+					<div class="row-md-1 row-xs-1">&nbsp;</div>
 					<div>
 						<img src="/Public/upload/<?php echo ($vo["image"]); ?>" class="img-responsive" />
 					</div>
@@ -321,10 +320,10 @@ function goTop(){
 				<div class="col-md-6 col-xs-12 col-md-offset-0 col-xs-pull-0 col-md-pull-0">
 					<div class="col-md-11 col-xs-12">
 
-						<div class="row-md-1 row-xs-1">&nbsp;</br></br></div>
+						<div class="row-md-1 row-xs-1">&nbsp;</div>
+						<div class="row-md-1 row-xs-1">&nbsp;</div>
 						<p class="comtext">
-							&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($vo["content"]); ?>
-							<a class="more1" href="#">详情>></a>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($vo["content"]); ?>
 						</p>
 
 						<div class="row-md-1 row-xs-1">&nbsp;</div>
@@ -358,7 +357,7 @@ function goTop(){
 			<div class="col-md-5 col-xs-7">
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.1
 						</h2>
@@ -373,7 +372,7 @@ function goTop(){
 				<div class="row-md-6">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.2
 						</h2>
@@ -392,7 +391,7 @@ function goTop(){
 				<div class="row-xs-5">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.3
 						</h2>
@@ -408,7 +407,7 @@ function goTop(){
 				<div class="row-md-6">&nbsp;</br></br></br></br></div>
 				<div class="row center31">
 					<div class="col-md-1"></div>
-					<div class="col-md-8 col-xs-12 left4">
+					<div class="col-md-9 col-xs-12 left4">
 						<h2>
 							NO.4
 						</h2>
@@ -423,21 +422,6 @@ function goTop(){
 		</div>
 		
 		<!-- 第七行 -->
-		<div class="row rowheight3" >
-		<div class="row-xs-5">&nbsp;</br></br></br></div>
-			<div  class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1 center3-3 text1">
-				<div class="row-md-1">&nbsp;</div>
-				<div class="col-md-12 col-xs-12">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;生物质颗粒作为一种新型的颗粒燃料以其特有的优势赢得了广泛的认可；与传统的燃料相比，不仅具有经济优势也具有环保效益.
-					</p>
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;生物质颗粒燃烧时有害气体成分含量极低，排放的有害气体少，具有环保效益。
-					</p>
-				</div>
-				<div class="row-md-1">&nbsp;</div>
-			</div>
-		</div>
 		<!-- 第八行 -->
 		<div class="row-md-1">&nbsp;</br></br></br><div id="box2"></div></br></div>
 		<div class="row rowheight">
@@ -455,16 +439,17 @@ function goTop(){
 		<div class="row rowheight">
 		
 			<div class="col-md-6  col-xs-12">
-				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture"><?php if(is_array($policy)): $i = 0; $__LIST__ = array_slice($policy,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($vi["image"]); ?>"/>
+				<div class="col-md-2">&nbsp;</div>
+				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin:0px"><?php if(is_array($policy)): $i = 0; $__LIST__ = array_slice($policy,3,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><img class="img-responsive" src="/Public/upload/<?php echo ($vi["image"]); ?>"/>
 				</div><?php endforeach; endif; else: echo "" ;endif; ?>
 			</div>
-			<div class="col-md-5 col-xs-12 col-md-offset-1 col-xs-offset-0">
-				<div class="col-md-10 col-xs-12">
+			<div class="col-md-5 col-xs-12 col-md-offset-0 col-xs-offset-0">
+			<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-11 col-xs-12">
 					<div class="row-xs-1">&nbsp;</div>
 					<?php if(is_array($policy)): $i = 0; $__LIST__ = $policy;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vi): $mod = ($i % 2 );++$i;?><p><img src="/Public/images/newenvironment/u1404.png" />&nbsp;
 					<a href="<?php echo ($vi["content"]); ?>" class="wtext">
-						<?php echo ($vi["title"]); ?>
+						<?php echo (mb_substr($vi["title"],0,18,'utf-8')); ?>...
 					</a>
 					</p><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
@@ -487,16 +472,16 @@ function goTop(){
 		<!-- 第十一行 -->
 		<div class="row rowheight">
 		<?php if(is_array($limit)): $i = 0; $__LIST__ = $limit;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ky): $mod = ($i % 2 );++$i;?><div class="col-md-6">
-				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture">
+				<div class="col-md-2">&nbsp;</div>
+				<div class="col-md-9 col-xs-12 col-md-offset-1 col-xs-offset-0 picture" style="padding:0px;margin: 0px">
 					<img src="/Public/upload/<?php echo ($ky["image"]); ?>" style="width:100%"/>
 				</div>
 
 			</div>
 
-			<div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-1">
-
-				<div class="col-md-10 col-xs-12">
+			<div class="col-md-5 col-xs-12 col-xs-offset-0 col-md-offset-0">
+				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-11 col-xs-12">
 					<div class="row-md-1">&nbsp;</div>
 					<p class="etext">
 						<?php echo ($ky["content"]); ?>
@@ -522,7 +507,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

@@ -24,8 +24,6 @@
 
     <!--<script src="/Public/js/main.js"></script>-->
     <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.js"></script>
-
-    <script type="text/javascript" src="/Public/js/broad.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -311,7 +309,7 @@ function goTop(){
             <div class="col-md-5 col-xs-7">
                 <div class="row center31">
                     <div class="col-md-1"></div>
-                    <div class="col-md-8 col-xs-10 gleft">
+                    <div class="col-md-9 col-xs-10 gleft">
                         <h2>
                             NO.1
                         </h2>
@@ -326,7 +324,7 @@ function goTop(){
                 <div class="row-md-6">&nbsp;</br></br></br></br></div>
                 <div class="row center31">
                     <div class="col-md-1"></div>
-                    <div class="col-md-8 col-xs-10 gleft">
+                    <div class="col-md-9 col-xs-10 gleft">
                         <h2>
                             NO.2
                         </h2>
@@ -345,7 +343,7 @@ function goTop(){
                 <div class="row-xs-5">&nbsp;</br></br></br></br></div>
                 <div class="row center31">
                     <div class="col-md-1"></div>
-                    <div class="col-md-8 col-xs-10 gleft">
+                    <div class="col-md-9 col-xs-10 gleft">
                         <h2>
                             NO.3
                         </h2>
@@ -361,7 +359,7 @@ function goTop(){
                 <div class="row-md-6">&nbsp;</br></br></br></br></div>
                 <div class="row center31">
                     <div class="col-md-1 col-xs-0"></div>
-                    <div class="col-md-8 col-xs-10 gleft">
+                    <div class="col-md-9 col-xs-10 gleft">
                         <h2>
                             NO.4
                         </h2>
@@ -589,7 +587,7 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            手机号：18134061015
                             &nbsp;&nbsp;&nbsp;
                             邮箱：kyenergy@vip.sina.com
                             &nbsp;&nbsp;&nbsp;

@@ -57,7 +57,7 @@ class SendController extends Controller
         if($Verify->check($messages['check'])) {
 
 
-        if($messages['username']&&$messages['town']&&$messages['provice']&&$messages['city']&&$messages['area']&&$messages['phone']) {
+        if(($messages['username'])&&($messages['town'])&&($messages['provice'])&&($messages['city'])&&($messages['area'])&&($messages['phone'])) {
 
 
             $message['time'] = date("Y-m-d H:i:s", time());

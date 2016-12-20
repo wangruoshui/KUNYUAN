@@ -7,9 +7,7 @@
 	width:100%;
 
 }
-.left4{
-	margin-left: -2%;
-}
+
 .center1{
 	width:100%;
 	margin-left: 300px;
@@ -37,7 +35,7 @@
 }
 
 .center312{
-	background-image:url(../images/newenvironment/square.png);
+	background-image:url(../images/newenvironment/square.webp);
     height:320px;
     width:400px;
     background-repeat: no-repeat;
@@ -45,7 +43,7 @@
     margin-top: 100px;
 }
 .center313{
-    background-image:url(../images/newenvironment/square.png);
+    background-image:url(../images/newenvironment/square.webp);
     background-position: center;
     filter:alpha(opacity=80);
     -moz-opacity:0.8;
@@ -84,7 +82,7 @@
 }
 .font6{
 	font-size: 18px;
-	font-family: "黑体" ;
+	font-family: "微软雅黑" ;
 	line-height:25px;
 	margin-left: 1%;
 }
@@ -126,17 +124,17 @@
 }
 .etext{
 	font-size: 16px;
-	font-family: "黑体" ;
+	font-family: "微软雅黑" ;
 	line-height:25px;
 }
 .wtext{
-	font-size: 17px;
-	font-family: "黑体" ;
+	font-size: 18px;
+	font-family: "微软雅黑" ;
 	line-height:29px;
 }
 .text1{
 	font-size: 17px;
-	font-family: "黑体" ;
+	font-family: "微软雅黑" ;
 	line-height:22px;
 }
 .picture{
@@ -157,10 +155,12 @@ a{
 	/*font-family: SimHei;*/
 }
 .center41{
-	background-image:url(../images/newenvironment/bigbgd.png);
+	background-image:url(../images/newenvironment/bigbgd.webp);
 	padding-top: 1%;
 }
-
+.size4444{
+	font-family: "微软雅黑" ;
+}
 .ba1{
    font-size:24px;
    font-weight: bolder;

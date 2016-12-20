@@ -69,6 +69,7 @@
 .product_title_first{
     font-family: "微软雅黑";
     font-weight: 700;
+    margin-left: -1px;
     font-size: 18px;
     font-style: normal;
     line-height: normal;
@@ -79,6 +80,7 @@
     font-size: 16px;
     line-height: normal;
 }
+
 .nc-second_content{
    /* padding-top:65px;
     padding-left:70px;*/
@@ -91,11 +93,18 @@
     text-align: left;
     font-size:16px;
 }
-.ggleft{
-    margin-left: 87px;
-    margin-top: 18px;
-}
+.newscleft{
+    margin-left: 40px;
 
+}
+.newscleft1{
+    margin-left: 32px;
+
+}
+.right{
+    float: right;
+    margin-top: 4px;
+}
 .nc_third_top{
   /*  margin-top:50px;*/
     /*margin-top:5%;*/
