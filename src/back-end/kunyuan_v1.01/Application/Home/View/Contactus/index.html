@@ -1,3 +1,77 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/send.css">
+<script type="text/javascript" src="__PUBLIC__/js/checkEmail.js"></script>
+<script type="text/javascript">
+    function checkName(){
+        //alert("tian");
+        var name2=document.getElementById("username").value;
+        if(name2==''){
+            //alert('333');
+            document.getElementById("name").style.visibility="visible";
+        }else{
+            document.getElementById("name").style.visibility="hidden";
+        }
+    }
+    function checkNametwo(){
+        // $("div[id='username1']").span(null);
+        //alert('22');
+        document.getElementById("name").style.visibility="hidden";
+
+    }
+    function checkAddress(){
+        var name=document.getElementById("address").value;
+        var test=document.getElementById("spanaddress");
+        if(name==""){
+            test.style.visibility="visible";
+            test.innerText="邮箱不能为空";
+        }else{
+            document.getElementById("spanaddress").style.visibility="hidden";
+           console.log(name);
+           console.log(emailCheck(name));
+           console.log("emailcheck");
+            var i=emailCheck(name);
+            if(i==1){
+                test.style.visibility="hidden";
+            }else{
+                test.style.visibility="visible";
+               test.innerText="邮箱格式错误";
+            }
+        }
+    }
+    function checkAddresstwo(){
+        document.getElementById("spanaddress").style.visibility="hidden";
+    }
+    function checkPhone(){
+        var name=document.getElementById("phone").value;
+        var test=document.getElementById("spanphone");
+        if(name==""){
+            test.style.visibility="visible";
+            test.innerText="电话不能为空";
+        }else{
+            document.getElementById("spanphone").style.visibility="hidden";
+            var i=phoneCheck(name);
+            if(i==1){
+                test.style.visibility="hidden";
+            }else{
+                console.log(name);
+                console.log(i);
+                test.style.visibility="visible";
+                test.innerText="电话格式错误";
+            }
+        }
+    }
+    function checkPhonetwo(){
+        document.getElementById("spanphone").style.visibility="hidden";
+    }
+    function checkContent(){
+        var name=document.getElementById("content").value;
+        if(name==""){
+            document.getElementById("spancontent").style.visibility="visible";
+        }else{document.getElementById("spancontent").style.visibility="hidden";}
+    }
+    function checkContenttwo(){
+        document.getElementById("spancontent").style.visibility="hidden";
+    }
+</script>
 <div class="container col-md-12 font-family"style="padding:0px">
     <div class="container col-md-12" style="padding:0px">
         <div>
@@ -175,21 +249,25 @@
             <form role="form" action="/home/contactus/addmessage" method="post">
                 <div class="row contact_seventh_first">
                     <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
-                        <input type="text" placeholder="请输入联系人姓名：" class="form-control">
+                        <input type="text" placeholder="请输入联系人姓名：" class="form-control" onblur='checkName()'  onfocus="checkNametwo()"
+                               id="username" name="name">
+                        <span value="姓名不能为空" style="white-space:nowrap;" id="name">姓名不能为空</span>
                     </div>
 
 
                 </div>
                 <div class="row contact_seventh_second">
                     <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
-                        <input type="text" placeholder="请输入联系电话：" class="form-control">
+                        <input type="text" placeholder="请输入联系电话：" onblur='checkPhone()'  onfocus="checkPhonetwo()"
+                               class="form-control" id="phone" name="phone">
+                        <div id="spanphone"></div>
                     </div>
                 </div>
                 <div class="row contact_seventh_second">
                     <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
                         <div class="form-group contact_seventh_second_third">
                             <!--<label for="name">选择列表</label>-->
-                            <select class="form-control">
+                            <select class="form-control" name="title">
                                 <option>我的需求</option>
                                 <option>产品问题</option>
                                 <option>价格问题</option>
@@ -200,13 +278,20 @@
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-push-1 col-xs-12  contact_seventh_third_input">
-                        <input class="form-control" id="auto-complete-domain" placeholder="请输入您的邮箱地址">
+                        <input class="form-control" id="address"  name="email"
+                               onblur='checkAddress()'  onfocus="checkAddresstwo()"
+                                placeholder="请输入您的邮箱地址">
+                        <div id="spanaddress"></div>
                     </div>
                 </div>
                 <div class="row">&nbsp</div>
                 <div class="row">
                     <div class="form-group col-md-10 col-md-push-1 col-xs-12 contact_seventh_fourth">
-                        <textarea rows="5" cols="50" class="form-control" placeholder="详情描述"></textarea></div>
+                        <textarea rows="5" cols="50" id="content" name="content" class="form-control"
+                                  onblur='checkContent()'  onfocus="checkContenttwo()"
+                                  placeholder="详情描述"></textarea>
+                        <span value="详情不能为空" style="white-space:nowrap;" id="spancontent">详情不能为空</span>
+                    </div>
                 </div>
                 <div class="row contact_seventh_last">
                     <div class="form-group col-md-2 col-xs-2 col-md-push-5 col-xs-push-4  ">

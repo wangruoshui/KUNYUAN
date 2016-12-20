@@ -43,7 +43,9 @@ class ContactusController extends Controller
         $this->display();
     }
     public function addmessage(){
+
         $messages=I("post.");
+    if($messages["title"]&&$messages["phone"]&&$messages["content"]&&$messages["email"]&&$messages["name"]){
 
         $messages['time']=date("Y-m-d H:i:s",time());
 //        dump($messages);
@@ -57,6 +59,7 @@ class ContactusController extends Controller
             //插入失败
             $this->error('提交失败，3秒后自动跳回留言界面','../contactus/index',3);
         }
+    }else{$this->error('都不能为空，请重新填写！');}
     }
 
 }
