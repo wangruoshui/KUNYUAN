@@ -27,9 +27,26 @@
 
 
         .right_img a:hover img{
-          -webkit-transform:scale(2,2);
-          -moz-transform:scale(2,2);
-          -transform:scale(2,2);
+          transition: transform 0.7s;
+          -moz-transition: -moz-transform 0.7s;
+          -webkit-transition: -webkit-transform 0.7s;
+          -o-transition: -o-transform 0.7s;
+          transform:scale(2,2);
+            -ms-transform:scale(2,2); /* IE 9 */
+            -moz-transform:scale(2,2); /* Firefox */
+            -webkit-transform:scale(2,2); /* Safari and Chrome */
+            -o-transform:scale(2,2); /* Opera */
+          }
+          .right_img a img{
+          transition: transform 0.7s;
+          -moz-transition: -moz-transform 0.7s;
+          -webkit-transition: -webkit-transform 0.7s;
+          -o-transition: -o-transform 0.7s;
+          transform:scale(1,1);
+            -ms-transform:scale(1,1); /* IE 9 */
+            -moz-transform:scale(1,1); /* Firefox */
+            -webkit-transform:scale(1,1); /* Safari and Chrome */
+            -o-transform:scale(1,1); /* Opera */
           }
     </style>
 
