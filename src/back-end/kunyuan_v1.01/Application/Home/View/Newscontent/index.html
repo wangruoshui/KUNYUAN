@@ -101,10 +101,20 @@
                         <a href="/home/newscontent/index/id/{$nextid}" class="{$nextid}" id="judgeright"><button type="button" class="btn btn-md btn-default">下一篇</button></a>
                     </div>
                     <script type="text/javascript">
-
                         x=document.getElementById("judgeleft"); // 找到元素
-                        if({$lastid}){
-                        x.style.display="none" ;}
+                        var xclass=x.className;
+                        if(xclass==0)
+                        {
+                            x.style.display="none";
+                        }
+                        y=document.getElementById("judgeright");//找到元素
+                        var yclass=y.className;
+                        console.log(yclass);
+                        console.log(yclass==0);
+                        if(yclass==0)
+                        {
+                            y.style.display="none";
+                        }
                     </script>
                 </div>
                 <!--第三部分结束-->
