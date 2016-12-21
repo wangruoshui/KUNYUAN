@@ -57,12 +57,12 @@ class SendController extends Controller
         if($Verify->check($messages['check'])) {
 
 
-        if(($messages['username'])&&($messages['town'])&&($messages['provice'])&&($messages['city'])&&($messages['area'])&&($messages['phone'])) {
+        if(($messages['username'])&&($messages['town'])&&($messages['s_province'])&&($messages['s_city'])&&($messages['s_county'])&&($messages['phone'])) {
 
 
             $message['time'] = date("Y-m-d H:i:s", time());
             $message['username'] = $messages['username'];
-            $message['address'] = $messages['province'] . '-' . $messages['city'] . '-' . $messages['area'] . '-' . $messages['town'];
+            $message['address'] = $messages['s_province'] .  $messages['city'] . $messages['s_county'] .  $messages['town'];
             $message['phone'] = $messages['phone'];
 
             $message['sex'] = $messages['sex'];
