@@ -24,6 +24,13 @@
         .side ul li .sidetop{width:54px;height:54px;line-height:54px;display:inline-block;background:#000;opacity:0.8;filter:Alpha(opacity=80);transition:all 0.3s;}
         .side ul li .sidetop:hover{background:#777777;opacity:1;filter:Alpha(opacity=100);}
         .side ul li img{float:left;}
+
+
+        .right_img a:hover img{
+          -webkit-transform:scale(2,2);
+          -moz-transform:scale(2,2);
+          -transform:scale(2,2);
+          }
     </style>
 
 </head>
@@ -257,8 +264,8 @@ function goTop(){
             <div class="text-center">
             <volist name="index" id="vo">
                 <div class="col-md-3 col-xs-6">
-                    <div >
-                        <img class="div1" alt="70×70" src="__PUBLIC__/upload/{$vo.image}" height="70" width="70" />
+                    <div class="right_img">
+                        <a href=""><img alt="70×70" src="__PUBLIC__/upload/{$vo.image}" height="70" width="70" /></a>
                         <div class="caption">
                             <h3 class="yuan4">
                                 {$vo.title}
@@ -388,21 +395,5 @@ function goTop(){
     </div>
 </div>
 </body>
-<script type="text/javascript"> 
-$(function(){ 
-    $('.div1').mouseover(function(){ 
-        $(this).animate({width: "230", 
-        height: "230", 
-        left:"5px", 
-        top:"0px"},700); 
-    });
-    $('.div1').mouseout(function(){ 
-        $(this).animate({width: "70", 
-        height: "70", 
-        left:"85px", 
-        top:"0px"},1000); 
-    }); 
-}); 
-</script>
 
 </html>

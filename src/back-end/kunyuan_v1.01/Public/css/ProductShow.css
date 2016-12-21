@@ -12,7 +12,7 @@
 }
 .content-con1{
 	height: 365px;
-	background-image:url(../images/productContent/chanpinleft.webp);
+	background-image:url(../images/productContent/chanpinleft.png);
 	background-repeat: no-repeat;
 	background-position-x: center;
 }
@@ -26,7 +26,7 @@
 }
 .content-con2{
 	height: 365px;
-	background-image:url(../images/productContent/chanpinright.webp);
+	background-image:url(../images/productContent/chanpinright.png);
 	background-repeat: no-repeat;
 	background-position-x: center;
 }
