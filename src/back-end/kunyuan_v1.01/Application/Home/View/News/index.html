@@ -78,7 +78,7 @@
                             </div>
                             <div class="col-md-9 col-xs-12" style="color:#666;display:inline;padding-bottom:0px; ">
 
-                                <p style="line-height: 27px;font-family:微软雅黑;">  {$data.content|mb_substr=###,0,50,'utf-8'}......<a target="_blank" href="/home/newscontent/index/id/{$data.commonid}" class="right">[详细]</a> </p>
+                                <p style="line-height: 27px;font-family:微软雅黑;">  {$data.content|htmlspecialchars_decode=###|mb_substr=###,0,70,'utf-8'}......<a target="_blank" href="/home/newscontent/index/id/{$data.commonid}" class="right">[详细]</a> </p>
                                 <span style="color:#999;padding-top:10px;">{$data.time}</span>
                             </div>
                             <script type="text/javascript">

@@ -76,7 +76,8 @@
 
 
                 <div class="col-md-11 col-xs-12 col-md-push-1">
-                    <p class="nc-second_content">&nbsp;&nbsp;&nbsp;&nbsp;{$data.content}</p>
+                    <p class="nc-second_content">&nbsp;&nbsp;&nbsp;&nbsp;{$data.content|htmlspecialchars_decode=###}
+                    </p>
                 </div>
 
                 <!--第二部分结束-->
