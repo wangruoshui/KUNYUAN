@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admin/courier/index">样品管理</a><span class="crumb-step">&gt;</span>样品信息
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <p style="font-size:26px;margin-left:42%;margin-top:3%;">样品信息</p>
+        <hr/>
+        <div class="well brown" style="margin-left:29.5%;margin-right:0%;">
+            <form action="{:U('admin/courier/manage')}">
+
+                <table class="insert-tab" width="40%">
+                    <tbody>
+
+                    <tr>
+                        <th width="45%">姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                        <td>
+                            {$courier[0].username}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>联系方式：</th>
+                        <td>{$courier[0].phone}</td>
+                    </tr>
+                    <tr>
+                        <th>地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                        <td>{$courier[0].address}</td>
+                    </tr>
+
+                    <tr>
+                        <th>状态&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                        <if condition="$courier[0]['status'] eq 0 ">
+                            <td>
+                                未寄出
+                            </td>
+                            <else />
+                            <td>
+                                已寄出
+                            </td>
+                        </if>
+                    </tr>
+
+
+
+
+                    </tbody></table>
+
+            </form>
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
+</html>

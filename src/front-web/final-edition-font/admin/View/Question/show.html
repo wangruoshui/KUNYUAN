@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admin/question/index">问题管理</a><span class="crumb-step">&gt;</span>问题信息
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <p style="font-size:26px;margin-left:42%;margin-top:3%;">问题信息</p>
+        <hr/>
+        <div class="well brown" style="margin-left:2%;margin-right:20%;">
+            <form action="{:U('admin/common/manage')}">
+
+                <table class="insert-tab" width="40%" style="margin-left: 30%;">
+
+                        <tbody>
+
+
+                        <tr>
+                            <th width="40%">问题：</th>
+                            <td>{$question[0].question}</td>
+                        </tr>
+                        <tr>
+                            <th>答案：</th>
+                            <td>
+                                {$question[0].answer}
+                            </td>
+                        </tr>
+
+
+
+                        </tbody></table>
+
+            </form>
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
+</html>

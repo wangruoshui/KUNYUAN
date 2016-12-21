@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="#">问题管理</a>
+
+            </div>
+        </div>
+        <div class="well1">
+
+            <a href="{:U('admin/question/add')}" style="color:#000;"><i class="icon-font"></i>&nbsp;&nbsp;添加问题</a>
+            <div class="well-content" style="margin-top: 1%;">
+
+                <table class="result-tab" width="100%">
+                    <thead>
+                    <tr>
+
+                        <th width="5%">ID</th>
+                        <th width="10%">用户名ID</th>
+                        <th width="20%">常见问题</th>
+                        <th width="45%">回答</th>
+                        <th width="17%">管理操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="question" id="vo">
+                        <tr>
+                            <td>{$i}</td>
+                            <td>{$vo.userid}</td>
+                            <td>{$vo.question}</td>
+                            <td>{$vo.answer|mb_substr=0,10,'utf-8'}</td>
+
+                            <td>
+                                <a class="btn" href="/admin/question/manage/id/{$vo.questionid}" title="修改">修改</a>
+                                <a class="btn" href="/admin/question/del/id/{$vo.questionid}" title="删除">删除</a>
+                                <a class="btn" href="/admin/question/show/id/{$vo.questionid}" title="查看">查看</a>
+                            </td>
+                        </tr>
+                    </volist>
+
+
+                    </tbody>
+                </table>
+                <ul class="pagination" style="float: right;margin-left: 5%;">
+                    {$pages}
+                </ul>
+            </div>
+
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
+</html>

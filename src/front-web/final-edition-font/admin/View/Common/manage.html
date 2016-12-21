@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admin/common/index">信息管理</a><span class="crumb-step">&gt;</span>修改内容
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <form action="{:U('admin/common/modify')}" method="post" enctype= "multipart/form-data">
+            <table class="insert-tab" width="100%">
+                <tbody>
+                <volist name="result" id="data">
+                    <tr>
+                        <th width="10%">种类：</th>
+                        <td>
+                            公司简介
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>标题：</th>
+                        <td><input class="title" name="title" size="50" type="text" value="{$data.title}"></td>
+                    </tr>
+                    <tr>
+                        <th>内容：</th>
+                        <td>
+                            <textarea class="content" name="content" cols="30" style="width: 60%;" rows="5">{$data.content}</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><i class="require-red">*</i>当前图片：</th>
+                        <th>
+                            <div class="modify_img"><img src="__PUBLIC__/upload/{$data.image}" width="150" hegiht="100" style="float: left;margin-bottom: 1%;margin-top: 1%;margin-left: 1%;"></div></th>
+                    </tr>
+                    <tr>
+                        <th><i class="require-red">*</i>选择图片：</th>
+                        <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
+                    </tr>
+
+                    <input class="common-text" name="commonid" size="50" type="hidden" value="{$data.commonid}">
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="修改" type="submit" name="submit">
+                            <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                        </td>
+                    </tr>
+                </volist>
+                </tbody></table>
+        </form>
+    </div>
+    <!-- Content end -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="#">招聘管理</a>
+
+            </div>
+        </div>
+        <div class="well1">
+
+            <a href="{:U('admin/recruit/add')}" style="color:#000;"><i class="icon-font"></i>&nbsp;&nbsp;添加招聘信息</a>
+            <div class="well-content" style="margin-top: 1%;">
+
+                <table class="result-tab" width="100%">
+                    <thead>
+                    <tr>
+
+                        <th width="10%">ID</th>
+                        <th width="20%">职位名称</th>
+                        <th width="20%">职位类别</th>
+                        <th width="20%">工作地点</th>
+
+                        <th width="15%">管理操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="result" id="data" key="k">
+                        <tr>
+                            <td>{$k}</td>
+                            <td>{$data.name}</td>
+                            <td>{$data.type}</td>
+                            <td>{$data.place}</td>
+                            <!--<td>{$data.introduce|mb_substr=0,10,'utf-8'}......</td>-->
+                            <!--<td>{$data.require|mb_substr=0,10,'utf-8'}......</td>-->
+
+                            <td>
+                                <a class="btn" href="/admin/recruit/manage/id/{$data.stationid}" title="修改">修改</a>
+                                <a class="btn" href="/admin/recruit/del/id/{$data.stationid}" title="删除">删除</a>
+                                <a class="btn" href="/admin/recruit/show/id/{$data.stationid}" title="查看">查看</a>
+                            </td>
+                        </tr>
+
+
+                    </volist>
+                    </tbody>
+                </table>
+                <ul class="pagination" style="float: right;margin-left: 5%;">
+                    {$pages}
+                </ul>
+            </div>
+
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="#">公司配置信息</a>
+
+            </div>
+        </div>
+        <div class="well1">
+
+            <a href="{:U('admin/common/add')}" style="color:#000;"></a>
+            <div class="well-content" style="margin-top: 1%;">
+
+                <table class="result-tab" style="width: 100%;">
+                        <thead>
+                        <tr>
+
+                            <th width="15%">ID</th>
+                            <th width="25%">名称</th>
+                            <th width="30%">内容</th>
+                            <th width="7%">管理操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <volist name="result" id="data" key="k">
+                            <tr>
+                                <td>{$k}</td>
+                                <td>{$data.config_name}</td>
+                                <td>{$data.config_content}</td>
+                                <if condition="($data['id'] eq 5)OR ($data['id'] eq 6)">
+
+                                    <td>
+                                        <a class="btn" href="/admin/peizhi/personmanage/id/{$data.id}" title="修改">修改</a>
+                                    </td>
+                                    <else />
+                                    <td>
+                                        <a class="btn" href="/admin/peizhi/crnmanage/id/{$data.id}" title="修改">修改</a>
+                                    </td>
+                                </if>
+                                <input type="hidden" name="id" value="{$data.id}">
+
+                            </tr>
+                        </volist>
+
+
+                        </tbody>
+                    </table>
+                    <ul class="pagination" style="float: right;margin-left: 5%;">
+                    {$pages}
+                </ul>
+            </div>
+
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admmin/peizhi/picture">网站图片管理</a><span class="crumb-step">&gt;</span>修改图片
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <form action="{:U('admin/peizhi/picturemanage')}" method="post" enctype= "multipart/form-data">
+            <table class="insert-tab" width="100%">
+                <tbody>
+
+                <tr>
+
+                    <th width="10%"><i class="require-red">*</i>产品名称：</th>
+                    <td>{$result[0]['config_name']}</td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>当前图片：</th>
+                    <th>
+                        <div class="modify_img" ><img src="__PUBLIC__/upload/{$result[0]['config_content']}"  height="300px;" style="float: left;"></div></th>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>更换图片：</th>
+                    <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
+                </tr>
+
+                <tr>
+                    <th width="10%"><i class="require-red">*</i>操作：</th>
+                    <td>
+                        <input type="hidden" name="id" value="{$result[0]['id']}">
+                        <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="修改" type="submit" name="submit">
+                        <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button"></td>
+                </tr>
+                </tbody></table>
+        </form>
+    </div>
+    <!-- Content end -->
+</div>
+
+</body>
+</html>
