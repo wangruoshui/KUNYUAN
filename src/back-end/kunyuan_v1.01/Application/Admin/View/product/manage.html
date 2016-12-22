@@ -1,128 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Flatpoint - Responsive Web App Template</title>
-  
+
     <meta name="description" content="">
     <meta name="author" content="">
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
 
-    <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <style type="text/css">
+        div{
+            width:100%;
+        }
+    </style>
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/modify.css"/>
-    <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/index.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/icon/font-awesome.css" rel="stylesheet">
-    
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
 
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/admin/img/apple-touch-icon-144-precomposed.html">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="__PUBLIC__/admin/img/apple-touch-icon-114-precomposed.html">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/admin/img/apple-touch-icon-72-precomposed.html">
-                    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/admin/img/apple-touch-icon-57-precomposed.html">
-                                  
+<body>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    
-  </head>
 
-  <body>
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
 
-    
-    <div id="content"> <!-- Content start -->
-      <div class="inner_content">
-          <div class="widgets_area">
-                <div class="row-fluid">
-                    <div class="span12">
-                         <div  class="daohanglink"style="">
-                           <span class="daohang"></span>
-                           <span>首页</span><span>></span>
-                           <span>产品管理</span><span>></span>
-                           <span>修改产品</span>
-                           
-                         </div>
-
-                        <div class="well-content">
-                        <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改产品</p>
-                           <hr/>
-                         <div class="result-content">
-               <form action="/Admin/product/modify" method="post" enctype= "multipart/form-data">
-                <table class="insert-tab" width="100%">
-                        <tbody>
-                        <volist name="result" id="data">
-                            <tr>
-
-                                <th width="10%"><i class="require-red">*</i>产品名称：</th>
-                                <td><input class="common-text" name="name" size="50" type="text" value="{$data.name}"></td>
-                            </tr>
-                            <tr>
-                                <th><i class="require-red">*</i>当前图片：</th>
-                                <th>
-                                    <div class="modify_img"><img src="__PUBLIC__/upload/{$data.image}" width="150" hegiht="100"></div></th>
-                            </tr>
-                            <tr>
-                                <th><i class="require-red">*</i>更换图片：</th>
-                                <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
-                            </tr>
-                            
-                            <tr>
-                            <th>介绍：</th>
-                            <td>
-                                <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.introductions}</textarea>
-                            </td>
-                            </tr>
-                            <th>优势：</th>
-                            <td>
-                                <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.advantage}</textarea>
-                            </td>
-                            </tr>
-                            <th>指标：</th>
-                            <td>
-                                <textarea class="common-textarea" name="introductions" cols="30" style="width: 60%;" rows="5">{$data.quota}</textarea>
-                            </td>
-                            </tr>
-                            <tr>
-                                <th><i class="require-red">*</i>价格：</th>
-                                <td><input class="common-text" name="price" size="50" type="text" value="{$data.price}"></td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <td>
-                                    <input class="hidden" value="{$data.productid}" name="productid">
-                                    <input class="hidden" value="{$data.userid}" name="userid">
-                                    <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="修改" type="submit" name="submit">
-                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
-                                </td>
-                            </tr>
-                            </volist>
-
-                        </tbody></table>
-               </form>
-            </div>
-                            </div>
-                    </div>
-                </div>
-
-            
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">产品中心</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">添加产品</a>
             </div>
         </div>
     </div>
+    <div class="well">
+        <form action="{:U('admin/product/modify')}" method="post" enctype= "multipart/form-data">
+            <table class="insert-tab" width="100%">
+                <tbody>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-   <script src="__PUBLIC__/admin/js/jquery-1.10.2.js"></script>
-    <script src="__PUBLIC__/admin/js/jquery-ui-1.10.3.js"></script>
-    <script src="__PUBLIC__/admin/js/bootstrap.js"></script>
+                <tr>
+                    <th width="10%"><i class="require-red">*</i>产品名称：</th>
+                    <td><input class="common-text" name="name" size="50" type="text" value="{$result[0].name}"></td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>当前图片：</th>
+                    <th>
+                        <div class="modify_img"><img src="__PUBLIC__/upload/{$result[0].image}" width="150" hegiht="100" style="float: left;margin-bottom: 1%;margin-top: 1%;margin-left: 1%;"></div></th>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>选择图片：</th>
+                    <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
+                </tr>
 
-    <script src="__PUBLIC__/admin/js/flatpoint_core.js"></script>
 
-  </body>
+                <tr>
+                    <th><i class="require-red">*</i>价格：</th>
+                    <td><input class="common-text" name="price" size="50" type="text" value="{$result[0].price}"></td>
+                </tr>
+
+                <input class="common-text" name="productid" size="50" type="hidden" value="{$result[0].productid}">
+
+                </tbody></table>
+            <div style="float: left;width: 10%;text-align: center;margin-top: 10%;"> 内容编辑：</div>
+            <textarea  name="introductions" style="width: 90%;float: right;"  id="editor"  value="{$result[0].introductions}">{$result[0].introductions}</textarea>
+            <div >
+                <input class="btn btn-primary btn6 mr10"  value="修改" type="submit" name="submit" onclick="getContent()" style="margin-top:2%;margin-left: 10%;">
+                <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button" style="margin-top:2%;">
+            </div>
+        </form>
+    </div>
+    <!-- Content end -->
+</div>
+<script type="text/javascript">
+    var ue = UE.getEditor('editor',
+            //这里可以选择自己需要的工具按钮名称,此处仅选择如下五个
+            {
+                //默认的编辑区域高度
+                initialFrameHeight:150,
+                toolbars:[[
+                    'undo', //撤销
+                    'redo', //重做
+                    'bold', //加粗
+                    'indent', //首行缩进
+                    'snapscreen', //截图
+                    'italic', //斜体
+                    'underline', //下划线
+                    'strikethrough', //删除线
+                    'subscript', //下标
+                    'fontborder', //字符边框
+                    'superscript', //上标
+                    'formatmatch', //格式刷
+                    'source', //源代码
+                    'pasteplain', //纯文本粘贴模式
+                    'selectall', //全选
+                    'preview', //预览
+                    'horizontal', //分隔线
+                    'removeformat', //清除格式
+                    'time', //时间
+                    'date', //日期
+                    'insertrow', //前插入行
+                    'insertcol', //前插入列
+                    'mergeright', //右合并单元格
+                    'mergedown', //下合并单元格
+                    'deleterow', //删除行
+                    'deletecol', //删除列
+                    'splittorows', //拆分成行
+                    'splittocols', //拆分成列
+                    'splittocells', //完全拆分单元格
+                    'deletecaption', //删除表格标题
+                    'inserttitle', //插入标题
+                    'mergecells', //合并多个单元格
+                    'deletetable', //删除表格
+                    'cleardoc', //清空文档
+                    'insertparagraphbeforetable', //"表格前插入行"
+                    'fontfamily', //字体
+                    'fontsize', //字号
+                    'paragraph', //段落格式
+                    'simpleupload', //单图上传
+                    'insertimage', //多图上传
+                    'edittable', //表格属性
+                    'edittd', //单元格属性
+                    'link', //超链接
+                    'map', //Baidu地图
+                    'justifyleft', //居左对齐
+                    'justifyright', //居右对齐
+                    'justifycenter', //居中对齐
+                    'justifyjustify', //两端对齐
+                    'forecolor', //字体颜色
+                    'backcolor', //背景色
+                    'fullscreen', //全屏
+                    'rowspacingtop', //段前距
+                    'rowspacingbottom', //段后距
+                    'imageleft', //左浮动
+                    'imageright', //右浮动
+                    'imagecenter', //居中
+                    'lineheight', //行间距
+                    'edittip ', //编辑提示
+                    'touppercase', //字母大写
+                    'tolowercase', //字母小写
+                    'inserttable', //插入表格
+                    'charts', // 图表
+                ]]});
+    function getContent() {
+        var arr = [];
+
+        arr.push(UE.getEditor('editor').getContent());
+        document.getElementById("editor").value=arr;
+        // alert(arr.join("\n"));
+    }
+</script>
+</body>
 </html>

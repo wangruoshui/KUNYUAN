@@ -34,7 +34,7 @@ class PeizhiController extends Controller
     {
         //连接数据库
         $pei=M('kunyuan_config');
-        $result=$pei->where('id=7')->select();
+        $result=$pei->where('id<8')->select();
 
         //传递数据
         $this->assign('result',$result);
@@ -48,11 +48,11 @@ class PeizhiController extends Controller
         if (isset($_POST['submit'])){
             $condition = array();
             $condition['config_content'] = I('post.config_content');
-
+            $id=I('post.id');
             //连接数据库
             $result = M('kunyuan_config');
 
-            $r = $result->where("id=7")->save($condition);
+            $r = $result->where("id=%d",$id)->save($condition);
 
             //判断是否修改成功
             if ($r) {
@@ -63,7 +63,7 @@ class PeizhiController extends Controller
         }else{
             //连接数据库
             $pei=M('kunyuan_config');
-            $result=$pei->where('id=7')->select();
+            $result=$pei->where("id=%d",I('get.id'))->select();
 
             //传递数据
             $this->assign('result',$result);
@@ -104,9 +104,9 @@ class PeizhiController extends Controller
 
             //判断是否修改成功
             if ($r) {
-                $this->redirect('admin/peizhi/person', '', 0, '修改成功!');
+                $this->redirect('admin/peizhi/crn', '', 0, '修改成功!');
             } else {
-                $this->redirect('admin/peizhi/person', '', 0, '修改失败!');
+                $this->redirect('admin/peizhi/crn', '', 0, '修改失败!');
             }
         }else{
             //连接数据库

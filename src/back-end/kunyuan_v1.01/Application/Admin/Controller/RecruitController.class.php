@@ -47,7 +47,7 @@ class RecruitController extends Controller{
     public function manage(){
         $this->_db=M("station");
         $id=I("get.id");
-        $results=$this->_db->where("stationid=$id")->select();
+        $results=$this->_db->where("stationid=%d",$id)->select();
         $this->assign('result',$results);
         $this->display();
     }
@@ -55,7 +55,7 @@ class RecruitController extends Controller{
         $this->_db=M("station");
         $results=I("post.");
         $id=$results['stationid'];
-        $result=$this->_db->save($results);
+        $result=$this->_db->where("stationid=%d",$id)->save($results);
         if($result){
             //插入成功
             $this->success('修改成功,3秒后自动为您跳转到招聘列表','/admin/recruit/index',3);

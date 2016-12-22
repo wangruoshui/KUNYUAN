@@ -1,114 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Flatpoint - Responsive Web App Template</title>
-  
+
     <meta name="description" content="">
     <meta name="author" content="">
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
 
-    <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <style type="text/css">
+        div{
+            width:100%;
+        }
+    </style>
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
-    <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/modify.css"/>
-    <link href="__PUBLIC__/admin/css/index.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/icon/font-awesome.css" rel="stylesheet">
-    
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
 
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/admin/img/apple-touch-icon-144-precomposed.html">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="__PUBLIC__/admin/img/apple-touch-icon-114-precomposed.html">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/admin/img/apple-touch-icon-72-precomposed.html">
-                    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/admin/img/apple-touch-icon-57-precomposed.html">
-                                  
+<body>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    
-  </head>
 
-  <body>
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
 
-    
-    <div id="content"> <!-- Content start -->
-      <div class="inner_content">
-          <div class="widgets_area">
-                <div class="row-fluid">
-                    <div class="span12">
-                         <div  class="daohanglink"style="">
-                           <span class="daohang"></span>
-                           <span>首页</span><span>></span>
-                           <span>招聘管理</span><span>></span>
-                           <span>修改招聘职位</span>
-                           
-                         </div>
-
-                        <div class="well-content">
-                         <p style="font-size:20px;margin-left:2%;margin-top:1%;">修改职位</p>
-                           <hr/>
-                         <div class="result-content">
-               <form action="{:U('admin/recruit/modify')}" method="post" enctype= "multipart/form-data">
-                <table class="insert-tab" width="100%">
-                        <tbody>
-                            <volist name="result" id="data">
-                            <tr>
-                                <th width="10%">职位名称：</th>
-                                <td><input class="common-text" name="thumb_media_id" size="50" type="text" value="{$data.name}"></td>
-                            </tr>
-                            <tr>
-                                <th>职位类别：</th>
-                                <td><input class="common-text" name="author" size="50" type="text" value="{$data.type}"></td>
-                            </tr>
-                            <tr>
-                                <th>工作地点：</th>
-                                <td><input class="common-text" name="author" size="50" type="text" value="{$data.place}"></td>
-                            </tr>
-                            <tr>
-                            <th>岗位描述：</th>
-                            <td>
-                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5">{$data.introduce}</textarea>
-                            </td>
-                            </tr>
-                            <tr>
-                            <th>岗位要求：</th>
-                            <td>
-                                <textarea class="common-textarea" name="description" cols="30" style="width: 60%;" rows="5">{$data.require}</textarea>
-                            </td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <td>
-                                    <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="添加" type="submit" name="submit">
-                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
-                                </td>
-                            </tr>
-</volist>
-                        </tbody></table>
-               </form>
-            </div>
-                            </div>
-                    </div>
-                </div>
-
-            
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">招聘管理</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">招聘信息修改</a>
             </div>
         </div>
     </div>
+    <div class="well">
+        <form action="{:U('admin/recruit/modify')}" method="post" enctype= "multipart/form-data">
+            <table class="insert-tab" width="100%">
+                <tbody>
+                    <tr>
+                        <th width="10%">职位名称：</th>
+                        <td><input class="common-text" name="name" size="50" type="text" value="{$result[0].name}"></td>
+                    </tr>
+                    <tr>
+                        <th>职位类别：</th>
+                        <td><input class="common-text" name="type" size="50" type="text" value="{$result[0].type}"></td>
+                    </tr>
+                    <tr>
+                        <th>工作地点：</th>
+                        <td><input class="common-text" name="place" size="50" type="text" value="{$result[0].place}"></td>
+                    </tr>
+                    <input type="hidden" value="{$result[0].stationid}" name="stationid">
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-   <script src="__PUBLIC__/admin/js/jquery-1.10.2.js"></script>
-    <script src="__PUBLIC__/admin/js/jquery-ui-1.10.3.js"></script>
-    <script src="__PUBLIC__/admin/js/bootstrap.js"></script>
+                </tbody></table>
 
-    <script src="__PUBLIC__/admin/js/flatpoint_core.js"></script>
+            <div style="float: left;width: 10%;text-align: center;margin-top: 6%;"> 岗位描述：</div>
 
-  </body>
+            <textarea  name="introduce" style="width: 90%;float: right;margin-top: 1%;"  id="editor"  >{$result[0].introduce}</textarea>
+            <div style="float: left;width: 10%;text-align: center;margin-top: 16%;"> 岗位要求：</div>
+
+            <textarea  name="require" style="width: 90%;float: right;margin-top: 1%;"  id="editor1"  >{$result[0].require}</textarea>
+            <div >
+                <input class="btn btn-primary btn6 mr10"  value="修改" type="submit" name="submit" onclick="getContent()" style="margin-top:2%;margin-left: 10%;">
+                <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button" style="margin-top:2%;">
+            </div>
+
+        </form>
+    </div>
+    <!-- Content end -->
+</div>
+
+<script type="text/javascript">
+    var ue = UE.getEditor('editor',
+            //这里可以选择自己需要的工具按钮名称,此处仅选择如下五个
+            {
+                //默认的编辑区域高度
+                initialFrameHeight:100,
+                toolbars:[[
+                    'undo', //撤销
+                    'redo', //重做
+                    'bold', //加粗
+                    'indent', //首行缩进
+                    'italic', //斜体
+                    'underline', //下划线
+                    'strikethrough', //删除线
+                    'subscript', //下标
+                    'superscript', //上标
+                    'pasteplain', //纯文本粘贴模式
+                    'selectall', //全选
+                    'preview', //预览
+                    'horizontal', //分隔线
+                    'removeformat', //清除格式
+                    'fontfamily', //字体
+                    'fontsize', //字号
+                    'paragraph', //段落格式
+                    'justifyleft', //居左对齐
+                    'justifyright', //居右对齐
+                    'justifycenter', //居中对齐
+                    'justifyjustify', //两端对齐
+                    'forecolor', //字体颜色
+                    'fullscreen', //全屏
+                    'imageleft', //左浮动
+                    'imageright', //右浮动
+                    'imagecenter', //居中
+                    'lineheight', //行间距
+                    'edittip ', //编辑提示
+                    'touppercase', //字母大写
+                    'tolowercase', //字母小写
+                ]]});
+    function getContent() {
+        var arr = [];
+
+        arr.push(UE.getEditor('editor').getContent());
+        document.getElementById("editor").value=arr;
+        // alert(arr.join("\n"));
+    }
+</script>
+
+<script type="text/javascript">
+    var ue = UE.getEditor('editor1',
+            //这里可以选择自己需要的工具按钮名称,此处仅选择如下五个
+            {
+                //默认的编辑区域高度
+                initialFrameHeight:100,
+                toolbars:[[
+                    'undo', //撤销
+                    'redo', //重做
+                    'bold', //加粗
+                    'indent', //首行缩进
+                    'italic', //斜体
+                    'underline', //下划线
+                    'strikethrough', //删除线
+                    'subscript', //下标
+                    'superscript', //上标
+                    'pasteplain', //纯文本粘贴模式
+                    'selectall', //全选
+                    'preview', //预览
+                    'horizontal', //分隔线
+                    'removeformat', //清除格式
+                    'fontfamily', //字体
+                    'fontsize', //字号
+                    'paragraph', //段落格式
+                    'justifyleft', //居左对齐
+                    'justifyright', //居右对齐
+                    'justifycenter', //居中对齐
+                    'justifyjustify', //两端对齐
+                    'forecolor', //字体颜色
+                    'fullscreen', //全屏
+                    'imageleft', //左浮动
+                    'imageright', //右浮动
+                    'imagecenter', //居中
+                    'lineheight', //行间距
+                    'edittip ', //编辑提示
+                    'touppercase', //字母大写
+                    'tolowercase', //字母小写
+                ]]});
+    function getContent() {
+        var arr = [];
+
+        arr.push(UE.getEditor('editor1').getContent());
+        document.getElementById("editor1").value=arr;
+        // alert(arr.join("\n"));
+    }
+</script>
+
+</body>
 </html>

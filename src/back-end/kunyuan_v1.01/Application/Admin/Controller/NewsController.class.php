@@ -70,39 +70,55 @@ class NewsController extends Controller
         $this->display();
     }
     public function modify(){
-        $upload = new \Think\Upload();// 实例化上传类
-        $upload->maxSize   =     3145728 ;// 设置附件上传大小
-        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-//            $upload->rootPath =     $_SERVER['DOCUMENT_ROOT'].__ROOT__.'/Public/';
-        $upload->rootPath =     './Public/upload/';
-        $upload->savePath = '';// 设置附件上传目录
 
-        //$upload->savePath  =      './Public/Uploads/';
-        // 上传单个文件
-        $info   =   $upload->upload();
+        if($_FILES['image']['name']) {
+
+            $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize = 3145728;// 设置附件上传大小
+            $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+//            $upload->rootPath =     $_SERVER['DOCUMENT_ROOT'].__ROOT__.'/Public/';
+            $upload->rootPath = './Public/upload/';
+            $upload->savePath = '';// 设置附件上传目录
+
+            //$upload->savePath  =      './Public/Uploads/';
+            // 上传单个文件
+            $info = $upload->upload();
 //            dump($info);
 //            exit();
-        if(!$info) {
-            // 上传错误提示错误信息
-            $this->error($upload->getError());
-        }else {
-            // 上传成功 获取上传文件信息
-            foreach ($info as $file) {
-                //  echo $file['savepath'].$file['savename'];
-                echo $file['name'];
+            if (!$info) {
+                // 上传错误提示错误信息
+                $this->error($upload->getError());
+            } else {
+                // 上传成功 获取上传文件信息
+                foreach ($info as $file) {
+                    //  echo $file['savepath'].$file['savename'];
+                    echo $file['name'];
+                }
             }
-        }
-        $this->_db=M("common");
-        $results=I("post.");
-        $id=$results['commonid'];
-        $results['image']=$file['savepath'].$file['savename'];
-        $result=$this->_db->save($results);
-        if($result){
-            //插入成功
-            $this->success('修改成功,3秒后自动为您跳转到新闻列表','/admin/news/index',3);
+            $this->_db = M("common");
+            $results = I("post.");
+            $id = $results['commonid'];
+            $results['image'] = $file['savepath'] . $file['savename'];
+            $result = $this->_db->save($results);
+            if ($result) {
+                //插入成功
+                $this->success('修改成功,3秒后自动为您跳转到新闻列表', '/admin/news/index', 3);
+            } else {
+                //插入失败
+                $this->error('修改失败，3秒后自动跳回新闻修改页面', "/admin/news/manage/id/$id", 3);
+            }
         }else{
-            //插入失败
-            $this->error('修改失败，3秒后自动跳回新闻修改页面',"/admin/news/manage/id/$id",3);
+            $this->_db = M("common");
+            $results = I("post.");
+            $id = $results['commonid'];
+            $result = $this->_db->save($results);
+            if ($result) {
+                //插入成功
+                $this->success('修改成功,3秒后自动为您跳转到新闻列表', '/admin/news/index', 3);
+            } else {
+                //插入失败
+                $this->error('修改失败，3秒后自动跳回新闻修改页面', "/admin/news/manage/id/$id", 3);
+            }
         }
     }
     public function show(){

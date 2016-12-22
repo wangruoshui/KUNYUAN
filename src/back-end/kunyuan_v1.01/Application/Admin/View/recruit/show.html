@@ -1,103 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Flatpoint - Responsive Web App Template</title>
-  
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
-    <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/index.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/icon/font-awesome.css" rel="stylesheet">
-    
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
 
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/admin/img/apple-touch-icon-144-precomposed.html">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="__PUBLIC__/admin/img/apple-touch-icon-114-precomposed.html">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/admin/img/apple-touch-icon-72-precomposed.html">
-                    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/admin/img/apple-touch-icon-57-precomposed.html">
-                                  
+<body>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    
-  </head>
 
-  <body>
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
 
-    
-    <div id="content"> <!-- Content start -->
-      <div class="inner_content">
-          <div class="widgets_area">
-                <div class="row-fluid">
-                    <div class="span12">
-                         <div  class="daohanglink"style="">
-                           <span class="daohang"></span>
-                           <span>首页</span><span>></span>
-                           <span>招聘管理</span><span>></span>
-                           <span>招聘职位详情</span>
-                           
-                         </div>
-
-                        <div class="well-content">
-                        <p style="font-size:26px;margin-left:42%;margin-top:3%;">招聘信息</p>
-                           <hr/>
-                        <div class="well brown" style="margin-left:20%;margin-right:20%;">
-                         <form action="{:U('admin/recruit/manage')}">
-                         <table class="insert-tab" width="100%" >
-                        <tbody>
-                        <volist name="result" id="data">
-                            <tr>
-                                <th width="30%">职位名称：</th>
-                                <td>{$data.name}</td>
-                            </tr>
-                            <tr>
-                                <th>职务类别：</th>
-                                <td>{$data.type}</td>
-                            </tr>
-                            <tr>
-                                <th>工作地点：</th>
-                                <td>{$data.place}</td>
-                            </tr>
-                            <tr>
-                                <th>岗位描述：</th>
-                                <td>{$data.introduce}</td>
-                            </tr>
-                            <tr>
-                                <th>职位要求：</th>
-                                <td>{$data.require}</td>
-                            </tr>
-                            </volist>
-
-                           
-                          </tbody></table></form>
-                        </div>
-                            </div>
-                    </div>
-                </div>
-
-            
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">招聘管理</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">职位信息</a>
             </div>
         </div>
     </div>
+    <div class="well">
+        <p style="font-size:26px;margin-left:42%;margin-top:3%;">职位信息</p>
+        <hr/>
+        <div class="well brown" style="margin-left:2%;margin-right:20%;">
+            <form action="{:U('admin/common/manage')}">
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-   <script src="__PUBLIC__/admin/js/jquery-1.10.2.js"></script>
-    <script src="__PUBLIC__/admin/js/jquery-ui-1.10.3.js"></script>
-    <script src="__PUBLIC__/admin/js/bootstrap.js"></script>
+                <table class="insert-tab" width="100%" >
+                    <tbody>
+                    <volist name="result" id="data">
+                        <tr>
+                            <th width="20%">职位名称：</th>
+                            <td>{$data.name}</td>
+                        </tr>
+                        <tr>
+                            <th>职务类别：</th>
+                            <td>{$data.type}</td>
+                        </tr>
+                        <tr>
+                            <th>工作地点：</th>
+                            <td>{$data.place}</td>
+                        </tr>
+                        <tr>
+                            <th>岗位描述：</th>
+                            <td>{$data.introduce|htmlspecialchars_decode}</td>
+                        </tr>
+                        <tr>
+                            <th>职位要求：</th>
+                            <td>{$data.require|htmlspecialchars_decode}</td>
+                        </tr>
+                    </volist>
 
-    <script src="__PUBLIC__/admin/js/flatpoint_core.js"></script>
 
-  </body>
+                    </tbody></table>
+
+            </form>
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
 </html>

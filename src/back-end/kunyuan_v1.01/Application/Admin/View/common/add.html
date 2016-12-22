@@ -1,119 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Flatpoint - Responsive Web App Template</title>
-  
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/allp.css"/>
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
-    <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/css/stylesheet.css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/modify.css"/>
-    <link href="__PUBLIC__/admin/css/index.css" rel="stylesheet">
-    <link href="__PUBLIC__/admin/icon/font-awesome.css" rel="stylesheet">
-    
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
 
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/admin/img/apple-touch-icon-144-precomposed.html">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="__PUBLIC__/admin/img/apple-touch-icon-114-precomposed.html">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/admin/img/apple-touch-icon-72-precomposed.html">
-                    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/admin/img/apple-touch-icon-57-precomposed.html">
-                                  
+<body>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    
-  </head>
 
-  <body>
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
 
-    
-    <div id="content"> <!-- Content start -->
-      <div class="inner_content">
-          <div class="widgets_area">
-                <div class="row-fluid">
-                    <div class="span12">
-                         <div  class="daohanglink"style="">
-                           <span class="daohang"></span>
-                           <span>首页</span><span>></span>
-                           <span>公司信息管理</span><span>></span>
-                           <span>添加信息</span>
-                           
-                         </div>
-                        <div class="well-content">
-                        <p style="font-size:20px;margin-left:2%;margin-top:1%;">添加信息</p>
-                           <hr/>
-                         <div class="result-content">
-                             <form action="{:U('admin/common/addinsert')}" method="post" enctype= "multipart/form-data">
-                                 <table class="insert-tab" width="100%">
-                                     <tbody>
-
-                                     <tr>
-                                         <th width="10%">种类：</th>
-                                         <td>
-                                             公司简介
-                                         </td>
-                                     </tr>
-                                     <tr><th><i>*</i>提示：</th><td>2->公司介绍；</td></tr>
-                                     <tr><th><i>*</i>提示：</th><td>345->我们的优势的一二三部分；</td></tr>
-                                     <tr><th><i>*</i>提示：</th><td>6->公司现状；</td></tr>
-                                     <tr><th><i>*</i>提示：</th><td>7->公司地址；</td></tr>
-                                     <tr>
-                                         <th><i class="require-red">*</i>请输入要添加部分的id：</th>
-                                         <td><input class="common-text" name="kindid" size="50" type="text" value=""></td>
-                                     </tr>
-                                     <tr>
-                                         <th><i class="require-red">*</i>标题：</th>
-                                         <td><input class="common-text" name="title" size="50" type="text" value=""></td>
-                                     </tr>
-                                     <tr>
-                                         <th>内容：</th>
-                                         <td>
-                                             <textarea class="common-textarea" name="content" cols="30" style="width: 60%;" rows="5"></textarea>
-                                         </td>
-                                     </tr>
-
-                                     <tr>
-                                         <th><i class="require-red">*</i>选择图片：</th>
-                                         <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
-                                     </tr>
-
-                                     <tr>
-                                         <th></th>
-                                         <td><input class="hidden" name="userid" value="5">
-                                             <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="添加" type="submit" name="submit">
-                                             <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
-                                         </td>
-                                     </tr>
-
-                                     </tbody></table>
-                             </form>
-            </div>
-                            </div>
-                    </div>
-                </div>
-
-            
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">信息管理</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">添加内容</a>
             </div>
         </div>
     </div>
+    <div class="well">
+        <form action="{:U('admin/common/addinsert')}" method="post" enctype= "multipart/form-data">
+            <table class="insert-tab" width="100%">
+                <tbody>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-   <script src="__PUBLIC__/admin/js/jquery-1.10.2.js"></script>
-    <script src="__PUBLIC__/admin/js/jquery-ui-1.10.3.js"></script>
-    <script src="__PUBLIC__/admin/js/bootstrap.js"></script>
+                <tr>
+                    <th width="10%">种类：</th>
+                    <td>
+                        公司简介
+                    </td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>请输入要添加部分：</th>
+                    <td>
+                        <select name="kindid">
+                            <option value="2">公司介绍</option>
+                            <option value="3">我们的优势的一部分</option>
+                            <option value="4">我们的优势的二部分</option>
+                            <option value="4">我们的优势的三部分</option>
+                            <option value="6">公司现状</option>
+                            <option value="7">公司地址</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>标题：</th>
+                    <td><input class="common-text" name="title" size="50" type="text" value=""></td>
+                </tr>
+                <tr>
+                    <th>内容：</th>
+                    <td>
+                        <textarea class="common-textarea" name="content" cols="30" style="width: 60%;" rows="5"></textarea>
+                    </td>
+                </tr>
 
-    <script src="__PUBLIC__/admin/js/flatpoint_core.js"></script>
+                <tr>
+                    <th><i class="require-red">*</i>选择图片：</th>
+                    <td><input type="file" name="image" id="pic" accept="image/gif, image/jpeg" /></td>
+                </tr>
 
-  </body>
+                <tr>
+                    <th></th>
+                    <td><input name="userid" value="5" type="hidden">
+                        <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="添加" type="submit" name="submit">
+                        <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                    </td>
+                </tr>
+
+                </tbody></table>
+        </form>
+    </div>
+    <!-- Content end -->
+</div>
+
+</body>
 </html>
