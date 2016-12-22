@@ -68,8 +68,9 @@
           </a>
       </li>
 
-      <li>
-           <div class="sidebox2"><img src="__PUBLIC__/images/index/2wm.jpg"></div>
+      <li><volist name="weixin2wm" id="weixin">
+           <div class="sidebox2"><img src="__PUBLIC__/upload/{$weixin.config_content}"></div>
+           </volist>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="__PUBLIC__/images/index/u192.png">微信</div>
@@ -316,23 +317,37 @@ function goTop(){
                         <div class="col-md-12 col-xs-12">
                             联系方式：
                             &nbsp;&nbsp;
-                            手机号：181-34061015
+                            <volist name="numb" id="numb">
+                            手机号：{$numb.config_content}
+                            </volist>
                             &nbsp;&nbsp;&nbsp;
-                            邮箱：kyenergy@vip.sina.com
+                            <volist name="email" id="e">
+                            邮箱：{$e.config_content}
+                            </volist>
                             &nbsp;&nbsp;&nbsp;
-                            QQ:652846913
+                            <volist name="qq" id="qq">
+                            QQ:{$qq.config_content}
+                            </volist>
                         </div >
                     </div>
                     <div class="col-md-12 col-xs-12" style="padding-top:1%" >
                         <div class="col-xs-12 col-md-12">
-                            公司地址：河北省廊坊市永清县里澜城镇（里澜城村）
+                            <volist name="addr" id="addr">
+                            公司地址：{$addr.config_content}
+                            </volist>
                             &nbsp;&nbsp;&nbsp;
-                            办公处：廊坊市广阳区盛德金地A座0907室
+                            <volist name="off" id="off">
+                            办公处：{$off.config_content}
+                            </volist>
+                            
                         </div>
                     </div>
                     <div class="col-md-12 col-xs-12" style="padding-top:1%" >
                         <div class="col-xs-11 col-md-12">
-                            京公网安备1104013201701号 京ICP备105623622号
+                            <volist name="beian" id="bei">
+                            备案号：{$bei.config_content}
+                            </volist>
+                            
                             <div class="row-md-1">&nbsp;</br></br></div>
                         </div>
                     </div>
@@ -340,7 +355,9 @@ function goTop(){
             </div>
             <div class="col-md-2">
                 <div class="col-md-8">
-                    <img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/images/index/2wm_u146.png"/>
+                    <volist name="weixin2wm" id="weixin">
+                        <img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$weixin.config_content}"/>
+                    </volist>
                     <div style="font-size:20px;">扫一扫</div>
                 </div>
             </div>

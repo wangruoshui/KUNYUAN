@@ -162,32 +162,39 @@
     <div class="col-md-12 col-xs-12 contact_third">
 
         <div class="col-md-4 col-md-push-2 col-xs-12 col-contact_third_img"><volist name="tele" id="te">
-            <img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$te.image}">
+            <img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$te.image}">   </volist>
         </div>
         
         <div class="col-md-4 col-md-push-3">
-            <volist name="di" id="di">
-            <p class="contact_third_first">{$di.config_name}
+        
+            <p class="contact_third_first">公司地址
             </p>
             <p class="contact-third-second">
-                ——{$di.config_content}
+                ——<volist name="addr" id="a">
+                    {$a.config_content}
+                  </volist>
             </p>
-            </volist>
+ 
             </br>
-            <volist name="ban" id="ban">
-            <p class="contact_third_first">{$ban.config_name}
+       
+            <p class="contact_third_first">办公处
             </p>
             <p class="contact-third-second">
-                ——{$ban.config_content}
+                ——<volist name="off" id="o">
+                    {$o.config_content}
+                  </volist>
             </p>
-            </volist>
+        
             </br>
             <p class="contact_third_first">
                 联系电话</p>
             
             <p class="contact-third-second">
-                ——{$te.content}</p>
-            </volist>
+                ——<volist name="numb" id="n">
+                    {$n.config_content}
+                  </volist>
+            </p>
+         
         </div>
     </div>
     <!--第三部分结束-->

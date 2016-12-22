@@ -376,7 +376,9 @@
 
 </div>
 <div class="text-center td col-md-12 col-xs-12 col-md-pull-3 col-xs-pull-1">
-    简历发送到：<a><volist name="config" id="vo">{$vo.config_content}</volist></a>
+    简历发送到：<a><volist name="email" id="em">
+                            {$em.config_content}
+                            </volist></a>
 </div>
 <div class="row-md-1">&nbsp;</br></br></div>
 <div class=" row-md-1">&nbsp;</br></br></div>

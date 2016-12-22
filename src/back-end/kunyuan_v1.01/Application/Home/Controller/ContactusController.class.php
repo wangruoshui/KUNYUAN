@@ -24,11 +24,7 @@ class ContactusController extends Controller
         $this->assign('bigtu',$bigtu);
 
         $numb=M('kunyuan_config');
-        //公司地址和办公处
-        $di=$numb->where('ID=3')->select();
-        $ban=$numb->where('ID=4')->select();
-        $this->assign('di',$di);
-        $this->assign('ban',$ban);
+
         //联系电话
         $tele=M('common');
         $tele=$tele->where('kindid=10')->order('commonid desc')->limit(1)->select();
@@ -38,7 +34,22 @@ class ContactusController extends Controller
         $phone=$phone->where('kindid=11')->order('commonid desc')->limit(2)->select();
         $this->assign('phone',$phone); 
         
-
+        //尾部
+        $numb=M('kunyuan_config');
+        $numb1=$numb->where('ID=2')->select();
+        $email=$numb->where('ID=1')->select();
+        $qq=$numb->where('ID=19')->select();
+        $addr=$numb->where('ID=3')->select();
+        $off=$numb->where('ID=4')->select();
+        $beian=$numb->where('ID=7')->select();
+        $weixin2wm=$numb->where('ID=18')->select();
+        $this->assign('numb',$numb1);
+        $this->assign('email',$email);
+        $this->assign('qq',$qq);
+        $this->assign('addr',$addr);
+        $this->assign('off',$off);
+        $this->assign('beian',$beian);
+        $this->assign('weixin2wm',$weixin2wm);
 
         $this->display();
     }

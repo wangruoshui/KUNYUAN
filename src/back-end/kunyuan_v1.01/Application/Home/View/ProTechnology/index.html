@@ -336,7 +336,9 @@
 							<p class="comtext"> 
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$data.content}
                             </volist></p>
-							<h5>—公司地址<a href="/home/company/index">（河北省廊坊市永清县里澜城工业园区）</a></h5>
+							<h5>—公司地址<a href="/home/company/index">（<volist name="addr" id="a">
+                            {$a.config_content}
+                            </volist>）</a></h5>
 						</div>
 					</div>
 				</div>

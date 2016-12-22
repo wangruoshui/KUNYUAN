@@ -35,7 +35,7 @@
 	</div>
 </div>
 <div class=" font-family container">
-
+<div class="row-md-1">&nbsp;</div>
 	<div class="text-center">
 		<div class="big">
 			<div>
@@ -308,7 +308,11 @@
 					}
 
 					//标注点数组
-					var markerArr = [{title:"坤源生物质颗粒有限公司",content:"手机：18134061015&nbsp;<br/>&nbsp;地址：廊坊市永清县里澜城工业园区",point:"116.734172|39.2066",isOpen:1,icon:{w:23,h:25,l:92,t:21,x:9,lb:12}}
+					var markerArr = [{title:"坤源生物质颗粒有限公司",content:"手机：<volist name="numb" id="n">
+                            {$n.config_content}
+                            </volist>&nbsp;<br/>&nbsp;<volist name="addr" id="ad">
+                            地址：{$ad.config_content}
+                            </volist>",point:"116.734172|39.2066",isOpen:1,icon:{w:23,h:25,l:92,t:21,x:9,lb:12}}
 					];
 					//创建marker
 					function addMarker(){
@@ -374,10 +378,9 @@
 	<div>
 		<div class="col-md-3">&nbsp;</div>
 		<div class="col-md-9">
-			<p class="cu2"><volist name="results" id="datas" offset="5" length="1">
-                <volist name="datas" id ="data">
-
-                    {$data.content}</volist></volist>
+			<p class="cu2">
+               {$ad.config_content}
+            </p>
 		</div>
 	</div>
 
