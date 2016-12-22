@@ -1,0 +1,23 @@
+body{
+    background-image: url(../upload/error404.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+.first_a{
+    display: block;
+    margin-left:43%;
+    margin-top:-0.1%;
+    width:120px;
+    height:25px;
+    border:1px;
+    float:left;
+}
+.second_a{
+    display: block;
+    margin-left:55%;
+    margin-top:36.5%;
+    width:72px;
+    height:25px;
+    border:1px;
+}
