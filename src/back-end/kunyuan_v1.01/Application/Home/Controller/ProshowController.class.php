@@ -21,25 +21,11 @@ class ProshowController extends Controller
 
         $product=M('product');
         $p=$product->where("productid=$id")->select();
+        $proimg=M('proimg');
+        $img=$proimg->where("productid=$id")->select();
+        $this->assign("img",$img);
 
         $this->assign('product',$p);
-
-        //尾部
-        $numb=M('kunyuan_config');
-        $numb1=$numb->where('ID=2')->select();
-        $email=$numb->where('ID=1')->select();
-        $qq=$numb->where('ID=19')->select();
-        $addr=$numb->where('ID=3')->select();
-        $off=$numb->where('ID=4')->select();
-        $beian=$numb->where('ID=7')->select();
-        $weixin2wm=$numb->where('ID=18')->select();
-        $this->assign('numb',$numb1);
-        $this->assign('email',$email);
-        $this->assign('qq',$qq);
-        $this->assign('addr',$addr);
-        $this->assign('off',$off);
-        $this->assign('beian',$beian);
-        $this->assign('weixin2wm',$weixin2wm);
         $this->display();
     }
 
