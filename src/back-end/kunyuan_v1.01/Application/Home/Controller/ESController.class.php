@@ -26,7 +26,7 @@ class ESController extends Controller
         $this->assign('advantage',$a);
          
         //政策支持
-        $policy=$common->where('kindid=19')->order('commonid desc')->limit(5)->select();
+        $policy=$common->where('kindid=19')->order('commonid desc')->limit(6)->select();
         $this->assign('policy',$policy);
 
     

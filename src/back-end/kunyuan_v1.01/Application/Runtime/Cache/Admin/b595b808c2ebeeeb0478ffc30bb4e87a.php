@@ -91,13 +91,8 @@
 
         <div style="margin-top:65%;"></div>
             <ul class="main" >
-                <?php if(is_array($role_list)): $i = 0; $__LIST__ = $role_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo[0]['id'] == 7) OR ($vo[0]['id'] == 8) ): ?><li ><a class="expand"  href="dashboard.html"><i class="icon-reorder"></i>&nbsp;&nbsp;<?php echo ($vo[0]['name']); ?></a>
-                            <ul class="sub_main" style="background-color: #20477C;">
-                                <div style=" height:8px; width:100%;"></div>
-                                <li><a href="/admin/<?php echo ($vo[0]['show_url']); ?>" target="right" onClick="getclassname(this)"><?php echo ($vo[0]['show_name']); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="float:right;font-size:20px;">></font></a></li>
-                                <div style=" height:8px; width:100%;"></div>
+                <?php if(is_array($role_list)): $i = 0; $__LIST__ = $role_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(($vo[0]['id'] == 7) OR ($vo[0]['id'] == 8) ): ?><li ><a target="right" onClick="getclassname(this)"  href="/admin/<?php echo ($vo[0]['show_url']); ?>"><i class="icon-reorder"></i>&nbsp;&nbsp;<?php echo ($vo[0]['name']); ?></a>
 
-                            </ul>
                         </li>
 
                         <?php else: ?>
@@ -139,42 +134,42 @@
 
     <!-- Le javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+     <!--Placed at the end of the document so the pages load faster -->
     <script src="/Public/admin/js/jquery-1.10.2.js"></script>
     <script src="/Public/admin/js/jquery-ui-1.10.3.js"></script>
     <script src="/Public/admin/js/bootstrap.js"></script>
 
     <script src="/Public/admin/js/library/jquery.collapsible.min.js"></script>
     <script src="/Public/admin/js/library/jquery.mCustomScrollbar.min.js"></script>
-    <script src="/Public/admin/js/library/jquery.mousewheel.min.js"></script>
-    <script src="/Public/admin/js/library/jquery.uniform.min.js"></script>
+    <!--<script src="/Public/admin/js/library/jquery.mousewheel.min.js"></script>-->
+    <!--<script src="/Public/admin/js/library/jquery.uniform.min.js"></script>-->
 
-    
-    <script src="/Public/admin/js/library/jquery.sparkline.min.js"></script>
-    <script src="/Public/admin/js/library/chosen.jquery.min.js"></script>
-    <script src="/Public/admin/js/library/jquery.easytabs.js"></script>
-    <script src="/Public/admin/js/library/flot/excanvas.min.js"></script>
-    <script src="/Public/admin/js/library/flot/jquery.flot.js"></script>
-    <script src="/Public/admin/js/library/flot/jquery.flot.pie.js"></script>
-    <script src="/Public/admin/js/library/flot/jquery.flot.selection.js"></script>
+
+    <!--<script src="/Public/admin/js/library/jquery.sparkline.min.js"></script>-->
+    <!--<script src="/Public/admin/js/library/chosen.jquery.min.js"></script>-->
+    <!--<script src="/Public/admin/js/library/jquery.easytabs.js"></script>-->
+    <!--<script src="/Public/admin/js/library/flot/excanvas.min.js"></script>-->
+    <!--<script src="/Public/admin/js/library/flot/jquery.flot.js"></script>-->
+    <!--<script src="/Public/admin/js/library/flot/jquery.flot.pie.js"></script>-->
+    <!--<script src="/Public/admin/js/library/flot/jquery.flot.selection.js"></script>-->
     <!--<script src="/Public/admin/js/library/flot/jquery.flot.resize.js"></script>-->
-    <script src="/Public/admin/js/library/flot/jquery.flot.orderBars.js"></script>
-    <script src="/Public/admin/js/library/maps/jquery.vmap.js"></script>
-    <script src="/Public/admin/js/library/maps/maps/jquery.vmap.world.js"></script>
-    <script src="/Public/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>
-    <script src="/Public/admin/js/library/jquery.autosize-min.js"></script>
-    <script src="/Public/admin/js/library/charCount.js"></script>
-    <script src="/Public/admin/js/library/jquery.minicolors.js"></script>
-    <script src="/Public/admin/js/library/jquery.tagsinput.js"></script>
-    <script src="/Public/admin/js/library/fullcalendar.min.js"></script>
-    <script src="/Public/admin/js/library/footable/footable.js"></script>
-    <script src="/Public/admin/js/library/footable/data-generator.js"></script>
+    <!--<script src="/Public/admin/js/library/flot/jquery.flot.orderBars.js"></script>-->
+    <!--<script src="/Public/admin/js/library/maps/jquery.vmap.js"></script>-->
+    <!--<script src="/Public/admin/js/library/maps/maps/jquery.vmap.world.js"></script>-->
+    <!--<script src="/Public/admin/js/library/maps/data/jquery.vmap.sampledata.js"></script>-->
+    <!--<script src="/Public/admin/js/library/jquery.autosize-min.js"></script>-->
+    <!--<script src="/Public/admin/js/library/charCount.js"></script>-->
+    <!--<script src="/Public/admin/js/library/jquery.minicolors.js"></script>-->
+    <!--<script src="/Public/admin/js/library/jquery.tagsinput.js"></script>-->
+    <!--<script src="/Public/admin/js/library/fullcalendar.min.js"></script>-->
+    <!--<script src="/Public/admin/js/library/footable/footable.js"></script>-->
+    <!--<script src="/Public/admin/js/library/footable/data-generator.js"></script>-->
 
-    <script src="/Public/admin/js/library/bootstrap-datetimepicker.js"></script>
-    <script src="/Public/admin/js/library/bootstrap-timepicker.js"></script>
-    <script src="/Public/admin/js/library/bootstrap-datepicker.js"></script>
-    <script src="/Public/admin/js/library/bootstrap-fileupload.js"></script>
-    <script src="/Public/admin/js/library/jquery.inputmask.bundle.js"></script>
+    <!--<script src="/Public/admin/js/library/bootstrap-datetimepicker.js"></script>-->
+    <!--<script src="/Public/admin/js/library/bootstrap-timepicker.js"></script>-->
+    <!--<script src="/Public/admin/js/library/bootstrap-datepicker.js"></script>-->
+    <!--<script src="/Public/admin/js/library/bootstrap-fileupload.js"></script>-->
+    <!--<script src="/Public/admin/js/library/jquery.inputmask.bundle.js"></script>-->
 
     <script src="/Public/admin/js/flatpoint_core.js"></script>
 
