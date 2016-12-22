@@ -198,26 +198,21 @@ function goTop(){
 </body>
 <script type="text/javascript">
 
-    $(".img-change").mouseover(function () {
-        var str = $(this).attr("name");
-        var addstr ='__PUBLIC__/images/ProTechnology/' + str + "_mouseOver.png";
-        $(this).attr("src",addstr);
-    });
-    $(".img-change").mouseout(function () {
-        var str = $(this).attr("name");
-        var addstr ='__PUBLIC__/images/ProTechnology/' + str + ".png";
-        $(this).attr("src",addstr);
-    });
-    $(".img-change1").mouseover(function () {
-        var str = $(this).attr("name");
-        var addstr ='__PUBLIC__/images/ProTechnology/' + str + "_mouseOver.png";
-        $(this).attr("src",addstr);
-    });
-    $(".img-change1").mouseout(function () {
-        var str = $(this).attr("name");
-        var addstr ='__PUBLIC__/images/ProTechnology/' + str + ".jpg";
-        $(this).attr("src",addstr);
-    });
+    $(".img-change").hover(
+
+                    function(){
+                        $(this).css("box-shadow","10px 10px 5px #888888");
+
+
+                    },
+                    function(){
+                        $(this).css("box-shadow","0px 0px 0px #fff");
+                    }
+
+    );
+
+
+
     $(".y-change").click(function(){
         $("#box").scrollTop(100);
     });
