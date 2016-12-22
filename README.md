@@ -68,6 +68,10 @@ Welcome to KUNYUAN
 
 ##<i class="icon-refresh"></i> 项目文档说明
 		---src  项目源码
+		   |---front-end				   前端
+				|---front-desk			   前台页面源码
+				|---background			   后台页面源码
+		   |---back-end                    后端
 		---doc  项目文档
 		   |---daily_legislative_Council   每日立会内容
 		   |---personal_weekly             个人项目周报

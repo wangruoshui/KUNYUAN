@@ -1,0 +1,82 @@
+
+h1{
+   font-size: 15px;
+}
+.form-horizontal{
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+}
+.recruit_font1{
+	margin-top: 0.5%;
+	color:white;
+	font-size: 28px;
+	font-weight: bold;
+}
+.recruit_font2{
+	color:black;
+	font-size: 28px;
+}
+.recruit_font3{
+	color:white;
+	font-size: 14px;
+}
+.kuang{
+	margin-top: 9%;
+	height: 20px;
+}
+@media (min-width: 1000px) {
+	.yangtugao{
+		height:336px;
+		width: 380px;
+	}
+	.xiaozi{
+		margin-left: 0.3%;
+		font-size: 17px;
+	}
+	.width4{
+		width: 265px;
+	}
+	.width3{
+		width: 265px;
+	}
+	.width5{
+		width: 113px;
+	}
+	.width6{
+		width: 132px;
+	}
+}
+@media (max-width: 767px) {
+	.yangtugao{
+		height:215px;
+		width: 290px;
+	}
+	.xiaozi{
+		margin-left: 0.3%;
+		font-size: 17px;
+	}
+	.bianda2{
+		font-size: 14px;
+		width: 55px;
+	}
+	.width4{
+		width:100%;
+	}
+	.width3{
+		margin-top: 1.5%;
+		width:90%;
+	}
+	.width5{
+		width: 90px;
+	}
+	.width6{
+		width: 88px;
+	}
+}
+.text4{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	margin-top: 5px;
+}

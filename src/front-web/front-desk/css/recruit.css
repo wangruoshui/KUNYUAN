@@ -1,0 +1,31 @@
+
+h1{
+   font-size: 15px;
+}
+.form-horizontal{
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+}
+.black{
+	background-image:url(../yinhangimages/car.png);
+    background-position: 50%;
+    height:100%;
+    width:100%;
+    background-repeat: no-repeat;
+}
+
+.font1{
+	color:white;
+	font-size: 28px;
+	font-weight: bold;
+}
+.font2{
+	color:black;
+	font-size: 28px;
+}
+.font3{
+	color:white;
+	font-size: 18px;
+}
