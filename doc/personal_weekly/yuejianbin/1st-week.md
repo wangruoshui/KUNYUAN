@@ -14,8 +14,8 @@
 |2|确立网站主题风格|11-01至11-03|与客户商讨后确定主题风格|
 |3|需求文档各部分内容的整合|11-02至11-05|明确大体需求|
 - **问题和关注点**
-1. 网站主题风格的确认，符合公司产品展示等内容
-1. 客户需求的明确，以便进一步开展今后的工作
+###网站主题风格的确认，符合公司产品展示等内容
+###客户需求的明确，以便进一步开展今后的工作
 - **下周工作安排**
 
 |  序号 |任务   |时间区间   |目标状态   |
@@ -25,11 +25,8 @@
 
 | 序号      |     任务 |  时间区间   | 完成情况 |
 | :-------- | --------:| :------: |:-------:|:------------:|
-| 1    |   岳** |  [57373](http://www.hostedredmine.com/users/57373)  |[yuejianbin](https://github.com/yuejianbin)| 
-|2|顾**	|[57409](http://www.hostedredmine.com/users/57409)|[guyinhang](https://github.com/guyinhang)|
-|3|王**|[57410](http://www.hostedredmine.com/users/57410)|[wangxiaoman1](https://github.com/wangxiaoman1)|
-|4|马**|[57442](http://www.hostedredmine.com/users/57442)|[maxing](https://github.com/maxing)|
-|5|孙**|[57377](http://www.hostedredmine.com/users/57377)|[sykun](https://github.com/sykun)|
-
+|1|项目前期必要准备|11-01至11-04|前期准备其本完成|
+|2|确立网站主题风格|11-01至11-03|与客户商讨后确定主题风格|
+|3|需求文档各部分内容的整合|11-02至11-05|明确大体需求|
 
 
