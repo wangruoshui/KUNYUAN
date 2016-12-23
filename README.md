@@ -5,10 +5,11 @@ Welcome to KUNYUAN
 
 # <i class="icon-refresh"></i> 坤源生物质颗粒网站
 >廊坊生物质颗粒有限公司 软件学院PHP方向实训课题
-
+-------------------
 **[坤源生物质网站](www.kunyuan.cf)**是为廊坊坤源生物质颗粒有限公司更好的将产品以及业务进行大范围推广而打造的具有产品展示,样品速递,新闻展示,公司宣传,公司招聘，在线留言等基本功能的商业网站.
 此网站不仅仅限制于大屏幕的终端设备，也将应用于手机微信端的微官网，因此，此项目在考虑客户需求的同时也要考虑自适应以及兼容性等问题，在实训过程中将对于我们项目小组对业务以及需求的把握有更高的要求，并从多方面提升组内各个成员的实践能力。
-# 界面原型部分
+------------------
+# 界面原型部分电脑端
 - **首页**
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/index.png)
 - **公司简介**
@@ -29,8 +30,9 @@ Welcome to KUNYUAN
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/Contactus.png)
 - **职业中心**
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/Career-center.png)
-- **微信微官网**
-
+------------------
+# 界面原型部分微信端
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/index-phone.jpeg)
 -------------------
 
 [TOCM]
@@ -97,7 +99,7 @@ Welcome to KUNYUAN
 		   |---database_design             数据库设计文档
 		---results_show                    阶段性成果展示
 		---Q&A                             常见问题和解答
-		---README.md                       readme.md                  
-		   
+		---README.md                       readme.md   
+		---images			   所需图片 
   
 
