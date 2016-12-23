@@ -1,0 +1,1999 @@
+[ 2016-12-14T08:11:41+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:12:01+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:12:05+08:00 ] 127.0.0.1 /home/send/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:12:14+08:00 ] 127.0.0.1 /home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2016-12-14T08:12:18+08:00 ] 127.0.0.1 /home/ES/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T08:12:35+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:31:06+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:47:30+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:47:33+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:48:47+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:49:00+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:49:02+08:00 ] 127.0.0.1 /home/ES/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T08:49:16+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:51:26+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:51:36+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:53:50+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:58:20+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T08:58:23+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T09:00:05+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T09:17:29+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2016-12-14T09:18:37+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-12-14T19:11:16+08:00 ] ::1 /kunyuan_v1.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T19:15:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T19:16:47+08:00 ] 127.0.0.1 /home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:23:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:27:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-14T21:29:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T21:30:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:37:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:40:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:41:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:41:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:42:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:42:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-14T21:43:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:44:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T21:44:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:45:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:45:54+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-12-14T21:46:10+08:00 ] 127.0.0.1 /home/protechnology/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: Êó†Ê≥ïÂä†ËΩΩÊéßÂà∂Âô®:Protechnology
+
+[ 2016-12-14T21:47:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:47:24+08:00 ] 127.0.0.1 /home/ProTechnology/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.024002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.024002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:47:31+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-12-14T21:47:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:47:45+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-12-14T21:47:51+08:00 ] 127.0.0.1 /home/news/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:48:05+08:00 ] 127.0.0.1 /home/es/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: Êó†Ê≥ïÂä†ËΩΩÊéßÂà∂Âô®:Es
+
+[ 2016-12-14T21:48:29+08:00 ] 127.0.0.1 /home/es/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: Êó†Ê≥ïÂä†ËΩΩÊéßÂà∂Âô®:Es
+
+[ 2016-12-14T21:48:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T21:48:37+08:00 ] 127.0.0.1 /home/ES/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T21:49:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:49:05+08:00 ] 127.0.0.1 /home/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:49:23+08:00 ] 127.0.0.1 /home/career/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:49:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-14T21:49:46+08:00 ] 127.0.0.1 /home/Career/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-12-14T21:49:50+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-12-14T21:50:59+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T21:51:24+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T21:54:04+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T21:54:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T21:54:51+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T21:55:11+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T21:57:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T21:57:55+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T21:59:53+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T22:03:11+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T22:03:12+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ÔøΩÔøΩ÷™ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  D:\wamp\www\kunyuan_v1.0\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 109 Ë°å.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ≤ª÷™µ¿’‚—˘µƒ÷˜ª˙°£ 
+
+[ 2016-12-14T22:06:58+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: Êó†Ê≥ïÂä†ËΩΩÊï∞ÊçÆÂ∫ìÈ©±Âä®: Think\Db\Driver\Mariadb
+
+[ 2016-12-14T22:07:16+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 190 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 190 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 190 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 253 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 266 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 277 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 297 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 308 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 342 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 354 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 381 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.173009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.173009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:07:24+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 190 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 190 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 190 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 241 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 253 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 266 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 277 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 297 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 308 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 342 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 354 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 381 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:07:47+08:00 ] 127.0.0.1 /home/contactus/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:15:05+08:00 ] 127.0.0.1 /home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-14T22:17:51+08:00 ] 127.0.0.1 /home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:24:24+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 247 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 259 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 272 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 283 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 303 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 314 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 348 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 360 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 387 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:25:34+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 247 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 259 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 272 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 283 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 303 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 314 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 348 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 360 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 387 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:26:01+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 247 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 259 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 272 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 283 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 303 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 314 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 348 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 360 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 387 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T22:26:40+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 247 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 259 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 272 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 283 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 303 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 314 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 348 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 360 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 387 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:28:43+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 247 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 259 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 272 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 283 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 303 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 314 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 348 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 360 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 387 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:30:12+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0360s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 196 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 247 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 259 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 272 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 283 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 303 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 314 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 348 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 360 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 387 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-14T22:32:21+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 209 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 209 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 209 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 260 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 272 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 285 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 296 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 316 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 327 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 361 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 373 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 400 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:32:48+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 242 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 254 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 267 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 278 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 298 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 309 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 343 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 355 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 382 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:34:09+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 242 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 254 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 267 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 278 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 298 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 309 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 343 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 355 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 382 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:40:36+08:00 ] 127.0.0.1 /home/company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 191 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 242 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 254 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 267 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 278 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 298 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 309 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 343 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 355 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 382 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:48:30+08:00 ] 127.0.0.1 /home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:49:13+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 240 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 252 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 265 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 276 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 296 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 307 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 341 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 353 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 380 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:49:42+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 240 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 252 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 265 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 276 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 296 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 307 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 341 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 353 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 380 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:49:48+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 240 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 252 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 265 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 276 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 296 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 307 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 341 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 353 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 380 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:49:56+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 240 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 252 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 265 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 276 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 296 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 307 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 341 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 353 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 380 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:51:21+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 189 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 240 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 252 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 265 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 276 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 296 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 307 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 341 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 353 Ë°å.
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\kunyuan_v1.0\Application\Runtime\Cache\Home\4107775cc35841a7e78a93349f59253e.php Á¨¨ 380 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:52:47+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0650s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:53:36+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T22:57:12+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-14T23:01:35+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-12-14T23:03:10+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0625s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T23:05:00+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-12-14T23:05:28+08:00 ] 127.0.0.1 /home/Company/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=4 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0225s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=5 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0225s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=6 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=7 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0475s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=8 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=9 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0225s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=10 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0225s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=11 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-14T23:11:06+08:00 ] 127.0.0.1 /home/ProTechnology/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

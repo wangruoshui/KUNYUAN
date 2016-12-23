@@ -15,8 +15,8 @@ body{font-size:14px}
 .header,.footer{ position:absolute; left:0; right:0; width:100%; z-index:99}
 .header{height:46px; line-height:46px;text-align:center;font-size: 30px;color: #AAAAAA;margin-top:1%;}
 
-.loginWraper{ position:absolute;width:100%; left:0; top:0; bottom:0; right:0; z-index:1; background:#3283AC url(../images/202134z9u3nfz4c0h84n6n.jpg) no-repeat center}
-.loginBox{ position:absolute; width:617px; height:330px; background:url(../images/admin-loginform-bg.png) no-repeat; left:50%; top:50%; margin-left:-309px; margin-top:-184px; padding-top:38px}
+.loginWraper{ position:absolute;width:100%; left:0; top:0; bottom:0; right:0; z-index:1; background:#3283AC url(../images/background-3.png) no-repeat center}
+.loginBox{ position:absolute; width:617px; height:330px; background:url(../images/admin-loginform-bg1.png) no-repeat; left:50%; top:50%; margin-left:-309px; margin-top:-184px; padding-top:38px}
 @media (max-width:617px) {
 	.loginbox{ width:100%; position:static; margin-top:0; margin-left:0; }
 }

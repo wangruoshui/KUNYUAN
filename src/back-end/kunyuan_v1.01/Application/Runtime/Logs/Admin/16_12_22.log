@@ -1,0 +1,322 @@
+[ 2016-12-22T22:17:01+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-22T22:17:01+08:00 ] 127.0.0.1 /index.php?s=/admin/log/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-22T22:17:01+08:00 ] 127.0.0.1 /admin/log/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant login1 - assumed 'login1' D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\LogController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-22T22:17:15+08:00 ] 127.0.0.1 /admin/log/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0200s ]
+
+[ 2016-12-22T22:17:19+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `user` WHERE ( userid=1 )  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `role` WHERE ( roleid=1 )  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `user` WHERE ( userid=1 )  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `role` WHERE ( 1=1 AND roleid='1' ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `role_notes` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=1 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=7 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=8 )  [ RunTime:0.0220s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=6 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=3 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=4 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=2 )  [ RunTime:0.0200s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=5 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=9 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=10 )  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:17:20+08:00 ] 127.0.0.1 /admin/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProductController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\ProductController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:17:24+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `user` WHERE ( userid=1 )  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `role` WHERE ( roleid=1 )  [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `user` WHERE ( userid=1 )  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `role` WHERE ( 1=1 AND roleid='1' ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `role_notes` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=1 )  [ RunTime:0.0220s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=7 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=8 )  [ RunTime:0.0220s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=6 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=3 )  [ RunTime:0.0230s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=4 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=2 )  [ RunTime:0.0220s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=5 )  [ RunTime:0.0220s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=9 )  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=10 )  [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:17:27+08:00 ] 127.0.0.1 /admin/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProductController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\ProductController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:17:31+08:00 ] 127.0.0.1 /index.php?s=/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `user` WHERE ( userid=1 )  [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `role` WHERE ( roleid=1 )  [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `user` WHERE ( userid=1 )  [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `role` WHERE ( 1=1 AND roleid='1' ) LIMIT 1   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `role_notes` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=1 )  [ RunTime:0.0180s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=7 )  [ RunTime:0.0190s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=8 )  [ RunTime:0.0190s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=6 )  [ RunTime:0.0190s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=3 )  [ RunTime:0.0190s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=4 )  [ RunTime:0.0170s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=2 )  [ RunTime:0.0180s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=5 )  [ RunTime:0.0180s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=9 )  [ RunTime:0.0180s ]
+SQL: SELECT * FROM `role_notes` WHERE ( id=10 )  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:17:33+08:00 ] 127.0.0.1 /admin/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProductController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\ProductController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-22T22:39:14+08:00 ] 127.0.0.1 /admin/product/manage/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProductController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\ProductController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `product` WHERE ( productid=3 )  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-22T22:39:24+08:00 ] 127.0.0.1 /index.php?s=/admin/product/modify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProductController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\ProductController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0220s ]
+SQL: UPDATE `product` SET `userid`='1',`name`='各种木',`price`='1234',`introductions`='生物质颗粒的直径一般为6~10毫米，长度为其直径的4~5倍，破碎率小于1.5%~2.0%，干基含水量小于15%，灰分含量小于2%，硫含量和氯含量均小于0.07%，氮含量小于0.5%。若使用添加剂，则应为农林产物，并且应标明使用的种类和数量。' WHERE ( productid=3 ) [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:39:29+08:00 ] 127.0.0.1 /admin/product/index/id/%7B$results[
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProductController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\ProductController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `product`  [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-22T22:40:10+08:00 ] 127.0.0.1 /admin/product/show/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProductController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\kunyuan_v1.01\Application\Admin\Controller\ProductController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `product` WHERE ( productid=3 )  [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

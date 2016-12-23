@@ -19,11 +19,11 @@
 
 					<li>
 						您所在的位置:
-						<a href="/home/index/index">首页</a>
+						<a href="/index.php/home/index/index">首页</a>
 					</li>
 					<li>
 
-						<a href="/home/peoTechnology/index">产品中心</a>
+						<a href="/index.php/home/proTechnology/index">产品中心</a>
 					</li>
 
 					<li class="active">
@@ -38,54 +38,22 @@
 </div>
 
 <div class="container col-md-12">
-	<div class="row">&nbsp</br></br></br></div>
-	<div class="container">
-		<div class="text-center">
+	<div class="xshidden row">&nbsp</br></br></div></br>
+	<div class="col-md-12 container">
+		<div class="col-md-12 text-center">
 			<div class="big">
 				<div>
 					<img src="__PUBLIC__/images/newslist/u321.png">
-					硬杂木生物质材料
+					产品内容
 					<img src="__PUBLIC__/images/newslist/u321.png">
 				</div>
 			</div>
 			<div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
+
 		</div>
 		<!--第一部分，内容标题+下划线+产品标题-->
-		<div class="row">&nbsp</br></br></div>
-		<div class="row nc_first_top"></div>
-		<div class="row nc_first">
-			<div class="xshidden row">&nbsp</br></br></div>
-
-				<div class="col-md-8 nc_first_left">
-
-
-
-					<div class="col-md-12 col-xs-12">
-
-
-
-
-
-
-
-
-
-
-
-
-
-						<!--第二部分结束-->
-						<!--第三部分开启-->
-
-
-
-
-
-						</div>
-						<!--第三部分结束-->
-
-		</div>
-	</div>
+		<div class="xshidden row">&nbsp</div>
+		</br>
 
 
 		<script type="text/javascript">
@@ -167,51 +135,16 @@
 				margin:0;
 				padding:0;
 				list-style-type:none;}
-			.zoombox{
-				width:686px;
-				margin:20px auto 0 auto;}
-			.zoompic{
-				border:solid 1px #dfdfdf;
-				width:684px;
-				height:394px;
-				background:url(url(__PUBLIC__/images/productContent/loading.gif) no-repeat 50% 50%;}
 
-			.sliderbox{
-				height:76px;
-				overflow:hidden;
-				margin:6px 0 0 0;}
-			.sliderbox .arrow-btn{
-				width:38px;
-				height:76px;
-				background:url(__PUBLIC__/images/productContent/arrow-btn.png) no-repeat;
-				cursor:pointer;}
 			.sliderbox #btn-left{
 				float:left;
 				background-position:0 0;
 			}
-			.sliderbox #btn-left.dasabled{
-				background-position:0 -76px;}
-			.sliderbox #btn-right{
-				float:right;
-				background-position:-38px 0;}
-			.sliderbox #btn-right.dasabled{
-				background-position:-38px -76px;
-			}
-			.sliderbox .slider{
-				float:left;height:76px;width:605px;
-				position:relative;
-				overflow:hidden;margin:0 0 0 3px;
-				display:inline;
-			}
+
 			.sliderbox .slider ul{
 				position:absolute;
 				left:0;
 				width:999em;}
-			.sliderbox .slider li{
-				float:left;
-				width:121px;
-				height:76px;
-				text-align:center;}
 			.sliderbox .slider li img{
 				border:solid 1px #dfdfdf;}
 			.sliderbox .slider li.current img{
@@ -228,18 +161,20 @@
 
 		<div class="zoombox">
 			<volist name="product" id="bigimg">
-			<div class="zoompic"><img src="__PUBLIC__/upload/{$bigimg.image}" width="684" height="394" alt=""></div>
+			<div class="protu1 zoompic"><img class="protu1" src="__PUBLIC__/upload/{$bigimg.image}"  alt=""></div>
+
 			</volist>
 
 			<div class="sliderbox">
 				<div id="btn-left" class="arrow-btn dasabled"></div>
 				<div class="slider" id="thumbnail" >
-					<ul style="width: 847px;">
+					<ul class="protu2">
 						<volist name="product" id="firstimg">
-						<li class="current"><a href="#" target="_blank"><img src="__PUBLIC__/upload/{$firstimg.image}" width="115" height="74" alt=""><p style="display:none">6</p></a></li>
+						<li class="current"><a href="#" target="_blank"><img src="__PUBLIC__/upload/{$firstimg.image}" class="protu3" alt=""><p style="display:none">6</p></a></li>
 						</volist>
 						<volist name="img" id="imgdata">
-						<li><a href="#" target="_blank"><img src="__PUBLIC__/upload/{$imgdata.proimgpath}" width="115" height="74" alt=""></a></li>
+						<li><a href="#" target="_blank"><img class="protu3" src="__PUBLIC__/upload/{$imgdata.proimgpath}" alt=""></a></li>
+
 						</volist>
 
 																</ul>

@@ -47,11 +47,11 @@
                                 <if condition="($data['id'] eq 5)OR ($data['id'] eq 6)">
 
                                     <td>
-                                        <a class="btn" href="/admin/peizhi/personmanage/id/{$data.id}" title="修改">修改</a>
+                                        <a class="btn" href="/index.php/admin/peizhi/personmanage/id/{$data.id}" title="修改">修改</a>
                                     </td>
                                     <else />
                                     <td>
-                                        <a class="btn" href="/admin/peizhi/crnmanage/id/{$data.id}" title="修改">修改</a>
+                                        <a class="btn" href="/index.php/admin/peizhi/crnmanage/id/{$data.id}" title="修改">修改</a>
                                     </td>
                                 </if>
                                 <input type="hidden" name="id" value="{$data.id}">

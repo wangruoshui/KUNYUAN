@@ -22,7 +22,7 @@
 
 					<li>
 						您所在的位置:
-						<a href="index.html">首页</a>
+						<a href="/index.php/home/index/index">首页</a>
 					</li>
 
 					<li class="active">
@@ -34,8 +34,18 @@
 		</div>
 	</div>
 </div>
+
+<div class="xshidden twonumb">
+	<volist name="phone" id="ph">
+        <div class="color2">
+            {$ph.title}：{$ph.content}        
+        </div>
+    </volist>
+</div>
+
 <div class=" font-family container">
 <div class="row-md-1">&nbsp;</div>
+<div class="xshidden row-md-1">&nbsp;</br></br></div>
 	<div class="text-center">
 		<div class="big">
 			<div>
@@ -50,8 +60,8 @@
 	<div class="row">
 		<div class="col-md-6">
 			<div class="col-md-1 col-xs-0"></div>
-			<div class="col-md-3 col-xs-5">
-				<img src="__PUBLIC__/images/company/6b.png">
+			<div class="col-md-3 col-xs-2">
+				<img class="bule6" src="__PUBLIC__/images/company/6b.png">
 			</div>
 			<div class="col-md-8 col-xs-7">
 				<div class="row-md-1">&nbsp;</br></br></div>
@@ -59,14 +69,15 @@
 					公司<a class="ba1">简介</a>
 				</div>
 			</div>
-			<div class="row-md-9">
-				<div class="row-md-1">&nbsp;</br></br></div>
+			<div class="col-md-12">
 				<div class="col-md-3">&nbsp;</div>
 				<div class="col-md-8">
-					<p class="comtext"><span>
+				<div class="mdhidden row-md-1">&nbsp;</br></br></div></br>
+					<p class="comtext1" ><span>
 						<volist name="results" id="datas" offset="0" length='1'>
                         <volist name="datas" id="data">
-                            <!--<?php dump(data)?>-->
+                        
+                         
                         &nbsp;&nbsp;&nbsp;{$data.content}
                         <br/>
                             </volist>
@@ -80,7 +91,7 @@
 			<div class="xshidden row-md-1">&nbsp;</br></br></br></br></div>
 			<div class="col-md-1 col-xs-0">&nbsp;</div>
 			<div class="img-thumbnail1 col-md-9 col-xs-12" style="padding:0px;margin:0px;">
-				<img class="carousel-inner img-responsive xintu" src="__PUBLIC__/upload/{$data.image}"></volist>
+				<img class="carousel-inner img-responsive xintu1" src="__PUBLIC__/upload/{$data.image}"></volist>
 			</div>
 			<div class="col-md-1 col-xs-0">&nbsp;</div>
 		</div>
@@ -90,10 +101,10 @@
 	<div class="row">
 		<div class="col-md-6">
 			<div class="col-md-1 col-xs-0"></div>
-			<div class="col-md-3  col-xs-5">
-				<img src="__PUBLIC__/images/company/6b.png">
+			<div class="col-md-3 col-xs-2">
+				<img class="bule6" src="__PUBLIC__/images/company/6b.png">
 			</div>
-			<div class="col-md-8  col-xs-7">
+			<div class="col-md-8 col-xs-7">
 				<div class="row-md-1">&nbsp;</br></br></div>
 				<div class="t1" class="row-md-10">
 					我们的<a class="ba1">优势</a>
@@ -115,7 +126,7 @@
 						<div>
 							<div class="row-md-1"></br></div>
 							<div class="col-md-3 col-xs-1">&nbsp;</div>
-							<div class="row-md-4 col-md-7 col-xs-8 center3">
+							<div class="row-md-4 col-md-7 col-xs-11 center3">
 								<h1 class="title3">NO.1</h1>
 								<p class="title333">
 									<volist name="results" id="datas" offset="1" length="1">
@@ -131,7 +142,7 @@
 							<div class="xshidden row-md-1">&nbsp;</div>
 							<div class="col-md-3 col-xs-0">&nbsp;</div>
 							<div class="col-md-9 col-xs-12">
-								<img class="img-responsive" src="__PUBLIC__/upload/{$data.image}">
+								<img class="top2 img-responsive" src="__PUBLIC__/upload/{$data.image}">
 							</div>
                             </volist>
                             </volist>
@@ -143,7 +154,7 @@
 						<div>
 							<div class="row-md-1"></br></div>
 							<div class="col-md-3 col-xs-1">&nbsp;</div>
-							<div class="row-md-4 col-md-7 col-xs-8 center3">
+							<div class="row-md-4 col-md-7 col-xs-11 center3">
 								<h1 class="title3">NO.2</h1>
 								<p class="title333">
                                     <volist name="results" id="datas" offset="2" length="1">
@@ -158,7 +169,7 @@
 						<div class="col-md-10 col-xs-12">
 							<div class="xshidden row-md-1">&nbsp;</div>
 							<div class="col-md-3 col-xs-0">&nbsp;</div>
-							<div class="col-md-9 col-xs-12">
+							<div class="top2 col-md-9 col-xs-12">
 								<img class="img-responsive" src="__PUBLIC__/upload/{$data.image}">
 							</div>
                             </volist>
@@ -211,8 +222,8 @@
 	<div class="row">
 		<div class="col-md-6">
 			<div class="col-md-1 col-xs-0"></div>
-			<div class="col-md-3 col-xs-5">
-				<img src="__PUBLIC__/images/company/6b.png">
+			<div class="col-md-3 col-xs-2">
+				<img class="bule6" src="__PUBLIC__/images/company/6b.png">
 			</div>
 			<div class="col-md-8 col-xs-7">
 				<div class="row-md-1">&nbsp;</br></br></div>
@@ -220,13 +231,15 @@
 					公司<a class="ba1">现状</a>
 				</div>
 			</div>
-			<div class="row-md-9">
-				<div class="row-md-1">&nbsp;</br></br></div>
+			<div class="col-md-12">
+				
 				<div class="col-md-3">&nbsp;</div>
 				<div class="col-md-8">
-					<p class="comtext"><span>&nbsp;&nbsp;&nbsp;<volist name="results" id="datas" offset="4" length="1">
+				<div class="row-md-1">&nbsp;</br></br></div>
+				<div class="mdhidden row-md-1">&nbsp;</div>
+					<p class="comtext1"><span>&nbsp;&nbsp;&nbsp;<volist name="results" id="datas" offset="4" length="1">
 										<volist name="datas" id ="data">
-
+											
                                             {$data.content}
                                         &nbsp;&nbsp;</span></p>
 				</div>
@@ -247,12 +260,13 @@
 		<div class="row-md-1 row-xs-1">&nbsp;</br></br></br></div>
 		<div class="col-md-6">
 			<div class="col-md-1 col-xs-0"></div>
-			<div class="col-md-3  col-xs-5">
-				<img src="__PUBLIC__/images/company/6b.png">
+			<div class="col-md-3 col-xs-2">
+				<img class="bule6" src="__PUBLIC__/images/company/6b.png">
 			</div>
-			<div class="col-md-8  col-xs-7">
+			<div class="col-md-8 col-xs-7">
 				<div class="row-md-1">&nbsp;</br></br></div>
-				<div class="t1" class="row-md-10">					公司<a class="ba1">地址</a>
+				<div class="t1" class="row-md-10">
+					公司<a class="ba1">地址</a>
 				</div>
 			</div>
 		</div>
@@ -268,7 +282,7 @@
 		<div class="col-md-3 col-xs-1">&nbsp;</div>
 		<div class="col-md-6 col-xs-10 img-thumbnail1" style="margin: 0px;padding: 0px">
 
-            <div style="width:559px;height:308px;border:#ccc solid 1px;" id="dituContent"></div>
+            <div class="baiduditu" style="border:#ccc solid 1px;" id="dituContent"></div>
 				<script type="text/javascript">
 					//创建和初始化地图函数：
 					function initMap(){

@@ -23,7 +23,7 @@ class PeizhiController extends Controller
             $this->assign('result',$result);
             $this->display('crn');
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }

@@ -29,7 +29,7 @@ class CourierController extends Controller{
             //显示视图
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }

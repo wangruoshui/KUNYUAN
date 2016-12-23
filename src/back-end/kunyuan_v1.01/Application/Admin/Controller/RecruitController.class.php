@@ -22,7 +22,7 @@ class RecruitController extends Controller{
             $this->assign('result',$results);
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -36,10 +36,10 @@ class RecruitController extends Controller{
 
             if($result){
                 //插入成功
-                $this->success('添加成功,3秒后自动为您跳转到招聘列表','/admin/recruit/index',3);
+                $this->success('添加成功,3秒后自动为您跳转到招聘列表','/index.php/admin/recruit/index',3);
             }else{
                 //插入失败
-                $this->error('添加失败，3秒后自动跳回添加页面','/admin/recruit/add',3);
+                $this->error('添加失败，3秒后自动跳回添加页面','/index.php/admin/recruit/add',3);
             }
         }
 
@@ -58,10 +58,10 @@ class RecruitController extends Controller{
         $result=$this->_db->where("stationid=%d",$id)->save($results);
         if($result){
             //插入成功
-            $this->success('修改成功,3秒后自动为您跳转到招聘列表','/admin/recruit/index',3);
+            $this->success('修改成功,3秒后自动为您跳转到招聘列表','/index.php/admin/recruit/index',3);
         }else{
             //插入失败
-            $this->error('修改失败，3秒后自动跳回招聘修改页面',"/admin/recruit/manage/id/$id",3);
+            $this->error('修改失败，3秒后自动跳回招聘修改页面',"/index.php/admin/recruit/manage/id/$id",3);
         }
     }
     public function show(){
@@ -78,10 +78,10 @@ class RecruitController extends Controller{
         $results=$this->_db->where("stationid=$id")->delete();
         if($results){
             //插入成功
-            $this->success('删除成功,3秒后自动为您跳转到招聘列表','/admin/recruit/index',3);
+            $this->success('删除成功,3秒后自动为您跳转到招聘列表','/index.php/admin/recruit/index',3);
         }else{
             //插入失败
-            $this->error('删除失败，3秒后自动跳回公司简介列表','/admin/recruit/index',3);
+            $this->error('删除失败，3秒后自动跳回公司简介列表','/index.php/admin/recruit/index',3);
         }
     }
 }

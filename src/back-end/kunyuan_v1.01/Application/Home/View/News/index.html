@@ -2,7 +2,6 @@
     <div class="container col-md-12" style="padding:0px">
         <div>
             <div class="carousel slide" >
-
                 <div class="carousel-inner">
                     <div class="item active" >
                         <volist name="bigtu" id="big">
@@ -19,7 +18,7 @@
 
                     <li>
                         您所在的位置:
-                        <a href="index.html">首页</a>
+                        <a href="/index.php/home/index/index">首页</a>
                     </li>
 
                     <li class="active">
@@ -34,7 +33,7 @@
 </div>
 
 <div class="container col-md-12">
-<div class="xshidden row">&nbsp</br></br></br></br></div>
+<div class="xshidden row">&nbsp</br></br></br></div></br>
     <div class="container">
         <div class="text-center">
             <div class="big">
@@ -47,9 +46,9 @@
             <div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
         </div>
         <!--第一部分，内容标题+下划线+产品标题-->
-        <div class="row nc_first_top"></div>
+        <div class="mdhidden row"></div>
         <div class="row nc_first">
-        <div class="xshidden row">&nbsp</br></br></div>
+       
           <div class="col-md-7 col-md-offset-1 nc_first_left">
 
 
@@ -68,17 +67,17 @@
                     <div class="col-md-12 col-xs-12" style="border-top: 1px solid #c6c6c6;" onmouseover="chagebgcolor(this)" onmouseout="recovecolor(this)">
 
                         <h2>
-                            <a target="_blank" href="http://123.207.175.231/index.php/home/newscontent/index/id/{$data.commonid}" style="text-decoration: none;font-size:23px;font-family:微软雅黑;line-width: 27px;" class="text-center">
+                            <a target="_blank" href="/index.php/home/newscontent/index/id/{$data.commonid}" style="text-decoration: none;font-size:23px;font-family:微软雅黑;line-width: 27px;" class="text-center">
                                {$data.title}
                             </a>
                         </h2>
 
                             <div class="col-md-3 col-xs-12"  style="display:inline; padding-bottom:10px">
-                                <a href="http://123.207.175.231/index.php/home/newscontent/index/id/{$data.commonid}" target="_blank" class="imageshide"><img width="100%" src="__PUBLIC__/upload/{$data.image}"/></a>
+                                <a href="/index.php/home/newscontent/index/id/{$data.commonid}" target="_blank" class="imageshide"><img width="100%" src="__PUBLIC__/upload/{$data.image}"/></a>
                             </div>
                             <div class="col-md-9 col-xs-12" style="color:#666;display:inline;padding-bottom:0px; ">
 
-                                <p style="line-height: 27px;font-family:微软雅黑;">  {$data.content|htmlspecialchars_decode=###|mb_substr=###,0,70,'utf-8'}......<a target="_blank" href="http://123.207.175.231/index.php/home/newscontent/index/id/{$data.commonid}" class="right">[详细]</a> </p>
+                                <p style="line-height: 27px;font-family:微软雅黑;">  {$data.content|htmlspecialchars_decode=###|mb_substr=###,0,70,'utf-8'}......<a target="_blank" href="/index.php/home/newscontent/index/id/{$data.commonid}" class="right">[详细]</a> </p>
                                 <span style="color:#999;padding-top:10px;">{$data.time}</span>
                             </div>
                             <script type="text/javascript">
@@ -110,7 +109,7 @@
         </volist>
 
         <div class="row-md-1">&nbsp;</div>
-              <div class="col-md-11 col-xs-8 col-md-push-9 col-xs-push-4 panel-body">{$page}</div>
+              <div class="col-md-11 col-xs-8 col-md-push-9 col-xs-push-5 panel-body">{$page}</div>
             </div>
 
             <script type="text/javascript">
@@ -124,7 +123,7 @@
             
             
             <div class="col-md-4 col-md-push-0">
-            <div class="row-md-1">&nbsp;</br></br></br></div>
+            <div class="row-md-1">&nbsp;</br></div>
             <div class="col-md-1 hidden-xs"><img src="__PUBLIC__/images/newslist/u1690.png"></div>
             <div class="col-md-11">
                 <div class="row news_push_title">
@@ -143,13 +142,13 @@
                     <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-4 col-xs-4">
                         <volist name="products" id="data1" offset="0" length="1">
-                            <a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
+                            <a href="/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
                             </a></volist>
                     </div>
                     
                     <div class="col-md-4 col-xs-4">
                         <volist name="products" id="data1" offset="1" length="1">
-                            <a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
+                            <a href="/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}">
                             </a></volist>
                    </div>
                 </div>
@@ -158,7 +157,7 @@
                     <div class="col-xs-4  col-md-4 right_first_word_first">
                         <div class="row">&nbsp</div>
                         <volist name="products" id="data1" offset="0" length="1">
-                        <a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                        <a href="/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
                             </volist>
                             <div class="row">&nbsp</div>
                     </div>
@@ -166,7 +165,7 @@
                     <div class="col-xs-4 right_first_word_second">
                         <div class="row">&nbsp</div>
                         <volist name="products" id="data1" offset="1" length="1">
-                        <a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                        <a href="/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
                             </volist>
                             <div class="row">&nbsp</div>
                     </div>
@@ -175,12 +174,12 @@
                     <div class="col-md-1 col-xs-1">&nbsp</div>
                     <div class="col-md-4 col-xs-4">
                         <volist name="products" id="data1" offset="2" length="1">
-                        <a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}"></a>
+                        <a href="/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}"></a>
                             </volist>
                     </div>
                     
                     <div class="col-md-4 col-xs-4">
-                        <volist name="products" id="data1" offset="3" length="1"><a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}"></a></volist></div>
+                        <volist name="products" id="data1" offset="3" length="1"><a href="/index.php/home/Proshow/index/id/{$data1.productid}"><img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$data1.image}"></a></volist></div>
                 </div>
 
                 <div class="row right_first_word">
@@ -188,7 +187,7 @@
                     <div class="col-xs-4  col-md-4 right_first_word_first">
                         <div class="row">&nbsp</div>
                         <volist name="products" id="data1" offset="2" length="1">
-                        <a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                        <a href="/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
                             </volist>
                             <div class="row">&nbsp</div>
                     </div>
@@ -196,7 +195,7 @@
                     <div class="col-xs-4 right_first_word_second">
                         <div class="row">&nbsp</div>
                         <volist name="products" id="data1" offset="3" length="1">
-                        <a href="http://123.207.175.231/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
+                        <a href="/index.php/home/Proshow/index/id/{$data1.productid}">{$data1.name}生物材料</a>
                             </volist>
                             <div class="row">&nbsp</div>
                     </div>
@@ -218,7 +217,7 @@
                 <div class="row news_push_content"><div class="col-md-2 col-xs-1">&nbsp</div><div class="col-md-8">
                                     </div></div>
                 <volist name="recommonnews" id="data">
-                <div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="http://123.207.175.231/index.php/home/newscontent/index/id/{$data.commonid}">{$data.title|mb_substr=###,0,14,'utf-8'}...</a></div></div>
+                <div class="row news_push_content"><div class="col-md-1 col-xs-1">&nbsp</div><div class="col-md-8"><a href="/index.php/home/newscontent/index/id/{$data.commonid}">{$data.title|mb_substr=###,0,14,'utf-8'}...</a></div></div>
                 </volist>
 
                 <!--第五部分结束-->

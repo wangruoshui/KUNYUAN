@@ -1,16 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Public/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet"  href="/Public/bootstrap/css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="/Public/css/index.css">
-    <script type="text/javascript" src="/Public/bootstrap/js/jquery.js"></script>
-    <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/css/allp.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
         a,img{border:0;}
@@ -27,19 +24,35 @@
 
 
         .right_img a:hover img{
-          -webkit-transform:scale(2,2);
-          -moz-transform:scale(2,2);
-          -transform:scale(2,2);
+          transition: transform 0.7s;
+          -moz-transition: -moz-transform 0.7s;
+          -webkit-transition: -webkit-transform 0.7s;
+          -o-transition: -o-transform 0.7s;
+          transform:scale(2,2);
+            -ms-transform:scale(2,2); /* IE 9 */
+            -moz-transform:scale(2,2); /* Firefox */
+            -webkit-transform:scale(2,2); /* Safari and Chrome */
+            -o-transform:scale(2,2); /* Opera */
+          }
+          .right_img a img{
+          transition: transform 0.7s;
+          -moz-transition: -moz-transform 0.7s;
+          -webkit-transition: -webkit-transform 0.7s;
+          -o-transition: -o-transform 0.7s;
+          transform:scale(1,1);
+            -ms-transform:scale(1,1); /* IE 9 */
+            -moz-transform:scale(1,1); /* Firefox */
+            -webkit-transform:scale(1,1); /* Safari and Chrome */
+            -o-transform:scale(1,1); /* Opera */
           }
     </style>
-
 </head>
 <body>
 
 <div class="side">
     <ul>
         <li>
-            <a href="/home/contactus/index#box3">
+            <a href="/index.php/home/contactus/index#box3">
                 <div class="sidebox">
                 <img src="/Public/images/index/side_icon01.png">在线留言
                 </div>
@@ -47,12 +60,12 @@
         </li>
       <li>
           <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=652846913&site=qq&menu=yes" >
-            <div class="sidebox"><img  title="QQ账号：652846913"src="/Public/images/index/side_icon04.png">QQ客服</div>
+              <div class="sidebox"><img  title="QQ账号：652846913"src="/Public/images/index/side_icon04.png">QQ客服</div>
           </a>
       </li>
 
       <li>
-           <div class="sidebox2"><img src="/Public/images/index/2wm.jpg"></div>
+           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
@@ -64,7 +77,7 @@
           </a>
       </li>
   </ul>
-</div>  
+</div> 
 <script>
 $(function(){
     $(".side ul li").hover(function(){
@@ -80,7 +93,7 @@ $(function(){
     });
 
 });
-//回到顶部函数
+//鍥炲埌椤堕儴鍑芥暟
 function goTop(){
     $('html,body').animate({'scrollTop':0},300);
 }
@@ -105,39 +118,40 @@ function goTop(){
                     </button>
                 </div>
                 <div  class="col-md-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="/home/index/index">首页</a>
-                            </li>
-                            <li>
-                                <a href="/home/Company/index">公司简介</a>
-                            </li>
-                            <li>
-                                <a href="/home/ProTechnology/index">产品中心</a>
-                            </li>
-                            <li>
-                                <a href="/home/News/index">新闻中心</a>
-                            </li>
-                            <li>
-                                <a href="/home/ES/index">环境与社会</a>
-                            </li>
-                            <li>
-                                <a href="/home/Career/index">职业中心</a>
-                            </li>
-                            <li>
-                                <a href="/home/Contactus/index">联系我们</a>
-                            </li>
+                    <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/index.php/home/index/index">首页</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/home/Company/index">公司简介</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/home/ProTechnology/index">产品中心</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/home/News/index">新闻中心</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/home/ES/index">环境与社会</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/home/Career/index">职业中心</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/home/Contactus/index">联系我们</a>
+                        </li>
 
 
 
 
-                        </ul>
+                    </ul>
                 </div>
 
             </nav>
         </div>
     </div>
 </div>
+
 
 <div class="container col-md-12" >
     <div class="row">
@@ -194,12 +208,12 @@ function goTop(){
     <div class="col-md-10 ">
         <div class="row">
             <div class="text-center">
-            <?php if(is_array($index)): $i = 0; $__LIST__ = $index;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-3 col-xs-6">
-                    <div class="right_img">
-                        <a href=""><img alt="70×70" src="/Public/upload/<?php echo ($vo["image"]); ?>" height="70" width="70" /></a>
+            <?php if(is_array($index)): $i = 0; $__LIST__ = $index;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-3 col-xs-6 divgao">
+                    <div class="right_img" >
+                        <a href=""><img class="img-circle" src="/Public/upload/<?php echo ($vo["image"]); ?>" height="70" width="70" /></a>
                         <div class="caption">
                             <h3 class="yuan4">
-                                <?php echo ($vo["title"]); ?>
+                                <?php echo ($vo["title"]); ?> 
                             </h3>
                             <p class="yuan44">
                                 <?php echo ($vo["content"]); ?>
@@ -222,7 +236,7 @@ function goTop(){
         </div>
 
         <div class="col-md-4 column">
-            <div class="row-md-1">&nbsp;</br></br>  </div>
+            <div class="xshidden row-md-1">&nbsp;</br></br>  </div>
             <div class="page-header">
                 <div class="text-center">
                     <div class="big1">
@@ -239,7 +253,7 @@ function goTop(){
         <div class="col-md-4">
         </div>
     </div>
-    <div class="row-md-1">&nbsp;</div>
+    <div class="xshidden row-md-1">&nbsp;</div>
     <div class="container">
 
         <div class="col-md-11">
@@ -256,17 +270,17 @@ function goTop(){
                             <p class="textzhu">
                                 &nbsp;&nbsp;&nbsp;&nbsp;<span>    
                                 <?php echo ($vo["content"]); ?>
-                                <a class="more1" href="/home/Company/index">详情>></a></span>
+                                <a class="more1" href="/index.php/home/Company/index">详情>></a></span>
                             </p>
 
                         </div>
 
                     </div>
                 </div>
-                <div class="row-md-1">&nbsp;</br></br></div>
+                <div class="xshidden row-md-1">&nbsp;</br></br></div>
                 <div class="col-md-1">&nbsp;</div>
                 <div class="col-md-5">
-                    <div class="row-md-1">&nbsp;</div>
+                    <div class="xshidden row-md-1">&nbsp;</div>
                     <img class="img-responsive xintu"  src="/Public/upload/<?php echo ($vo["image"]); ?>"/>
                 </div><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
@@ -277,44 +291,38 @@ function goTop(){
 <div class="row-md-1">&nbsp;</br></br></div>
 <div class="xshidden row-md-1">&nbsp;</br></br></div>
 <div class="container col-md-12 footer-color">
-    <div class="col-md-12">
-        <div class="col-md-1 column">
+    <div class="col-md-12 col-xs-12">
+        <div class="col-md-1 col-xs-0 column">
         </div>
-        <div class="col-md-10 text-center weitext">
+        <div class="col-md-10 col-xs-12 text-center-1 weitext">
             <div class="row-md-1">&nbsp;</div>
-            <div class="col-md-9 ">
-                <div class="row">
+            <div class="col-md-9 col-xs-12">
 
-                    <div class="col-md-12 col-xs-12" style="padding-top:1%" >
-                        <div class="col-md-12 col-xs-12">
-                            联系方式：
-                            &nbsp;&nbsp;
-                            手机号：181-34061015
-                            &nbsp;&nbsp;&nbsp;
-                            邮箱：kyenergy@vip.sina.com
-                            &nbsp;&nbsp;&nbsp;
-                            QQ:652846913
-                        </div >
-                    </div>
-                    <div class="col-md-12 col-xs-12" style="padding-top:1%" >
-                        <div class="col-xs-12 col-md-12">
-                            公司地址：河北省廊坊市永清县里澜城镇（里澜城村）
-                            &nbsp;&nbsp;&nbsp;
-                            办公处：廊坊市广阳区盛德金地A座0907室
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-xs-12" style="padding-top:1%" >
-                        <div class="col-xs-11 col-md-12">
-                            京公网安备1104013201701号 京ICP备105623622号
+                    <div class="col-md-12 col-xs-12"  >
+                            
+                            <?php if(is_array($numb)): $i = 0; $__LIST__ = $numb;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$numb): $mod = ($i % 2 );++$i;?><br class="xshidden" > 
+
+                            手机号：<?php echo ($numb["config_content"]); ?>&nbsp;&nbsp;<br class="mdhidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(is_array($email)): $i = 0; $__LIST__ = $email;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$e): $mod = ($i % 2 );++$i;?>邮箱：<?php echo ($e["config_content"]); ?>&nbsp;&nbsp;<br class="mdhidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+                   
+                            <?php if(is_array($qq)): $i = 0; $__LIST__ = $qq;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$qq): $mod = ($i % 2 );++$i;?>QQ：<?php echo ($qq["config_content"]); ?>&nbsp;&nbsp;<br><br class="topwei xshidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(is_array($addr)): $i = 0; $__LIST__ = $addr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$addr): $mod = ($i % 2 );++$i;?>公司地址：<?php echo ($addr["config_content"]); ?>&nbsp;&nbsp;<br  class="mdhidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+                        
+                            <?php if(is_array($off)): $i = 0; $__LIST__ = $off;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$off): $mod = ($i % 2 );++$i;?>办公处：<?php echo ($off["config_content"]); ?>&nbsp;&nbsp;<br><br class="topwei xshidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(is_array($beian)): $i = 0; $__LIST__ = $beian;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bei): $mod = ($i % 2 );++$i;?>备案号：<?php echo ($bei["config_content"]); endforeach; endif; else: echo "" ;endif; ?>
+
                             <div class="row-md-1">&nbsp;</br></br></div>
-                        </div>
                     </div>
-                </div>
+
             </div>
             <div class="col-md-2">
                 <div class="col-md-8">
-                    <img class="carousel-inner img-responsive img-rounded" src="/Public/images/index/2wm_u146.png"/>
-                    <div style="font-size:20px;">扫一扫</div>
+                    <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><img class="saoyisao carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"/><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <div class="text-center" style="margin-top:4%;font-size:20px;">扫一扫</div>
+                    <div class="mdhidden"></br></div>
                 </div>
             </div>
         </div>

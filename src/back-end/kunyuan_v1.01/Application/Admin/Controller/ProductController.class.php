@@ -22,7 +22,7 @@ class ProductController extends Controller{
             $this->assign('result',$results);
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -57,10 +57,10 @@ class ProductController extends Controller{
         $result=$this->_db->add($results);
         if($result){
             //插入成功
-            $this->success('添加成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+            $this->success('添加成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
         }else{
             //插入失败
-            $this->error('添加失败，3秒后自动跳回添加页面','/admin/product/add',0);
+            $this->error('添加失败，3秒后自动跳回添加页面','/index.php/admin/product/add',0);
         }
         }else{
             $this->display();
@@ -106,10 +106,10 @@ class ProductController extends Controller{
             $result=$this->_db->save($results);
             if($result){
                 //插入成功
-                $this->success('修改成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+                $this->success('修改成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
             }else{
                 //插入失败
-                $this->error('修改失败，3秒后自动跳回产品列表','/admin/product/index/id/{$results["productid"]}',0);
+                $this->error('修改失败，3秒后自动跳回产品列表','/index.php/admin/product/index/id/{$results["productid"]}',0);
             }
         }else{
             $pro=M('product');
@@ -132,10 +132,10 @@ class ProductController extends Controller{
 
             if($result){
                 //插入成功
-                $this->success('修改成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+                $this->success('修改成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
             }else{
                 //插入失败
-                $this->error('修改失败，3秒后自动跳回产品列表','/admin/product/index/id/{$results["productid"]}',0);
+                $this->error('修改失败，3秒后自动跳回产品列表','/index.php/admin/product/index/id/{$results["productid"]}',0);
             }
         }
 
@@ -154,10 +154,10 @@ class ProductController extends Controller{
         $results=$this->_db->where("productid=$id")->delete();
         if($results){
             //插入成功
-            $this->success('删除成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+            $this->success('删除成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
         }else{
             //插入失败
-            $this->error('删除失败，3秒后自动跳回产品列表','/admin/product/index',0);
+            $this->error('删除失败，3秒后自动跳回产品列表','/index.php/admin/product/index',0);
         }
     }
 }

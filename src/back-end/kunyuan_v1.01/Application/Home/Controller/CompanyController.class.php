@@ -41,7 +41,7 @@ class CompanyController extends Controller
 //        exit;
         $this->assign("results",$results);
 
-        //尾部
+        //尾部 
         $numb=M('kunyuan_config');
         $numb1=$numb->where('ID=2')->select();
         $email=$numb->where('ID=1')->select();
@@ -57,6 +57,10 @@ class CompanyController extends Controller
         $this->assign('off',$off);
         $this->assign('beian',$beian);
         $this->assign('weixin2wm',$weixin2wm);
+
+        $phone=M('common');
+        $phone=$phone->where('kindid=11')->order('commonid desc')->limit(2)->select();
+        $this->assign('phone',$phone); 
        $this->display();
 
     }

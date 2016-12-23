@@ -5,24 +5,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/Public/css/recruit.css"  type="text/css" rel="stylesheet">
-    <link href="/Public/css/environment.css"  type="text/css" rel="stylesheet">
-
-    <link href="/Public/css/newscontent.css" type="text/css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="/Public/css/ProductContent2.css">
-    <link rel="stylesheet" type="text/css" href="/Public/css/ProductList.css">
-    <link href="/Public/css/contactus.css" type="text/css" rel="stylesheet">
-
-
     <link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap-theme.css">
-
-    <link rel="stylesheet" type="text/css" href="/Public/css/index.css">
-    <!--<script type="text/javascript" src="/Public/bootstrap/js/npm.js"></script>-->
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
-
-    <!--<script src="/Public/js/main.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="/Public/css/allp.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
     <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style>
         *{margin:0;padding:0;list-style-type:none;}
@@ -61,25 +46,25 @@
                 <div  class="col-md-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li >
-                            <a href="/home/index/index">首页</a>
+                            <a href="/index.php/home/index/index">首页</a>
                         </li>
                         <li>
-                            <a href="/home/Company/index">公司简介</a>
+                            <a href="/index.php/home/Company/index">公司简介</a>
                         </li>
                         <li>
-                            <a href="/home/ProTechnology/index">产品中心</a>
+                            <a href="/index.php/home/ProTechnology/index">产品中心</a>
                         </li>
                         <li>
-                            <a href="/home/News/index">新闻中心</a>
+                            <a href="/index.php/home/News/index">新闻中心</a>
                         </li>
                         <li>
-                            <a href="/home/ES/index">环境与社会</a>
+                            <a href="/index.php/home/ES/index">环境与社会</a>
                         </li>
                         <li>
-                            <a href="/home/Career/index">职业中心</a>
+                            <a href="/index.php/home/Career/index">职业中心</a>
                         </li>
                         <li>
-                            <a href="/home/Contactus/index">联系我们</a>
+                            <a href="/index.php/home/Contactus/index">联系我们</a>
                         </li>
 
 
@@ -98,7 +83,7 @@
 <div class="side">
     <ul>
         <li>
-            <a href="/home/contactus/index#box3">
+            <a href="/index.php/home/contactus/index#box3">
                 <div class="sidebox">
                 <img src="/Public/images/index/side_icon01.png">在线留言
                 </div>
@@ -111,7 +96,7 @@
       </li>
 
       <li>
-           <div class="sidebox2"><img src="/Public/images/index/2wm.jpg"></div>
+           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
@@ -124,7 +109,7 @@
       </li>
   </ul>
 </div>
-<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>    
+
 <script>
 $(function(){
     $(".side ul li").hover(function(){
@@ -148,7 +133,7 @@ function goTop(){
 
 
 
-<link rel="stylesheet" type="text/css" href="/Public/css/send.css">
+
 <script type="text/javascript" src="/Public/js/checkEmail.js"></script>
 <script type="text/javascript">
     function checkName(){
@@ -222,11 +207,22 @@ function goTop(){
         document.getElementById("spancontent").style.visibility="hidden";
     }
 </script>
+<style type="text/css">
+    .span{
+        visibility: hidden;
+        color:red;
+    }
+    #spanphone{
+    color:red;
+}
+#spanaddress{
+    color:red;
+}
+</style>
 <div class="container col-md-12 font-family"style="padding:0px">
     <div class="container col-md-12" style="padding:0px">
         <div>
             <div class="carousel slide" >
-
                 <div class="carousel-inner">
                     <div class="item active" >
                         <?php if(is_array($bigtu)): $i = 0; $__LIST__ = $bigtu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$big): $mod = ($i % 2 );++$i;?><img  src="/Public/upload/<?php echo ($big["config_content"]); ?>" width="100%" /><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -241,7 +237,7 @@ function goTop(){
 
                     <li>
                         您所在的位置:
-                        <a href="index.html">首页</a>
+                        <a href="/index.php/home/index/index">首页</a>
                     </li>
 
                     <li class="active">
@@ -293,9 +289,9 @@ function goTop(){
     <!--第一部分结束-->
     <!--第二部分开始-->
     
-    <div class="xshidden row-md-1">&nbsp;</br></br></br></br><div id="box1"></div></br></br></div>
-    
-    <div class="text-center">
+    <div class="xshidden row-md-1">&nbsp;</br></br></br><div id="box1"></div></br></div>
+    </br>
+    <div class="col-md-12 text-center">
         <div class="big">
             <div>
                 <img src="/Public/images/protechnology/u321.png">
@@ -309,36 +305,40 @@ function goTop(){
     <!--第三部分开始-->
     <div class="col-md-12 col-xs-12 contact_third">
 
-        <div class="col-md-4 col-md-push-2 col-xs-12 col-contact_third_img"><?php if(is_array($tele)): $i = 0; $__LIST__ = $tele;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$te): $mod = ($i % 2 );++$i;?><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($te["image"]); ?>">
+        <div class="col-md-4 col-md-push-2 col-xs-12 col-contact_third_img"><?php if(is_array($tele)): $i = 0; $__LIST__ = $tele;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$te): $mod = ($i % 2 );++$i;?><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($te["image"]); ?>"><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
-        
+        <div class="mdhidden row-md-1">&nbsp;</div>
         <div class="col-md-4 col-md-push-3">
-            <?php if(is_array($di)): $i = 0; $__LIST__ = $di;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$di): $mod = ($i % 2 );++$i;?><p class="contact_third_first"><?php echo ($di["config_name"]); ?>
+        
+            <p class="contact_third_first">公司地址
             </p>
             <p class="contact-third-second">
-                ——<?php echo ($di["config_content"]); ?>
-            </p><?php endforeach; endif; else: echo "" ;endif; ?>
-            </br>
-            <?php if(is_array($ban)): $i = 0; $__LIST__ = $ban;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ban): $mod = ($i % 2 );++$i;?><p class="contact_third_first"><?php echo ($ban["config_name"]); ?>
+                ——<?php if(is_array($addr)): $i = 0; $__LIST__ = $addr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$a): $mod = ($i % 2 );++$i; echo ($a["config_content"]); endforeach; endif; else: echo "" ;endif; ?>
+            </p>
+ 
+       
+            <p class="contact_third_first">办公处
             </p>
             <p class="contact-third-second">
-                ——<?php echo ($ban["config_content"]); ?>
-            </p><?php endforeach; endif; else: echo "" ;endif; ?>
-            </br>
+                ——<?php if(is_array($off)): $i = 0; $__LIST__ = $off;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$o): $mod = ($i % 2 );++$i; echo ($o["config_content"]); endforeach; endif; else: echo "" ;endif; ?>
+            </p>
+        
             <p class="contact_third_first">
                 联系电话</p>
             
             <p class="contact-third-second">
-                ——<?php echo ($te["content"]); ?></p><?php endforeach; endif; else: echo "" ;endif; ?>
+                ——<?php if(is_array($numb)): $i = 0; $__LIST__ = $numb;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$n): $mod = ($i % 2 );++$i; echo ($n["config_content"]); endforeach; endif; else: echo "" ;endif; ?>
+            </p>
+         
         </div>
     </div>
     <!--第三部分结束-->
     <!--第四部分开始-->
     
-    <div class="xshidden row-md-1">&nbsp;</br></br><div id="box2"></div></br></br></div>
+    <div class="xshidden row-md-1">&nbsp;</br><div id="box2"></div></br></br></div>
     <div class="row-md-1">&nbsp;</br></br></br></div>
     
-    <div class="text-center">
+    <div class="col-md-12 text-center">
         <div class="big">
             <div>
                 <img src="/Public/images/protechnology/u321.png">
@@ -350,13 +350,12 @@ function goTop(){
     </div>
     <!--第四部分结束-->
     <!--第五部分开始-->
-    <div class="row contact_third">
+    <div class="col-md-12  contact_third">
         <div class="col-md-4 col-md-push-2 col-xs-push-1 col-xs-10 contact_third_img">
         <?php if(is_array($phone)): $i = 0; $__LIST__ = array_slice($phone,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ph): $mod = ($i % 2 );++$i;?><img class="carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($ph["image"]); ?>"><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
-        <div class="col-xs-12 col-md-4 col-md-push-3 col-xs-push-1 contact_fifth_text">
-        <?php if(is_array($phone)): $i = 0; $__LIST__ = $phone;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ph): $mod = ($i % 2 );++$i;?></br>
-            <div class="contact_third_first"><?php echo ($ph["resource"]); ?></div>
+        <div class="col-xs-12 col-md-4 col-md-push-3 col-xs-push-0 contact_fifth_text">
+        <?php if(is_array($phone)): $i = 0; $__LIST__ = $phone;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ph): $mod = ($i % 2 );++$i;?><div class="contact_third_first"><?php echo ($ph["resource"]); ?></div>
             <div class="contact-third-second">
                 <div><?php echo ($ph["title"]); ?></div>
                 <div>联系方式：<?php echo ($ph["content"]); ?></div>
@@ -367,10 +366,8 @@ function goTop(){
     <!--第五部分结束-->
     <!--第六部分开始-->
     
-    <div class="xshidden row-md-1">&nbsp;</br></br><div id="box3"></div></br></br></div>
-    <div class="row-md-1">&nbsp;</br></br></br></div>
-
-    <div class="text-center">
+    <div class="xshidden row-md-1">&nbsp;</br><div id="box3"></div></br></br></div>
+    <div class=" contact_seventh col-md-12 text-center">
         <div class="big">
             <div>
                 <img src="/Public/images/protechnology/u321.png">
@@ -382,14 +379,14 @@ function goTop(){
     </div>
     <!--第六部分结束-->
     <!--第七部分开始-->
-    <div class="row contact_seventh">
-        <div class="col-md-8 col-md-push-2 col-xs-10 col-xs-push-1 contact_seventh_form">
-            <form role="form" action="/home/contactus/addmessage" method="post">
+    <div class="col-md-12  contact_seventh">
+        <div class="col-md-8 col-md-push-2 col-xs-12 col-xs-push-0 contact_seventh_form">
+            <form role="form" action="/index.php/home/contactus/addmessage" method="post">
                 <div class="row contact_seventh_first">
-                    <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
+                    <div class="col-md-10 col-md-push-1  contact_seventh_first_input">
                         <input type="text" placeholder="请输入联系人姓名：" class="form-control" onblur='checkName()'  onfocus="checkNametwo()"
                                id="username" name="name">
-                        <span value="姓名不能为空" style="white-space:nowrap;" id="name">姓名不能为空</span>
+                        <span class="span" value="姓名不能为空" style="white-space:nowrap;" id="name">姓名不能为空</span>
                     </div>
 
 
@@ -402,7 +399,7 @@ function goTop(){
                     </div>
                 </div>
                 <div class="row contact_seventh_second">
-                    <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
+                    <div class="contact_seventh_second col-md-10 col-md-push-1 contact_seventh_first_input">
                         <div class="form-group contact_seventh_second_third">
                             <!--<label for="name">选择列表</label>-->
                             <select class="form-control" name="title">
@@ -428,7 +425,7 @@ function goTop(){
                         <textarea rows="5" cols="50" id="content" name="content" class="form-control"
                                   onblur='checkContent()'  onfocus="checkContenttwo()"
                                   placeholder="详情描述"></textarea>
-                        <span value="详情不能为空" style="white-space:nowrap;" id="spancontent">详情不能为空</span>
+                        <span class="span" value="详情不能为空" style="white-space:nowrap;" id="spancontent">详情不能为空</span>
                     </div>
                 </div>
                 <div class="row contact_seventh_last">
@@ -443,44 +440,38 @@ function goTop(){
 </div>
 <div class="row-md-1">&nbsp;</br></br></br></br></div>
 <div class="container col-md-12 footer-color">
-    <div class="col-md-12">
-        <div class="col-md-1 column">
+    <div class="col-md-12 col-xs-12">
+        <div class="col-md-1 col-xs-0 column">
         </div>
-        <div class="col-md-10 text-center weitext">
+        <div class="col-md-10 col-xs-12 text-center-1 weitext">
             <div class="row-md-1">&nbsp;</div>
-            <div class="col-md-9 ">
-                <div class="row">
+            <div class="col-md-9 col-xs-12">
 
-                    <div class="col-md-12 col-xs-12" style="padding-top:1%" >
-                        <div class="col-md-12 col-xs-12">
-                            联系方式：
-                            &nbsp;&nbsp;
-                            手机号：18134061015
-                            &nbsp;&nbsp;&nbsp;
-                            邮箱：kyenergy@vip.sina.com
-                            &nbsp;&nbsp;&nbsp;
-                            QQ:652846913
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-xs-12" style="padding-top:1%" >
-                        <div class="col-xs-12 col-md-12">
-                            公司地址：河北省廊坊市永清县里澜城镇（里澜城村）
-                            &nbsp;&nbsp;&nbsp;
-                            办公处：廊坊市广阳区盛德金地A座0907室
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-xs-12" style="padding-top:1%" >
-                        <div class="col-xs-11 col-md-12">
-                            京公网安备1104013201701号 京ICP备105623622号
+                    <div class="col-md-12 col-xs-12"  >
+                            
+                            <?php if(is_array($numb)): $i = 0; $__LIST__ = $numb;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$numb): $mod = ($i % 2 );++$i;?><br class="xshidden" > 
+
+                            手机号：<?php echo ($numb["config_content"]); ?>&nbsp;&nbsp;<br class="mdhidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(is_array($email)): $i = 0; $__LIST__ = $email;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$e): $mod = ($i % 2 );++$i;?>邮箱：<?php echo ($e["config_content"]); ?>&nbsp;&nbsp;<br class="mdhidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+                   
+                            <?php if(is_array($qq)): $i = 0; $__LIST__ = $qq;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$qq): $mod = ($i % 2 );++$i;?>QQ：<?php echo ($qq["config_content"]); ?>&nbsp;&nbsp;<br><br class="topwei xshidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(is_array($addr)): $i = 0; $__LIST__ = $addr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$addr): $mod = ($i % 2 );++$i;?>公司地址：<?php echo ($addr["config_content"]); ?>&nbsp;&nbsp;<br  class="mdhidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+                        
+                            <?php if(is_array($off)): $i = 0; $__LIST__ = $off;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$off): $mod = ($i % 2 );++$i;?>办公处：<?php echo ($off["config_content"]); ?>&nbsp;&nbsp;<br><br class="topwei xshidden" ><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                            <?php if(is_array($beian)): $i = 0; $__LIST__ = $beian;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$bei): $mod = ($i % 2 );++$i;?>备案号：<?php echo ($bei["config_content"]); endforeach; endif; else: echo "" ;endif; ?>
+
                             <div class="row-md-1">&nbsp;</br></br></div>
-                        </div>
                     </div>
-                </div>
+
             </div>
             <div class="col-md-2">
                 <div class="col-md-8">
-                    <img class="carousel-inner img-responsive img-rounded" src="/Public/images/index/2wm_u146.png"/>
-                    <div style="font-size:20px;">扫一扫</div>
+                    <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><img class="saoyisao carousel-inner img-responsive img-rounded" src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"/><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <div class="text-center" style="margin-top:4%;font-size:20px;">扫一扫</div>
+                    <div class="mdhidden"></br></div>
                 </div>
             </div>
         </div>

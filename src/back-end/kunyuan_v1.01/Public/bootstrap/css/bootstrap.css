@@ -29,7 +29,7 @@ body {
   font-family: "微软雅黑" ;
   line-height:25px;
 }
-.comtext{
+.comtext1{
   font-size: 15px;
   font-family: "微软雅黑" ;
   line-height:23px;
@@ -4403,15 +4403,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: none;
   }
 }
-.navbar-nav {
-  margin: 7.5px -15px;
-}
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  width:120px;
-  line-height: 20px;
-}
+
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -4437,17 +4429,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    text-align: center;
     margin: 0;
   }
   .navbar-nav > li {
     text-align: center;
     width:auto;
-    float: left;
+    text-align: center;
   }
   .navbar-nav > li > a {
-    padding-top: 18px;
-    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 14px;
   }
 }
 .navbar-form {
@@ -4462,6 +4454,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
 }
 @media (min-width: 768px) {
+  .navbar-nav {
+  margin: 7.5px -15px;
+  .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  width:120px;
+  line-height: 20px;
+}
+}
+
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -4518,6 +4520,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
   }
+  .navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 2px;
+  width:120px;
+  line-height: 5px;
+  margin-left: 100px;
+}
+.navbar-nav{
+  border-bottom: 10px;
+}
 }
 @media (min-width: 768px) {
   .navbar-form {

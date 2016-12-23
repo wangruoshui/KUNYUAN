@@ -1430,3 +1430,170 @@ INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
 
 
+[ 2016-12-22T22:13:26+08:00 ] 127.0.0.1 /home/Proshow/index/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kunyuan_config` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=12 )  [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `product` WHERE ( productid=3 )  [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `proimg` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `proimg` WHERE ( productid=3 )  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 114 行.
+NOTIC: [8] Undefined variable: numb D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 416 行.
+NOTIC: [8] Undefined variable: email D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 418 行.
+NOTIC: [8] Undefined variable: qq D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 420 行.
+NOTIC: [8] Undefined variable: addr D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 425 行.
+NOTIC: [8] Undefined variable: off D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 427 行.
+NOTIC: [8] Undefined variable: beian D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 433 行.
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 442 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-22T22:13:40+08:00 ] 127.0.0.1 /home/Proshow/index/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kunyuan_config` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=12 )  [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `product` WHERE ( productid=1 )  [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `proimg` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `proimg` WHERE ( productid=1 )  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 114 行.
+NOTIC: [8] Undefined variable: numb D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 416 行.
+NOTIC: [8] Undefined variable: email D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 418 行.
+NOTIC: [8] Undefined variable: qq D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 420 行.
+NOTIC: [8] Undefined variable: addr D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 425 行.
+NOTIC: [8] Undefined variable: off D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 427 行.
+NOTIC: [8] Undefined variable: beian D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 433 行.
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 442 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-22T22:14:32+08:00 ] 127.0.0.1 /home/Proshow/index/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kunyuan_config` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=12 )  [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `product` WHERE ( productid=1 )  [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `proimg` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `proimg` WHERE ( productid=1 )  [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 114 行.
+NOTIC: [8] Undefined variable: numb D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 416 行.
+NOTIC: [8] Undefined variable: email D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 418 行.
+NOTIC: [8] Undefined variable: qq D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 420 行.
+NOTIC: [8] Undefined variable: addr D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 425 行.
+NOTIC: [8] Undefined variable: off D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 427 行.
+NOTIC: [8] Undefined variable: beian D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 433 行.
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 442 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:14:49+08:00 ] 127.0.0.1 /home/Proshow/index/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kunyuan_config` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=12 )  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `product` WHERE ( productid=1 )  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `proimg` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `proimg` WHERE ( productid=1 )  [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 114 行.
+NOTIC: [8] Undefined variable: numb D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 416 行.
+NOTIC: [8] Undefined variable: email D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 418 行.
+NOTIC: [8] Undefined variable: qq D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 420 行.
+NOTIC: [8] Undefined variable: addr D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 425 行.
+NOTIC: [8] Undefined variable: off D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 427 行.
+NOTIC: [8] Undefined variable: beian D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 433 行.
+NOTIC: [8] Undefined variable: weixin2wm D:\wamp\www\kunyuan_v1.01\Application\Runtime\Cache\Home\4826b7b36b9ca81ce675399d36571496.php 第 442 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-22T22:17:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kunyuan_config` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=8 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=9 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=10 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=2 )  [ RunTime:0.0170s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=1 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=19 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=3 )  [ RunTime:0.0170s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=4 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=7 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `kunyuan_config` WHERE ( ID=18 )  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `common` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=1 ) ORDER BY commonid desc LIMIT 4   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `common` WHERE ( kindid=2 ) ORDER BY commonid desc LIMIT 1   [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
