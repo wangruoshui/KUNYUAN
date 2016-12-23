@@ -5,32 +5,44 @@ Welcome to KUNYUAN
 
 # <i class="icon-refresh"></i> 坤源生物质颗粒网站
 >廊坊生物质颗粒有限公司 软件学院PHP方向实训课题
+-------------------
+**[坤源生物质网站](www.kunyuan.cf)**是为廊坊坤源生物质颗粒有限公司更好的将产品以及业务进行大范围推广而打造的具有产品展示,样品速递,新闻展示,公司宣传,公司招聘，在线留言等基本功能的商业网站.此网站不仅仅限制于大屏幕的终端设备，也将应用于手机微信端的微官网，因此，此项目在考虑客户需求的同时也要考虑自适应以及兼容性等问题，在实训过程中将对于我们项目小组对业务以及需求的把握有更高的要求，并从多方面提升组内各个成员的实践能力。
+------------------
 
-**[坤源生物质网站](www.kunyuan.cf)**是为廊坊坤源生物质颗粒有限公司更好的将产品以及业务进行大范围推广而打造的具有产品展示,样品速递,新闻展示,公司宣传,公司招聘，在线留言等基本功能的商业网站.
-此网站不仅仅限制于大屏幕的终端设备，也将应用于手机微信端的微官网，因此，此项目在考虑客户需求的同时也要考虑自适应以及兼容性等问题，在实训过程中将对于我们项目小组对业务以及需求的把握有更高的要求，并从多方面提升组内各个成员的实践能力。
-# 界面原型部分
+# 界面原型部分——电脑端
 - **首页**
+*产品介绍，公司介绍，产品优势，公司优势*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/index.png)
 - **公司简介**
+*公司简介，我们的优势，公司现状，公司地址*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/company.png)
 - **产品中心**
+*产品技术，产品展示（主要），销售范围，样品寄送（主要）*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/product-center.png)
 - **产品内容**
+*图片，产品详细介绍*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/product-content.png)
 - **样品速递**
+*申请样品寄送*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/sample-send.png)
 - **新闻中心**
+*新闻近况（与产业相关），新闻推荐（根据点击量进行推荐），产品展示（侧栏）*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/news.png)
 - **新闻内容**
+*具体新闻详情，新闻推荐（根据点击量进行推荐），产品展示（侧栏）*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/news-content.png)
 - **环境与社会**
+*社会需求，政策支持（为外部链接点击入口），地域限制*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/ES.png)
 - **联系我们**
+*联系方式，加入我们，客户留言（主要）*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/Contactus.png)
 - **职业中心**
+*人才理念，岗位招聘（主要）*
 ![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/Career-center.png)
-- **微信微官网**
-
+------------------
+# 界面原型部分微信端
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/index-phone.jpeg)
 -------------------
 
 [TOCM]
@@ -97,7 +109,7 @@ Welcome to KUNYUAN
 		   |---database_design             数据库设计文档
 		---results_show                    阶段性成果展示
 		---Q&A                             常见问题和解答
-		---README.md                       readme.md                  
-		   
+		---README.md                       readme.md   
+		---images			   所需图片 
   
 
