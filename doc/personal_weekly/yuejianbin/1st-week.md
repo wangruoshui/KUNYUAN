@@ -21,6 +21,13 @@
 |  1 | 进一步控制需求与风格  | 11-07至11-13  | 确立需求与风格便不予更改  |
 |  2 | 绘制界面原型  | 11-07至11-13  | 确定界面原型，并在今后的开发处于主导地位  |
 
+| 序号      |     姓名 |   redmine主页   | github主页 | 角色 |
+| :-------- | --------:| :------: |:-------:|:------------:|:-----------:|
+| 1    |   岳** |  [57373](http://www.hostedredmine.com/users/57373)  |[yuejianbin](https://github.com/yuejianbin)| 项目经理 |
+|2|顾**	|[57409](http://www.hostedredmine.com/users/57409)|[guyinhang](https://github.com/guyinhang)|产品经理|
+|3|王**|[57410](http://www.hostedredmine.com/users/57410)|[wangxiaoman1](https://github.com/wangxiaoman1)|UI设计 开发工程师|
+|4|马**|[57442](http://www.hostedredmine.com/users/57442)|[maxing](https://github.com/maxing)|开发工程师|
+|5|孙**|[57377](http://www.hostedredmine.com/users/57377)|[sykun](https://github.com/sykun)|测试工程师 开发工程师|
 
 
 
