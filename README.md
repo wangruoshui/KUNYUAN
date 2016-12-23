@@ -1,19 +1,34 @@
 Welcome to KUNYUAN
 ===================
 
-![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/logo.gif)
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/logo.webp)
 
 # <i class="icon-refresh"></i> 坤源生物质颗粒网站
 >廊坊生物质颗粒有限公司 软件学院PHP方向实训课题
 
 **[坤源生物质网站](www.kunyuan.cf)**是为廊坊坤源生物质颗粒有限公司更好的将产品以及业务进行大范围推广而打造的具有产品展示,样品速递,新闻展示,公司宣传,公司招聘，在线留言等基本功能的商业网站.
 此网站不仅仅限制于大屏幕的终端设备，也将应用于手机微信端的微官网，因此，此项目在考虑客户需求的同时也要考虑自适应以及兼容性等问题，在实训过程中将对于我们项目小组对业务以及需求的把握有更高的要求，并从多方面提升组内各个成员的实践能力。
- 
-- **产品展示**
-- **样品速递**:
-- **新闻展示**
+# 界面原型部分
+- **首页**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/index.png)
+- **公司简介**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/company.png)
+- **产品中心**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/product-center.png)
+- **产品内容**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/product-content.png)
+- **样品速递**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/sample-send.png)
+- **新闻中心**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/news.png)
+- **新闻内容**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/news-content.png)
 - **环境与社会**
-- **在线留言**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/ES.png)
+- **联系我们**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/Contactus.png)
+- **职业中心**
+![](https://github.com/yuejianbin/KUNYUAN/blob/master/images/Career-center.png)
 - **微信微官网**
 
 -------------------
