@@ -9,23 +9,46 @@
 
 namespace Admin\Controller;
 
+use Library\Page;
 use Think\Controller;
 class UserController extends Controller
 {
     public function index() {
         if (isset($_SESSION['group_id'])){
-            //连接数据库
-            //关联表，数据模型类
-            $results = D('user')->relation(true)->select();
-           // dump($results);
 
+
+            //1、获取总记录
+            $count=D('user')->relation(true)->count();
+
+            //2、获取每一页显示的个数
+            $pageSize=5;
+
+            //3、创建分页对象
+            $page = new Page($count,$pageSize);
+
+            //设计分页样式
+            $page->setConfig('prev','上一页');
+            $page->setConfig('next','下一页');
+            $page->setConfig('first','....');
+            $page->setConfig('last',"...$count");
+            $page->setConfig('theme',' %UP_PAGE% %FIRST%  %LINK_PAGE%  %END% %DOWN_PAGE%');
+
+            //4、分页查
+            $result =D('user')->relation(true)->limit($page->firstRow.','.$page->listRows)->select();
+
+            //5、输出查询结果
             //传递数据
-            $this->assign('user',$results);
+            $this->assign('user',$result);
+
+            //6、输出分页码
+            $this->assign('pages',$page->show());
+
+
 
             //显示视图
             $this->display();
         }else{
-            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
+            exit('<script>top.location.href="/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }

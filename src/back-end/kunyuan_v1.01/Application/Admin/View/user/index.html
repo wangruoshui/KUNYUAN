@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>坤源后台</title>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
-
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
     <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
@@ -19,11 +20,11 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list">
-                <i class="icon-font"></i><a href="#">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="#">职员管理</a>
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="#">职员管理</a>
 
             </div>
         </div>
-        <div class="well">
+        <div class="well1">
 
             <a href="{:U('admin/user/add')}" style="color:#000;"><i class="icon-font"></i>&nbsp;&nbsp;添加职员</a>
             <div class="well-content" style="margin-top: 1%;">
@@ -58,9 +59,9 @@
                             <td>{$vo.address}</td>
 
                             <td>
-                                <a class="btn" href="/index.php/admin/user/manage/id/{$vo.userid}" title="修改">修改</a>
-                                <a class="btn" href="/index.php/admin/user/del/id/{$vo.userid}" title="删除">删除</a>
-                                <a class="btn" href="/index.php/admin/user/show/id/{$vo.userid}" title="查看">查看</a>
+                                <a class="btn" href="/admin/user/manage/id/{$vo.userid}" title="修改">修改</a>
+                                <a class="btn" href="/admin/user/del/id/{$vo.userid}" title="删除">删除</a>
+                                <a class="btn" href="/admin/user/show/id/{$vo.userid}" title="查看">查看</a>
                             </td>
                         </tr>
                     </volist>
@@ -68,6 +69,9 @@
 
                     </tbody>
                 </table>
+                <ul class="pagination" style="float: right;margin-left: 5%;">
+                    {$pages}
+                </ul>
             </div>
 
         </div>

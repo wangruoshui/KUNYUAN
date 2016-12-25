@@ -9,23 +9,44 @@
 
 namespace Admin\Controller;
 
+use Library\Page;
 use Think\Controller;
 
 class RoleController extends Controller{
     public function index() {
         if (isset($_SESSION['group_id'])){
-            //连接数据库
-            $role=M('role');
-            $role_list=$role->select();
-            //dump($ques_list);
+            //1、获取总记录
+            $count=M('role')->count();
 
+            //2、获取每一页显示的个数
+            $pageSize=2;
+
+            //3、创建分页对象
+            $page = new Page($count,$pageSize);
+
+            //设计分页样式
+            $page->setConfig('prev','上一页');
+            $page->setConfig('next','下一页');
+            $page->setConfig('first','....');
+            $page->setConfig('last',"...$count");
+            $page->setConfig('theme',' %UP_PAGE% %FIRST%  %LINK_PAGE%  %END% %DOWN_PAGE%');
+
+            //4、分页查
+            $role_list =M('role')->limit($page->firstRow.','.$page->listRows)->select();
+
+            //5、输出查询结果
             //传递数据
             $this->assign('role',$role_list);
+
+            //6、输出分页码
+            $this->assign('pages',$page->show());
+
+
 
             //显示视图
             $this->display();
         }else{
-            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
+            exit('<script>top.location.href="/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
