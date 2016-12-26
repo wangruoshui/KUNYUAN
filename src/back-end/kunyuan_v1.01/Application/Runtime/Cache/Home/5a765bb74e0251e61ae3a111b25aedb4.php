@@ -45,26 +45,38 @@
                 </div>
                 <div  class="col-md-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li >
-                            <a href="/index.php/home/index/index">首页</a>
-                        </li>
                         <li>
-                            <a href="/index.php/home/Company/index">公司简介</a>
+                            <a href="/index.php/home/index/index">首页
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ProTechnology/index">产品中心</a>
+                            <a href="/index.php/home/Company/index">公司简介
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/News/index">新闻中心</a>
+                            <a href="/index.php/home/ProTechnology/index">产品中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ES/index">环境与社会</a>
+                            <a href="/index.php/home/News/index">新闻中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Career/index">职业中心</a>
+                            <a href="/index.php/home/ES/index">环境与社会
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Contactus/index">联系我们</a>
+                            <a href="/index.php/home/Career/index">职业中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
+                        </li>
+                        <hr class="mdhidden hrme">
+                        <li>
+                            <a href="/index.php/home/Contactus/index">联系我们<img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
 
 
@@ -96,7 +108,7 @@
       </li>
 
       <li>
-           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img  class="img-responsive" src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
@@ -134,6 +146,7 @@ function goTop(){
 
 
 <script class="resources library" src="/Public/js/area.js" type="text/javascript"></script>
+<script type="text/javascript" src="/Public/js/checkEmail.js"></script>
 <script type="text/javascript">
     function checkName(){
        //alert("tian");
@@ -159,9 +172,23 @@ function goTop(){
     }
     function checkPhone(){
         var name=document.getElementById("phone").value;
+         var test=document.getElementById("spanphone");
         if(name==""){
-        document.getElementById("spanphone").style.visibility="visible";
-        }else{document.getElementById("spanphone").style.visibility="hidden";}
+        test.style.visibility="visible";
+        test.innerText="电话不能为空";
+        }else{
+        	document.getElementById("spanphone").style.visibility="hidden";
+            var i=phoneCheck(name);
+            console.log(i);
+            if(i==1){
+                test.style.visibility="hidden";
+            }else{
+                console.log(name);
+                console.log(i);
+                test.style.visibility="visible";
+                test.innerText="电话格式错误";
+            }
+        }
     }
     function checkPhonetwo(){
         document.getElementById("spanphone").style.visibility="hidden";
@@ -175,7 +202,45 @@ function goTop(){
     function checkchecktwo(){
         document.getElementById("spancheck").style.visibility="hidden";
     }
+	function checkSubmit() {
+		console.log('check()');
+		var name=document.getElementById("username").value;
+		var address=document.getElementById("address").value;
+		var address1=document.getElementById("s_province").value;
+		var address2=document.getElementById("s_city").value;
+		var address3=document.getElementById("s_county").value;
+		var phone=document.getElementById("phone").value;
+		var check=document.getElementById("check").value;
+		if(name!=''&&address!=''&&address1!=''&&address2!=''&&address3!=''&&phone!=''&&check!=''){
+			var i=phoneCheck(phone);
+			if(i==1){
+					if(address1!='省份'){
+						if(address2!='地级市'){
+							if(address3!='市、县级市'){
+								return true;
+							}else{
+								alert("请选择市、县级市");
+								return false;
+							}
+						}else{
+							alert("请选择地级市");
+							return false;
+						}
+					}else{
+						alert("请选择省份");
+						return false;
+					}
+			}else{
+				alert("电话格式错误");
+				return false;
+			}
 
+		}else{
+			alert("信息不能为空");
+			return false;
+		}
+
+	}
 
 	$(document).ready(function(){
         _init_area();
@@ -188,6 +253,7 @@ function goTop(){
         }
         Gid('s_county').setAttribute('onchange','showArea()');
 	});
+	console.log('before');
 </script>
 <style type="text/css">
     .span{
@@ -262,7 +328,7 @@ function goTop(){
 		<div class="col-md-1 col-xs-1">
 		</div>
 		<div class="col-md-5 col-xs-12 black">
-			<form role="form" action="/index.php/home/send/addsend" method="post" enctype="multipart/form-data">
+			<form role="form" action="/index.php/home/send/addsend" method="post" enctype="multipart/form-data" onsubmit="return checkSubmit()">
 				<div class="kuang">
 					<div class="col-md-2 col-xs-3 text4">
 						 姓&nbsp;&nbsp;&nbsp;&nbsp;名
@@ -300,11 +366,11 @@ function goTop(){
 					<div class="col-md-10 col-xs-9">
 						<input type="text" style="height:30px;" class="width4" name="phone" onblur='checkPhone()'  onfocus="checkPhonetwo()" id="phone"
 							   placeholder="请输入手机号">
-                        <span class="span" value="手机号不能为空" style="white-space:nowrap;" id="spanphone">手机号不能为空</span>
+                        <div id="spanphone"></div>
 					</div>
 				</div>
 				<div class="kuang">
-					<div class="col-md-2 col-xs-3 text4">
+					<div class="col-md-2 col-xs-3 text5">
 						验证码
 					</div>
 			

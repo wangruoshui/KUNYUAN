@@ -51,7 +51,7 @@ class QuestionController extends Controller{
             //显示视图
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
 
@@ -72,9 +72,9 @@ class QuestionController extends Controller{
 
             //判断是否添加成功
             if ($question_add) {
-                $this->redirect('admin/question/index', '', 0, '添加成功!');
+                $this->redirect('/index.php/admin/question/index', '', 0, '添加成功!');
             } else {
-                $this->redirect('admin/question/index', '', 0, '添加失败!');
+                $this->redirect('/index.php/admin/question/index', '', 0, '添加失败!');
             }
 
 
@@ -101,9 +101,9 @@ class QuestionController extends Controller{
             //dump($question_manage);
             //判断是否添加成功
             if ($question_manage) {
-                $this->redirect('admin/question/index', '', 0, '修改成功!');
+                $this->redirect('/index.php/admin/question/index', '', 0, '修改成功!');
             } else {
-                $this->redirect('admin/question/index', '', 0, '修改失败!');
+                $this->redirect('/index.php/admin/question/index', '', 0, '修改失败!');
             }
 
             //$this->display('index');
@@ -134,9 +134,9 @@ class QuestionController extends Controller{
         $question=M('question');
         $ques_list=$question->where('questionid=%d',I('get.id'))->delete();
         if ($ques_list){
-            $this->redirect('admin/question/index', '', 0, '删除成功!');
+            $this->redirect('/index.php/admin/question/index', '', 0, '删除成功!');
         }else{
-            $this->redirect('admin/question/index', '', 0, '删除失败!');
+            $this->redirect('/index.php/admin/question/index', '', 0, '删除失败!');
         }
 
     }

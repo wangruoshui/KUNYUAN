@@ -45,26 +45,38 @@
                 </div>
                 <div  class="col-md-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li >
-                            <a href="/index.php/home/index/index">首页</a>
-                        </li>
                         <li>
-                            <a href="/index.php/home/Company/index">公司简介</a>
+                            <a href="/index.php/home/index/index">首页
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ProTechnology/index">产品中心</a>
+                            <a href="/index.php/home/Company/index">公司简介
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/News/index">新闻中心</a>
+                            <a href="/index.php/home/ProTechnology/index">产品中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ES/index">环境与社会</a>
+                            <a href="/index.php/home/News/index">新闻中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Career/index">职业中心</a>
+                            <a href="/index.php/home/ES/index">环境与社会
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Contactus/index">联系我们</a>
+                            <a href="/index.php/home/Career/index">职业中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
+                        </li>
+                        <hr class="mdhidden hrme">
+                        <li>
+                            <a href="/index.php/home/Contactus/index">联系我们<img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
 
 
@@ -96,7 +108,7 @@
       </li>
 
       <li>
-           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img  class="img-responsive" src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
@@ -166,8 +178,8 @@ function goTop(){
     </div>
 </div>
 
-<div class="container col-md-12">
-<div class="row">&nbsp</br></br></br></div>
+<div class="container col-md-12"></br>
+<div class="xshidden row">&nbsp</br></br></div>
     <div class="container">
         <div class="text-center">
             <div class="big">
@@ -177,25 +189,25 @@ function goTop(){
                     <img src="/Public/images/newslist/u321.png">
                 </div>
             </div>
-            <div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
+            <div class="kunyuan">kunyuan</div>
         </div>
         <!--第一部分，内容标题+下划线+产品标题-->
         <div class="row nc_first_top"></div>
         <div class="row nc_first">
         <?php if(is_array($newscontent)): $i = 0; $__LIST__ = $newscontent;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-md-8 nc_first_left">
-            <div class="row nc_first_left_title"><div class="col-md-11 col-xs-10 col-md-push-1 col-xs-push-1 xsnewstitle text-center"><?php echo ($data["title"]); ?></div></div>
-            <div class="row">&nbsp</div>
+            <div class="row nc_first_left_title"><div class="col-md-11 col-xs-10 col-md-push-1 col-xs-push-1 xsnewstitle"><?php echo ($data["title"]); ?></div></div>
+            <div class="xshidden row">&nbsp</div>
             <div class="col-xs-11 col-md-12 row nc_sat xiao">
                 <div class="col-xs-2 col-md-2 col-md-push-5 col-xs-push-2 source">来源：<?php echo ($data["resource"]); ?></div>
                 <div class="col-xs-2 col-xs-push-3 col-md-2 col-md-push-5 author">时间：<?php echo ($data["time"]); ?></div>
                 <div class="col-xs-6 col-xs-push-4 col-md-6 col-md-push-6 push_time"></div>
             </div>
-            <div class="mdhidden row-md-1">&nbsp;</div>
+    
             <div class="col-md-12 col-xs-12">
 
                 <!--第二部分内容-->
  
-                <div class="row">&nbsp</div>
+                <div class="xshidden row">&nbsp</div>
                 <div class="col-xs-12 col-md-9 col-md-push-2 col-xs-push-0 ">
              
                         <img  class="leftxin img-responsive" src="/Public/upload/<?php echo ($data["image"]); ?>">

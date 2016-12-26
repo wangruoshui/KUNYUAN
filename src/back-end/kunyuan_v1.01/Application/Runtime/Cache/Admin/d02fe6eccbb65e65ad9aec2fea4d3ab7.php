@@ -19,7 +19,7 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list">
-                <i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">产品中心</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">产品信息</a>
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/index.php/admin/product/index">产品中心</a><span class="crumb-step">&gt;</span>产品信息
             </div>
         </div>
     </div>
@@ -38,7 +38,10 @@
                             <th>图片：</th>
                             <td><img src="/Public/upload/<?php echo ($data["image"]); ?>" style="height:100px;width:120px;margin-top: 2%;margin-left: 1%;margin-bottom: 2%;"></td>
                         </tr>
-
+                        <?php if(is_array($proimg)): $i = 0; $__LIST__ = $proimg;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                            <th>详情页图片：<?php echo ($i); ?></th>
+                            <td><img src="/Public/upload/<?php echo ($vo["proimgpath"]); ?>" style="height:100px;width:120px;margin-top: 2%;margin-left: 1%;margin-bottom: 2%;"></td>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         <tr>
                             <th>介绍：</th>
                             <td>

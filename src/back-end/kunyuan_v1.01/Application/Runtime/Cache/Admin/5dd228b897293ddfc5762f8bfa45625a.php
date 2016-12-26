@@ -44,7 +44,7 @@
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
           <input name="captcha" class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
-          <img src="/index.php/admin/log/captcha?"  width="30%" onclick="this.src=this.src+'?'"/> <a id="kanbuq" href="#">点击图片换一换</a> </div>
+          <img src="/index.php/admin/log/captcha"  width="30%" onclick="this.src=this.src+'?'"/> <a id="kanbuq" href="#">点击图片换一换</a> </div>
       </div>
     
       <div class="row cl">

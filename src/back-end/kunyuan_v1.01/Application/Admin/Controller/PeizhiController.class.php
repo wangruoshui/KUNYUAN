@@ -23,7 +23,7 @@ class PeizhiController extends Controller
             $this->assign('result',$result);
             $this->display('crn');
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -78,9 +78,9 @@ class PeizhiController extends Controller
 
             //判断是否修改成功
             if ($r) {
-                $this->redirect('admin/peizhi/crn', '', 0, '修改成功!');
+                $this->redirect('/index.php/admin/peizhi/crn', '', 0, '修改成功!');
             } else {
-                $this->redirect('admin/peizhi/crn', '', 0, '修改失败!');
+                $this->redirect('/index.php/admin/peizhi/crn', '', 0, '修改失败!');
             }
         }else{
             //连接数据库
@@ -126,9 +126,9 @@ class PeizhiController extends Controller
 
             //判断是否修改成功
             if ($r) {
-                $this->redirect('admin/peizhi/crn', '', 0, '修改成功!');
+                $this->redirect('/index.php/admin/peizhi/crn', '', 0, '修改成功!');
             } else {
-                $this->redirect('admin/peizhi/crn', '', 0, '修改失败!');
+                $this->redirect('/index.php/admin/peizhi/crn', '', 0, '修改失败!');
             }
         }else{
             //连接数据库
@@ -174,9 +174,9 @@ class PeizhiController extends Controller
 
             //判断是否修改成功
             if ($r) {
-                $this->redirect('admin/peizhi/phone', '', 0, '修改成功!');
+                $this->redirect('/index.php/admin/peizhi/phone', '', 0, '修改成功!');
             } else {
-                $this->redirect('admin/peizhi/phone', '', 0, '修改失败!');
+                $this->redirect('/index.php/admin/peizhi/phone', '', 0, '修改失败!');
             }
         }else{
             //连接数据库
@@ -258,9 +258,9 @@ class PeizhiController extends Controller
 
             //判断是否修改成功
             if ($r) {
-                $this->redirect('admin/peizhi/picture', '', 0, '修改成功!');
+                $this->redirect('/index.php/admin/peizhi/picture', '', 0, '修改成功!');
             } else {
-                $this->redirect('admin/peizhi/picture', '', 0, '修改失败!');}
+                $this->redirect('/index.php/admin/peizhi/picture', '', 0, '修改失败!');}
 
         }else{
             //连接数据库

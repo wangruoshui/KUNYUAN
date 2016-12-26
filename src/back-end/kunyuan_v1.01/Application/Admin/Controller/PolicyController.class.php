@@ -45,7 +45,7 @@ class PolicyController extends Controller
 
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -77,10 +77,10 @@ class PolicyController extends Controller
 
             if($result){
                 //插入成功
-                $this->success('添加成功,3秒后自动为您跳转到产品列表','/admin/policy/index',3);
+                $this->success('添加成功,3秒后自动为您跳转到产品列表','/index.php/admin/policy/index',3);
             }else{
                 //插入失败
-                $this->error('添加失败，3秒后自动跳回添加页面','/admin/policy/add',3);
+                $this->error('添加失败，3秒后自动跳回添加页面','/index.php/admin/policy/add',3);
             }
         }else{
             $this->display();
@@ -125,10 +125,10 @@ class PolicyController extends Controller
             $result = $this->_db->save($results);
             if ($result) {
                 //插入成功
-                $this->success('修改成功,3秒后自动为您跳转到政策列表', '/admin/policy/index', 3);
+                $this->success('修改成功,3秒后自动为您跳转到政策列表', '/index.php/admin/policy/index', 3);
             } else {
                 //插入失败
-                $this->error('修改失败，3秒后自动跳回政策修改页面', "/admin/policy/manage/id/$id", 3);
+                $this->error('修改失败，3秒后自动跳回政策修改页面', "/index.php/admin/policy/manage/id/$id", 3);
             }
         }else{
             $this->_db = M("common");
@@ -137,10 +137,10 @@ class PolicyController extends Controller
             $result = $this->_db->save($results);
             if ($result) {
                 //插入成功
-                $this->success('修改成功,3秒后自动为您跳转到政策列表', '/admin/policy/index', 3);
+                $this->success('修改成功,3秒后自动为您跳转到政策列表', '/index.php/admin/policy/index', 3);
             } else {
                 //插入失败
-                $this->error('修改失败，3秒后自动跳回政策修改页面', "/admin/policy/manage/id/$id", 3);
+                $this->error('修改失败，3秒后自动跳回政策修改页面', "/index.php/admin/policy/manage/id/$id", 3);
             }
         }
     }
@@ -158,10 +158,10 @@ class PolicyController extends Controller
         $results=$this->_db->where("commonid=$id")->delete();
         if($results){
             //插入成功
-            $this->success('删除成功,3秒后自动为您跳转到政策列表','/admin/policy/index',3);
+            $this->success('删除成功,3秒后自动为您跳转到政策列表','/index.php/admin/policy/index',3);
         }else{
             //插入失败
-            $this->error('删除失败，3秒后自动跳回政策列表','/admin/policy/index',3);
+            $this->error('删除失败，3秒后自动跳回政策列表','/index.php/admin/policy/index',3);
         }
     }
 }

@@ -26,15 +26,15 @@
         </div>
         <div class="list">
             <img src="__PUBLIC__/admin/images/chanpin1.png">
-            <a href="/admin/product/index" target="right">产品中心</a>
+            <a href="/index.php/admin/product/index" target="right">产品中心</a>
         </div>
         <div class="list">
             <img src="__PUBLIC__/admin/images/chanpin3.png">
-            <a href="/admin/news/index" target="right">新闻中心</a>
+            <a href="/index.php/admin/news/index" target="right">新闻中心</a>
         </div>
         <div class="list" >
             <img src="__PUBLIC__/admin/images/chanpin5.png">
-            <a href="#">网站首页</a>
+            <a href="/index.php/home/index/index">网站首页</a>
         </div>
     </div>
     <!-- Header end -->
@@ -46,9 +46,9 @@
         <div class="user" style="height: 100px; margin-left: 8%;margin-top:20%;">
             <div style="float: left;margin-right: 7%;">
                 <if condition="$usersex eq 1 ">
-                    <a  href="/admin/user/show/id/{$userid}" target="right"><img src="__PUBLIC__/admin/images/user1.png" /></a>
+                    <a  href="/index.php/admin/user/show/id/{$userid}" target="right"><img src="__PUBLIC__/admin/images/user1.png" /></a>
                     <else />
-                    <a  href="/admin/user/show/id/{$userid}" target="right"><img src="__PUBLIC__/admin/images/user2.png" /></a>
+                    <a  href="/index.php/admin/user/show/id/{$userid}" target="right"><img src="__PUBLIC__/admin/images/user2.png" /></a>
                 </if></span>
 
             </div>
@@ -64,7 +64,7 @@
                 <ul class="submenu" >
                     <volist name="role_list" id="vo">
                         <if condition="($vo[0]['id'] eq 1) OR ($vo[0]['id'] eq 2) OR ($vo[0]['id'] eq 3) OR ($vo[0]['id'] eq 4)">
-                            <li><a href="/admin/{$vo[0]['show_url']}" target="right">{$vo[0]['show_name']}</a></li>
+                            <li><a href="/index.php/admin/{$vo[0]['show_url']}" target="right">{$vo[0]['show_name']}</a></li>
                             <else />
 
                         </if>
@@ -75,32 +75,32 @@
                 <div class="link">站点管理<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                     <if condition="$peizhi eq 1">
-                        <li><a href="/admin/peizhi/crn" target="right">公司配置信息</a></li>
-                        <li><a href="/admin/peizhi/picture" target="right">网站图片管理</a></li>
+                        <li><a href="/index.php/admin/peizhi/crn" target="right">公司配置信息</a></li>
+                        <li><a href="/index.php/admin/peizhi/picture" target="right">网站图片管理</a></li>
                     </if>
-                    <li><a href="/admin/user/manage/id/{$userid}" target="right">个人信息修改</a></li>
+                    <li><a href="/index.php/admin/user/manage/id/{$userid}" target="right">个人信息修改</a></li>
                 </ul>
             </li>
             <li>
                 <div class="link">样品与留言<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
-                    <li><a href="/admin/courier/index" target="right">样品列表</a></li>
-                    <li><a href="/admin/message/index" target="right">留言列表</a></li>
+                    <li><a href="/index.php/admin/courier/index" target="right">样品列表</a></li>
+                    <li><a href="/index.php/admin/message/index" target="right">留言列表</a></li>
                 </ul>
             </li>
             <li>
                 <div class="link">招聘与问题<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
-                    <li><a href="/admin/recruit/index" target="right">招聘列表</a></li>
-                    <li><a href="/admin/question/index" target="right">问题列表</a></li>
+                    <li><a href="/index.php/admin/recruit/index" target="right">招聘列表</a></li>
+                    <li><a href="/index.php/admin/question/index" target="right">问题列表</a></li>
                 </ul>
             </li>
             <if condition="$peizhi eq 1">
             <li>
                 <div class="link">职员管理<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
-                    <li><a href="/admin/user/index" target="right">职员列表</a></li>
-                    <li><a href="/admin/role/index" target="right">角色列表</a></li>
+                    <li><a href="/index.php/admin/user/index" target="right">职员列表</a></li>
+                    <li><a href="/index.php/admin/role/index" target="right">角色列表</a></li>
                 </ul>
             </li>
             </if>
@@ -113,7 +113,7 @@
     <div class="content_right">
         <!-- Content start -->
 
-        <iframe  class="inner_navigation1" name="right" src="/admin/{$role_list[0][0]['show_url']}" frameborder="0" width="100%" scrolling="auto" height="100%"></iframe>
+        <iframe  class="inner_navigation1" name="right" src="/index.php/admin/{$role_list[0][0]['show_url']}" frameborder="0" width="100%" scrolling="auto" height="100%"></iframe>
 
         <!-- Content END -->
     </div>

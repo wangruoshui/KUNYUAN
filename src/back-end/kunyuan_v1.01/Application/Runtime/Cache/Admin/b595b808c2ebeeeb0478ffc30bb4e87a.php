@@ -22,7 +22,7 @@
         </div>
         <div class="list" style="margin-right: 2%;">
             <img src="/Public/admin/images/chanpin6.png">
-            <a href="<?php echo U('/admin/log/logout');?>">退出登录</a>
+            <a href="<?php echo U('admin/log/logout');?>">退出登录</a>
         </div>
         <div class="list">
             <img src="/Public/admin/images/chanpin1.png">

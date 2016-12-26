@@ -5,6 +5,27 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
+
+
+    <!--引入CSS-->
+    <link rel="stylesheet" type="text/css" href="/Public/proimg/style/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/proimg/style/syntax.css">
+    <link rel="stylesheet" type="text/css" href="/Public/proimg/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/Public/proimg/style/webuploader.css">
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!--引入JS-->
+    <script type="text/javascript" src="/Public/proimg/style/webuploader.min.js"></script>
+    <script type="text/javascript" src="/Public/proimg/style/proimg.js"></script>
+
+
     <script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.all.min.js"> </script>
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
@@ -33,11 +54,11 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list">
-                <i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">产品中心</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allCategorys.html">添加产品</a>
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/index.php/admin/product/index">产品中心</a><span class="crumb-step">&gt;</span>添加产品
             </div>
         </div>
     </div>
-    <div class="well">
+    <div class="well1">
         <form action="<?php echo U('admin/product/modify');?>" method="post" enctype= "multipart/form-data">
             <table class="insert-tab" width="100%">
                 <tbody>
@@ -60,6 +81,20 @@
                 <tr>
                     <th><i class="require-red">*</i>价格：</th>
                     <td><input class="common-text" name="price" size="50" type="text" value="<?php echo ($result[0]["price"]); ?>"></td>
+                </tr>
+                <?php if(is_array($proimg)): $i = 0; $__LIST__ = $proimg;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr id="<?php echo ($vo["proimgid"]); ?>1">
+                        <th id="<?php echo ($vo["proimgid"]); ?>2">详情页图片：<?php echo ($i); ?></th>
+                        <td id="<?php echo ($vo["proimgid"]); ?>3"><img src="/Public/upload/<?php echo ($vo["proimgpath"]); ?>" style="height:100px;width:120px;margin-top: 2%;margin-left: 1%;margin-bottom: 2%;">&nbsp;&nbsp;&nbsp;<a href="#" class="proimg" name="<?php echo ($vo["proimgid"]); ?>"><i class="icon-font"></i></a></td>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                <tr>
+                    <th><i class="require-red">*</i>添加产品详情页图片：
+
+                    </th>
+                    <td><div id="uploader-demo">
+                        <!--用来存放item-->
+                        <div id="fileList" class="uploader-list"></div>
+                        <div id="filePicker" style="width:60px;margin-top: 1%;"><i class="icon-font"></i></div>
+                    </div></td>
                 </tr>
 
                 <input class="common-text" name="productid" size="50" type="hidden" value="<?php echo ($result[0]["productid"]); ?>">
@@ -152,6 +187,29 @@
         document.getElementById("editor").value=arr;
         // alert(arr.join("\n"));
     }
+</script>
+<script src="/Public/admin/js/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $(".proimg").click(function(){
+            var id=$(this).attr('name');
+            var parent=document.getElementById(id+'1');
+            var child1=document.getElementById(id+'2');
+            var child2=document.getElementById(id+'3');
+            parent.removeChild(child1);
+            parent.removeChild(child2);
+            $.post("<?php echo U('/admin/proimg/del');?>",
+                    {
+                        id:id
+                    },
+                    function(){
+                        alert('删除成功！');
+                    });
+
+        });
+
+    });
 </script>
 </body>
 </html>

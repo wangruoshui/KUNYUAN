@@ -467,6 +467,9 @@ th {
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
+  
+  color: #000;
+  opacity: 0.4;
   position: relative;
   top: 1px;
   display: inline-block;
@@ -4429,17 +4432,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    text-align: center;
+    float: left;
     margin: 0;
   }
   .navbar-nav > li {
     text-align: center;
     width:auto;
-    text-align: center;
+    float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 8px;
-    padding-bottom: 14px;
+    padding-top: 18px;
+    padding-bottom: 20px;
   }
 }
 .navbar-form {
@@ -4454,16 +4457,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
 }
 @media (min-width: 768px) {
-  .navbar-nav {
-  margin: 7.5px -15px;
-  .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  width:120px;
-  line-height: 20px;
-}
-}
-
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -4520,16 +4513,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
   }
-  .navbar-nav > li > a {
-  padding-top: 20px;
-  padding-bottom: 2px;
-  width:120px;
-  line-height: 5px;
-  margin-left: 100px;
-}
-.navbar-nav{
-  border-bottom: 10px;
-}
 }
 @media (min-width: 768px) {
   .navbar-form {

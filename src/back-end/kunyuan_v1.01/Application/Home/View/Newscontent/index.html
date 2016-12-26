@@ -33,8 +33,8 @@
     </div>
 </div>
 
-<div class="container col-md-12">
-<div class="row">&nbsp</br></br></br></div>
+<div class="container col-md-12"></br>
+<div class="xshidden row">&nbsp</br></br></div>
     <div class="container">
         <div class="text-center">
             <div class="big">
@@ -44,26 +44,26 @@
                     <img src="__PUBLIC__/images/newslist/u321.png">
                 </div>
             </div>
-            <div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
+            <div class="kunyuan">kunyuan</div>
         </div>
         <!--第一部分，内容标题+下划线+产品标题-->
         <div class="row nc_first_top"></div>
         <div class="row nc_first">
         <volist name="newscontent" id="data">
         <div class="col-md-8 nc_first_left">
-            <div class="row nc_first_left_title"><div class="col-md-11 col-xs-10 col-md-push-1 col-xs-push-1 xsnewstitle text-center">{$data.title}</div></div>
-            <div class="row">&nbsp</div>
+            <div class="row nc_first_left_title"><div class="col-md-11 col-xs-10 col-md-push-1 col-xs-push-1 xsnewstitle">{$data.title}</div></div>
+            <div class="xshidden row">&nbsp</div>
             <div class="col-xs-11 col-md-12 row nc_sat xiao">
                 <div class="col-xs-2 col-md-2 col-md-push-5 col-xs-push-2 source">来源：{$data.resource}</div>
                 <div class="col-xs-2 col-xs-push-3 col-md-2 col-md-push-5 author">时间：{$data.time}</div>
                 <div class="col-xs-6 col-xs-push-4 col-md-6 col-md-push-6 push_time"></div>
             </div>
-            <div class="mdhidden row-md-1">&nbsp;</div>
+    
             <div class="col-md-12 col-xs-12">
 
                 <!--第二部分内容-->
  
-                <div class="row">&nbsp</div>
+                <div class="xshidden row">&nbsp</div>
                 <div class="col-xs-12 col-md-9 col-md-push-2 col-xs-push-0 ">
              
                         <img  class="leftxin img-responsive" src="__PUBLIC__/upload/{$data.image}">

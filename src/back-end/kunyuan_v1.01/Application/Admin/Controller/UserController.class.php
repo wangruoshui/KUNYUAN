@@ -48,7 +48,7 @@ class UserController extends Controller
             //显示视图
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -112,9 +112,9 @@ class UserController extends Controller
 
                     //判断是否添加成功
                     if ($user_add) {
-                        $this->redirect('admin/user/index', '', 0, '添加成功!');
+                        $this->redirect('/index.php/admin/user/index', '', 0, '添加成功!');
                     } else {
-                        $this->redirect('admin/user/index', '', 0, '添加失败!');
+                        $this->redirect('/index.php/admin/user/index', '', 0, '添加失败!');
                     }
                 }
 
@@ -180,9 +180,9 @@ class UserController extends Controller
                 //dump($question_manage);
                 //判断是否修改成功
                 if ($user_manage) {
-                    $this->redirect('admin/user/index', '', 0, '修改成功!');
+                    $this->redirect('/index.php/admin/user/index', '', 0, '修改成功!');
                 } else {
-                    $this->redirect('admin/user/index', '', 0, '修改失败!');
+                    $this->redirect('/index.php/admin/user/index', '', 0, '修改失败!');
                 }
 
                 //$this->display('index');
@@ -218,9 +218,9 @@ class UserController extends Controller
         $user=M('user');
         $user_list=$user->where('userid=%d',I('get.id'))->delete();
         if ($user_list){
-            $this->redirect('admin/user/index', '', 0, '删除成功!');
+            $this->redirect('/index.php/admin/user/index', '', 0, '删除成功!');
         }else{
-            $this->redirect('admin/user/index', '', 0, '删除失败!');
+            $this->redirect('/index.php/admin/user/index', '', 0, '删除失败!');
         }
     }
 

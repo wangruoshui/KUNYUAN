@@ -45,26 +45,38 @@
                 </div>
                 <div  class="col-md-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li >
-                            <a href="/index.php/home/index/index">首页</a>
-                        </li>
                         <li>
-                            <a href="/index.php/home/Company/index">公司简介</a>
+                            <a href="/index.php/home/index/index">首页
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ProTechnology/index">产品中心</a>
+                            <a href="/index.php/home/Company/index">公司简介
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/News/index">新闻中心</a>
+                            <a href="/index.php/home/ProTechnology/index">产品中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ES/index">环境与社会</a>
+                            <a href="/index.php/home/News/index">新闻中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Career/index">职业中心</a>
+                            <a href="/index.php/home/ES/index">环境与社会
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Contactus/index">联系我们</a>
+                            <a href="/index.php/home/Career/index">职业中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
+                        </li>
+                        <hr class="mdhidden hrme">
+                        <li>
+                            <a href="/index.php/home/Contactus/index">联系我们<img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
 
 
@@ -96,7 +108,7 @@
       </li>
 
       <li>
-           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img  class="img-responsive" src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
@@ -212,7 +224,7 @@ function goTop(){
 					社会需求
 					<img src="/Public/images/newenvironment/hengxian.png">
 				</div>
-				<p style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</p>
+				<p class="kunyuan">kunyuan</p>
 			</div>
 		</div>
 		<!-- 第三行 -->
@@ -357,7 +369,7 @@ function goTop(){
 					政策支持
 					<img src="/Public/images/newenvironment/hengxian.png">
 				</div>
-				<p style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</p>
+				<p class="kunyuan">kunyuan</p>
 			</div>
 		</div>
 		<!-- 第九行 -->
@@ -391,7 +403,7 @@ function goTop(){
 					燃料地域限制
 					<img src="/Public/images/newenvironment/hengxian.png">
 				</div>
-				<p style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</p>
+				<p class="kunyuan">kunyuan</p>
 			</div>
 		</div>
 		<!-- 第十一行 -->

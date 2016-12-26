@@ -88,10 +88,10 @@ class SendController extends Controller
             //  dump($result);
             if ($result) {
                 //插入成功
-                $this->success('提交成功,3秒后自动为您跳转到产品页面', '/index.php/home/proTechnology/index', 2);
+                $this->success('提交成功', '/index.php/home/proTechnology/index', 2);
             } else {
                 //插入失败
-                $this->error('提交失败，3秒后自动跳回留言界面', '/index.php/home/send/index', 2);
+                $this->error('提交失败', '/index.php/home/send/index', 2);
             }
         }else{
             $this->error('信息不能为空，请重新填写', '/index.php/home/send/index', 2);

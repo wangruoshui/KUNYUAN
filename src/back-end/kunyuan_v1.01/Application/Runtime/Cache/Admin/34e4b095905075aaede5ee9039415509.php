@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>坤源后台</title>
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/list.css">
-
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/main.css"/>
     <script type="text/javascript" src="/Public/admin/js/modernizr.min.js"></script>
@@ -19,13 +20,14 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list">
-                <i class="icon-font"></i><a href="#">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="#">产品中心</a>
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="#">产品中心</a>
 
             </div>
         </div>
-        <div class="well">
+        <div class="well1">
 
             <a href="<?php echo U('admin/product/add');?>" style="margin-bottom: 0%;color:#000;"><i class="icon-font"></i>&nbsp;&nbsp;添加产品</a>
+
             <div class="well-content" style="margin-top: 2%;">
 
                 <table class="result-tab" style="width: 100%;">
@@ -44,7 +46,7 @@
                     <tbody>
                     <?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
 
-                            <td><?php echo ($data["productid"]); ?></td>
+                            <td><?php echo ($i); ?></td>
                             <td><?php echo ($data["name"]); ?></td>
                             <td><img src="/Public/upload/<?php echo ($data["image"]); ?>" style="margin-left: 15%;"></td>
                             <td><?php echo ($data["time"]); ?></td>
@@ -61,6 +63,9 @@
 
                     </tbody>
                 </table>
+                <ul class="pagination" style="float: right;margin-left: 5%;">
+                    <?php echo ($pages); ?>
+                </ul>
             </div>
 
         </div>

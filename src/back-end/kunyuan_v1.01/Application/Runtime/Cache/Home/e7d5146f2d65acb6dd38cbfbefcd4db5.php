@@ -45,26 +45,38 @@
                 </div>
                 <div  class="col-md-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li >
-                            <a href="/index.php/home/index/index">首页</a>
-                        </li>
                         <li>
-                            <a href="/index.php/home/Company/index">公司简介</a>
+                            <a href="/index.php/home/index/index">首页
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ProTechnology/index">产品中心</a>
+                            <a href="/index.php/home/Company/index">公司简介
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/News/index">新闻中心</a>
+                            <a href="/index.php/home/ProTechnology/index">产品中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ES/index">环境与社会</a>
+                            <a href="/index.php/home/News/index">新闻中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Career/index">职业中心</a>
+                            <a href="/index.php/home/ES/index">环境与社会
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Contactus/index">联系我们</a>
+                            <a href="/index.php/home/Career/index">职业中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
+                        </li>
+                        <hr class="mdhidden hrme">
+                        <li>
+                            <a href="/index.php/home/Contactus/index">联系我们<img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
 
 
@@ -96,7 +108,7 @@
       </li>
 
       <li>
-           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img  class="img-responsive" src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
@@ -363,7 +375,7 @@ function goTop(){
                         </div>
                         <div class="col-md-3 col-xs-3">
                             <h3 class="text-center td">
-                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#panel-element-388476"><img src="/Public/images/career/u2831.png"></a>
+                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#"><img src="/Public/images/career/u2831.png"></a>
 
                             </h3>
                         </div>
@@ -372,7 +384,7 @@ function goTop(){
                 </div>
             </div>
 
-            <div id="panel-element-388476" class="panel-collapse collapse">
+            <div  class="panel-collapse collapse myspan">
                 <div class="panel-body">
                     <p class="cu1">岗位描述：</p>
                     <?php echo ($advan["introduce"]); ?>
@@ -400,7 +412,7 @@ function goTop(){
                         </div>
                         <div class="col-md-3 col-xs-3">
                             <h3 class="text-center td">
-                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#panel-element-388477"><img src="/Public/images/career/u2831.png"></a>
+                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#"><img src="/Public/images/career/u2831.png"></a>
 
                             </h3>
                         </div>
@@ -408,7 +420,7 @@ function goTop(){
                 </div>
             </div>
 
-            <div id="panel-element-388477" class="panel-collapse collapse">
+            <div  class="panel-collapse collapse myspan">
                 <div class="panel-body">
                     <p class="cu1">岗位描述：</p>
                     <?php echo ($advan["introduce"]); ?>
@@ -436,7 +448,7 @@ function goTop(){
                         </div>
                         <div class="col-md-3 col-xs-3">
                             <h3 class="text-center td">
-                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#panel-element-388478"><img src="/Public/images/career/u2831.png"></a>
+                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#"><img src="/Public/images/career/u2831.png"></a>
 
                             </h3>
                         </div>
@@ -444,7 +456,7 @@ function goTop(){
                 </div>
             </div>
 
-            <div id="panel-element-388478" class="panel-collapse collapse">
+            <div  class="panel-collapse collapse myspan">
                 <div class="panel-body">
                     <p class="cu1">岗位描述：</p>
                     <?php echo ($advan["introduce"]); ?>
@@ -472,7 +484,7 @@ function goTop(){
                         </div>
                         <div class="col-md-3 col-xs-3">
                             <h3 class="text-center td">
-                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#panel-element-388479"><img src="/Public/images/career/u2831.png"></a>
+                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-185091" href="#"><img src="/Public/images/career/u2831.png"></a>
 
                             </h3>
                         </div>
@@ -480,7 +492,7 @@ function goTop(){
                 </div>
             </div>
 
-            <div id="panel-element-388479" class="panel-collapse collapse">
+            <div  class="panel-collapse collapse myspan">
                 <div class="panel-body">
                     <p class="cu1">岗位描述：</p>
                     <?php echo ($advan["introduce"]); ?>
@@ -500,6 +512,15 @@ function goTop(){
 </div>
 <div class="row-md-1">&nbsp;</br></br></br></br></div>
 <div class="xshidden row-md-1">&nbsp;</br></br></div>
+<script>
+$(".panel-title").click(function () {
+var num=$(".panel-title").index(this);
+$(".myspan").each(function () {
+$(this).removeClass("in");
+})
+$(".myspan").eq(num).addClass("in");
+})
+</script>
 <div class="container col-md-12 footer-color">
     <div class="col-md-12 col-xs-12">
         <div class="col-md-1 col-xs-0 column">

@@ -46,7 +46,7 @@ class ProductController extends Controller{
 
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -92,24 +92,26 @@ class ProductController extends Controller{
                 $r2['productid']=$result;
                 $r=$proimg->where('proimgid=%d',$value['proimgid'])->save($r2);
                 if ($r){
-                    $this->success('添加详情图片成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+                    $this->success('添加详情图片成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
 
                 }else{
                     $p1=M('proimg');
                     $r=$p1->where('productid=0')->delete();
-                    $this->error('添加详情图片失败，3秒后自动跳回添加页面','/admin/product/add',0);
+                    $this->error('添加详情图片失败，3秒后自动跳回添加页面','/index.php/admin/product/add',0);
 
                 }
             }
 
-            $this->success('添加成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+            $this->success('添加成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
         }else{
             //插入失败
             $p1=M('proimg');
             $r=$p1->where('productid=0')->delete();
-            $this->error('添加失败，3秒后自动跳回添加页面','/admin/product/add',0);
+            $this->error('添加失败，3秒后自动跳回添加页面','/index.php/admin/product/add',0);
         }
         }else{
+            $p1=M('proimg');
+                $r=$p1->where('productid=0')->delete();
             $this->display('add');
         }
 
@@ -165,26 +167,29 @@ class ProductController extends Controller{
                     $r2['productid']=$productid;
                     $r=$proimg->where('proimgid=%d',$value['proimgid'])->save($r2);
                     if ($r){
-                        $this->success('添加详情图片成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+                        $this->success('添加详情图片成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
 
                     }else{
                         $p1=M('proimg');
                         $r=$p1->where('productid=0')->delete();
-                        $this->error('添加详情图片失败，3秒后自动跳回添加页面','/admin/product/add',0);
+                        $this->error('添加详情图片失败，3秒后自动跳回添加页面','/index.php/admin/product/add',0);
 
                     }
                 }
 
-                $this->success('修改成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+                $this->success('修改成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
             }else{
                 //插入失败
 
                 $p1=M('proimg');
                 $r=$p1->where('productid=0')->delete();
 
-                $this->error('修改失败，3秒后自动跳回产品列表','/admin/product/index/id/{$results["productid"]}',0);
+                $this->error('修改失败，3秒后自动跳回产品列表','/index.php/admin/product/index/id/{$results["productid"]}',0);
             }
         }else{
+            $p1=M('proimg');
+                $r=$p1->where('productid=0')->delete();
+
             $pro=M('product');
 //            $results=I("post.");
             $results = array();
@@ -212,24 +217,24 @@ class ProductController extends Controller{
                     $r2['productid']=$productid;
                     $r=$proimg->where('proimgid=%d',$value['proimgid'])->save($r2);
                     if ($r){
-                        $this->success('添加详情图片成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+                        $this->success('添加详情图片成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
 
                     }else{
                         $p1=M('proimg');
                         $r=$p1->where('productid=0')->delete();
-                        $this->error('添加详情图片失败，3秒后自动跳回添加页面','/admin/product/add',0);
+                        $this->error('添加详情图片失败，3秒后自动跳回添加页面','/index.php/admin/product/add',0);
 
                     }
                 }
 
-                $this->success('修改成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+                $this->success('修改成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
             }else{
                 //插入失败
 
                 $p1=M('proimg');
                 $r=$p1->where('productid=0')->delete();
 
-                $this->error('修改失败，3秒后自动跳回产品列表','/admin/product/index/id/{$results["productid"]}',0);
+                $this->error('修改失败，3秒后自动跳回产品列表','/index.php/admin/product/index/id/{$results["productid"]}',0);
             }
         }
 
@@ -255,10 +260,10 @@ class ProductController extends Controller{
         $r=$proimg->where("productid=$id")->delete();
         if($results && $r){
             //插入成功
-            $this->success('删除成功,3秒后自动为您跳转到产品列表','/admin/product/index',0);
+            $this->success('删除成功,3秒后自动为您跳转到产品列表','/index.php/admin/product/index',0);
         }else{
             //插入失败
-            $this->error('删除失败，3秒后自动跳回产品列表','/admin/product/index',0);
+            $this->error('删除失败，3秒后自动跳回产品列表','/index.php/admin/product/index',0);
         }
     }
 }

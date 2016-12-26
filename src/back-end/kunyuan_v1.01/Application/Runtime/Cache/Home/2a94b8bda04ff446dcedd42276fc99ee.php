@@ -1,9 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坤源</title>
     <link rel="stylesheet" href="/Public/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/Public/css/allp.css">
     <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
@@ -60,12 +63,11 @@
         </li>
       <li>
           <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=652846913&site=qq&menu=yes" >
-              <div class="sidebox"><img  title="QQ账号：652846913"src="/Public/images/index/side_icon04.png">QQ客服</div>
+            <div class="sidebox"><img  title="QQ账号：652846913"src="/Public/images/index/side_icon04.png">QQ客服</div>
           </a>
       </li>
 
-      <li>
-           <?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+      <li><?php if(is_array($weixin2wm)): $i = 0; $__LIST__ = $weixin2wm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$weixin): $mod = ($i % 2 );++$i;?><div class="sidebox2"><img class="img-responsive" src="/Public/upload/<?php echo ($weixin["config_content"]); ?>"></div><?php endforeach; endif; else: echo "" ;endif; ?>
           <a href="javascript:void(0);">
 
             <div class="sidebox weixin"><img src="/Public/images/index/u192.png">微信</div>
@@ -77,7 +79,7 @@
           </a>
       </li>
   </ul>
-</div> 
+</div>  
 <script>
 $(function(){
     $(".side ul li").hover(function(){
@@ -93,7 +95,7 @@ $(function(){
     });
 
 });
-//鍥炲埌椤堕儴鍑芥暟
+//回到顶部函数
 function goTop(){
     $('html,body').animate({'scrollTop':0},300);
 }
@@ -119,26 +121,38 @@ function goTop(){
                 </div>
                 <div  class="col-md-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li >
-                            <a href="/index.php/home/index/index">首页</a>
-                        </li>
                         <li>
-                            <a href="/index.php/home/Company/index">公司简介</a>
+                            <a href="/index.php/home/index/index">首页
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ProTechnology/index">产品中心</a>
+                            <a href="/index.php/home/Company/index">公司简介
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/News/index">新闻中心</a>
+                            <a href="/index.php/home/ProTechnology/index">产品中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/ES/index">环境与社会</a>
+                            <a href="/index.php/home/News/index">新闻中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Career/index">职业中心</a>
+                            <a href="/index.php/home/ES/index">环境与社会
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
+                        <hr class="mdhidden hrme">
                         <li>
-                            <a href="/index.php/home/Contactus/index">联系我们</a>
+                            <a href="/index.php/home/Career/index">职业中心
+                            <img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
+                        </li>
+                        <hr class="mdhidden hrme">
+                        <li>
+                            <a href="/index.php/home/Contactus/index">联系我们<img class="mdhidden moreyou" src="/Public/upload/more.png" /></a>
                         </li>
 
 
@@ -151,7 +165,6 @@ function goTop(){
         </div>
     </div>
 </div>
-
 
 <div class="container col-md-12" >
     <div class="row">
@@ -179,7 +192,7 @@ function goTop(){
 </div>
 
 <div class="col-md-12 container" >
-<div class="row-md-1">&nbsp;</div>
+<div class="xshidden row-md-1">&nbsp;</div>
 <div class="xshidden row-md-1">&nbsp;</br></br></div>
     <div class="col-md-4">
     </div>
@@ -192,7 +205,7 @@ function goTop(){
                             产品简介
                         </div>
                     </div>
-                    <div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
+                    <div class="kunyuan">kunyuan</div>
                 </div>
         </div>
     </div>
@@ -246,7 +259,7 @@ function goTop(){
 
                         </div>
                     </div>
-                    <div style="font-family:Blackadder ITC Normal, Blackadder ITC;font-size:19px">kunyuan</div>
+                    <div class="kunyuan">kunyuan</div>
                 </div>
             </div>
         </div>
@@ -330,6 +343,7 @@ function goTop(){
         </div>
     </div>
 </div>
+
 </body>
 
 </html>

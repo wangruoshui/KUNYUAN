@@ -83,7 +83,7 @@ class IndexController extends Controller {
 			$this->display();
 		}else
 		{
-            $this->redirect('admin/log/login', '', 0, '删除成功!');
+            $this->redirect('/index.php/admin/log/login', '', 0, '删除成功!');
 		}
         
     }

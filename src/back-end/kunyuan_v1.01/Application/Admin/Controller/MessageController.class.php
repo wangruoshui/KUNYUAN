@@ -53,7 +53,7 @@ class MessageController extends Controller{
             //显示视图
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -79,9 +79,9 @@ class MessageController extends Controller{
             //dump($question_manage);
             //判断是否添加成功
             if ($message_manage) {
-                $this->redirect('admin/message/index', '', 0, '修改成功!');
+                $this->redirect('/index.php/admin/message/index', '', 0, '修改成功!');
             } else {
-                $this->redirect('admin/message/index', '', 0, '修改失败!');
+                $this->redirect('/index.php/admin/message/index', '', 0, '修改失败!');
             }
 
             //$this->display('index');
@@ -116,9 +116,9 @@ class MessageController extends Controller{
         //dump($question_manage);
         //判断是否添加成功
         if ($message_manage) {
-            $this->redirect('admin/message/index', '', 0, '删除成功!');
+            $this->redirect('/index.php/admin/message/index', '', 0, '删除成功!');
         } else {
-            $this->redirect('admin/message/index', '', 0, '删除失败!');
+            $this->redirect('/index.php/admin/message/index', '', 0, '删除失败!');
         }
 
         //$this->display('index');

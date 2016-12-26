@@ -46,7 +46,7 @@ class RoleController extends Controller{
             //显示视图
             $this->display();
         }else{
-            exit('<script>top.location.href="/admin/log/login"</script>');
+            exit('<script>top.location.href="/index.php/admin/log/login"</script>');
             //$this->redirect('/admin/index/login', '', 0, '请登录!');
         }
     }
@@ -95,9 +95,9 @@ class RoleController extends Controller{
 
             //判断是否添加成功
             if ($role_add) {
-                $this->redirect('admin/role/index', '', 0, '添加成功!');
+                $this->redirect('/index.php/admin/role/index', '', 0, '添加成功!');
             } else {
-                $this->redirect('admin/role/add', '', 0, '添加失败!');
+                $this->redirect('/index.php/admin/role/add', '', 0, '添加失败!');
             }
         }else{
             $this->display();
@@ -151,9 +151,9 @@ class RoleController extends Controller{
 
             //判断是否添加成功
             if ($role_add) {
-                $this->redirect('admin/role/index', '', 0, '修改成功!');
+                $this->redirect('/index.php/admin/role/index', '', 0, '修改成功!');
             } else {
-                $this->redirect("admin/role/index", '', 0, '修改失败!');
+                $this->redirect("/index.php/admin/role/index", '', 0, '修改失败!');
             }
         }else{
             $role = M('role');
@@ -184,9 +184,9 @@ class RoleController extends Controller{
         }else{
             $role_list=$role->where('roleid=%d',I('get.id'))->delete();
             if ($role_list){
-                $this->redirect('admin/role/index', '', 0, '删除成功!');
+                $this->redirect('/index.php/admin/role/index', '', 0, '删除成功!');
             }else{
-                $this->redirect('admin/role/index', '', 0, '删除失败!');
+                $this->redirect('/index.php/admin/role/index', '', 0, '删除失败!');
             }
         }
 

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>坤源后台</title>
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/list.css">
-
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/main.css"/>
     <script type="text/javascript" src="/Public/admin/js/modernizr.min.js"></script>
@@ -19,11 +20,11 @@
 
         <div class="crumb-wrap">
             <div class="crumb-list">
-                <i class="icon-font"></i><a href="#">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="#">留言管理</a>
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="#">留言管理</a>
 
             </div>
         </div>
-        <div class="well">
+        <div class="well1">
 
             <a style="margin-bottom: 0%;color:#000;"><i class="icon-font"></i>&nbsp;&nbsp;留言管理</a>
             <div class="well-content" style="margin-top: 2%;">
@@ -54,7 +55,7 @@
 
                             <td><?php echo ($vo["title"]); ?></td>
                             <td><?php echo ($vo["email"]); ?></td>
-                            <td><?php echo (mb_substr($vo["content"],0,10,'utf-8')); ?></td>
+                            <td><?php echo (mb_substr($vo["content"],0,6,'utf-8')); ?>...</td>
                             <td><?php echo ($vo["time"]); ?></td>
 
                             <?php if($vo["status"] == 0 ): ?><td style="text-align:center;"><button style="color:#FF0033;"  class="status1" href="#" name="<?php echo ($vo["messageid"]); ?>">未回复</button></td>
@@ -78,6 +79,9 @@
 
                     </tbody>
                 </table>
+                <ul class="pagination" style="float: right;margin-left: 5%;">
+                    <?php echo ($pages); ?>
+                </ul>
             </div>
 
         </div>

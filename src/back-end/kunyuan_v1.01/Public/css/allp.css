@@ -8,6 +8,9 @@ a{
   margin-top:-5px;
 }
 @media(max-width:767px){
+  .kehu{
+        margin-top:12px;
+    }
   .navsun{
     margin-top:-7px;
     font-weight: normal;
@@ -31,7 +34,7 @@ a{
     margin-top: -30px;
   }
   .baiduditu{
-    width:289px;
+    width:274px;
     height:300px;
   }
   .content3-img{  
@@ -123,9 +126,9 @@ a{
     font-size: 13px;
   }
   .textzhu{
-    font-size: 12px;
+    font-size: 14px;
     font-family: "微软雅黑" ;
-    line-height:23px;
+    line-height:21px;
   }
   .xintu{
     height:166px;
@@ -137,12 +140,16 @@ a{
   }
     .xsnewstitle{
     font-family:"微软雅黑";
-    font-size: 18px;
+    font-size: 19px;
   }
   .xiao{
     font-family:"微软雅黑";
-    font-size: 4px;
+    font-size: 12px;
+    margin-top: 5px;
     color: gray;
+  }
+  .leftxin{
+    margin-top: 5px;
   }
   .xshidden{
     display: none;
@@ -153,24 +160,62 @@ a{
   } 
   .bianda2{
     font-size: 14px;
-    width: 55px;
+    width: 52px;
   }
   .width4{
     width:100%;
   }
   .width3{
     margin-top: 1.5%;
-    width:90%;
+    width:89%;
   }
   .width5{
+     margin-top: 10px;
     width: 90px;
   }
   .width6{
-    width: 88px;
+    margin-top: 10px;
+    width: 80px;
+  }
+  .navbar-nav > li > a {
+    margin-left: 20px;
+    text-align: left;
+    margin-top: 3px;
+  }
+  .navbar-nav > li {
+    background-color: #EEEEEE;
+    padding-top: 1px;
+    width:100%;
+    line-height: 6px;
+  }
+  .navbar-nav {
+    margin: 0px -15px;
+  }
+  .top{
+    margin-top: -8px;
+  }
+  .moreyou{
+    margin-left: 270px;
+    margin-top: -13px;
+    height: 17px;
+    width: 15px;
+  }
+  .hrme{
+    margin-top: -20px;
+  }
+  .kunyuan{
+    font-size:15px;
   }
 }
-@media(min-width:1000px){
-  .navsun{}
+@media(min-width:768px){
+  .navbar-nav > li > a {
+    padding-top: 18px;
+    padding-bottom: 20px;
+    width:120px;
+    line-height: 20px;
+  }
+  .navbar-nav {
+      }
   .lan{
     margin-left:1%;
   }
@@ -284,13 +329,19 @@ a{
     width: 265px;
   }
   .width5{
+     margin-top: 10px;
     width: 113px;
   }
   .width6{
+    margin-top: 10px;
     width: 132px;
   }
-
+  .kunyuan{
+    font-family:Blackadder ITC Normal, Blackadder ITC;
+    font-size:19px;
+  }
 }
+
  .completer-container{
  	font-family:inherit;
  	font-size:14px;
@@ -707,4 +758,10 @@ a{
 	font-size: 14px;
 	font-family: "微软雅黑";
 	margin-top: 5px;
+}
+
+.text5{
+  font-size: 14px;
+  font-family: "微软雅黑";
+  margin-top: 10px;
 }

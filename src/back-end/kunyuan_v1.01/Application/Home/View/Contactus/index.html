@@ -71,6 +71,36 @@
     function checkContenttwo(){
         document.getElementById("spancontent").style.visibility="hidden";
     }
+    function checkSubmit() {
+        var name=document.getElementById("username").value;
+        var phone=document.getElementById("phone").value;
+        var email=document.getElementById("address").value;
+        var title=document.getElementById("title").value;
+        var content=document.getElementById("content").value;
+        if(name!=''&&phone!=''&&email!=''&&title!=''&&content!=''){
+            var i=phoneCheck(phone);
+            if(i==1){
+                if(title!='我的需求'){
+                    var j=emailCheck(email);
+                        if(j==1){
+                            return true;
+                        }else{
+                            alert("邮箱格式错误");
+                            return false;
+                        }
+                }else{
+                    alert("请选择需求");
+                    return false;
+                }
+            }else{
+                alert("电话格式错误");
+                return false;
+            }
+        }else{
+            alert('信息不能为空');
+            return false;
+        }
+    }
 </script>
 <style type="text/css">
     .span{
@@ -84,10 +114,12 @@
     color:red;
 }
 </style>
+
 <div class="container col-md-12 font-family"style="padding:0px">
     <div class="container col-md-12" style="padding:0px">
         <div>
             <div class="carousel slide" >
+
                 <div class="carousel-inner">
                     <div class="item active" >
                         <volist name="bigtu" id="big">
@@ -104,7 +136,7 @@
 
                     <li>
                         您所在的位置:
-                        <a href="/index.php/home/index/index">首页</a>
+                        <a href="index.html">首页</a>
                     </li>
 
                     <li class="active">
@@ -119,7 +151,7 @@
 </div>
 <div class="col-md-12 col-xs-12 container">
     <!--第一部分开始-->
-    <div class="row xshidden">&nbsp;</div>
+    <div class="row">&nbsp;</div>
     <div class="row xshidden">
         <div class="col-md-7 col-md-offset-3 col-xs-10 col-xs-offset-1">
             <div class="content-nav">
@@ -156,9 +188,9 @@
     <!--第一部分结束-->
     <!--第二部分开始-->
     
-    <div class="xshidden row-md-1">&nbsp;</br></br></br><div id="box1"></div></br></div>
-    </br>
-    <div class="col-md-12 text-center">
+    <div class="xshidden row-md-1">&nbsp;</br></br></br></br><div id="box1"></div></br></br></div>
+    
+    <div class="text-center">
         <div class="big">
             <div>
                 <img src="__PUBLIC__/images/protechnology/u321.png">
@@ -209,10 +241,10 @@
     <!--第三部分结束-->
     <!--第四部分开始-->
     
-    <div class="xshidden row-md-1">&nbsp;</br><div id="box2"></div></br></br></div>
+    <div class="xshidden row-md-1">&nbsp;</br></br><div id="box2"></div></br></br></div>
     <div class="row-md-1">&nbsp;</br></br></br></div>
     
-    <div class="col-md-12 text-center">
+    <div class="text-center">
         <div class="big">
             <div>
                 <img src="__PUBLIC__/images/protechnology/u321.png">
@@ -224,7 +256,7 @@
     </div>
     <!--第四部分结束-->
     <!--第五部分开始-->
-    <div class="col-md-12  contact_third">
+        <div class="col-md-12  contact_third">
         <div class="col-md-4 col-md-push-2 col-xs-push-1 col-xs-10 contact_third_img">
         <volist name="phone" id="ph" offset="0" length="1">
             <img class="carousel-inner img-responsive img-rounded" src="__PUBLIC__/upload/{$ph.image}">
@@ -244,8 +276,10 @@
     <!--第五部分结束-->
     <!--第六部分开始-->
     
-    <div class="xshidden row-md-1">&nbsp;</br><div id="box3"></div></br></br></div>
-    <div class=" contact_seventh col-md-12 text-center">
+    <div class="xshidden row-md-1">&nbsp;</br></br><div id="box3"></div></br></br></div>
+    <div class="row-md-1">&nbsp;</br></br></br></div>
+
+    <div class="text-center">
         <div class="big">
             <div>
                 <img src="__PUBLIC__/images/protechnology/u321.png">
@@ -257,11 +291,11 @@
     </div>
     <!--第六部分结束-->
     <!--第七部分开始-->
-    <div class="col-md-12  contact_seventh">
-        <div class="col-md-8 col-md-push-2 col-xs-12 col-xs-push-0 contact_seventh_form">
-            <form role="form" action="/index.php/home/contactus/addmessage" method="post">
+    <div class="row contact_seventh">
+        <div class="col-md-8 col-md-push-2 col-xs-10 col-xs-push-1 contact_seventh_form">
+            <form role="form" action="http://123.207.175.231/index.php/home/contactus/addmessage" method="post" onsubmit="return checkSubmit()">
                 <div class="row contact_seventh_first">
-                    <div class="col-md-10 col-md-push-1  contact_seventh_first_input">
+                    <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
                         <input type="text" placeholder="请输入联系人姓名：" class="form-control" onblur='checkName()'  onfocus="checkNametwo()"
                                id="username" name="name">
                         <span class="span" value="姓名不能为空" style="white-space:nowrap;" id="name">姓名不能为空</span>
@@ -277,10 +311,10 @@
                     </div>
                 </div>
                 <div class="row contact_seventh_second">
-                    <div class="contact_seventh_second col-md-10 col-md-push-1 contact_seventh_first_input">
+                    <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
                         <div class="form-group contact_seventh_second_third">
                             <!--<label for="name">选择列表</label>-->
-                            <select class="form-control" name="title">
+                            <select class="form-control" name="title" id="title">
                                 <option>我的需求</option>
                                 <option>产品问题</option>
                                 <option>价格问题</option>
@@ -303,7 +337,7 @@
                         <textarea rows="5" cols="50" id="content" name="content" class="form-control"
                                   onblur='checkContent()'  onfocus="checkContenttwo()"
                                   placeholder="详情描述"></textarea>
-                        <span class="span" value="详情不能为空" style="white-space:nowrap;" id="spancontent">详情不能为空</span>
+                        <span class="span"  value="详情不能为空" style="white-space:nowrap;" id="spancontent">详情不能为空</span>
                     </div>
                 </div>
                 <div class="row contact_seventh_last">
