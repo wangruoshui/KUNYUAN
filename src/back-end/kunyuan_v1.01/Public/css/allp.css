@@ -8,6 +8,8 @@ a{
   margin-top:-5px;
 }
 @media(max-width:767px){
+
+
   .xiaoshou{
     margin-left: -20px;
     width: 260px;
@@ -246,12 +248,13 @@ a{
     width:89%;
   }
   .width5{
+     margin-left:-22px;
      margin-top: 10px;
     width: 90px;
   }
   .width6{
     margin-top: 10px;
-    width: 80px;
+    width: 81px;
   }
   .navbar-nav > li > a {
     margin-left: 20px;
@@ -284,6 +287,10 @@ a{
   }
 }
 @media(min-width:768px){
+  .bianda2{
+    font-size: 15px;
+    width: 83px;
+  }
   .content4-title{
   font-size: 32px;
   color: red;
@@ -481,6 +488,7 @@ a{
     width: 113px;
   }
   .width6{
+    margin-left:23px;
     margin-top: 10px;
     width: 132px;
   }
@@ -838,5 +846,5 @@ a{
 .text5{
   font-size: 14px;
   font-family: "微软雅黑";
-  margin-top: 10px;
+  margin-top: 15px;
 }

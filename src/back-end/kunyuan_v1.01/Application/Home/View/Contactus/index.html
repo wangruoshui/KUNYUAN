@@ -4,11 +4,12 @@
     function checkName(){
         //alert("tian");
         var name2=document.getElementById("username").value;
+	var test=document.getElementById("spanname");
         if(name2==''){
-            //alert('333');
-            document.getElementById("name").style.visibility="visible";
+            test.style.visibility="visible";
+            test.innerText="姓名不能为空";
         }else{
-            document.getElementById("name").style.visibility="hidden";
+            document.getElementById("name").style.display="none";
         }
     }
     function checkNametwo(){
@@ -111,6 +112,9 @@
     color:red;
 }
 #spanaddress{
+    color:red;
+}
+#spanname{
     color:red;
 }
 </style>
@@ -275,10 +279,8 @@
     </div>
     <!--第五部分结束-->
     <!--第六部分开始-->
-    
-    <div class="xshidden row-md-1">&nbsp;</br></br><div id="box3"></div></br></br></div>
-    <div class="row-md-1">&nbsp;</br></br></br></div>
-
+    </div>
+    <div class="row-md-1">&nbsp;</br></br><div id="box3"></div></br></br></div>
     <div class="text-center">
         <div class="big">
             <div>
@@ -291,6 +293,7 @@
     </div>
     <!--第六部分结束-->
     <!--第七部分开始-->
+<div class="col-md-12">
     <div class="row contact_seventh">
         <div class="col-md-8 col-md-push-2 col-xs-10 col-xs-push-1 contact_seventh_form">
             <form role="form" action="http://123.207.175.231/index.php/home/contactus/addmessage" method="post" onsubmit="return checkSubmit()">
@@ -298,7 +301,7 @@
                     <div class="col-md-10 col-md-push-1 contact_seventh_first_input">
                         <input type="text" placeholder="请输入联系人姓名：" class="form-control" onblur='checkName()'  onfocus="checkNametwo()"
                                id="username" name="name">
-                        <span class="span" value="姓名不能为空" style="white-space:nowrap;" id="name">姓名不能为空</span>
+                        <div id="spanname"></div>
                     </div>
 
 
@@ -348,6 +351,7 @@
             </form>
         </div>
     </div>
+</div>
     <!--第七部分结束-->
 </div>
 <div class="row-md-1">&nbsp;</br></br></br></br></div>
