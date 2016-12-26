@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admin/role/index">角色管理</a><span class="crumb-step">&gt;</span>角色信息
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <p style="font-size:26px;margin-left:42%;margin-top:3%;">角色信息</p>
+        <hr/>
+        <div class="well brown" style="margin-left:30%;margin-right:20%;">
+            <form action="{:U('admin/common/manage')}">
+
+                <table class="insert-tab" width="50%">
+                    <tbody>
+
+                    <tr>
+                        <th width="35%">角色名称：</th>
+                        <td>{$role[0].rolename}</td>
+                    </tr>
+                    <tr>
+                        <th>所在部门：</th>
+                        <td>{$role[0].description}</td>
+                    </tr>
+                    <tr>
+                        <th>权限&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</th>
+                        <td class="tc" >
+
+                            <if condition="$role[0]['product'] eq 1 ">
+                                产品&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['courier'] eq 1 ">
+                                样品&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['message'] eq 1 ">
+                                留言&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['question'] eq 1 ">
+                                问题&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['news'] eq 1 ">
+                                新闻&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['policy'] eq 1 ">
+                                政策&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['common'] eq 1 ">
+                                公司信息&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['recruit'] eq 1 ">
+                                招聘&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['admin'] eq 1 ">
+                                用户&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                            <if condition="$role[0]['role'] eq 1 ">
+                                角色&nbsp;&nbsp;/&nbsp;&nbsp;
+                            </if>
+                        </td>
+                    </tr>
+
+
+                    </tbody></table>
+
+            </form>
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
+</html>

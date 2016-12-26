@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admin/peizhi/crn">公司配置信息</a><span class="crumb-step">&gt;</span>修改内容
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <form action="{:U('admin/peizhi/personmanage')}" method="post" enctype= "multipart/form-data">
+            <table class="insert-tab" width="100%">
+                <tbody>
+
+                <tr>
+
+                    <th width="10%"><i class="require-red">*</i>联系人：</th>
+                    <td><input class="common-text" name="config_name" size="50" type="text" value="{$result[0].config_name}"></td>
+                </tr>
+                <tr>
+
+                    <th width="10%"><i class="require-red">*</i>电话：</th>
+                    <td><input class="common-text" name="config_content" size="50" type="text" value="{$result[0].config_content}"></td>
+                </tr>
+
+
+
+                <tr>
+                    <th width="10%"><i class="require-red">*</i>操作：</th>
+                    <td>
+                        <input type="hidden" name="id" value="{$result[0].id}">
+                        <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="修改" type="submit" name="submit">
+                        <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button"></td>
+                </tr>
+                </tbody></table>
+        </form>
+    </div>
+    <!-- Content end -->
+</div>
+
+</body>
+</html>

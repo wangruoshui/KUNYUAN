@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admin/user/index">职员管理</a><span class="crumb-step">&gt;</span>信息修改
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <form action="/admin/user/manage/id/{$user[0].userid}" method="post" enctype= "multipart/form-data">
+            <table class="insert-tab" width="100%">
+                <tbody>
+
+                <tr>
+                    <th><i class="require-red">*</i>用户名：</th>
+                    <td><input class="common-text" name="username" size="50" type="text" value="{$user[0].username}"></td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>密码：</th>
+                    <td><input class="common-text" name="password" size="50" type="password" id="pas1" onblur="password1()" ></td>
+                </tr>
+                <tr>
+                    <th>性别：</th>
+                    <if condition="$user[0]['sex'] eq 1 ">
+                        <td>
+                            <input name="sex"  type="radio" value="1" checked="checked" />男&nbsp; &nbsp;&nbsp;&nbsp;
+                            <input name="sex"  type="radio" value="0" >女
+                        </td>
+                        <else />
+                        <td>
+                            <input name="sex1"  type="radio" value="1" />男&nbsp; &nbsp;&nbsp;&nbsp;
+                            <input name="sex1"  type="radio" value="0" checked="checked" >女
+                        </td>
+                    </if>
+
+                </tr>
+                <tr>
+                    <th>职位：</th>
+                    <td>
+                        <select name="roleid">
+
+                            <volist name="rolelist" id="vo">
+                                <if condition="$user[0]['role']['roleid'] eq $vo['roleid']">
+                                    <option value="{$vo.roleid}" selected="selected">{$vo.rolename}</option>
+                                    <else />
+                                    <option value="{$vo.roleid}">{$vo.rolename}</option>
+                                </if>
+
+                            </volist>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>部门：</th>
+                    <td>
+                        <select name="department">
+
+
+                            <if condition="$user[0]['department'] eq '销售'">
+                                <option value="销售" selected="selected">销售</option>
+                                <else />
+                                <option value="销售">销售</option>
+                            </if>
+                            <if condition="$user[0]['department'] eq '财务'">
+                                <option value="财务" selected="selected">财务</option>
+                                <else />
+                                <option value="财务">财务</option>
+                            </if>
+                            <if condition="$user[0]['department'] eq '后勤'">
+                                <option value="后勤" selected="selected">后勤</option>
+                                <else />
+                                <option value="后勤">后勤</option>
+                            </if>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>手机：</th>
+                    <td><input class="common-text" name="phone" size="50" type="text" value="{$user[0].phone}"></td>
+                </tr>
+                <tr>
+                    <th>家庭地址：</th>
+                    <td><input class="common-text" name="address" size="80" type="text" value="{$user[0].address}"></td>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td>
+                        <input class="btn btn-primary btn6 mr10" style="color:#ffffff;" value="修改" type="submit" name="submit">
+                        <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                    </td>
+                </tr>
+
+                </tbody></table>
+        </form>
+    </div>
+    <!-- Content end -->
+</div>
+
+</body>
+</html>

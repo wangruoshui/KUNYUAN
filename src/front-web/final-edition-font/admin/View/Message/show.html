@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>坤源后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/list.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<div>
+    <!-- Content start -->
+    <div  class="daohanglink">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>首页<span class="crumb-step">&gt;</span><a class="crumb-name" href="/admin/message/index">留言管理</a><span class="crumb-step">&gt;</span>留言信息
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <p style="font-size:26px;margin-left:42%;margin-top:3%;">留言信息</p>
+        <hr/>
+        <div class="well brown" style="margin-left:29.5%;margin-right:0%;">
+            <form action="#">
+
+                <table class="insert-tab" width="40%">
+                    <tbody>
+
+                    <tr>
+                        <th width="20%">姓名：</th>
+                        <td>
+                            {$message[0].name}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>手机号：</th>
+                        <td>{$message[0].phone}</td>
+                    </tr>
+                    <tr>
+                        <th>邮箱：</th>
+                        <td>{$message[0].email}</td>
+                    </tr>
+                    <tr>
+                        <th>标题：</th>
+                        <td>{$message[0].title}</td>
+                    </tr>
+                    <tr>
+                        <th>内容：</th>
+                        <td>{$message[0].content}</td>
+                    </tr>
+
+                    <tr>
+                        <th>状态：</th>
+                        <if condition="$message[0]['status'] eq 0 ">
+                            <td>
+                                未回复
+                            </td>
+                            <else />
+                            <td>
+                                已回复
+                            </td>
+                        </if>
+                    </tr>
+
+
+
+
+                    </tbody></table>
+
+            </form>
+        </div>
+        <!-- Content end -->
+    </div>
+</div>
+</body>
+</html>
