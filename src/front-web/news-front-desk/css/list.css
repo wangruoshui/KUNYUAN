@@ -1,0 +1,24 @@
+*{
+	font-family: '微软雅黑';
+	/*background-color: #FFF;*/
+}
+table{
+	/*border:1px solid black;*/
+	bgcolor:#FFF;
+}
+.crumb-wrap{
+	margin-top: 0%;
+	margin-bottom: 2%;
+	width: 100%;
+	margin-left: 0%;
+}
+.crumb-list a{
+	color: #000;
+}
+.well{
+	margin-top: 2%;
+	margin-left: 3%;
+	width: 94%;
+}
+
+
